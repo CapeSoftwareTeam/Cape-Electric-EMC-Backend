@@ -30,7 +30,7 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 				powerEarthingData.setCreatedBy(powerEarthingData.getUserName());
 				powerEarthingDataRepository.save(powerEarthingData);
 			} else {
-				throw new PowerEarthingDataException("User  name  already exists");
+				throw new PowerEarthingDataException("User name already exists");
 			}
 
 		} else {
@@ -48,7 +48,7 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 			if (powerEarthingDataRep != null && !powerEarthingDataRep.isEmpty()) {
 				return powerEarthingDataRep;
 			} else {
-				throw new PowerEarthingDataException("Given UserName & Id doesn't exist in Basic Lps Details");
+				throw new PowerEarthingDataException("Given UserName & Id doesn't exist in PowerEarthingData Details");
 			}
 		} else {
 			throw new PowerEarthingDataException("Invalid Inputs");
@@ -68,7 +68,7 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 				powerEarthingData.setUpdatedBy(powerEarthingData.getUserName());
 				powerEarthingDataRepository.save(powerEarthingData);
 			} else {
-				throw new PowerEarthingDataException("Given Basic LPS Id is Invalid");
+				throw new PowerEarthingDataException("Given Emc is Invalid");
 			}
 
 		} else {

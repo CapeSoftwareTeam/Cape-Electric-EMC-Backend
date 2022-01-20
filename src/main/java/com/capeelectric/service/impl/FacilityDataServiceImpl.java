@@ -27,7 +27,7 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 				facilityData.setCreatedBy(facilityData.getUserName());
 				facilityDataRepository.save(facilityData);
 			} else {
-				throw new FacilityDataException("User  name  already exists");
+				throw new FacilityDataException("User name  already exists");
 			}
 
 		} else {
@@ -43,7 +43,7 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 			if (facilityDataRep != null && !facilityDataRep.isEmpty()) {
 				return facilityDataRep;
 			} else {
-				throw new FacilityDataException("Given UserName & Id doesn't exist in Basic Lps Details");
+				throw new FacilityDataException("Given UserName & Id doesn't exist in FacilityData Details");
 			}
 		} else {
 			throw new FacilityDataException("Invalid Inputs");
@@ -60,7 +60,7 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 				facilityData.setUpdatedBy(facilityData.getUserName());
 				facilityDataRepository.save(facilityData);
 			} else {
-				throw new FacilityDataException("Given Basic LPS Id is Invalid");
+				throw new FacilityDataException("Given Emc Id is Invalid");
 			}
 
 		} else {

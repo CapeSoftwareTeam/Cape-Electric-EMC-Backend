@@ -52,7 +52,7 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 				return electromagneticDataRep;
 			} else {
 				throw new ElectromagneticCompatabilityException(
-						"Given UserName & Id doesn't exist in Basic Lps Details");
+						"Given UserName & Id doesn't exist in ElectromagneticCompatability Details");
 			}
 		} else {
 			throw new ElectromagneticCompatabilityException("Invalid Inputs");
@@ -75,7 +75,7 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 				electromagneticCompatability.setUpdatedBy(electromagneticCompatability.getUserName());
 				electromagneticCompatabilityRepository.save(electromagneticCompatability);
 			} else {
-				throw new ElectromagneticCompatabilityException("Given Basic LPS Id is Invalid");
+				throw new ElectromagneticCompatabilityException("Given Emc Id is Invalid");
 			}
 
 		} else {
