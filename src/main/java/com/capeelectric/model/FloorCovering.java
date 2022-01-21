@@ -51,7 +51,7 @@ public class FloorCovering implements Serializable {
 	private String wallMaterial;
 
 	@Column(name = "WALL_COVERING_TYPE")
-	private String wallCovering_Type;
+	private String wallCoveringType;
 
 	@Column(name = "WALL_HUMUDITY")
 	private String wallHumidity;
@@ -73,12 +73,15 @@ public class FloorCovering implements Serializable {
 
 	@Column(name = "CC_UTILISATION")
 	private String ccUtilisation;
+	
+	@Column(name = "CC_TRUE_DESCRIPTION")
+	private String ccTrueDesc;
 
 	@Column(name = "CC_TRUE_HUMIDITY")
 	private String ccTrueHumidity;
-
-	@Column(name = "CC_TRUE_DESCRIPTION")
-	private String ccTrueDesc;
+	
+	@Column(name = "CC_SURFACE_DESCRIPTION")
+	private String ccSurfaceDesc;
 
 	@Column(name = "WINDOWS_EXTERNAL")
 	private String windowsExternal;
@@ -202,11 +205,11 @@ public class FloorCovering implements Serializable {
 	}
 
 	public String getWallCovering_Type() {
-		return wallCovering_Type;
+		return wallCoveringType;
 	}
 
 	public void setWallCovering_Type(String wallCovering_Type) {
-		this.wallCovering_Type = wallCovering_Type;
+		this.wallCoveringType = wallCovering_Type;
 	}
 
 	public String getWallHumidity() {
@@ -384,5 +387,23 @@ public class FloorCovering implements Serializable {
 	public void setFacilityData(FacilityData facilityData) {
 		this.facilityData = facilityData;
 	}
+
+	public String getWallCoveringType() {
+		return wallCoveringType;
+	}
+
+	public void setWallCoveringType(String wallCoveringType) {
+		this.wallCoveringType = wallCoveringType;
+	}
+
+	public String getCcSurfaceDesc() {
+		return ccSurfaceDesc;
+	}
+
+	public void setCcSurfaceDesc(String ccSurfaceDesc) {
+		this.ccSurfaceDesc = ccSurfaceDesc;
+	}
+	
+	
 
 }

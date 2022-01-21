@@ -39,6 +39,9 @@ public class FacilityData implements Serializable {
 	@Column(name = "BL_OTHER_DESC ")
 	private String blOtherDescription;
 
+	@Column(name = "BC_TYPE")
+	private String bcType;
+	
 	@Column(name = "BC_NO_FLOORS")
 	private String bcNoOfFloors;
 
@@ -69,8 +72,8 @@ public class FacilityData implements Serializable {
 	@Column(name = "RU_DEDICATED")
 	private String ruDedicated;
 
-	@Column(name = "RU_NON_DEDICATED")
-	private String ruNonDedicated;
+//	@Column(name = "RU_NON_DEDICATED")
+//	private String ruNonDedicated;
 
 	@Column(name = "RU_OTHER_DESC")
 	private String ruOtherDesc;
@@ -194,6 +197,14 @@ public class FacilityData implements Serializable {
 		this.blOtherDescription = blOtherDescription;
 	}
 
+	public String getBcType() {
+		return bcType;
+	}
+
+	public void setBcType(String bcType) {
+		this.bcType = bcType;
+	}
+
 	public String getBcNoOfFloors() {
 		return bcNoOfFloors;
 	}
@@ -274,13 +285,13 @@ public class FacilityData implements Serializable {
 		this.ruDedicated = ruDedicated;
 	}
 
-	public String getRuNonDedicated() {
-		return ruNonDedicated;
-	}
-
-	public void setRuNonDedicated(String ruNonDedicated) {
-		this.ruNonDedicated = ruNonDedicated;
-	}
+//	public String getRuNonDedicated() {
+//		return ruNonDedicated;
+//	}
+//
+//	public void setRuNonDedicated(String ruNonDedicated) {
+//		this.ruNonDedicated = ruNonDedicated;
+//	}
 
 	public String getRuOtherDesc() {
 		return ruOtherDesc;
