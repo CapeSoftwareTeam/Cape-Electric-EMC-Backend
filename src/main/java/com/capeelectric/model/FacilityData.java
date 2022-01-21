@@ -36,7 +36,7 @@ public class FacilityData implements Serializable {
 	@Column(name = "EMC_ID")
 	private Integer emcId;
 
-	@Column(name = "BL_OTHER_DESC ")
+	@Column(name = "BL_OTHER_DESC")
 	private String blOtherDescription;
 
 	@Column(name = "BC_TYPE")
@@ -63,7 +63,7 @@ public class FacilityData implements Serializable {
 	@Column(name = "RL_SOLID_EXTERIOR")
 	private String rlSolidExterior;
 
-	@Column(name = "RL_WINDOWED_EXTERIOR ")
+	@Column(name = "RL_WINDOWED_EXTERIOR")
 	private String rlWindowedExterior;
 
 	@Column(name = "RL_WINDOWS_FACE")
@@ -87,7 +87,7 @@ public class FacilityData implements Serializable {
 	@Column(name = "RM_WIDTH")
 	private String rmWidth;
 
-	@Column(name = "RM_LENGTH ")
+	@Column(name = "RM_LENGTH")
 	private String rmLength;
 
 	@Column(name = "RM_MAX_FLOOR")
