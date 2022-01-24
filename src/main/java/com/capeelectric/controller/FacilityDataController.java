@@ -34,11 +34,10 @@ public class FacilityDataController {
 	private FacilityDataService facilityDataService;
 
 	@PostMapping("/saveFacilityData")
-	public ResponseEntity<String> savePeriodicTesting(@RequestBody FacilityData facilityData)
+	public ResponseEntity<String> addFacilityData(@RequestBody FacilityData facilityData)
 			throws FacilityDataException {
 		logger.debug("started saveFacilityData function userName: {},emcId : {}", facilityData.getUserName(),
 				facilityData.getEmcId());
-
 		facilityDataService.addFacilityData(facilityData);
 		logger.debug("ended saveFacilityData function");
 

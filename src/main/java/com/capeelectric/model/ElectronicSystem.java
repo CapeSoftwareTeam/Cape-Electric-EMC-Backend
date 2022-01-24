@@ -23,63 +23,75 @@ public class ElectronicSystem implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "ELECTRONICSYSTEM_ID ")
 	private Integer electronicSystemId;
-
+		
+	@Column(name = "BD_SLD")
+	private String bDSld;
+	
+	@Column(name = "BD_RECORD_DATA")
+	private String bDRecordData;
+	
+	@Column(name = "BD_EARTHING")
+	private String bDEarthing;
+		
+	@Column(name = "ELECTRONIC_DESC")
+	private String electronicDesc;
+	
 	@Column(name = "PANEL_ID")
 	private Integer panelId;
 
 	@Column(name = "NAMEPLATE_DATA")
-	private Integer namePlateData;
+	private String namePlateData;
 
 	@Column(name = "MAIN_CIRCUTE_BRAKER")
-	private Integer mainCircuteBraker;
+	private String mainCircuteBraker;
 
 	@Column(name = "MAINCIRCUTE_BRAKER_RATING")
-	private Integer mainCircuteBrakerRating;
+	private String mainCircuteBrakerRating;
 
 	@Column(name = "EMERGENCY_TRIP_REMOTE")
-	private Integer emergencyTripRemote;
+	private String emergencyTripRemote;
 
 	@Column(name = "EMERGENCY_TRIP_LOCAL")
-	private Integer emergencyTripLocal;
+	private String emergencyTripLocal;
 
 	@Column(name = "OHTHER_TRIP")
-	private Integer otherTrip;
+	private String otherTrip;
 
 	@Column(name = "DIFFERENTAL_PROTECTION")
-	private Integer differentalProtection;
+	private String differentalProtection;
 
 	@Column(name = "BUODING_STELL")
-	private Integer bouodingStell;
+	private String bouodingStell;
 
 	@Column(name = "PANEL_FEED")
-	private Integer panelFeed;
+	private String panelFeed;
 
 	@Column(name = "PHASE_WIRES")
-	private Integer phaseWires;
+	private String phaseWires;
 
 	@Column(name = "NEUTRAL_WIRE")
-	private Integer neutralWire;
+	private String neutralWire;
 
 	@Column(name = "PE_WIRE_SIZE")
-	private Integer peWireSize;
+	private String peWireSize;
 
 	@Column(name = "PANNEL_CONNECTORS")
-	private Integer pannelConnectors;
+	private String pannelConnectors;
 
 	@Column(name = "NEUTRAL_BUS")
-	private Integer neutralBus;
+	private String neutralBus;
 
 	@Column(name = "EARTH_BUS")
-	private Integer earthBus;
+	private String earthBus;
 
 	@Column(name = "LIST_OF_NONELECTRONICLOAD")
-	private Integer listOfNonElectronicLoad;
+	private String listOfNonElectronicLoad;
 
 	@Column(name = "DEDICATED_ELECTRONIC_SYSTEM")
-	private Integer dedicatedElectronicSystem;
+	private String dedicatedElectronicSystem;
 
 	@Column(name = "NON_COMPUTER_LOADS")
-	private Integer nonComputerLoads;
+	private String nonComputerLoads;
 
 	@JsonBackReference
 	@ManyToOne
@@ -94,6 +106,38 @@ public class ElectronicSystem implements Serializable {
 		this.electronicSystemId = electronicSystemId;
 	}
 
+	public String getbDSld() {
+		return bDSld;
+	}
+
+	public void setbDSld(String bDSld) {
+		this.bDSld = bDSld;
+	}
+
+	public String getbDRecordData() {
+		return bDRecordData;
+	}
+
+	public void setbDRecordData(String bDRecordData) {
+		this.bDRecordData = bDRecordData;
+	}
+
+	public String getbDEarthing() {
+		return bDEarthing;
+	}
+
+	public void setbDEarthing(String bDEarthing) {
+		this.bDEarthing = bDEarthing;
+	}
+
+	public String getElectronicDesc() {
+		return electronicDesc;
+	}
+
+	public void setElectronicDesc(String electronicDesc) {
+		this.electronicDesc = electronicDesc;
+	}
+
 	public Integer getPanelId() {
 		return panelId;
 	}
@@ -102,147 +146,147 @@ public class ElectronicSystem implements Serializable {
 		this.panelId = panelId;
 	}
 
-	public Integer getNamePlateData() {
+	public String getNamePlateData() {
 		return namePlateData;
 	}
 
-	public void setNamePlateData(Integer namePlateData) {
+	public void setNamePlateData(String namePlateData) {
 		this.namePlateData = namePlateData;
 	}
 
-	public Integer getMainCircuteBraker() {
+	public String getMainCircuteBraker() {
 		return mainCircuteBraker;
 	}
 
-	public void setMainCircuteBraker(Integer mainCircuteBraker) {
+	public void setMainCircuteBraker(String mainCircuteBraker) {
 		this.mainCircuteBraker = mainCircuteBraker;
 	}
 
-	public Integer getMainCircuteBrakerRating() {
+	public String getMainCircuteBrakerRating() {
 		return mainCircuteBrakerRating;
 	}
 
-	public void setMainCircuteBrakerRating(Integer mainCircuteBrakerRating) {
+	public void setMainCircuteBrakerRating(String mainCircuteBrakerRating) {
 		this.mainCircuteBrakerRating = mainCircuteBrakerRating;
 	}
 
-	public Integer getEmergencyTripRemote() {
+	public String getEmergencyTripRemote() {
 		return emergencyTripRemote;
 	}
 
-	public void setEmergencyTripRemote(Integer emergencyTripRemote) {
+	public void setEmergencyTripRemote(String emergencyTripRemote) {
 		this.emergencyTripRemote = emergencyTripRemote;
 	}
 
-	public Integer getEmergencyTripLocal() {
+	public String getEmergencyTripLocal() {
 		return emergencyTripLocal;
 	}
 
-	public void setEmergencyTripLocal(Integer emergencyTripLocal) {
+	public void setEmergencyTripLocal(String emergencyTripLocal) {
 		this.emergencyTripLocal = emergencyTripLocal;
 	}
 
-	public Integer getOtherTrip() {
+	public String getOtherTrip() {
 		return otherTrip;
 	}
 
-	public void setOtherTrip(Integer otherTrip) {
+	public void setOtherTrip(String otherTrip) {
 		this.otherTrip = otherTrip;
 	}
 
-	public Integer getDifferentalProtection() {
+	public String getDifferentalProtection() {
 		return differentalProtection;
 	}
 
-	public void setDifferentalProtection(Integer differentalProtection) {
+	public void setDifferentalProtection(String differentalProtection) {
 		this.differentalProtection = differentalProtection;
 	}
 
-	public Integer getBouodingStell() {
+	public String getBouodingStell() {
 		return bouodingStell;
 	}
 
-	public void setBouodingStell(Integer bouodingStell) {
+	public void setBouodingStell(String bouodingStell) {
 		this.bouodingStell = bouodingStell;
 	}
 
-	public Integer getPanelFeed() {
+	public String getPanelFeed() {
 		return panelFeed;
 	}
 
-	public void setPanelFeed(Integer panelFeed) {
+	public void setPanelFeed(String panelFeed) {
 		this.panelFeed = panelFeed;
 	}
 
-	public Integer getPhaseWires() {
+	public String getPhaseWires() {
 		return phaseWires;
 	}
 
-	public void setPhaseWires(Integer phaseWires) {
+	public void setPhaseWires(String phaseWires) {
 		this.phaseWires = phaseWires;
 	}
 
-	public Integer getNeutralWire() {
+	public String getNeutralWire() {
 		return neutralWire;
 	}
 
-	public void setNeutralWire(Integer neutralWire) {
+	public void setNeutralWire(String neutralWire) {
 		this.neutralWire = neutralWire;
 	}
 
-	public Integer getPeWireSize() {
+	public String getPeWireSize() {
 		return peWireSize;
 	}
 
-	public void setPeWireSize(Integer peWireSize) {
+	public void setPeWireSize(String peWireSize) {
 		this.peWireSize = peWireSize;
 	}
 
-	public Integer getPannelConnectors() {
+	public String getPannelConnectors() {
 		return pannelConnectors;
 	}
 
-	public void setPannelConnectors(Integer pannelConnectors) {
+	public void setPannelConnectors(String pannelConnectors) {
 		this.pannelConnectors = pannelConnectors;
 	}
 
-	public Integer getNeutralBus() {
+	public String getNeutralBus() {
 		return neutralBus;
 	}
 
-	public void setNeutralBus(Integer neutralBus) {
+	public void setNeutralBus(String neutralBus) {
 		this.neutralBus = neutralBus;
 	}
 
-	public Integer getEarthBus() {
+	public String getEarthBus() {
 		return earthBus;
 	}
 
-	public void setEarthBus(Integer earthBus) {
+	public void setEarthBus(String earthBus) {
 		this.earthBus = earthBus;
 	}
 
-	public Integer getListOfNonElectronicLoad() {
+	public String getListOfNonElectronicLoad() {
 		return listOfNonElectronicLoad;
 	}
 
-	public void setListOfNonElectronicLoad(Integer listOfNonElectronicLoad) {
+	public void setListOfNonElectronicLoad(String listOfNonElectronicLoad) {
 		this.listOfNonElectronicLoad = listOfNonElectronicLoad;
 	}
 
-	public Integer getDedicatedElectronicSystem() {
+	public String getDedicatedElectronicSystem() {
 		return dedicatedElectronicSystem;
 	}
 
-	public void setDedicatedElectronicSystem(Integer dedicatedElectronicSystem) {
+	public void setDedicatedElectronicSystem(String dedicatedElectronicSystem) {
 		this.dedicatedElectronicSystem = dedicatedElectronicSystem;
 	}
 
-	public Integer getNonComputerLoads() {
+	public String getNonComputerLoads() {
 		return nonComputerLoads;
 	}
 
-	public void setNonComputerLoads(Integer nonComputerLoads) {
+	public void setNonComputerLoads(String nonComputerLoads) {
 		this.nonComputerLoads = nonComputerLoads;
 	}
 

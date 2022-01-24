@@ -27,8 +27,8 @@ public class PowerEarthingData implements Serializable {
 	@Column(name = "POWEREARTHINGDATA_ID")
 	private Integer powerEarthingDataId;
 
-	@Column(name = "POWER_ELECTRICITY")
-	private String powerElectricity;
+	@Column(name = "POWER_ELECTRICAL_UTILITY")
+	private String powerElectricalUtility;
 
 	@Column(name = "POWER_BACKUP_SOURCE")
 	private String powerBackupSource;
@@ -42,11 +42,11 @@ public class PowerEarthingData implements Serializable {
 	@Column(name = "POWER_DISC_SUPPLY")
 	private String powerDiscSupply;
 
-	@Column(name = "POWER_TRANSFORMATION")
-	private String powerTransformation;
+	@Column(name = "POWER_TRANSFORMATIONKVA")
+	private String powerTransformationKVA;
 
-	@Column(name = "POWER_INPUT")
-	private String powerInput;
+//	@Column(name = "POWER_INPUT")
+//	private String powerInput;
 
 	@Column(name = "POWER_INPUT_VOLTS")
 	private String powerInputVolts;
@@ -63,8 +63,8 @@ public class PowerEarthingData implements Serializable {
 	@Column(name = "POWER_INPUT_DESCRIBE")
 	private String powerInputDesc;
 
-	@Column(name = "POWER_OUTPUT")
-	private String powerOutput;
+//	@Column(name = "POWER_OUTPUT")
+//	private String powerOutput;
 
 	@Column(name = "POWER_OUTPUT_VOLTS")
 	private String powerOutputVolts;
@@ -78,14 +78,20 @@ public class PowerEarthingData implements Serializable {
 	@Column(name = "POWER_OUTPUT_FEED")
 	private String powerOutputFeed;
 
+	@Column(name = "POWER_OUTPUT_INCOMING_AMPS")
+	private String powerIncomingAmps;
+
+	@Column(name = "POWER_OUTPUT_NEUTRAL")
+	private String powerNeutral;
+
 	@Column(name = "PS_EARTHING")
 	private String psEarthing;
 
 	@Column(name = "PE_ATTACHEMENT")
 	private String peAttachement;
 
-	@Column(name = "BS_ENTRANCE")
-	private String bsEntrance;
+//	@Column(name = "BS_ENTRANCE")
+//	private String bsEntrance;
 
 	@Column(name = "DEDICATED_TRANSFERMATION")
 	private String dedicatedTransfermation;
@@ -125,16 +131,15 @@ public class PowerEarthingData implements Serializable {
 
 	@JsonManagedReference
 	@OneToMany(mappedBy = "powerEarthingData", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private List<DistrubutionPannel> distrubutionPannel;
+	private List<ElectronicSystem> electronicSystem;
 
 	@JsonManagedReference
 	@OneToMany(mappedBy = "powerEarthingData", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private List<ElectronicSystem> electronicSystem;
+	private List<DistrubutionPannel> distrubutionPannel;
 
 	public Integer getPowerEarthingDataId() {
 		return powerEarthingDataId;
 	}
-
 
 	public List<ElectronicSystem> getElectronicSystem() {
 		return electronicSystem;
@@ -164,12 +169,12 @@ public class PowerEarthingData implements Serializable {
 		this.emcId = emcId;
 	}
 
-	public String getPowerElectricity() {
-		return powerElectricity;
+	public String getPowerElectricalUtility() {
+		return powerElectricalUtility;
 	}
 
-	public void setPowerElectricity(String powerElectricity) {
-		this.powerElectricity = powerElectricity;
+	public void setPowerElectricalUtility(String powerElectricalUtility) {
+		this.powerElectricalUtility = powerElectricalUtility;
 	}
 
 	public String getPowerBackupSource() {
@@ -204,20 +209,20 @@ public class PowerEarthingData implements Serializable {
 		this.powerDiscSupply = powerDiscSupply;
 	}
 
-	public String getPowerTransformation() {
-		return powerTransformation;
+//	public String getPowerInput() {
+//		return powerInput;
+//	}
+//
+//	public void setPowerInput(String powerInput) {
+//		this.powerInput = powerInput;
+//	}
+
+	public String getPowerTransformationKVA() {
+		return powerTransformationKVA;
 	}
 
-	public void setPowerTransformation(String powerTransformation) {
-		this.powerTransformation = powerTransformation;
-	}
-
-	public String getPowerInput() {
-		return powerInput;
-	}
-
-	public void setPowerInput(String powerInput) {
-		this.powerInput = powerInput;
+	public void setPowerTransformationKVA(String powerTransformationKVA) {
+		this.powerTransformationKVA = powerTransformationKVA;
 	}
 
 	public String getPowerInputVolts() {
@@ -260,13 +265,13 @@ public class PowerEarthingData implements Serializable {
 		this.powerInputDesc = powerInputDesc;
 	}
 
-	public String getPowerOutput() {
-		return powerOutput;
-	}
-
-	public void setPowerOutput(String powerOutput) {
-		this.powerOutput = powerOutput;
-	}
+//	public String getPowerOutput() {
+//		return powerOutput;
+//	}
+//
+//	public void setPowerOutput(String powerOutput) {
+//		this.powerOutput = powerOutput;
+//	}
 
 	public String getPowerOutputVolts() {
 		return powerOutputVolts;
@@ -316,13 +321,13 @@ public class PowerEarthingData implements Serializable {
 		this.peAttachement = peAttachement;
 	}
 
-	public String getBsEntrance() {
-		return bsEntrance;
-	}
-
-	public void setBsEntrance(String bsEntrance) {
-		this.bsEntrance = bsEntrance;
-	}
+//	public String getBsEntrance() {
+//		return bsEntrance;
+//	}
+//
+//	public void setBsEntrance(String bsEntrance) {
+//		this.bsEntrance = bsEntrance;
+//	}
 
 	public String getDedicatedTransfermation() {
 		return dedicatedTransfermation;
@@ -410,6 +415,22 @@ public class PowerEarthingData implements Serializable {
 
 	public void setUpdatedDate(LocalDateTime updatedDate) {
 		this.updatedDate = updatedDate;
+	}
+
+	public String getPowerIncomingAmps() {
+		return powerIncomingAmps;
+	}
+
+	public void setPowerIncomingAmps(String powerIncomingAmps) {
+		this.powerIncomingAmps = powerIncomingAmps;
+	}
+
+	public String getPowerNeutral() {
+		return powerNeutral;
+	}
+
+	public void setPowerNeutral(String powerNeutral) {
+		this.powerNeutral = powerNeutral;
 	}
 
 }
