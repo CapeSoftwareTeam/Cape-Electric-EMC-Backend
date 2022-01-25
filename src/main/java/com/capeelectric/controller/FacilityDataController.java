@@ -59,7 +59,7 @@ public class FacilityDataController {
 		logger.info("called updateBasicLpsDetails function UserName : {},emcId : {}", facilityData.getUserName(),
 				facilityData.getEmcId());
 		facilityDataService.updateFacilityData(facilityData);
-		return new ResponseEntity<String>("Basic Lps Details Updated Successfully", HttpStatus.OK);
+		return new ResponseEntity<String>("FacilityData  Details Updated Successfully", HttpStatus.OK);
 	}
 
 }
