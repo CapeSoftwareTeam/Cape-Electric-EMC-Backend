@@ -11,6 +11,7 @@ import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
+import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
 import com.capeelectric.service.PowerEarthingDataService;
 
@@ -19,20 +20,31 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 
 	@Autowired
 	PowerEarthingDataRepository powerEarthingDataRepository;
+	
+	@Autowired
+	private FacilityDataRepository facilityDataRepository;
 
 	@Override
 	public void savePowerEarthingData(PowerEarthingData powerEarthingData) throws PowerEarthingDataException {
 		if (powerEarthingData != null && powerEarthingData.getUserName() != null) {
+			Optional<FacilityData> facilityDataRep = facilityDataRepository.findByEmcId(powerEarthingData.getEmcId());
+
 			Optional<PowerEarthingData> powerEarthingDataRep = powerEarthingDataRepository
 					.findByEmcId(powerEarthingData.getEmcId());
-			if (!powerEarthingDataRep.isPresent()) {
-				powerEarthingData.setCreatedDate(LocalDateTime.now());
-				powerEarthingData.setCreatedBy(powerEarthingData.getUserName());
-				powerEarthingDataRepository.save(powerEarthingData);
-			} else {
-				throw new PowerEarthingDataException("User name already exists");
+			if (facilityDataRep.isPresent() && facilityDataRep.get().getEmcId().equals(powerEarthingData.getEmcId())) {
+				if (!powerEarthingDataRep.isPresent()) {
+					powerEarthingData.setCreatedDate(LocalDateTime.now());
+					powerEarthingData.setCreatedBy(powerEarthingData.getUserName());
+					powerEarthingDataRepository.save(powerEarthingData);
+				} else {
+					throw new PowerEarthingDataException("Given PowerEarthingData Already Exists");
+				}
+
 			}
 
+			else {
+				throw new PowerEarthingDataException("Given FacilityData EMC Id is Invalid");
+			}
 		} else {
 			throw new PowerEarthingDataException("Invalid Inputs");
 		}

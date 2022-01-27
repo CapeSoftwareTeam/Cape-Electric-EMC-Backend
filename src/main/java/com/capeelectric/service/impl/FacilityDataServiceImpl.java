@@ -27,7 +27,7 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 				facilityData.setCreatedBy(facilityData.getUserName());
 				facilityDataRepository.save(facilityData);
 			} else {
-				throw new FacilityDataException("User name  already exists");
+				throw new FacilityDataException("Given FacilityData Already Exists");
 			}
 
 		} else {

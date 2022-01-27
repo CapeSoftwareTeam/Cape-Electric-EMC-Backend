@@ -14,26 +14,49 @@ import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
 import com.capeelectric.repository.ElectromagneticCompatabilityRepository;
+import com.capeelectric.repository.FacilityDataRepository;
+import com.capeelectric.repository.PowerEarthingDataRepository;
 import com.capeelectric.service.ElectromagneticCompatabilityService;
 
 @Service
 public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticCompatabilityService {
 
+	
+	@Autowired
+	PowerEarthingDataRepository powerEarthingDataRepository;
+	
 	@Autowired
 	ElectromagneticCompatabilityRepository electromagneticCompatabilityRepository;
+	@Autowired
+	private FacilityDataRepository facilityDataRepository;
 
 	@Override
 	public void saveElectromagneticCompatability(ElectromagneticCompatability electromagneticCompatability)
 			throws ElectromagneticCompatabilityException {
 		if (electromagneticCompatability != null && electromagneticCompatability.getUserName() != null) {
+			Optional<FacilityData> facilityDataRep = facilityDataRepository
+					.findByEmcId(electromagneticCompatability.getEmcId());
+			Optional<PowerEarthingData> powerEarthingDataRep = powerEarthingDataRepository
+					.findByEmcId(electromagneticCompatability.getEmcId());
 			Optional<ElectromagneticCompatability> electromagneticDataRep = electromagneticCompatabilityRepository
 					.findByEmcId(electromagneticCompatability.getEmcId());
-			if (!electromagneticDataRep.isPresent()) {
-				electromagneticCompatability.setCreatedDate(LocalDateTime.now());
-				electromagneticCompatability.setCreatedBy(electromagneticCompatability.getUserName());
-				electromagneticCompatabilityRepository.save(electromagneticCompatability);
+			if (facilityDataRep.isPresent()
+					&& facilityDataRep.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
+				if (powerEarthingDataRep.isPresent()
+						&& powerEarthingDataRep.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
+					if (!electromagneticDataRep.isPresent()) {
+						electromagneticCompatability.setCreatedDate(LocalDateTime.now());
+						electromagneticCompatability.setCreatedBy(electromagneticCompatability.getUserName());
+						electromagneticCompatabilityRepository.save(electromagneticCompatability);
+					} else {
+						throw new ElectromagneticCompatabilityException("Given ElectromagneticCompatability Already Exists");
+					}
+				} else {
+					throw new ElectromagneticCompatabilityException("Power and Earthing Data Not Filled");
+				}
 			} else {
-				throw new ElectromagneticCompatabilityException("User  name  already exists");
+				throw new ElectromagneticCompatabilityException("FacilityData Not Filled");
+
 			}
 
 		} else {
