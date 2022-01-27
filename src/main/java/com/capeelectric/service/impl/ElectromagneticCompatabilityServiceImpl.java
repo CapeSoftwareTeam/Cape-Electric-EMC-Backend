@@ -4,12 +4,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
-import com.capeelectric.exception.FacilityDataException;
-import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
@@ -21,14 +21,20 @@ import com.capeelectric.service.ElectromagneticCompatabilityService;
 @Service
 public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticCompatabilityService {
 
-	
+	private static final Logger logger = LoggerFactory.getLogger(ElectromagneticCompatabilityServiceImpl.class);
+
 	@Autowired
 	PowerEarthingDataRepository powerEarthingDataRepository;
-	
+
 	@Autowired
 	ElectromagneticCompatabilityRepository electromagneticCompatabilityRepository;
+
 	@Autowired
 	private FacilityDataRepository facilityDataRepository;
+
+	private FacilityData facility;
+
+	private Optional<FacilityData> facilityRepo;
 
 	@Override
 	public void saveElectromagneticCompatability(ElectromagneticCompatability electromagneticCompatability)
@@ -48,8 +54,25 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 						electromagneticCompatability.setCreatedDate(LocalDateTime.now());
 						electromagneticCompatability.setCreatedBy(electromagneticCompatability.getUserName());
 						electromagneticCompatabilityRepository.save(electromagneticCompatability);
+						logger.debug("Electro Magnetic Compatability  Details Successfully Saved in DB");
+
+						facilityRepo = facilityDataRepository.findByEmcId(electromagneticCompatability.getEmcId());
+						if (facilityRepo.isPresent()
+								&& facilityRepo.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
+							facility = facilityRepo.get();
+							facility.setAllStepsCompleted("AllStepCompleted");
+							facilityDataRepository.save(facility);
+							logger.debug("AllStepCompleted information saved Facility table in DB"
+									+ electromagneticCompatability.getUserName());
+						} else {
+							logger.error("EMC-Id Information not Available in Facility_Table");
+							throw new ElectromagneticCompatabilityException(
+									"EMC-Id Information not Available in Facility_Table");
+						}
+
 					} else {
-						throw new ElectromagneticCompatabilityException("Given ElectromagneticCompatability Already Exists");
+						throw new ElectromagneticCompatabilityException(
+								"Given ElectromagneticCompatability Already Exists");
 					}
 				} else {
 					throw new ElectromagneticCompatabilityException("Power and Earthing Data Not Filled");
