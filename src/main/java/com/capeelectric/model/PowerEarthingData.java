@@ -11,6 +11,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -18,6 +20,9 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "POWEREARTHINGDATA_TABLE")
+@NamedQueries(value = {
+		@NamedQuery(name = "PowerEarthingDataRepository.findByUserNameAndEmcId", query = "select r from PowerEarthingData r where r.userName=:userName and r.emcId=:emcId"),
+		@NamedQuery(name = "PowerEarthingDataRepository.findByEmcId", query = "select r from PowerEarthingData r where r.emcId=:emcId")})
 public class PowerEarthingData implements Serializable {
 
 	private static final long serialVersionUID = 1L;

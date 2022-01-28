@@ -11,14 +11,18 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
-
 @Entity
 @Table(name = "FACILITYDATA_TABLE")
+@NamedQueries(value = {
+		@NamedQuery(name = "FacilityDataRepository.findByUserNameAndEmcId", query = "select r from FacilityData r where r.userName=:userName and r.emcId=:emcId"),
+		@NamedQuery(name = "FacilityDataRepository.findByEmcId", query = "select r from FacilityData r where r.emcId=:emcId")})
 public class FacilityData implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -35,7 +39,7 @@ public class FacilityData implements Serializable {
 
 	@Column(name = "EMC_ID")
 	private Integer emcId;
-	
+
 	@Column(name = "ALL_STEPS_COMPLETED")
 	private String allStepsCompleted;
 
@@ -44,7 +48,7 @@ public class FacilityData implements Serializable {
 
 	@Column(name = "BC_TYPE")
 	private String bcType;
-	
+
 	@Column(name = "BC_NO_FLOORS")
 	private String bcNoOfFloors;
 

@@ -11,6 +11,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -18,6 +20,9 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "ELECTROMAGNETIC_COMPATABILITY_TABLE")
+@NamedQueries(value = {
+		@NamedQuery(name = "ElectromagneticCompatabilityRepository.findByUserNameAndEmcId", query = "select r from ElectromagneticCompatability r where r.userName=:userName and r.emcId=:emcId"),
+		@NamedQuery(name = "ElectromagneticCompatabilityRepository.findByEmcId", query = "select r from ElectromagneticCompatability r where r.emcId=:emcId")})
 public class ElectromagneticCompatability implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -120,7 +125,7 @@ public class ElectromagneticCompatability implements Serializable {
 	public void setEmcId(Integer emcId) {
 		this.emcId = emcId;
 	}
-	
+
 	public String getSeSinglePoint() {
 		return seSinglePoint;
 	}
