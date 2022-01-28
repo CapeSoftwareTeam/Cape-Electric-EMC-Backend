@@ -35,6 +35,9 @@ public class FacilityData implements Serializable {
 
 	@Column(name = "EMC_ID")
 	private Integer emcId;
+	
+	@Column(name = "ALL_STEPS_COMPLETED")
+	private String allStepsCompleted;
 
 	@Column(name = "BL_OTHER_DESC")
 	private String blOtherDescription;
@@ -187,6 +190,14 @@ public class FacilityData implements Serializable {
 
 	public void setEmcId(Integer emcId) {
 		this.emcId = emcId;
+	}
+
+	public String getAllStepsCompleted() {
+		return allStepsCompleted;
+	}
+
+	public void setAllStepsCompleted(String allStepsCompleted) {
+		this.allStepsCompleted = allStepsCompleted;
 	}
 
 	public String getBlOtherDescription() {
