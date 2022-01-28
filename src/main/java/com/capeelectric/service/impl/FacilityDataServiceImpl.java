@@ -44,7 +44,7 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 
 	@Override
 	public List<FacilityData> retrieveFacilityData(String userName, Integer emcId) throws FacilityDataException {
-		if (userName != null) {
+		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			List<FacilityData> facilityDataRep = facilityDataRepository.findByUserNameAndEmcId(userName, emcId);
 			if (facilityDataRep != null && !facilityDataRep.isEmpty()) {
 				return facilityDataRep;
