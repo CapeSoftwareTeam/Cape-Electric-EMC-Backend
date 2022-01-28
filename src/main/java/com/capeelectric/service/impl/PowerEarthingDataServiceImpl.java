@@ -4,10 +4,11 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
@@ -18,9 +19,11 @@ import com.capeelectric.service.PowerEarthingDataService;
 @Service
 public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 
+	private static final Logger logger = LoggerFactory.getLogger(PowerEarthingDataServiceImpl.class);
+
 	@Autowired
 	PowerEarthingDataRepository powerEarthingDataRepository;
-	
+
 	@Autowired
 	private FacilityDataRepository facilityDataRepository;
 
@@ -37,15 +40,15 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 					powerEarthingData.setCreatedBy(powerEarthingData.getUserName());
 					powerEarthingDataRepository.save(powerEarthingData);
 				} else {
+					logger.error("Given PowerEarthingData Already Exists");
 					throw new PowerEarthingDataException("Given PowerEarthingData Already Exists");
 				}
-
-			}
-
-			else {
+			} else {
+				logger.error("Given FacilityData EMC Id is Invalid");
 				throw new PowerEarthingDataException("Given FacilityData EMC Id is Invalid");
 			}
 		} else {
+			logger.error("Invalid Inputs");
 			throw new PowerEarthingDataException("Invalid Inputs");
 		}
 
@@ -60,9 +63,11 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 			if (powerEarthingDataRep != null && !powerEarthingDataRep.isEmpty()) {
 				return powerEarthingDataRep;
 			} else {
+				logger.error("Given UserName & Id doesn't exist in PowerEarthingData Details");
 				throw new PowerEarthingDataException("Given UserName & Id doesn't exist in PowerEarthingData Details");
 			}
 		} else {
+			logger.error("Invalid Inputs");
 			throw new PowerEarthingDataException("Invalid Inputs");
 		}
 	}
@@ -80,10 +85,12 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 				powerEarthingData.setUpdatedBy(powerEarthingData.getUserName());
 				powerEarthingDataRepository.save(powerEarthingData);
 			} else {
+				logger.error("Given Emc is Invalid");
 				throw new PowerEarthingDataException("Given Emc is Invalid");
 			}
 
 		} else {
+			logger.error("Invalid Inputs");
 			throw new PowerEarthingDataException("Invalid inputs");
 		}
 

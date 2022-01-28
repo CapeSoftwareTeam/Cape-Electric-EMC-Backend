@@ -71,18 +71,22 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 						}
 
 					} else {
+						logger.error("Given ElectromagneticCompatability Already Exists");
 						throw new ElectromagneticCompatabilityException(
 								"Given ElectromagneticCompatability Already Exists");
 					}
 				} else {
+					logger.error("Power and Earthing Data Not Filled");
 					throw new ElectromagneticCompatabilityException("Power and Earthing Data Not Filled");
 				}
 			} else {
+				logger.error("FacilityData Not Filled");
 				throw new ElectromagneticCompatabilityException("FacilityData Not Filled");
 
 			}
 
 		} else {
+			logger.error("Invalid Inputs");
 			throw new ElectromagneticCompatabilityException("Invalid Inputs");
 		}
 
@@ -97,10 +101,12 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 			if (electromagneticDataRep != null && !electromagneticDataRep.isEmpty()) {
 				return electromagneticDataRep;
 			} else {
+				logger.error("Given UserName & Id doesn't exist in ElectromagneticCompatability Details");
 				throw new ElectromagneticCompatabilityException(
 						"Given UserName & Id doesn't exist in ElectromagneticCompatability Details");
 			}
 		} else {
+			logger.error("Invalid Inputs");
 			throw new ElectromagneticCompatabilityException("Invalid Inputs");
 		}
 
@@ -121,10 +127,12 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 				electromagneticCompatability.setUpdatedBy(electromagneticCompatability.getUserName());
 				electromagneticCompatabilityRepository.save(electromagneticCompatability);
 			} else {
+				logger.error("Given Emc Id is Invalid");
 				throw new ElectromagneticCompatabilityException("Given Emc Id is Invalid");
 			}
 
 		} else {
+			logger.error("Invalid Inputs");
 			throw new ElectromagneticCompatabilityException("Invalid inputs");
 		}
 
