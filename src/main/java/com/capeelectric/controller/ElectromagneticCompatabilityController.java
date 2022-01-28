@@ -16,11 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
-import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.ElectromagneticCompatability;
-import com.capeelectric.model.PowerEarthingData;
 import com.capeelectric.service.ElectromagneticCompatabilityService;
-import com.capeelectric.service.PowerEarthingDataService;
 
 /**
  * @author CAPE-SOFTWARE

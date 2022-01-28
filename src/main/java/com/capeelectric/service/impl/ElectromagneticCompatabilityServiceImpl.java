@@ -95,7 +95,7 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 	@Override
 	public List<ElectromagneticCompatability> retrieveElectromagneticCompatability(String userName, Integer emcId)
 			throws ElectromagneticCompatabilityException {
-		if (userName != null) {
+		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			List<ElectromagneticCompatability> electromagneticDataRep = electromagneticCompatabilityRepository
 					.findByUserNameAndEmcId(userName, emcId);
 			if (electromagneticDataRep != null && !electromagneticDataRep.isEmpty()) {

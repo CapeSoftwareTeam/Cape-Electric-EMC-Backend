@@ -33,7 +33,8 @@ public class EmcFinalReportServiceImpl implements FinalReportService {
 
 	@Override
 	public Optional<EmcFinalReport> retrieveEmcReports(String userName, Integer emcId) throws EmcFinalReportException {
-		if (userName != null && emcId != null) {
+
+		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			EmcFinalReport emcFinalReport = new EmcFinalReport();
 			emcFinalReport.setUserName(userName);
 			emcFinalReport.setEmcId(emcId);
@@ -59,19 +60,13 @@ public class EmcFinalReportServiceImpl implements FinalReportService {
 					logger.debug("ElectromagneticCompatability fetching ended");
 					if (electromagneticDatails.isPresent() && electromagneticDatails != null) {
 						emcFinalReport.setElectromagneticCompatability(electromagneticDatails.get());
-
 					}
 				}
-
 			}
 			return Optional.of(emcFinalReport);
-
-		}
-
-		else {
+		} else {
+			logger.debug("Invalid Input");
 			throw new EmcFinalReportException("Invalid Input");
 		}
-
 	}
-
 }

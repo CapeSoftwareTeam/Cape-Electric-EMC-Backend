@@ -16,7 +16,6 @@ import com.capeelectric.exception.EmcFinalReportException;
 import com.capeelectric.model.EmcFinalReport;
 import com.capeelectric.service.impl.EmcFinalReportServiceImpl;
 
-
 /**
  * @author CAPE-SOFTWARE
  *
@@ -25,18 +24,16 @@ import com.capeelectric.service.impl.EmcFinalReportServiceImpl;
 @RestController
 @RequestMapping("/api/emc/v1")
 public class EmcFinalReportController {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(EmcFinalReportController.class);
-	
-	@Autowired(required=true)
+
+	@Autowired
 	EmcFinalReportServiceImpl emcFinalReportServiceImpl;
-	
-	
+
 	@GetMapping("/retrieveEmcReport/{userName}/{emcId}")
-	public ResponseEntity<Optional<EmcFinalReport>> retrieveLpsReports(@PathVariable String userName,
+	public ResponseEntity<Optional<EmcFinalReport>> retrieveEmcReports(@PathVariable String userName,
 			@PathVariable Integer emcId) throws EmcFinalReportException {
-		logger.info("FinalReportAPI_started retrieveFinalEmcReport function userName: {},emcId : {}", userName,
-				emcId);
+		logger.info("FinalReportAPI_started retrieveFinalEmcReport function userName: {},emcId : {}", userName, emcId);
 
 		return new ResponseEntity<Optional<EmcFinalReport>>(
 				emcFinalReportServiceImpl.retrieveEmcReports(userName, emcId), HttpStatus.OK);
