@@ -47,7 +47,7 @@ public class PowerEarthingData implements Serializable {
 	@Column(name = "POWER_DISC_SUPPLY")
 	private String powerDiscSupply;
 
-	@Column(name = "POWER_TRANSFORMATIONKVA")
+	@Column(name = "POWER_TRANSFORMATION_KVA")
 	private String powerTransformationKVA;
 
 //	@Column(name = "POWER_INPUT")
