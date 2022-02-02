@@ -57,7 +57,7 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 	@Override
 	public List<PowerEarthingData> retrievePowerEarthingData(String userName, Integer emcId)
 			throws PowerEarthingDataException {
-		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
+		if (userName != null && !userName.isEmpty() && emcId != null) {
 			List<PowerEarthingData> powerEarthingDataRep = powerEarthingDataRepository.findByUserNameAndEmcId(userName,
 					emcId);
 			if (powerEarthingDataRep != null && !powerEarthingDataRep.isEmpty()) {
@@ -74,8 +74,7 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 
 	@Override
 	public void updatePowerEarthingData(PowerEarthingData powerEarthingData) throws PowerEarthingDataException {
-		if (powerEarthingData != null && powerEarthingData.getEmcId() != null && powerEarthingData.getEmcId() != 0
-				&& powerEarthingData.getUserName() != null) {
+		if (powerEarthingData != null && powerEarthingData.getEmcId() != null && powerEarthingData.getUserName() != null) {
 			Optional<PowerEarthingData> powerEarthingDataRep = powerEarthingDataRepository
 					.findByEmcId(powerEarthingData.getEmcId());
 

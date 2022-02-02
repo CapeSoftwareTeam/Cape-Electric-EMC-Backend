@@ -44,7 +44,7 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 
 	@Override
 	public List<FacilityData> retrieveFacilityData(String userName, Integer emcId) throws FacilityDataException {
-		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
+		if (userName != null && !userName.isEmpty() && emcId != null) {
 			List<FacilityData> facilityDataRep = facilityDataRepository.findByUserNameAndEmcId(userName, emcId);
 			if (facilityDataRep != null && !facilityDataRep.isEmpty()) {
 				return facilityDataRep;
@@ -60,8 +60,7 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 
 	@Override
 	public void updateFacilityData(FacilityData facilityData) throws FacilityDataException {
-		if (facilityData != null && facilityData.getEmcId() != null && facilityData.getEmcId() != 0
-				&& facilityData.getUserName() != null) {
+		if (facilityData != null && facilityData.getEmcId() != null	&& facilityData.getUserName() != null) {
 			Optional<FacilityData> facilityDataRep = facilityDataRepository.findByEmcId(facilityData.getEmcId());
 			if (facilityDataRep.isPresent() && facilityDataRep.get().getEmcId().equals(facilityData.getEmcId())) {
 				facilityData.setUpdatedDate(LocalDateTime.now());

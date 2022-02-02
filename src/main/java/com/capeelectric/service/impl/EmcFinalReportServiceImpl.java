@@ -34,7 +34,7 @@ public class EmcFinalReportServiceImpl implements FinalReportService {
 	@Override
 	public Optional<EmcFinalReport> retrieveEmcReports(String userName, Integer emcId) throws EmcFinalReportException {
 
-		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
+		if (userName != null && !userName.isEmpty() && emcId != null) {
 			EmcFinalReport emcFinalReport = new EmcFinalReport();
 			emcFinalReport.setUserName(userName);
 			emcFinalReport.setEmcId(emcId);
