@@ -34,7 +34,7 @@ public class ElectromagneticCompatabilityController {
 	private ElectromagneticCompatabilityService electromagneticCompatabilityService;
 
 	@PostMapping("/saveElectromagneticCompatability")
-	public ResponseEntity<String> savePowerEarthingData(@RequestBody ElectromagneticCompatability electromagneticCompatability)
+	public ResponseEntity<String> saveElectromagneticCompatability(@RequestBody ElectromagneticCompatability electromagneticCompatability)
 			throws  ElectromagneticCompatabilityException {
 		logger.debug("started saveElectromagneticCompatability function userName: {},emcId : {}", electromagneticCompatability.getUserName(),
 				electromagneticCompatability.getEmcId());
