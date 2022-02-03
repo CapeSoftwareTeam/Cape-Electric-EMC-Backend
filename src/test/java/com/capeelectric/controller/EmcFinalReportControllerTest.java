@@ -64,7 +64,7 @@ public class EmcFinalReportControllerTest {
 		ResponseEntity<Optional<EmcFinalReport>> finalReport = emcFinalReportController
 				.retrieveEmcReports("LVsystem@gmail.com", 1);
 		assertEquals(finalReport.getStatusCode(), HttpStatus.OK);
-		logger.info("testRetrieveEmcReports Function Started");
+		logger.info("testRetrieveEmcReports Function ended");
 
 	}
 
