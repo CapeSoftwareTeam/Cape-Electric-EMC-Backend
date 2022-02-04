@@ -56,7 +56,7 @@ public class FacilityDataController {
 	@PutMapping("/updateFacilityData")
 	public ResponseEntity<String> updateFacilityData(@RequestBody FacilityData facilityData)
 			throws FacilityDataException {
-		logger.info("called updateBasicLpsDetails function UserName : {},emcId : {}", facilityData.getUserName(),
+		logger.info("called updateBasicLpsDetails function UserName : {},getEmcId : {}", facilityData.getUserName(),
 				facilityData.getEmcId());
 		facilityDataService.updateFacilityData(facilityData);
 		return new ResponseEntity<String>("FacilityData  Details Updated Successfully", HttpStatus.OK);

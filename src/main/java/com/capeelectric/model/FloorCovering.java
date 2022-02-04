@@ -121,7 +121,7 @@ public class FloorCovering implements Serializable {
 
 	@JsonBackReference
 	@ManyToOne
-	@JoinColumn(name = "FACILITYDATA_ID")
+	@JoinColumn(name = "EMC_ID")
 	private FacilityData facilityData;
 
 	public Integer getFloorCoveringId() {

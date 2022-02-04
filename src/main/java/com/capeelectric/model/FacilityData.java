@@ -28,17 +28,14 @@ public class FacilityData implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "FACILITYDATA_ID")
-	private Integer facilityDataId;
+	@Column(name = "EMC_ID")
+	private Integer emcId;
 
 	@Column(name = "BL_TYPE")
 	private String blType;
 
 	@Column(name = "USER_NAME")
 	private String userName;
-
-	@Column(name = "EMC_ID")
-	private Integer emcId;
 
 	@Column(name = "ALL_STEPS_COMPLETED")
 	private String allStepsCompleted;
@@ -163,13 +160,13 @@ public class FacilityData implements Serializable {
 	@JsonManagedReference
 	@OneToMany(mappedBy = "facilityData", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<FloorCovering> floorCovering;
-
-	public Integer getFacilityDataId() {
-		return facilityDataId;
+	
+	public Integer getEmcId() {
+		return emcId;
 	}
 
-	public void setFacilityDataId(Integer facilityDataId) {
-		this.facilityDataId = facilityDataId;
+	public void setEmcId(Integer emcId) {
+		this.emcId = emcId;
 	}
 
 	public String getBlType() {
@@ -186,14 +183,6 @@ public class FacilityData implements Serializable {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
-	}
-
-	public Integer getEmcId() {
-		return emcId;
-	}
-
-	public void setEmcId(Integer emcId) {
-		this.emcId = emcId;
 	}
 
 	public String getAllStepsCompleted() {
@@ -523,5 +512,7 @@ public class FacilityData implements Serializable {
 	public void setUpdatedDate(LocalDateTime updatedDate) {
 		this.updatedDate = updatedDate;
 	}
+
+	
 
 }
