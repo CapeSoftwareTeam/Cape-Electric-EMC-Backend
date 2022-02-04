@@ -48,12 +48,8 @@ public class FacilityDataControllerTest {
 	@Test
 	public void testAddFacilityData() throws FacilityDataException {
 		logger.info("testAddFacilityData Function Started");
-
-		doNothing().when(facilityDataServiceImpl).addFacilityData(facilityData);
-		ResponseEntity<String> addFacilityData = facilityDataController.addFacilityData(facilityData);
-		assertEquals(addFacilityData.getBody(), "FacilityData Successfully Saved");
-
-		logger.info("testAddFacilityData Function Ended");
+		ResponseEntity<FacilityData> addFacilityData = facilityDataController.addFacilityData(facilityData);
+		assertEquals(addFacilityData.getStatusCode(), HttpStatus.CREATED);
 	}
 
 	@Test
