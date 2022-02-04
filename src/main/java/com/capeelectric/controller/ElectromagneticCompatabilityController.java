@@ -59,6 +59,6 @@ public class ElectromagneticCompatabilityController {
 		logger.info("called updatePowerEarthingData function UserName : {},emcId : {}", electromagneticCompatability.getUserName(),
 				electromagneticCompatability.getEmcId());
 		electromagneticCompatabilityService.updateElectromagneticCompatability(electromagneticCompatability);
-		return new ResponseEntity<String>("PowerEarthingData Updated Successfully", HttpStatus.OK);
+		return new ResponseEntity<String>("ElectromagneticCompatability Updated Successfully", HttpStatus.OK);
 	}
 }

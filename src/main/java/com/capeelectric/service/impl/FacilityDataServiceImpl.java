@@ -23,13 +23,13 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 	private FacilityDataRepository facilityDataRepository;
 
 	@Override
-	public void addFacilityData(FacilityData facilityData) throws FacilityDataException {
+	public FacilityData addFacilityData(FacilityData facilityData) throws FacilityDataException {
 		if (facilityData != null && facilityData.getUserName() != null) {
 			Optional<FacilityData> facilityDataRep = facilityDataRepository.findByEmcId(facilityData.getEmcId());
 			if (!facilityDataRep.isPresent()) {
 				facilityData.setCreatedDate(LocalDateTime.now());
 				facilityData.setCreatedBy(facilityData.getUserName());
-				facilityDataRepository.save(facilityData);
+				return facilityDataRepository.save(facilityData);
 			} else {
 				logger.error("Given FacilityData Already Exists");
 				throw new FacilityDataException("Given FacilityData Already Exists");

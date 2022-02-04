@@ -7,7 +7,7 @@ import com.capeelectric.model.FacilityData;
 
 public interface FacilityDataService {
 
-	public void addFacilityData(FacilityData facilityData) throws FacilityDataException;
+	public FacilityData addFacilityData(FacilityData facilityData) throws FacilityDataException;
 
 	public List<FacilityData> retrieveFacilityData(String userName, Integer emcId) throws FacilityDataException;
 
