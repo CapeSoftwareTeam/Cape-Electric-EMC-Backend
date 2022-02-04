@@ -44,6 +44,8 @@ public class EmcFinalReportControllerTest {
 
 	private EmcFinalReport emcFinalReport;
 
+	private FacilityData facilityData;
+
 	{
 		emcFinalReport = new EmcFinalReport();
 		emcFinalReport.setEmcId(1);
@@ -52,6 +54,12 @@ public class EmcFinalReportControllerTest {
 		emcFinalReport.setFacilityData(new FacilityData());
 		emcFinalReport.setPowerEarthingData(new PowerEarthingData());
 
+	}
+
+	{
+
+		facilityData = new FacilityData();
+		facilityData.setUserName("LVsystem@gmail.com");
 	}
 
 	@Test
@@ -65,6 +73,21 @@ public class EmcFinalReportControllerTest {
 				.retrieveEmcReports("LVsystem@gmail.com", 1);
 		assertEquals(finalReport.getStatusCode(), HttpStatus.OK);
 		logger.info("testRetrieveEmcReports Function ended");
+
+	}
+
+	@Test
+	public void testRetrieveListOfFacilityData() throws EmcFinalReportException {
+		logger.info("testRetrieveListOfFacilityData Function Started");
+		List<FacilityData> arrayList = new ArrayList<FacilityData>();
+		arrayList.add(facilityData);
+
+		when(emcFinalReportServiceImpl.retrieveListOfFacilityData("LVsystem@gmail.com")).thenReturn(arrayList);
+
+		ResponseEntity<List<FacilityData>> finalReport = emcFinalReportController
+				.retrieveListOfFacilityData("LVsystem@gmail.com");
+		assertEquals(finalReport.getStatusCode(), HttpStatus.OK);
+		logger.info("testRetrieveListOfFacilityData Function ended");
 
 	}
 
