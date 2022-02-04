@@ -13,8 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.capeelectric.exception.EmcFinalReportException;
+
 import com.capeelectric.model.EmcFinalReport;
+import com.capeelectric.model.FacilityData;
 import com.capeelectric.service.impl.EmcFinalReportServiceImpl;
+
+import java.util.List;
 
 /**
  * @author CAPE-SOFTWARE
@@ -39,5 +43,14 @@ public class EmcFinalReportController {
 				emcFinalReportServiceImpl.retrieveEmcReports(userName, emcId), HttpStatus.OK);
 
 	}
+	
+	@GetMapping("/retrieveListOfFacilityData/{userName}")
+	public ResponseEntity<List<FacilityData>> retrieveListOfFacilityData(@PathVariable String userName) throws EmcFinalReportException {
+		logger.info("FinalReportAPI_started retrieveListEmcReport function userName: {},emcId : {}", userName);
 
+		return new ResponseEntity<List<FacilityData>>(
+				emcFinalReportServiceImpl.retrieveListOfFacilityData(userName), HttpStatus.OK);
+
+	}
+	
 }

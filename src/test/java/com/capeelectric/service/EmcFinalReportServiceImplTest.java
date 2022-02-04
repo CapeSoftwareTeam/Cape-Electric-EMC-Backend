@@ -2,8 +2,11 @@ package com.capeelectric.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.junit.jupiter.api.Assertions;
@@ -14,6 +17,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
@@ -49,6 +54,8 @@ public class EmcFinalReportServiceImplTest {
 
 	private EmcFinalReport emcFinalReport;
 
+	private FacilityData facilityData;
+
 	{
 		emcFinalReport = new EmcFinalReport();
 		emcFinalReport.setEmcId(1);
@@ -57,6 +64,12 @@ public class EmcFinalReportServiceImplTest {
 		emcFinalReport.setFacilityData(retriveFacilityData());
 		emcFinalReport.setPowerEarthingData(retrivePowerEarthingData());
 
+	}
+
+	{
+
+		facilityData = new FacilityData();
+		facilityData.setUserName("LVsystem@gmail.com");
 	}
 
 	@Test
@@ -77,6 +90,24 @@ public class EmcFinalReportServiceImplTest {
 				() -> emcFinalReportServiceImpl.retrieveEmcReports(null, 1));
 		assertEquals(finalReportException.getMessage(), "Invalid Input");
 		logger.info("testRetrieveEmcReports method ended");
+
+	}
+
+	@Test
+	public void testRetrieveListOfFacilityData() throws EmcFinalReportException {
+		logger.info("testRetrieveListOfFacilityData Function Started");
+		List<FacilityData> arrayList = new ArrayList<FacilityData>();
+		arrayList.add(facilityData);
+
+		when(facilityDataRepository.findByUserName("LVsystem@gmail.com")).thenReturn(arrayList);
+
+		List<FacilityData> arrayList1 = emcFinalReportServiceImpl.retrieveListOfFacilityData("LVsystem@gmail.com");
+		assertTrue(arrayList1.contains(facilityData));
+
+		EmcFinalReportException finalReportException = Assertions.assertThrows(EmcFinalReportException.class,
+				() -> emcFinalReportServiceImpl.retrieveListOfFacilityData(null));
+		assertEquals(finalReportException.getMessage(), "Invaild Input");
+		logger.info("testRetrieveListOfFacilityData Function ended");
 
 	}
 

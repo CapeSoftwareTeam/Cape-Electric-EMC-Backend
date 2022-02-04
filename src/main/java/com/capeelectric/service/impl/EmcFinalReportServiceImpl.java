@@ -1,5 +1,6 @@
 package com.capeelectric.service.impl;
 
+import java.util.List;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -67,6 +68,23 @@ public class EmcFinalReportServiceImpl implements FinalReportService {
 		} else {
 			logger.debug("Invalid Input");
 			throw new EmcFinalReportException("Invalid Input");
+
 		}
+	}
+
+	@Override
+	public List<FacilityData> retrieveListOfFacilityData(String userName) throws EmcFinalReportException {
+		if (userName != null) {
+			try {
+				logger.info("FacilityData fetching process started");
+				return facilityDataRepository.findByUserName(userName);
+			} catch (Exception e) {
+				logger.info("FacilityData fetching process faild");
+				throw new EmcFinalReportException("FacilityData site process faild");
+			}
+		} else {
+			throw new EmcFinalReportException("Invaild Input");
+		}
+
 	}
 }
