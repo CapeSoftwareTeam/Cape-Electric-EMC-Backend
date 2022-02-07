@@ -1,5 +1,5 @@
-CREATE DATABASE lv_safety_verification;
-use lv_safety_verification;
+CREATE DATABASE emc;
+use emc;
 
 
 -----------> EMC <----------
