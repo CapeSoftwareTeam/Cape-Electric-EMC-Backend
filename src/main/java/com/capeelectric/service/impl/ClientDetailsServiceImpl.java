@@ -35,7 +35,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 				return clientDetailsRepository.save(clientDetails);
 			} else {
 				logger.error("Given ClientDetails Already Exists");
-				throw new ClientDetailsException("Given ClientDetails Already Exists");
+				throw new ClientDetailsException("Given UserName and Emc Id Already Exists");
 			}
 
 		} else {
@@ -53,7 +53,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 				return clientDetailsRepo;
 			} else {
 				logger.error("Given UserName ClientDetails ");
-				throw new ClientDetailsException("Given UserName exist in ClientDetails ");
+				throw new ClientDetailsException("Given EmcId doesn't exist in ClientDetails");
 			}
 		} else {
 			logger.error("Invalid Inputs");
@@ -72,7 +72,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 				clientDetailsRepository.save(clientDetails);
 			} else {
 				logger.error("Given UserName is Invalid");
-				throw new ClientDetailsException("Given UserName is Invalid");
+				throw new ClientDetailsException("Given Emc Id is Invalid");
 			}
 
 		} else {
