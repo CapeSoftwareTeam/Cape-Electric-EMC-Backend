@@ -48,7 +48,7 @@ public class FacilityDataControllerTest {
 	@Test
 	public void testAddFacilityData() throws FacilityDataException {
 		logger.info("testAddFacilityData Function Started");
-		ResponseEntity<FacilityData> addFacilityData = facilityDataController.addFacilityData(facilityData);
+		ResponseEntity<String> addFacilityData = facilityDataController.addFacilityData(facilityData);
 		assertEquals(addFacilityData.getStatusCode(), HttpStatus.CREATED);
 	}
 

@@ -22,17 +22,20 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 @Table(name = "FACILITYDATA_TABLE")
 @NamedQueries(value = {
 		@NamedQuery(name = "FacilityDataRepository.findByUserNameAndEmcId", query = "select r from FacilityData r where r.userName=:userName and r.emcId=:emcId"),
-		@NamedQuery(name = "FacilityDataRepository.findByEmcId", query = "select r from FacilityData r where r.emcId=:emcId")})
+		@NamedQuery(name = "FacilityDataRepository.findByEmcId", query = "select r from FacilityData r where r.emcId=:emcId") })
 public class FacilityData implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "EMC_ID")
-	private Integer emcId;
+	@Column(name = "FACILITYDATA_ID")
+	private Integer facilityDataId;
 
 	@Column(name = "BL_TYPE")
 	private String blType;
+
+	@Column(name = "EMC_ID")
+	private Integer emcId;
 
 	@Column(name = "USER_NAME")
 	private String userName;
@@ -160,7 +163,15 @@ public class FacilityData implements Serializable {
 	@JsonManagedReference
 	@OneToMany(mappedBy = "facilityData", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<FloorCovering> floorCovering;
-	
+
+	public Integer getFacilityDataId() {
+		return facilityDataId;
+	}
+
+	public void setFacilityDataId(Integer facilityDataId) {
+		this.facilityDataId = facilityDataId;
+	}
+
 	public Integer getEmcId() {
 		return emcId;
 	}
@@ -512,7 +523,5 @@ public class FacilityData implements Serializable {
 	public void setUpdatedDate(LocalDateTime updatedDate) {
 		this.updatedDate = updatedDate;
 	}
-
-	
 
 }

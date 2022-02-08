@@ -34,13 +34,13 @@ public class FacilityDataController {
 	private FacilityDataService facilityDataService;
 
 	@PostMapping("/saveFacilityData")
-	public ResponseEntity<FacilityData> addFacilityData(@RequestBody FacilityData facilityData)
+	public ResponseEntity<String> addFacilityData(@RequestBody FacilityData facilityData)
 			throws FacilityDataException {
 		logger.debug("started saveFacilityData function userName: {},emcId : {}", facilityData.getUserName(),
 				facilityData.getEmcId());
-		
+		facilityDataService.addFacilityData(facilityData);
 		logger.debug("ended saveFacilityData function");
-		return new ResponseEntity<FacilityData>(facilityDataService.addFacilityData(facilityData), HttpStatus.CREATED);
+		return new ResponseEntity<String>("FacilityData  Details Saved Successfully", HttpStatus.CREATED);
 	}
 
 	@GetMapping("/retrieveFacilityData/{userName}/{emcId}")
