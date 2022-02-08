@@ -34,7 +34,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 				clientDetails.setCreatedBy(clientDetails.getUserName());
 				return clientDetailsRepository.save(clientDetails);
 			} else {
-				logger.error("Given ClientDetails Already Exists");
+				logger.error("Given UserName and Emc Id Already Exists");
 				throw new ClientDetailsException("Given UserName and Emc Id Already Exists");
 			}
 
@@ -52,7 +52,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 			if (clientDetailsRepo != null && !clientDetailsRepo.isEmpty()) {
 				return clientDetailsRepo;
 			} else {
-				logger.error("Given UserName ClientDetails ");
+				logger.error("Given EmcId doesn't exist in ClientDetails");
 				throw new ClientDetailsException("Given EmcId doesn't exist in ClientDetails");
 			}
 		} else {
@@ -71,7 +71,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 				clientDetails.setUpdatedBy(clientDetails.getUserName());
 				clientDetailsRepository.save(clientDetails);
 			} else {
-				logger.error("Given UserName is Invalid");
+				logger.error("Given Emc Id is Invalid");
 				throw new ClientDetailsException("Given Emc Id is Invalid");
 			}
 
