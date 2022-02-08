@@ -123,6 +123,7 @@ CREATE TABLE state_table (
 			        UPDATED_BY VARCHAR(255),
 			        UPDATED_DATE datetime,
 			        CONSTRAINT PK_EMC_ID  PRIMARY KEY(EMC_ID)
+			        )
 			
 			
 
