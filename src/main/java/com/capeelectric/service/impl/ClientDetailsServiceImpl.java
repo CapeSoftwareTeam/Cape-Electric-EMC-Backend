@@ -34,8 +34,8 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 				clientDetails.setCreatedBy(clientDetails.getUserName());
 				return clientDetailsRepository.save(clientDetails);
 			} else {
-				logger.error("Given UserName and Emc Id Already Exists");
-				throw new ClientDetailsException("Given UserName and Emc Id Already Exists");
+				logger.error("Given UserName Already Exists");
+				throw new ClientDetailsException("Given UserName Already Exists");
 			}
 
 		} else {
