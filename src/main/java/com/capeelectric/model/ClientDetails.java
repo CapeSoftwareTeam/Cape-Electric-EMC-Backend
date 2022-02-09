@@ -29,6 +29,9 @@ public class ClientDetails implements Serializable {
 	@Column(name = "CLIENT_NAME")
 	private String clientName;
 
+	@Column(name = "ALL_STEPS_COMPLETED")
+	private String allStepsCompleted;
+
 	@Column(name = "CLIENT_ADDRESS")
 	private String clientAddress;
 
@@ -82,6 +85,14 @@ public class ClientDetails implements Serializable {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getAllStepsCompleted() {
+		return allStepsCompleted;
+	}
+
+	public void setAllStepsCompleted(String allStepsCompleted) {
+		this.allStepsCompleted = allStepsCompleted;
 	}
 
 	public String getClientName() {

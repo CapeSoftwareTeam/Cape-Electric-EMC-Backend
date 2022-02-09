@@ -40,9 +40,6 @@ public class FacilityData implements Serializable {
 	@Column(name = "USER_NAME")
 	private String userName;
 
-	@Column(name = "ALL_STEPS_COMPLETED")
-	private String allStepsCompleted;
-
 	@Column(name = "BL_OTHER_DESC")
 	private String blOtherDescription;
 
@@ -194,14 +191,6 @@ public class FacilityData implements Serializable {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
-	}
-
-	public String getAllStepsCompleted() {
-		return allStepsCompleted;
-	}
-
-	public void setAllStepsCompleted(String allStepsCompleted) {
-		this.allStepsCompleted = allStepsCompleted;
 	}
 
 	public String getBlOtherDescription() {

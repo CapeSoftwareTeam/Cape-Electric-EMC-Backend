@@ -37,9 +37,8 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 	@Autowired
 	private FacilityDataRepository facilityDataRepository;
 
-	private FacilityData facility;
+	private ClientDetails clientDetails;
 
-	private Optional<FacilityData> facilityRepo;
 
 	@Override
 	public void saveElectromagneticCompatability(ElectromagneticCompatability electromagneticCompatability)
@@ -65,18 +64,18 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 							electromagneticCompatabilityRepository.save(electromagneticCompatability);
 							logger.debug("Electro Magnetic Compatability  Details Successfully Saved in DB");
 
-							facilityRepo = facilityDataRepository.findByEmcId(electromagneticCompatability.getEmcId());
-							if (facilityRepo.isPresent()
-									&& facilityRepo.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
-								facility = facilityRepo.get();
-								facility.setAllStepsCompleted("AllStepCompleted");
-								facilityDataRepository.save(facility);
-								logger.debug("AllStepCompleted information saved Facility table in DB"
+							clientDetailsRepo = clientDetailsRepository.findByUserNameAndEmcId(electromagneticCompatability.getUserName(),electromagneticCompatability.getEmcId());
+							if (clientDetailsRepo.isPresent()
+									&& clientDetailsRepo.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
+								clientDetails = clientDetailsRepo.get();
+								clientDetails.setAllStepsCompleted("AllStepCompleted");
+								clientDetailsRepository.save(clientDetails);
+								logger.debug("AllStepCompleted information saved ClientDetails table in DB"
 										+ electromagneticCompatability.getUserName());
 							} else {
-								logger.error("EMC-Id Information not Available in Facility_Table");
+								logger.error("EMC-Id Information not Available in ClientDetails_Table");
 								throw new ElectromagneticCompatabilityException(
-										"EMC-Id Information not Available in Facility_Table");
+										"EMC-Id Information not Available in ClientDetails_Table");
 							}
 
 						} else {
