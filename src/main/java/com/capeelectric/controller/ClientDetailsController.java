@@ -34,7 +34,7 @@ public class ClientDetailsController {
 	@PostMapping("/saveClientDetails")
 	public ResponseEntity<ClientDetails> saveClientDetails(@RequestBody ClientDetails clientDetails)
 			throws ClientDetailsException {
-		logger.debug("started saveClientDetails function userName: {},emcId : {}", clientDetails.getUserName());
+		logger.debug("started saveClientDetails function userName: {}", clientDetails.getUserName());
 		return new ResponseEntity<ClientDetails>(clientDetailsService.saveClientDetails(clientDetails),
 				HttpStatus.CREATED);
 

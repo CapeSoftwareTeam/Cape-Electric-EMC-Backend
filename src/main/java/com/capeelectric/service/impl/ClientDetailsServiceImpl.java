@@ -28,7 +28,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 	public ClientDetails saveClientDetails(ClientDetails clientDetails) throws ClientDetailsException {
 		if (clientDetails != null && clientDetails.getUserName() != null) {
 			Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository
-					.findByUserNameAndEmcId(clientDetails.getUserName(), clientDetails.getEmcId());
+					.findByUserName(clientDetails.getUserName());
 			if (!clientDetailsRepo.isPresent()) {
 				clientDetails.setCreatedDate(LocalDateTime.now());
 				clientDetails.setCreatedBy(clientDetails.getUserName());
