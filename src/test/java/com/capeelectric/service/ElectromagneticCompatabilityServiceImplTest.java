@@ -20,9 +20,11 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import com.capeelectric.controller.ElectromagneticCompatabilityControllerTest;
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
 import com.capeelectric.exception.PowerEarthingDataException;
+import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
+import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.ElectromagneticCompatabilityRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
@@ -48,6 +50,9 @@ public class ElectromagneticCompatabilityServiceImplTest {
 
 	@MockBean
 	private PowerEarthingDataRepository powerEarthingDataRepository;
+
+	@MockBean
+	private ClientDetailsRepository clientDetailsRepository;
 
 	@MockBean
 	private FacilityDataRepository facilityDataRepository;
@@ -78,6 +83,14 @@ public class ElectromagneticCompatabilityServiceImplTest {
 		facilityData.setUserName("LVsystem@gmail.com");
 
 	}
+	private ClientDetails clientDetails;
+
+	{
+		clientDetails = new ClientDetails();
+		clientDetails.setEmcId(1);
+		clientDetails.setUserName("LVsystem@gmail.com");
+
+	}
 
 	@Test
 	public void testSaveElectromagneticCompatability() throws ElectromagneticCompatabilityException {
@@ -85,6 +98,8 @@ public class ElectromagneticCompatabilityServiceImplTest {
 		when(facilityDataRepository.findByEmcId(1)).thenReturn(Optional.of(facilityData));
 		when(electromagneticCompatabilityRepository.findByEmcId(1))
 				.thenReturn(Optional.of(electromagneticCompatability));
+		when(clientDetailsRepository.findByUserNameAndEmcId("LVsystem@gmail.com", 1))
+				.thenReturn(Optional.of(clientDetails));
 
 		ElectromagneticCompatabilityException assertThrows_1 = Assertions
 				.assertThrows(ElectromagneticCompatabilityException.class, () -> electromagneticCompatabilityServiceImpl
@@ -102,7 +117,7 @@ public class ElectromagneticCompatabilityServiceImplTest {
 		ElectromagneticCompatabilityException assertThrows_3 = Assertions
 				.assertThrows(ElectromagneticCompatabilityException.class, () -> electromagneticCompatabilityServiceImpl
 						.saveElectromagneticCompatability(electromagneticCompatability));
-		assertEquals(assertThrows_3.getMessage(), "FacilityData Not Filled");
+		assertEquals(assertThrows_3.getMessage(), "Client Details Not Filled");
 
 	}
 

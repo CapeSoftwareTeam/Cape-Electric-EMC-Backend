@@ -10,9 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
+import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
+import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.ElectromagneticCompatabilityRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
@@ -25,6 +27,9 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 
 	@Autowired
 	PowerEarthingDataRepository powerEarthingDataRepository;
+
+	@Autowired
+	private ClientDetailsRepository clientDetailsRepository;
 
 	@Autowired
 	ElectromagneticCompatabilityRepository electromagneticCompatabilityRepository;
@@ -46,42 +51,51 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 					.findByEmcId(electromagneticCompatability.getEmcId());
 			Optional<ElectromagneticCompatability> electromagneticDataRep = electromagneticCompatabilityRepository
 					.findByEmcId(electromagneticCompatability.getEmcId());
-			if (facilityDataRep.isPresent()
-					&& facilityDataRep.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
-				if (powerEarthingDataRep.isPresent()
-						&& powerEarthingDataRep.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
-					if (!electromagneticDataRep.isPresent()) {
-						electromagneticCompatability.setCreatedDate(LocalDateTime.now());
-						electromagneticCompatability.setCreatedBy(electromagneticCompatability.getUserName());
-						electromagneticCompatabilityRepository.save(electromagneticCompatability);
-						logger.debug("Electro Magnetic Compatability  Details Successfully Saved in DB");
+			Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByUserNameAndEmcId(
+					electromagneticCompatability.getUserName(), electromagneticCompatability.getEmcId());
+			if (clientDetailsRepo.isPresent()
+					&& clientDetailsRepo.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
+				if (facilityDataRep.isPresent()
+						&& facilityDataRep.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
+					if (powerEarthingDataRep.isPresent()
+							&& powerEarthingDataRep.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
+						if (!electromagneticDataRep.isPresent()) {
+							electromagneticCompatability.setCreatedDate(LocalDateTime.now());
+							electromagneticCompatability.setCreatedBy(electromagneticCompatability.getUserName());
+							electromagneticCompatabilityRepository.save(electromagneticCompatability);
+							logger.debug("Electro Magnetic Compatability  Details Successfully Saved in DB");
 
-						facilityRepo = facilityDataRepository.findByEmcId(electromagneticCompatability.getEmcId());
-						if (facilityRepo.isPresent()
-								&& facilityRepo.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
-							facility = facilityRepo.get();
-							facility.setAllStepsCompleted("AllStepCompleted");
-							facilityDataRepository.save(facility);
-							logger.debug("AllStepCompleted information saved Facility table in DB"
-									+ electromagneticCompatability.getUserName());
+							facilityRepo = facilityDataRepository.findByEmcId(electromagneticCompatability.getEmcId());
+							if (facilityRepo.isPresent()
+									&& facilityRepo.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
+								facility = facilityRepo.get();
+								facility.setAllStepsCompleted("AllStepCompleted");
+								facilityDataRepository.save(facility);
+								logger.debug("AllStepCompleted information saved Facility table in DB"
+										+ electromagneticCompatability.getUserName());
+							} else {
+								logger.error("EMC-Id Information not Available in Facility_Table");
+								throw new ElectromagneticCompatabilityException(
+										"EMC-Id Information not Available in Facility_Table");
+							}
+
 						} else {
-							logger.error("EMC-Id Information not Available in Facility_Table");
+							logger.error("Given ElectromagneticCompatability Already Exists");
 							throw new ElectromagneticCompatabilityException(
-									"EMC-Id Information not Available in Facility_Table");
+									"Given ElectromagneticCompatability Already Exists");
 						}
-
 					} else {
-						logger.error("Given ElectromagneticCompatability Already Exists");
-						throw new ElectromagneticCompatabilityException(
-								"Given ElectromagneticCompatability Already Exists");
+						logger.error("Power and Earthing Data Not Filled");
+						throw new ElectromagneticCompatabilityException("Power and Earthing Data Not Filled");
 					}
 				} else {
-					logger.error("Power and Earthing Data Not Filled");
-					throw new ElectromagneticCompatabilityException("Power and Earthing Data Not Filled");
+					logger.error("FacilityData Not Filled");
+					throw new ElectromagneticCompatabilityException("FacilityData Not Filled");
+
 				}
 			} else {
-				logger.error("FacilityData Not Filled");
-				throw new ElectromagneticCompatabilityException("FacilityData Not Filled");
+				logger.error("Client Details Not Filled");
+				throw new ElectromagneticCompatabilityException("Client Details Not Filled");
 
 			}
 
@@ -116,7 +130,8 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 	public void updateElectromagneticCompatability(ElectromagneticCompatability electromagneticCompatability)
 			throws ElectromagneticCompatabilityException {
 
-		if (electromagneticCompatability != null && electromagneticCompatability.getEmcId() != null && electromagneticCompatability.getUserName() != null) {
+		if (electromagneticCompatability != null && electromagneticCompatability.getEmcId() != null
+				&& electromagneticCompatability.getUserName() != null) {
 			Optional<ElectromagneticCompatability> electromagneticDataRep = electromagneticCompatabilityRepository
 					.findByEmcId(electromagneticCompatability.getEmcId());
 

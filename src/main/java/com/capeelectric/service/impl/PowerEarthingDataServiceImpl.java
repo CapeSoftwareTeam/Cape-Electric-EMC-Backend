@@ -10,8 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.capeelectric.exception.PowerEarthingDataException;
+import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
+import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
 import com.capeelectric.service.PowerEarthingDataService;
@@ -20,6 +22,9 @@ import com.capeelectric.service.PowerEarthingDataService;
 public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 
 	private static final Logger logger = LoggerFactory.getLogger(PowerEarthingDataServiceImpl.class);
+
+	@Autowired
+	private ClientDetailsRepository clientDetailsRepository;
 
 	@Autowired
 	PowerEarthingDataRepository powerEarthingDataRepository;
@@ -34,18 +39,27 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 
 			Optional<PowerEarthingData> powerEarthingDataRep = powerEarthingDataRepository
 					.findByEmcId(powerEarthingData.getEmcId());
-			if (facilityDataRep.isPresent() && facilityDataRep.get().getEmcId().equals(powerEarthingData.getEmcId())) {
-				if (!powerEarthingDataRep.isPresent()) {
-					powerEarthingData.setCreatedDate(LocalDateTime.now());
-					powerEarthingData.setCreatedBy(powerEarthingData.getUserName());
-					powerEarthingDataRepository.save(powerEarthingData);
+			Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository
+					.findByUserNameAndEmcId(powerEarthingData.getUserName(), powerEarthingData.getEmcId());
+			if (clientDetailsRepo.isPresent()
+					&& clientDetailsRepo.get().getEmcId().equals(powerEarthingData.getEmcId())) {
+				if (facilityDataRep.isPresent()
+						&& facilityDataRep.get().getEmcId().equals(powerEarthingData.getEmcId())) {
+					if (!powerEarthingDataRep.isPresent()) {
+						powerEarthingData.setCreatedDate(LocalDateTime.now());
+						powerEarthingData.setCreatedBy(powerEarthingData.getUserName());
+						powerEarthingDataRepository.save(powerEarthingData);
+					} else {
+						logger.error("Given PowerEarthingData Already Exists");
+						throw new PowerEarthingDataException("Given PowerEarthingData Already Exists");
+					}
 				} else {
-					logger.error("Given PowerEarthingData Already Exists");
-					throw new PowerEarthingDataException("Given PowerEarthingData Already Exists");
+					logger.error("Given EMC Id is is Not Registered in FacilityData");
+					throw new PowerEarthingDataException("Given EMC Id is is Not Registered in FacilityData");
 				}
 			} else {
-				logger.error("Given FacilityData EMC Id is Invalid");
-				throw new PowerEarthingDataException("Given FacilityData EMC Id is Invalid");
+				logger.error("Given EMC Id is is Not Registered in ClientDetails");
+				throw new PowerEarthingDataException("Given EMC Id is is Not Registered in ClientDetails");
 			}
 		} else {
 			logger.error("Invalid Inputs");
@@ -74,7 +88,8 @@ public class PowerEarthingDataServiceImpl implements PowerEarthingDataService {
 
 	@Override
 	public void updatePowerEarthingData(PowerEarthingData powerEarthingData) throws PowerEarthingDataException {
-		if (powerEarthingData != null && powerEarthingData.getEmcId() != null && powerEarthingData.getUserName() != null) {
+		if (powerEarthingData != null && powerEarthingData.getEmcId() != null
+				&& powerEarthingData.getUserName() != null) {
 			Optional<PowerEarthingData> powerEarthingDataRep = powerEarthingDataRepository
 					.findByEmcId(powerEarthingData.getEmcId());
 

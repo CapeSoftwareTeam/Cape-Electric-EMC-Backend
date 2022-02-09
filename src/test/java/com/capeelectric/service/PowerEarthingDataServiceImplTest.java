@@ -20,9 +20,10 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import com.capeelectric.controller.PowerEarthingDataController;
 import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.exception.PowerEarthingDataException;
+import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
-
+import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
 import com.capeelectric.service.impl.PowerEarthingDataServiceImpl;
@@ -43,6 +44,9 @@ public class PowerEarthingDataServiceImplTest {
 
 	@MockBean
 	private FacilityDataRepository facilityDataRepository;
+	
+	@MockBean
+	private ClientDetailsRepository clientDetailsRepository;
 
 	private PowerEarthingData powerEarthingData;
 
@@ -61,11 +65,21 @@ public class PowerEarthingDataServiceImplTest {
 		facilityData.setUserName("LVsystem@gmail.com");
 
 	}
+	private ClientDetails clientDetails;
+
+	{
+		clientDetails = new ClientDetails();
+		clientDetails.setEmcId(1);
+		clientDetails.setUserName("LVsystem@gmail.com");
+
+	}
 
 	@Test
 	public void testSavePowerEarthingData() throws PowerEarthingDataException {
 		when(powerEarthingDataRepository.findByEmcId(1)).thenReturn(Optional.of(powerEarthingData));
 		when(facilityDataRepository.findByEmcId(1)).thenReturn(Optional.of(facilityData));
+		when(clientDetailsRepository.findByUserNameAndEmcId("LVsystem@gmail.com", 1))
+		.thenReturn(Optional.of(clientDetails));
 
 		PowerEarthingDataException assertThrows_1 = Assertions.assertThrows(PowerEarthingDataException.class,
 				() -> powerEarthingDataServiceImpl.savePowerEarthingData(powerEarthingData));

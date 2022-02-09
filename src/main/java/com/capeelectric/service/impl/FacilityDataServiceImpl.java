@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.capeelectric.exception.FacilityDataException;
+import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.FacilityData;
+import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.service.FacilityDataService;
 
@@ -22,19 +24,30 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 	@Autowired
 	private FacilityDataRepository facilityDataRepository;
 
+	@Autowired
+	private ClientDetailsRepository clientDetailsRepository;
+
 	@Override
 	public void addFacilityData(FacilityData facilityData) throws FacilityDataException {
 		if (facilityData != null && facilityData.getUserName() != null) {
 			Optional<FacilityData> facilityDataRep = facilityDataRepository.findByEmcId(facilityData.getEmcId());
-			if (!facilityDataRep.isPresent()) {
-				facilityData.setCreatedDate(LocalDateTime.now());
-				facilityData.setCreatedBy(facilityData.getUserName());
-				 facilityDataRepository.save(facilityData);
-			} else {
-				logger.error("Given FacilityData Already Exists");
-				throw new FacilityDataException("Given FacilityData Already Exists");
-			}
 
+			Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository
+					.findByUserNameAndEmcId(facilityData.getUserName(), facilityData.getEmcId());
+			if (clientDetailsRepo.isPresent() && clientDetailsRepo.get().getEmcId().equals(facilityData.getEmcId())) {
+				if (!facilityDataRep.isPresent()) {
+					facilityData.setCreatedDate(LocalDateTime.now());
+					facilityData.setCreatedBy(facilityData.getUserName());
+					facilityDataRepository.save(facilityData);
+				} else {
+					logger.error("Given FacilityData Already Exists");
+					throw new FacilityDataException("Given FacilityData Already Exists");
+				}
+
+			} else {
+				logger.error("Given EMC Id is is Not Registered in ClientDetails");
+				throw new FacilityDataException("Given EMC Id is is Not Registered in ClientDetails");
+			}
 		} else {
 			logger.error("Invalid Inputs");
 			throw new FacilityDataException("Invalid Inputs");
@@ -60,7 +73,7 @@ public class FacilityDataServiceImpl implements FacilityDataService {
 
 	@Override
 	public void updateFacilityData(FacilityData facilityData) throws FacilityDataException {
-		if (facilityData != null && facilityData.getEmcId() != null	&& facilityData.getUserName() != null) {
+		if (facilityData != null && facilityData.getEmcId() != null && facilityData.getUserName() != null) {
 			Optional<FacilityData> facilityDataRep = facilityDataRepository.findByEmcId(facilityData.getEmcId());
 			if (facilityDataRep.isPresent() && facilityDataRep.get().getEmcId().equals(facilityData.getEmcId())) {
 				facilityData.setUpdatedDate(LocalDateTime.now());

@@ -1,6 +1,7 @@
 package com.capeelectric.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -50,12 +51,13 @@ public class ClientDetailsServiceTest {
 
 	@Test
 	public void testSaveClientDetails() throws ClientDetailsException {
-		when(clientDetailsRepository.findByUserNameAndEmcId("LVsystem@gmail.com", 1))
-				.thenReturn(Optional.of(clientDetails));
+		when(clientDetailsRepository.findByUserName("LVsystem@gmail.com")).thenReturn(Optional.of(clientDetails));
 
 		ClientDetailsException assertThrows_1 = Assertions.assertThrows(ClientDetailsException.class,
 				() -> clientDetailsServiceImpl.saveClientDetails(clientDetails));
-		assertEquals(assertThrows_1.getMessage(), "Given UserName and Emc Id Already Exists");
+		assertEquals(assertThrows_1.getMessage(), "Given UserName Already Exists");
+		Optional<ClientDetails> clientDetails1 = clientDetailsRepository.findByUserName("LVsystem@gmail.com");
+		assertNotNull(clientDetails1);
 
 		clientDetails.setEmcId(13);
 		clientDetails.setUserName(null);

@@ -19,7 +19,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.capeelectric.controller.FacilityDataController;
 import com.capeelectric.exception.FacilityDataException;
+import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.FacilityData;
+import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.service.impl.FacilityDataServiceImpl;
 
@@ -34,6 +36,9 @@ public class FacilityDataServiceImplTest {
 	private FacilityDataRepository facilityDataRepository;
 
 	@MockBean
+	private ClientDetailsRepository clientDetailsRepository;
+
+	@MockBean
 	private FacilityDataException facilityDataException;
 
 	private FacilityData facilityData;
@@ -45,9 +50,20 @@ public class FacilityDataServiceImplTest {
 
 	}
 
+	private ClientDetails clientDetails;
+
+	{
+		clientDetails = new ClientDetails();
+		clientDetails.setEmcId(1);
+		clientDetails.setUserName("LVsystem@gmail.com");
+
+	}
+
 	@Test
 	public void testAddFacilityData() throws FacilityDataException {
 		when(facilityDataRepository.findByEmcId(1)).thenReturn(Optional.of(facilityData));
+		when(clientDetailsRepository.findByUserNameAndEmcId("LVsystem@gmail.com", 1))
+				.thenReturn(Optional.of(clientDetails));
 
 		FacilityDataException assertThrows_1 = Assertions.assertThrows(FacilityDataException.class,
 				() -> facilityDataServiceImpl.addFacilityData(facilityData));
