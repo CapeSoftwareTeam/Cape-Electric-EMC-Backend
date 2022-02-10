@@ -89,7 +89,7 @@ public class PowerEarthingDataServiceImplTest {
 
 		PowerEarthingDataException assertThrows_2 = Assertions.assertThrows(PowerEarthingDataException.class,
 				() -> powerEarthingDataServiceImpl.savePowerEarthingData(powerEarthingData));
-		assertEquals(assertThrows_2.getMessage(), "Given EMC Id is is Not Registered in FacilityData");
+		assertEquals(assertThrows_2.getMessage(), "Invalid Inputs");
 
 	}
 
