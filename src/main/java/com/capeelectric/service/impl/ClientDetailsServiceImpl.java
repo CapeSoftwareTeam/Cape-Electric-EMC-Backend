@@ -29,7 +29,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 		if (clientDetails != null && clientDetails.getUserName() != null) {
 			List<ClientDetails> clientDetailsRepo = clientDetailsRepository
 					.findByUserName(clientDetails.getUserName());
-			if (!clientDetailsRepo.isEmpty()&&clientDetailsRepo!=null) {
+			if (clientDetailsRepo.isEmpty()) {
 				clientDetails.setCreatedDate(LocalDateTime.now());
 				clientDetails.setCreatedBy(clientDetails.getUserName());
 				return clientDetailsRepository.save(clientDetails);

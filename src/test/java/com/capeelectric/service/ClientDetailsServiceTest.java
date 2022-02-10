@@ -56,8 +56,8 @@ public class ClientDetailsServiceTest {
 
 		when(clientDetailsRepository.findByUserName("LVsystem@gmail.com")).thenReturn(arrayList);
 
-		clientDetails.setEmcId(22);
-		clientDetails.setUserName("cape");
+		clientDetails.setEmcId(1);
+		clientDetails.setUserName("LVsystem@gmail.com");
 
 		ClientDetailsException assertThrows_1 = Assertions.assertThrows(ClientDetailsException.class,
 				() -> clientDetailsServiceImpl.saveClientDetails(clientDetails));
