@@ -51,13 +51,17 @@ public class ClientDetailsServiceTest {
 
 	@Test
 	public void testSaveClientDetails() throws ClientDetailsException {
-		when(clientDetailsRepository.findByUserName("LVsystem@gmail.com")).thenReturn(Optional.of(clientDetails));
+		List<ClientDetails> arrayList = new ArrayList<ClientDetails>();
+		arrayList.add(clientDetails);
+
+		when(clientDetailsRepository.findByUserName("LVsystem@gmail.com")).thenReturn(arrayList);
+
+		clientDetails.setEmcId(22);
+		clientDetails.setUserName("cape");
 
 		ClientDetailsException assertThrows_1 = Assertions.assertThrows(ClientDetailsException.class,
 				() -> clientDetailsServiceImpl.saveClientDetails(clientDetails));
 		assertEquals(assertThrows_1.getMessage(), "Given UserName Already Exists");
-		Optional<ClientDetails> clientDetails1 = clientDetailsRepository.findByUserName("LVsystem@gmail.com");
-		assertNotNull(clientDetails1);
 
 		clientDetails.setEmcId(13);
 		clientDetails.setUserName(null);

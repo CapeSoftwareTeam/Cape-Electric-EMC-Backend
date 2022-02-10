@@ -86,18 +86,17 @@ public class EmcFinalReportServiceImpl implements FinalReportService {
 	}
 
 	@Override
-	public List<FacilityData> retrieveListOfFacilityData(String userName) throws EmcFinalReportException {
+	public List<ClientDetails> retrieveListOfClientDetails(String userName) throws EmcFinalReportException {
 		if (userName != null) {
 			try {
-				logger.info("FacilityData fetching process started");
-				return facilityDataRepository.findByUserName(userName);
+				logger.info("ClientDetails fetching process started");
+				return clientDetailsRepository.findByUserName(userName);
 			} catch (Exception e) {
-				logger.info("FacilityData fetching process faild");
-				throw new EmcFinalReportException("FacilityData site process faild");
+				logger.info("ClientDetails fetching process faild");
+				throw new EmcFinalReportException("ClientDetails Not Available");
 			}
 		} else {
 			throw new EmcFinalReportException("Invaild Input");
 		}
-
 	}
 }

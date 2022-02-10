@@ -21,6 +21,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
 import com.capeelectric.exception.EmcFinalReportException;
 import com.capeelectric.exception.FacilityDataException;
+import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.EmcFinalReport;
 import com.capeelectric.model.FacilityData;
@@ -44,7 +45,7 @@ public class EmcFinalReportControllerTest {
 
 	private EmcFinalReport emcFinalReport;
 
-	private FacilityData facilityData;
+	private ClientDetails clientDetails;
 
 	{
 		emcFinalReport = new EmcFinalReport();
@@ -58,8 +59,9 @@ public class EmcFinalReportControllerTest {
 
 	{
 
-		facilityData = new FacilityData();
-		facilityData.setUserName("LVsystem@gmail.com");
+		clientDetails = new ClientDetails();
+		clientDetails.setUserName("LVsystem@gmail.com");
+		clientDetails.setEmcId(1);
 	}
 
 	@Test
@@ -77,15 +79,15 @@ public class EmcFinalReportControllerTest {
 	}
 
 	@Test
-	public void testRetrieveListOfFacilityData() throws EmcFinalReportException {
+	public void testRetrieveListOfClientDetails() throws EmcFinalReportException {
 		logger.info("testRetrieveListOfFacilityData Function Started");
-		List<FacilityData> arrayList = new ArrayList<FacilityData>();
-		arrayList.add(facilityData);
+		List<ClientDetails> arrayList = new ArrayList<ClientDetails>();
+		arrayList.add(clientDetails);
 
-		when(emcFinalReportServiceImpl.retrieveListOfFacilityData("LVsystem@gmail.com")).thenReturn(arrayList);
+		when(emcFinalReportServiceImpl.retrieveListOfClientDetails("LVsystem@gmail.com")).thenReturn(arrayList);
 
-		ResponseEntity<List<FacilityData>> finalReport = emcFinalReportController
-				.retrieveListOfFacilityData("LVsystem@gmail.com");
+		ResponseEntity<List<ClientDetails>> finalReport = emcFinalReportController
+				.retrieveListOfClientDetails("LVsystem@gmail.com");
 		assertEquals(finalReport.getStatusCode(), HttpStatus.OK);
 		logger.info("testRetrieveListOfFacilityData Function ended");
 

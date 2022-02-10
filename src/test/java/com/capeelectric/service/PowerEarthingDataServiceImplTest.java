@@ -44,7 +44,7 @@ public class PowerEarthingDataServiceImplTest {
 
 	@MockBean
 	private FacilityDataRepository facilityDataRepository;
-	
+
 	@MockBean
 	private ClientDetailsRepository clientDetailsRepository;
 
@@ -79,7 +79,7 @@ public class PowerEarthingDataServiceImplTest {
 		when(powerEarthingDataRepository.findByEmcId(1)).thenReturn(Optional.of(powerEarthingData));
 		when(facilityDataRepository.findByEmcId(1)).thenReturn(Optional.of(facilityData));
 		when(clientDetailsRepository.findByUserNameAndEmcId("LVsystem@gmail.com", 1))
-		.thenReturn(Optional.of(clientDetails));
+				.thenReturn(Optional.of(clientDetails));
 
 		PowerEarthingDataException assertThrows_1 = Assertions.assertThrows(PowerEarthingDataException.class,
 				() -> powerEarthingDataServiceImpl.savePowerEarthingData(powerEarthingData));
@@ -89,7 +89,7 @@ public class PowerEarthingDataServiceImplTest {
 
 		PowerEarthingDataException assertThrows_2 = Assertions.assertThrows(PowerEarthingDataException.class,
 				() -> powerEarthingDataServiceImpl.savePowerEarthingData(powerEarthingData));
-		assertEquals(assertThrows_2.getMessage(), "Invalid Inputs");
+		assertEquals(assertThrows_2.getMessage(), "Given EMC Id is is Not Registered in FacilityData");
 
 	}
 

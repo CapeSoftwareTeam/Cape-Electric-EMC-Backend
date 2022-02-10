@@ -13,10 +13,12 @@ import com.capeelectric.model.FacilityData;
 @Repository
 public interface ClientDetailsRepository extends CrudRepository<ClientDetails, Integer> {
 
-	Optional<ClientDetails> findByUserName(String userName);
+	List<ClientDetails> findByUserName(String userName);
 
 	List<ClientDetails> findByEmcId(Integer emcId);
 
 	Optional<ClientDetails> findByUserNameAndEmcId(String userName, Integer emcId);
+
+	
 
 }

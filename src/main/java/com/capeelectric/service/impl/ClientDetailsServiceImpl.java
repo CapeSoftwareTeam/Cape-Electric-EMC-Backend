@@ -27,9 +27,9 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 	@Override
 	public ClientDetails saveClientDetails(ClientDetails clientDetails) throws ClientDetailsException {
 		if (clientDetails != null && clientDetails.getUserName() != null) {
-			Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository
+			List<ClientDetails> clientDetailsRepo = clientDetailsRepository
 					.findByUserName(clientDetails.getUserName());
-			if (!clientDetailsRepo.isPresent()) {
+			if (!clientDetailsRepo.isEmpty()&&clientDetailsRepo!=null) {
 				clientDetails.setCreatedDate(LocalDateTime.now());
 				clientDetails.setCreatedBy(clientDetails.getUserName());
 				return clientDetailsRepository.save(clientDetails);

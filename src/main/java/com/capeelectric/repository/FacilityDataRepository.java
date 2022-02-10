@@ -18,6 +18,6 @@ public interface FacilityDataRepository extends CrudRepository<FacilityData, Int
 
 	Optional<FacilityData> findByEmcId(Integer emcId);
 	List<FacilityData> findByUserNameAndEmcId(String userName, Integer emcId);
-	List<FacilityData> findByUserName(String userName);
+	
 
 }

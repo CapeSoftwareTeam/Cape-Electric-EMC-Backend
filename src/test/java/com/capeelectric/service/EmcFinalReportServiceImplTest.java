@@ -60,7 +60,7 @@ public class EmcFinalReportServiceImplTest {
 
 	private EmcFinalReport emcFinalReport;
 
-	private FacilityData facilityData;
+	private ClientDetails clientDetails;
 
 	{
 		emcFinalReport = new EmcFinalReport();
@@ -74,8 +74,8 @@ public class EmcFinalReportServiceImplTest {
 
 	{
 
-		facilityData = new FacilityData();
-		facilityData.setUserName("LVsystem@gmail.com");
+		clientDetails = new ClientDetails();
+		clientDetails.setUserName("LVsystem@gmail.com");
 	}
 
 	@Test
@@ -102,20 +102,20 @@ public class EmcFinalReportServiceImplTest {
 	}
 
 	@Test
-	public void testRetrieveListOfFacilityData() throws EmcFinalReportException {
-		logger.info("testRetrieveListOfFacilityData Function Started");
-		List<FacilityData> arrayList = new ArrayList<FacilityData>();
-		arrayList.add(facilityData);
+	public void testRetrieveListOfClientDetails() throws EmcFinalReportException {
+		logger.info("testRetrieveListOfClientDetails Function Started");
+		List<ClientDetails> arrayList = new ArrayList<ClientDetails>();
+		arrayList.add(clientDetails);
 
-		when(facilityDataRepository.findByUserName("LVsystem@gmail.com")).thenReturn(arrayList);
+		when(clientDetailsRepository.findByUserName("LVsystem@gmail.com")).thenReturn(arrayList);
 
-		List<FacilityData> arrayList1 = emcFinalReportServiceImpl.retrieveListOfFacilityData("LVsystem@gmail.com");
-		assertTrue(arrayList1.contains(facilityData));
+		List<ClientDetails> arrayList1 = emcFinalReportServiceImpl.retrieveListOfClientDetails("LVsystem@gmail.com");
+		assertTrue(arrayList1.contains(clientDetails));
 
 		EmcFinalReportException finalReportException = Assertions.assertThrows(EmcFinalReportException.class,
-				() -> emcFinalReportServiceImpl.retrieveListOfFacilityData(null));
+				() -> emcFinalReportServiceImpl.retrieveListOfClientDetails(null));
 		assertEquals(finalReportException.getMessage(), "Invaild Input");
-		logger.info("testRetrieveListOfFacilityData Function ended");
+		logger.info("testRetrieveListOfClientDetails Function ended");
 
 	}
 
