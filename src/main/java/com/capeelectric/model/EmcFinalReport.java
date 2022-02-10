@@ -5,6 +5,8 @@ public class EmcFinalReport {
 
 	private Integer emcId;
 
+	private ClientDetails clientDetails;
+
 	private PowerEarthingData powerEarthingData;
 
 	private FacilityData facilityData;
@@ -25,6 +27,14 @@ public class EmcFinalReport {
 
 	public void setEmcId(Integer emcId) {
 		this.emcId = emcId;
+	}
+
+	public ClientDetails getClientDetails() {
+		return clientDetails;
+	}
+
+	public void setClientDetails(ClientDetails clientDetails) {
+		this.clientDetails = clientDetails;
 	}
 
 	public PowerEarthingData getPowerEarthingData() {
@@ -50,9 +60,5 @@ public class EmcFinalReport {
 	public void setElectromagneticCompatability(ElectromagneticCompatability electromagneticCompatability) {
 		this.electromagneticCompatability = electromagneticCompatability;
 	}
-	
-	
-	
-
 
 }

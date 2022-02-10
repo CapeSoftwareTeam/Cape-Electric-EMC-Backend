@@ -16,6 +16,7 @@ import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,10 +24,12 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
 import com.capeelectric.exception.EmcFinalReportException;
+import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.EmcFinalReport;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
+import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.ElectromagneticCompatabilityRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
@@ -51,6 +54,9 @@ public class EmcFinalReportServiceImplTest {
 
 	@MockBean
 	private EmcFinalReportException emcFinalReportException;
+
+	@MockBean
+	private ClientDetailsRepository clientDetailsRepository;
 
 	private EmcFinalReport emcFinalReport;
 
@@ -81,6 +87,8 @@ public class EmcFinalReportServiceImplTest {
 		when(powerEarthingDataRepository.findByEmcId(1)).thenReturn(Optional.of(retrivePowerEarthingData()));
 		when(electromagneticCompatabilityRepository.findByEmcId(1))
 				.thenReturn(Optional.of(retriveElectromagneticCompatability()));
+		when(clientDetailsRepository.findByUserNameAndEmcId("LVsystem@gmail.com", 1))
+				.thenReturn(Optional.of(retriveClientDetails()));
 
 		Optional<EmcFinalReport> retrieveFinalReport = emcFinalReportServiceImpl
 				.retrieveEmcReports("LVsystem@gmail.com", 1);
@@ -130,6 +138,14 @@ public class EmcFinalReportServiceImplTest {
 		facilityData.setUserName("LVsystem@gmail.com");
 		facilityData.setEmcId(1);
 		return facilityData;
+	}
+
+	private ClientDetails retriveClientDetails() {
+		ClientDetails clientDetails = new ClientDetails();
+		clientDetails.setUserName("LVsystem@gmail.com");
+		clientDetails.setEmcId(1);
+
+		return clientDetails;
 	}
 
 }

@@ -9,10 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.capeelectric.exception.EmcFinalReportException;
+import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.EmcFinalReport;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
+import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.ElectromagneticCompatabilityRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
@@ -32,6 +34,9 @@ public class EmcFinalReportServiceImpl implements FinalReportService {
 	@Autowired
 	private PowerEarthingDataRepository powerEarthingDataRepository;
 
+	@Autowired
+	private ClientDetailsRepository clientDetailsRepository;
+
 	@Override
 	public Optional<EmcFinalReport> retrieveEmcReports(String userName, Integer emcId) throws EmcFinalReportException {
 
@@ -40,27 +45,35 @@ public class EmcFinalReportServiceImpl implements FinalReportService {
 			emcFinalReport.setUserName(userName);
 			emcFinalReport.setEmcId(emcId);
 
-			// FacilityData Fetch
-			logger.debug("fetching process started for FacilityData");
-			Optional<FacilityData> facilityDatails = facilityDataRepository.findByEmcId(emcId);
-			logger.debug("FacilityData fetching ended");
-			if (facilityDatails.isPresent() && facilityDatails != null) {
-				emcFinalReport.setFacilityData(facilityDatails.get());
+			// ClientDetails Fetch
+			logger.debug("fetching process started for ClientDetails");
+			Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByUserNameAndEmcId(userName, emcId);
+			logger.debug("ClientDetails fetching ended");
+			if (clientDetailsRepo.isPresent() && clientDetailsRepo != null) {
+				emcFinalReport.setClientDetails(clientDetailsRepo.get());
 
-				// PowerEarthingData Fetch
-				logger.debug("fetching process started for PowerEarthingData");
-				Optional<PowerEarthingData> powerEarthingDatails = powerEarthingDataRepository.findByEmcId(emcId);
-				logger.debug("PowerEarthingData fetching ended");
-				if (powerEarthingDatails.isPresent() && powerEarthingDatails != null) {
-					emcFinalReport.setPowerEarthingData(powerEarthingDatails.get());
+				// FacilityData Fetch
+				logger.debug("fetching process started for FacilityData");
+				Optional<FacilityData> facilityDatails = facilityDataRepository.findByEmcId(emcId);
+				logger.debug("FacilityData fetching ended");
+				if (facilityDatails.isPresent() && facilityDatails != null) {
+					emcFinalReport.setFacilityData(facilityDatails.get());
 
-					// ElectromagneticCompatability Fetch
-					logger.debug("fetching process started for ElectromagneticCompatability");
-					Optional<ElectromagneticCompatability> electromagneticDatails = electromagneticCompatabilityRepository
-							.findByEmcId(emcId);
-					logger.debug("ElectromagneticCompatability fetching ended");
-					if (electromagneticDatails.isPresent() && electromagneticDatails != null) {
-						emcFinalReport.setElectromagneticCompatability(electromagneticDatails.get());
+					// PowerEarthingData Fetch
+					logger.debug("fetching process started for PowerEarthingData");
+					Optional<PowerEarthingData> powerEarthingDatails = powerEarthingDataRepository.findByEmcId(emcId);
+					logger.debug("PowerEarthingData fetching ended");
+					if (powerEarthingDatails.isPresent() && powerEarthingDatails != null) {
+						emcFinalReport.setPowerEarthingData(powerEarthingDatails.get());
+
+						// ElectromagneticCompatability Fetch
+						logger.debug("fetching process started for ElectromagneticCompatability");
+						Optional<ElectromagneticCompatability> electromagneticDatails = electromagneticCompatabilityRepository
+								.findByEmcId(emcId);
+						logger.debug("ElectromagneticCompatability fetching ended");
+						if (electromagneticDatails.isPresent() && electromagneticDatails != null) {
+							emcFinalReport.setElectromagneticCompatability(electromagneticDatails.get());
+						}
 					}
 				}
 			}
