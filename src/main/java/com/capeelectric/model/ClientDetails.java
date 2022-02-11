@@ -29,17 +29,23 @@ public class ClientDetails implements Serializable {
 	@Column(name = "CLIENT_NAME")
 	private String clientName;
 
-	@Column(name = "ALL_STEPS_COMPLETED")
-	private String allStepsCompleted;
+	@Column(name = "CONTACT_NUMBER")
+	private Integer contactNumber;
 
-	@Column(name = "CLIENT_ADDRESS")
-	private String clientAddress;
+	@Column(name = "CONTACT_PERSON")
+	private String contactPerson;
+
+	@Column(name = "LAND_MARK")
+	private String landMark;
 
 	@Column(name = "CLIENT_LOCATION")
 	private String clientLocation;
 
-	@Column(name = "CLIENT_PLACE")
-	private String clientPlace;
+	@Column(name = "CLIENT_ADDRESS")
+	private String clientAddress;
+
+	@Column(name = "EMAIL")
+	private String email;
 
 	@Column(name = "COUNTRY")
 	private String country;
@@ -47,17 +53,8 @@ public class ClientDetails implements Serializable {
 	@Column(name = "STATE")
 	private String state;
 
-	@Column(name = "CONTACT_PERSON")
-	private String contactPerson;
-
-	@Column(name = "EMAIL")
-	private String email;
-
-	@Column(name = "CONTACT_NUMBER")
-	private String contactNumber;
-
-	@Column(name = "LAND_MARK")
-	private String landMark;
+	@Column(name = "ALL_STEPS_COMPLETED")
+	private String allStepsCompleted;
 
 	@Column(name = "CREATED_BY")
 	private String createdBy;
@@ -119,14 +116,6 @@ public class ClientDetails implements Serializable {
 		this.clientLocation = clientLocation;
 	}
 
-	public String getClientPlace() {
-		return clientPlace;
-	}
-
-	public void setClientPlace(String clientPlace) {
-		this.clientPlace = clientPlace;
-	}
-
 	public String getCountry() {
 		return country;
 	}
@@ -159,11 +148,11 @@ public class ClientDetails implements Serializable {
 		this.email = email;
 	}
 
-	public String getContactNumber() {
+	public Integer getContactNumber() {
 		return contactNumber;
 	}
 
-	public void setContactNumber(String contactNumber) {
+	public void setContactNumber(Integer contactNumber) {
 		this.contactNumber = contactNumber;
 	}
 
