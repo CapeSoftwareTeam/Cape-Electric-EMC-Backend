@@ -54,7 +54,7 @@ public class ClientDetails implements Serializable {
 	private String email;
 
 	@Column(name = "CONTACT_NUMBER")
-	private Integer contactNumber;
+	private String contactNumber;
 
 	@Column(name = "LAND_MARK")
 	private String landMark;
@@ -159,11 +159,11 @@ public class ClientDetails implements Serializable {
 		this.email = email;
 	}
 
-	public Integer getContactNumber() {
+	public String getContactNumber() {
 		return contactNumber;
 	}
 
-	public void setContactNumber(Integer contactNumber) {
+	public void setContactNumber(String contactNumber) {
 		this.contactNumber = contactNumber;
 	}
 
