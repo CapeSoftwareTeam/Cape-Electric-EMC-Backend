@@ -30,7 +30,7 @@ public class ClientDetails implements Serializable {
 	private String clientName;
 
 	@Column(name = "CONTACT_NUMBER")
-	private Integer contactNumber;
+	private String contactNumber;
 
 	@Column(name = "CONTACT_PERSON")
 	private String contactPerson;
@@ -148,11 +148,11 @@ public class ClientDetails implements Serializable {
 		this.email = email;
 	}
 
-	public Integer getContactNumber() {
+	public String getContactNumber() {
 		return contactNumber;
 	}
 
-	public void setContactNumber(Integer contactNumber) {
+	public void setContactNumber(String contactNumber) {
 		this.contactNumber = contactNumber;
 	}
 
