@@ -27,17 +27,9 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 	@Override
 	public ClientDetails saveClientDetails(ClientDetails clientDetails) throws ClientDetailsException {
 		if (clientDetails != null && clientDetails.getUserName() != null) {
-			List<ClientDetails> clientDetailsRepo = clientDetailsRepository
-					.findByUserName(clientDetails.getUserName());
-			if (clientDetailsRepo.isEmpty()) {
-				clientDetails.setCreatedDate(LocalDateTime.now());
-				clientDetails.setCreatedBy(clientDetails.getUserName());
-				return clientDetailsRepository.save(clientDetails);
-			} else {
-				logger.error("Given UserName Already Exists");
-				throw new ClientDetailsException("Given UserName Already Exists");
-			}
-
+			clientDetails.setCreatedDate(LocalDateTime.now());
+			clientDetails.setCreatedBy(clientDetails.getUserName());
+			return clientDetailsRepository.save(clientDetails);
 		} else {
 			logger.error("Invalid Inputs");
 			throw new ClientDetailsException("Invalid Inputs");
