@@ -1,0 +1,78 @@
+package com.capeelectric.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
+@Entity
+@Table(name = "FILE_UPLOAD_TABLE")
+public class ResponseFile {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "FILE_ID")
+	private Integer fileId;
+
+	@Column(name = "FILE_NAME")
+	private String fileName;
+
+	@Column(name = "EMC_ID")
+	private Integer emcId;
+
+	@Column(name = "FILE_TYPE")
+	private String fileType;
+	@Lob
+	@Column(name = "DATA")
+	private byte[] data;
+
+	public Integer getEmcId() {
+		return emcId;
+	}
+
+	public void setEmcId(Integer emcId) {
+		this.emcId = emcId;
+	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	public String getFileType() {
+		return fileType;
+	}
+
+	public void setFileType(String fileType) {
+		this.fileType = fileType;
+	}
+
+	public byte[] getData() {
+		return data;
+	}
+
+	public void setData(byte[] data) {
+		this.data = data;
+	}
+
+	public Integer getfileId() {
+		return fileId;
+	}
+
+	public Integer getFileId() {
+		return fileId;
+	}
+
+	public void setFileId(Integer fileId) {
+		this.fileId = fileId;
+	}
+
+}
