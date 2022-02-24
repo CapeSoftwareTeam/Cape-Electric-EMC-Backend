@@ -69,7 +69,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.authorizeRequests().antMatchers(
 						
 						"/api/emc/v1/fetchStatesByCountryCode/**",
-						"/api/emc/v1/fetchCountries")
+						"/api/emc/v1/fetchCountries",
+						"/api/emc/v1/health")
 				
 				.permitAll().antMatchers(HttpMethod.OPTIONS, "/**").permitAll().
 				// all other requests need to be authenticated

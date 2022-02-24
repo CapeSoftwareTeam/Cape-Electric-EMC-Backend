@@ -16,13 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.capeelectric.exception.ClientDetailsException;
-import com.capeelectric.exception.ElectromagneticCompatabilityException;
-import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.model.ClientDetails;
-import com.capeelectric.model.ElectromagneticCompatability;
-import com.capeelectric.model.FacilityData;
 import com.capeelectric.service.ClientDetailsService;
-import com.capeelectric.service.ElectromagneticCompatabilityService;
 
 @RestController
 @RequestMapping("/api/emc/v1")
@@ -55,5 +50,4 @@ public class ClientDetailsController {
 		clientDetailsService.updateClientDetails(clientDetails);
 		return new ResponseEntity<String>("ClientDetails  Updated Successfully", HttpStatus.OK);
 	}
-
 }

@@ -1,5 +1,6 @@
 package com.capeelectric.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.Logger;
@@ -15,10 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.capeelectric.exception.EmcFinalReportException;
 import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.EmcFinalReport;
-import com.capeelectric.model.FacilityData;
 import com.capeelectric.service.impl.EmcFinalReportServiceImpl;
-
-import java.util.List;
 
 /**
  * @author CAPE-SOFTWARE
