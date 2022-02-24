@@ -15,11 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.exception.PowerEarthingDataException;
-import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
-import com.capeelectric.service.FacilityDataService;
 import com.capeelectric.service.PowerEarthingDataService;
 
 /**
