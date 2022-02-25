@@ -1,0 +1,5 @@
+2022-02-11T19:43:09.157+0530 ERROR Data truncation: Out of range value for column 'contact_number' at row 1
+2022-02-11T19:48:11.952+0530 ERROR Data truncation: Out of range value for column 'contact_number' at row 1
+2022-02-11T19:48:45.795+0530 ERROR Data truncation: Out of range value for column 'contact_number' at row 1
+2022-02-14T17:27:03.748+0530 ERROR Data truncation: Out of range value for column 'contact_number' at row 1
+2022-02-14T18:01:03.992+0530 ERROR Data truncation: Out of range value for column 'contact_number' at row 1

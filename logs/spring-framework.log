@@ -1,0 +1,1288 @@
+2022-02-11T19:27:18.590+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-11T19:27:18.635+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-11T19:27:18.670+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-11T19:27:18.681+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-11T19:28:07.782+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-11T19:28:07.900+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-11T19:28:08.450+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-11T19:28:08.501+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-11T19:28:29.798+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-11T19:28:29.910+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-11T19:28:30.448+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-11T19:28:30.506+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-11T19:29:18.120+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-11T19:29:18.121+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-11T19:29:18.121+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-11T19:29:18.121+0530 DEBUG Detected FixedThemeResolver
+2022-02-11T19:29:18.123+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1053cb1a
+2022-02-11T19:29:18.123+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@25469c43
+2022-02-11T19:29:18.123+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-11T19:29:18.123+0530 INFO Completed initialization in 2 ms
+2022-02-11T19:29:18.145+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-11T19:29:18.145+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:29:18.145+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:29:18.178+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-11T19:29:18.180+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:29:18.341+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:29:18.341+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-11T19:29:18.343+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-11T19:29:18.344+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:29:18.453+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:29:18.454+0530 DEBUG Writing [[]]
+2022-02-11T19:29:18.487+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:29:18.488+0530 DEBUG Writing [[com.capeelectric.model.Country@575c7218, com.capeelectric.model.Country@a2ade5d9, com.capeelectric. (truncated)...]
+2022-02-11T19:29:18.508+0530 DEBUG Completed 200 OK
+2022-02-11T19:29:18.513+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:29:18.524+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:29:18.525+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:29:18.529+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:29:18.529+0530 DEBUG Writing [[]]
+2022-02-11T19:29:18.531+0530 DEBUG Completed 200 OK
+2022-02-11T19:29:18.588+0530 DEBUG Completed 200 OK
+2022-02-11T19:32:33.946+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-11T19:32:33.963+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-11T19:32:33.968+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-11T19:32:33.968+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-11T19:32:34.000+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:32:34.000+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-11T19:32:34.001+0530 DEBUG Completed 200 OK
+2022-02-11T19:32:38.712+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:32:38.725+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:32:38.735+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-11T19:32:38.735+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:32:38.754+0530 DEBUG Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.capeelectric.model.ClientDetails> com.capeelectric.controller.ClientDetailsController.saveClientDetails(com.capeelectric.model.ClientDetails) throws com.capeelectric.exception.ClientDetailsException: JSON parse error: Cannot deserialize value of type `int` from String "7358021553": Overflow: numeric value (7358021553) out of range of int (-2147483648 -2147483647); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "7358021553": Overflow: numeric value (7358021553) out of range of int (-2147483648 -2147483647)
+ at [Source: (PushbackInputStream); line: 1, column: 42] (through reference chain: com.capeelectric.model.ClientDetails["contactNumber"])
+2022-02-11T19:32:38.757+0530 WARN Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "7358021553": Overflow: numeric value (7358021553) out of range of int (-2147483648 -2147483647); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "7358021553": Overflow: numeric value (7358021553) out of range of int (-2147483648 -2147483647)
+ at [Source: (PushbackInputStream); line: 1, column: 42] (through reference chain: com.capeelectric.model.ClientDetails["contactNumber"])]
+2022-02-11T19:32:38.758+0530 DEBUG Completed 400 BAD_REQUEST
+2022-02-11T19:32:38.765+0530 DEBUG "ERROR" dispatch for POST "/error", parameters={}
+2022-02-11T19:32:38.768+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-11T19:32:38.779+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:32:38.780+0530 DEBUG Writing [{timestamp=Fri Feb 11 19:32:38 IST 2022, status=400, error=Bad Request, trace=org.springframework.ht (truncated)...]
+2022-02-11T19:32:38.787+0530 DEBUG Exiting from "ERROR" dispatch, status 400
+2022-02-11T19:40:19.309+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-11T19:40:19.498+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-11T19:40:20.848+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-11T19:40:21.054+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-11T19:40:40.967+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-11T19:40:40.967+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-11T19:40:40.968+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-11T19:40:40.968+0530 DEBUG Detected FixedThemeResolver
+2022-02-11T19:40:40.969+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@dd1030e
+2022-02-11T19:40:40.969+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@676f5b43
+2022-02-11T19:40:40.969+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-11T19:40:40.970+0530 INFO Completed initialization in 3 ms
+2022-02-11T19:40:40.996+0530 DEBUG Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2022-02-11T19:40:40.996+0530 DEBUG Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2022-02-11T19:40:41.026+0530 DEBUG Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2022-02-11T19:40:41.153+0530 DEBUG GET "/api/lps/v1/retrieveListOfBasicLps/sd@capeindia.net", parameters={}
+2022-02-11T19:40:41.156+0530 DEBUG Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2022-02-11T19:40:41.162+0530 DEBUG Resource not found
+2022-02-11T19:40:41.163+0530 DEBUG Completed 404 NOT_FOUND
+2022-02-11T19:40:41.167+0530 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+2022-02-11T19:40:41.169+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-11T19:40:41.191+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:40:41.192+0530 DEBUG Writing [{timestamp=Fri Feb 11 19:40:41 IST 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
+2022-02-11T19:40:41.232+0530 DEBUG Exiting from "ERROR" dispatch, status 404
+2022-02-11T19:40:41.245+0530 DEBUG Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2022-02-11T19:40:41.252+0530 DEBUG GET "/api/lps/v1/retrieveListOfBasicLps/sd@capeindia.net", parameters={}
+2022-02-11T19:40:41.253+0530 DEBUG Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2022-02-11T19:40:41.255+0530 DEBUG Resource not found
+2022-02-11T19:40:41.255+0530 DEBUG Completed 404 NOT_FOUND
+2022-02-11T19:40:41.256+0530 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+2022-02-11T19:40:41.256+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-11T19:40:41.258+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:40:41.258+0530 DEBUG Writing [{timestamp=Fri Feb 11 19:40:41 IST 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
+2022-02-11T19:40:41.260+0530 DEBUG Exiting from "ERROR" dispatch, status 404
+2022-02-11T19:40:45.161+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-11T19:40:45.162+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:40:45.171+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:40:45.172+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-11T19:40:45.172+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:40:45.172+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-11T19:40:45.200+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:40:45.201+0530 DEBUG Writing [[]]
+2022-02-11T19:40:45.204+0530 DEBUG Completed 200 OK
+2022-02-11T19:40:45.213+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:40:45.219+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:40:45.220+0530 DEBUG Writing [[com.capeelectric.model.Country@552b5126, com.capeelectric.model.Country@cb22556e, com.capeelectric. (truncated)...]
+2022-02-11T19:40:45.224+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:40:45.224+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:40:45.231+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:40:45.232+0530 DEBUG Writing [[]]
+2022-02-11T19:40:45.233+0530 DEBUG Completed 200 OK
+2022-02-11T19:40:45.314+0530 DEBUG Completed 200 OK
+2022-02-11T19:41:24.665+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-11T19:41:24.676+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-11T19:41:24.678+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-11T19:41:24.723+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:41:24.724+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-11T19:41:24.726+0530 DEBUG Completed 200 OK
+2022-02-11T19:41:38.474+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:41:38.481+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-11T19:41:38.481+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:41:38.498+0530 DEBUG Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.capeelectric.model.ClientDetails> com.capeelectric.controller.ClientDetailsController.saveClientDetails(com.capeelectric.model.ClientDetails) throws com.capeelectric.exception.ClientDetailsException: JSON parse error: Cannot deserialize value of type `int` from String "7358021553": Overflow: numeric value (7358021553) out of range of int (-2147483648 -2147483647); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "7358021553": Overflow: numeric value (7358021553) out of range of int (-2147483648 -2147483647)
+ at [Source: (PushbackInputStream); line: 1, column: 43] (through reference chain: com.capeelectric.model.ClientDetails["contactNumber"])
+2022-02-11T19:41:38.500+0530 WARN Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "7358021553": Overflow: numeric value (7358021553) out of range of int (-2147483648 -2147483647); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "7358021553": Overflow: numeric value (7358021553) out of range of int (-2147483648 -2147483647)
+ at [Source: (PushbackInputStream); line: 1, column: 43] (through reference chain: com.capeelectric.model.ClientDetails["contactNumber"])]
+2022-02-11T19:41:38.501+0530 DEBUG Completed 400 BAD_REQUEST
+2022-02-11T19:41:38.503+0530 DEBUG "ERROR" dispatch for POST "/error", parameters={}
+2022-02-11T19:41:38.504+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-11T19:41:38.509+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:41:38.509+0530 DEBUG Writing [{timestamp=Fri Feb 11 19:41:38 IST 2022, status=400, error=Bad Request, trace=org.springframework.ht (truncated)...]
+2022-02-11T19:41:38.511+0530 DEBUG Exiting from "ERROR" dispatch, status 400
+2022-02-11T19:41:38.597+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:41:38.607+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:41:38.608+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:41:38.611+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:41:38.611+0530 DEBUG Writing [[]]
+2022-02-11T19:41:38.612+0530 DEBUG Completed 200 OK
+2022-02-11T19:42:12.526+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-11T19:42:12.579+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-11T19:42:12.622+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-11T19:42:12.632+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-11T19:42:23.188+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-11T19:42:23.188+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-11T19:42:23.188+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-11T19:42:23.188+0530 DEBUG Detected FixedThemeResolver
+2022-02-11T19:42:23.189+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@a1e49d
+2022-02-11T19:42:23.189+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@2ef1d055
+2022-02-11T19:42:23.189+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-11T19:42:23.189+0530 INFO Completed initialization in 1 ms
+2022-02-11T19:42:23.191+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-11T19:42:23.192+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:42:23.224+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:42:23.224+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-11T19:42:23.225+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-11T19:42:23.225+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:42:23.242+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:42:23.243+0530 DEBUG Writing [[]]
+2022-02-11T19:42:23.244+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:42:23.244+0530 DEBUG Writing [[com.capeelectric.model.Country@2ccb00ef, com.capeelectric.model.Country@7d94d6a5, com.capeelectric. (truncated)...]
+2022-02-11T19:42:23.245+0530 DEBUG Completed 200 OK
+2022-02-11T19:42:23.256+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:42:23.262+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:42:23.263+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:42:23.267+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:42:23.267+0530 DEBUG Writing [[]]
+2022-02-11T19:42:23.268+0530 DEBUG Completed 200 OK
+2022-02-11T19:42:23.299+0530 DEBUG Completed 200 OK
+2022-02-11T19:42:35.014+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-11T19:42:35.020+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-11T19:42:35.021+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-11T19:42:35.027+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:42:35.028+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-11T19:42:35.029+0530 DEBUG Completed 200 OK
+2022-02-11T19:43:09.053+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:43:09.064+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-11T19:43:09.065+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:43:09.072+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@4f4e7de1]
+2022-02-11T19:43:09.166+0530 DEBUG Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement
+2022-02-11T19:43:09.176+0530 DEBUG "ERROR" dispatch for POST "/error", parameters={}
+2022-02-11T19:43:09.176+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-11T19:43:09.179+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:43:09.179+0530 DEBUG Writing [{timestamp=Fri Feb 11 19:43:09 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-02-11T19:43:09.181+0530 DEBUG Exiting from "ERROR" dispatch, status 500
+2022-02-11T19:43:09.209+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:43:09.214+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:43:09.215+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:43:09.218+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:43:09.218+0530 DEBUG Writing [[]]
+2022-02-11T19:43:09.219+0530 DEBUG Completed 200 OK
+2022-02-11T19:46:11.110+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-11T19:46:11.149+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-11T19:46:11.180+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-11T19:46:11.188+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-11T19:48:11.884+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-11T19:48:11.885+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-11T19:48:11.886+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-11T19:48:11.886+0530 DEBUG Detected FixedThemeResolver
+2022-02-11T19:48:11.887+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7c568b4d
+2022-02-11T19:48:11.887+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@835f75b
+2022-02-11T19:48:11.887+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-11T19:48:11.887+0530 INFO Completed initialization in 2 ms
+2022-02-11T19:48:11.888+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:48:11.931+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-11T19:48:11.932+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:48:11.939+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@2268960d]
+2022-02-11T19:48:11.954+0530 DEBUG Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement
+2022-02-11T19:48:11.956+0530 DEBUG "ERROR" dispatch for POST "/error", parameters={}
+2022-02-11T19:48:11.957+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-11T19:48:11.965+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:48:11.965+0530 DEBUG Writing [{timestamp=Fri Feb 11 19:48:11 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-02-11T19:48:11.968+0530 DEBUG Exiting from "ERROR" dispatch, status 500
+2022-02-11T19:48:11.997+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:48:12.004+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:48:12.004+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:48:12.016+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:48:12.017+0530 DEBUG Writing [[]]
+2022-02-11T19:48:12.017+0530 DEBUG Completed 200 OK
+2022-02-11T19:48:45.774+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:48:45.786+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-11T19:48:45.787+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-11T19:48:45.788+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@6c88a21b]
+2022-02-11T19:48:45.798+0530 DEBUG Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement
+2022-02-11T19:48:45.801+0530 DEBUG "ERROR" dispatch for POST "/error", parameters={}
+2022-02-11T19:48:45.803+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-11T19:48:45.813+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:48:45.813+0530 DEBUG Writing [{timestamp=Fri Feb 11 19:48:45 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-02-11T19:48:45.816+0530 DEBUG Exiting from "ERROR" dispatch, status 500
+2022-02-11T19:48:45.896+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:48:45.906+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-11T19:48:45.906+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-11T19:48:45.915+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-11T19:48:45.915+0530 DEBUG Writing [[]]
+2022-02-11T19:48:45.917+0530 DEBUG Completed 200 OK
+2022-02-14T17:12:32.121+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-14T17:12:32.282+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-14T17:12:33.133+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-14T17:12:33.196+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-14T17:16:03.441+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-14T17:16:03.494+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-14T17:16:03.544+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-14T17:16:03.552+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-14T17:16:06.349+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-14T17:16:06.395+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-14T17:16:06.439+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-14T17:16:06.451+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-14T17:16:13.870+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-14T17:16:13.870+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-14T17:16:13.871+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-14T17:16:13.871+0530 DEBUG Detected FixedThemeResolver
+2022-02-14T17:16:13.872+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@72a95ca3
+2022-02-14T17:16:13.872+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@4127f441
+2022-02-14T17:16:13.872+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-14T17:16:13.873+0530 INFO Completed initialization in 2 ms
+2022-02-14T17:16:13.897+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T17:16:13.898+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T17:16:13.898+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T17:16:13.947+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T17:16:13.949+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T17:16:14.106+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-14T17:16:14.106+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T17:16:14.108+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T17:16:14.108+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T17:16:14.152+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T17:16:14.153+0530 DEBUG Writing [[]]
+2022-02-14T17:16:14.164+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T17:16:14.164+0530 DEBUG Writing [[com.capeelectric.model.Country@7cebc998, com.capeelectric.model.Country@a04fcca8, com.capeelectric. (truncated)...]
+2022-02-14T17:16:14.181+0530 DEBUG Completed 200 OK
+2022-02-14T17:16:14.195+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T17:16:14.203+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T17:16:14.204+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T17:16:14.207+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T17:16:14.207+0530 DEBUG Writing [[]]
+2022-02-14T17:16:14.208+0530 DEBUG Completed 200 OK
+2022-02-14T17:16:14.254+0530 DEBUG Completed 200 OK
+2022-02-14T17:26:42.146+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T17:26:42.177+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T17:26:42.184+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-14T17:26:42.184+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T17:26:42.223+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T17:26:42.223+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-14T17:26:42.225+0530 DEBUG Completed 200 OK
+2022-02-14T17:27:03.628+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-14T17:27:03.646+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-14T17:27:03.651+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-14T17:27:03.651+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-14T17:27:03.664+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@33dfb7dd]
+2022-02-14T17:27:03.760+0530 DEBUG Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement
+2022-02-14T17:27:03.773+0530 DEBUG "ERROR" dispatch for POST "/error", parameters={}
+2022-02-14T17:27:03.782+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-14T17:27:03.793+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T17:27:03.794+0530 DEBUG Writing [{timestamp=Mon Feb 14 17:27:03 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-02-14T17:27:03.801+0530 DEBUG Exiting from "ERROR" dispatch, status 500
+2022-02-14T17:27:03.830+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T17:27:03.836+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T17:27:03.836+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T17:27:03.839+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T17:27:03.839+0530 DEBUG Writing [[]]
+2022-02-14T17:27:03.840+0530 DEBUG Completed 200 OK
+2022-02-14T18:00:33.351+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:00:33.351+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T18:00:33.351+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:00:33.443+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T18:00:33.449+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:00:33.920+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-14T18:00:33.931+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T18:00:33.932+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T18:00:33.965+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:00:34.006+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:00:34.010+0530 DEBUG Writing [[]]
+2022-02-14T18:00:34.029+0530 DEBUG Completed 200 OK
+2022-02-14T18:00:34.030+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:00:34.031+0530 DEBUG Writing [[com.capeelectric.model.Country@37e90c84, com.capeelectric.model.Country@c6d56358, com.capeelectric. (truncated)...]
+2022-02-14T18:00:34.042+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:00:34.057+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T18:00:34.057+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:00:34.062+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:00:34.062+0530 DEBUG Writing [[]]
+2022-02-14T18:00:34.065+0530 DEBUG Completed 200 OK
+2022-02-14T18:00:34.416+0530 DEBUG Completed 200 OK
+2022-02-14T18:00:47.620+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T18:00:47.632+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T18:00:47.643+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-14T18:00:47.644+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T18:00:47.673+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:00:47.673+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-14T18:00:47.674+0530 DEBUG Completed 200 OK
+2022-02-14T18:01:03.901+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-14T18:01:03.914+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-14T18:01:03.927+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-14T18:01:03.928+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-14T18:01:03.935+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@b57773c]
+2022-02-14T18:01:04.011+0530 DEBUG Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement
+2022-02-14T18:01:04.083+0530 DEBUG "ERROR" dispatch for POST "/error", parameters={}
+2022-02-14T18:01:04.084+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-14T18:01:04.096+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:01:04.099+0530 DEBUG Writing [{timestamp=Mon Feb 14 18:01:04 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-02-14T18:01:04.106+0530 DEBUG Exiting from "ERROR" dispatch, status 500
+2022-02-14T18:01:04.164+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:01:04.175+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T18:01:04.177+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:01:04.181+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:01:04.181+0530 DEBUG Writing [[]]
+2022-02-14T18:01:04.183+0530 DEBUG Completed 200 OK
+2022-02-14T18:30:22.596+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-14T18:30:22.713+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-14T18:30:23.265+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-14T18:30:23.314+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-14T18:31:08.104+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-14T18:31:08.104+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-14T18:31:08.104+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-14T18:31:08.104+0530 DEBUG Detected FixedThemeResolver
+2022-02-14T18:31:08.105+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5f55d77f
+2022-02-14T18:31:08.106+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@100fb239
+2022-02-14T18:31:08.106+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-14T18:31:08.106+0530 INFO Completed initialization in 2 ms
+2022-02-14T18:31:08.137+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T18:31:08.137+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:31:08.137+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:31:08.180+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T18:31:08.183+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:31:08.343+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T18:31:08.343+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-14T18:31:08.345+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T18:31:08.345+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:31:08.400+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:31:08.401+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:31:08.402+0530 DEBUG Writing [[]]
+2022-02-14T18:31:08.402+0530 DEBUG Writing [[com.capeelectric.model.Country@9d1ec21b, com.capeelectric.model.Country@bb9d1d8a, com.capeelectric. (truncated)...]
+2022-02-14T18:31:08.427+0530 DEBUG Completed 200 OK
+2022-02-14T18:31:08.434+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:31:08.444+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T18:31:08.445+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:31:08.449+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:31:08.450+0530 DEBUG Writing [[]]
+2022-02-14T18:31:08.451+0530 DEBUG Completed 200 OK
+2022-02-14T18:31:08.519+0530 DEBUG Completed 200 OK
+2022-02-14T18:31:11.881+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T18:31:11.897+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T18:31:11.902+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-14T18:31:11.903+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T18:31:11.936+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:31:11.937+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-14T18:31:11.939+0530 DEBUG Completed 200 OK
+2022-02-14T18:31:24.352+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-14T18:31:24.369+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-14T18:31:24.374+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-14T18:31:24.374+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-14T18:31:24.384+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@5799fdc8]
+2022-02-14T18:31:24.451+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:31:24.451+0530 DEBUG Writing [com.capeelectric.model.ClientDetails@5799fdc8]
+2022-02-14T18:31:24.455+0530 DEBUG Completed 201 CREATED
+2022-02-14T18:31:24.466+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:31:24.466+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#retrieveClientDetails(String, Integer)
+2022-02-14T18:31:24.473+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T18:31:24.473+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:31:24.480+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:31:24.481+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@24b124c]]
+2022-02-14T18:31:24.482+0530 DEBUG Completed 200 OK
+2022-02-14T18:31:24.482+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#retrieveClientDetails(String, Integer)
+2022-02-14T18:31:24.487+0530 DEBUG GET "/api/emc/v1/retrieveClientDetails/sd@capeindia.net/1", parameters={}
+2022-02-14T18:31:24.487+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#retrieveClientDetails(String, Integer)
+2022-02-14T18:31:24.496+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:31:24.497+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@723d7bae]]
+2022-02-14T18:31:24.499+0530 DEBUG Completed 200 OK
+2022-02-14T18:53:23.710+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T18:53:23.711+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:53:23.835+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T18:53:23.835+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-14T18:53:23.836+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T18:53:23.836+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:53:23.850+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:53:23.852+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@626ad623]]
+2022-02-14T18:53:23.853+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:53:23.854+0530 DEBUG Writing [[com.capeelectric.model.Country@38cd1aae, com.capeelectric.model.Country@7b41037d, com.capeelectric. (truncated)...]
+2022-02-14T18:53:23.857+0530 DEBUG Completed 200 OK
+2022-02-14T18:53:23.876+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:53:23.882+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T18:53:23.883+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:53:23.892+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:53:23.892+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@723423aa]]
+2022-02-14T18:53:23.894+0530 DEBUG Completed 200 OK
+2022-02-14T18:53:23.898+0530 DEBUG Completed 200 OK
+2022-02-14T18:53:26.404+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-14T18:53:26.413+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-14T18:53:26.418+0530 DEBUG GET "/api/emc/v1/retrieveEmcReport/sd@capeindia.net/1", parameters={}
+2022-02-14T18:53:26.418+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-14T18:53:26.468+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:53:26.469+0530 DEBUG Writing [Optional[com.capeelectric.model.EmcFinalReport@60d8afb9]]
+2022-02-14T18:53:26.473+0530 DEBUG Completed 200 OK
+2022-02-14T18:53:26.493+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T18:53:26.493+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:53:26.499+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T18:53:26.499+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-14T18:53:26.500+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T18:53:26.500+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-14T18:53:26.504+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:53:26.505+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@74b5e52b]]
+2022-02-14T18:53:26.506+0530 DEBUG Completed 200 OK
+2022-02-14T18:53:26.509+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T18:53:26.509+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-14T18:53:26.510+0530 DEBUG Completed 200 OK
+2022-02-14T19:02:42.530+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#addFacilityData(FacilityData)
+2022-02-14T19:02:42.547+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#addFacilityData(FacilityData)
+2022-02-14T19:02:42.570+0530 DEBUG POST "/api/emc/v1/saveFacilityData", parameters={}
+2022-02-14T19:02:42.572+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#addFacilityData(FacilityData)
+2022-02-14T19:02:42.627+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.FacilityData@1a4e93d1]
+2022-02-14T19:02:42.796+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:02:42.796+0530 DEBUG Writing ["FacilityData  Details Saved Successfully"]
+2022-02-14T19:02:42.799+0530 DEBUG Completed 201 CREATED
+2022-02-14T19:02:42.817+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#retrieveFacilityData(String, Integer)
+2022-02-14T19:02:42.827+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#retrieveFacilityData(String, Integer)
+2022-02-14T19:02:42.834+0530 DEBUG GET "/api/emc/v1/retrieveFacilityData/sd@capeindia.net/1", parameters={}
+2022-02-14T19:02:42.835+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#retrieveFacilityData(String, Integer)
+2022-02-14T19:02:42.844+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:02:42.844+0530 DEBUG Writing [[com.capeelectric.model.FacilityData@6c611de5]]
+2022-02-14T19:02:42.859+0530 DEBUG Completed 200 OK
+2022-02-14T19:14:56.783+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#savePowerEarthingData(PowerEarthingData)
+2022-02-14T19:14:56.815+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#savePowerEarthingData(PowerEarthingData)
+2022-02-14T19:14:56.823+0530 DEBUG POST "/api/emc/v1/savePowerEarthingData", parameters={}
+2022-02-14T19:14:56.824+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#savePowerEarthingData(PowerEarthingData)
+2022-02-14T19:14:56.842+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.PowerEarthingData@3b6147ab]
+2022-02-14T19:14:56.931+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:14:56.931+0530 DEBUG Writing ["PowerEarthingData Successfully Saved"]
+2022-02-14T19:14:56.932+0530 DEBUG Completed 200 OK
+2022-02-14T19:14:56.947+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-14T19:14:56.965+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-14T19:14:56.972+0530 DEBUG GET "/api/emc/v1/retrievePowerEarthingData/sd@capeindia.net/1", parameters={}
+2022-02-14T19:14:56.972+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-14T19:14:56.982+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:14:56.982+0530 DEBUG Writing [[com.capeelectric.model.PowerEarthingData@3c8556c2]]
+2022-02-14T19:14:56.999+0530 DEBUG Completed 200 OK
+2022-02-14T19:16:18.009+0530 DEBUG Mapped to com.capeelectric.controller.ElectromagneticCompatabilityController#saveElectromagneticCompatability(ElectromagneticCompatability)
+2022-02-14T19:16:18.027+0530 DEBUG Mapped to com.capeelectric.controller.ElectromagneticCompatabilityController#saveElectromagneticCompatability(ElectromagneticCompatability)
+2022-02-14T19:16:18.042+0530 DEBUG POST "/api/emc/v1/saveElectromagneticCompatability", parameters={}
+2022-02-14T19:16:18.043+0530 DEBUG Mapped to com.capeelectric.controller.ElectromagneticCompatabilityController#saveElectromagneticCompatability(ElectromagneticCompatability)
+2022-02-14T19:16:18.051+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ElectromagneticCompatability@1a86f01f]
+2022-02-14T19:16:18.163+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:16:18.163+0530 DEBUG Writing ["Electromagnetic Compatability Successfully Saved"]
+2022-02-14T19:16:18.164+0530 DEBUG Completed 200 OK
+2022-02-14T19:16:18.182+0530 DEBUG Mapped to com.capeelectric.controller.ElectromagneticCompatabilityController#retrieveElectromagneticCompatability(String, Integer)
+2022-02-14T19:16:18.197+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:16:18.197+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:16:18.197+0530 DEBUG Mapped to com.capeelectric.controller.ElectromagneticCompatabilityController#retrieveElectromagneticCompatability(String, Integer)
+2022-02-14T19:16:18.202+0530 DEBUG GET "/api/emc/v1/retrieveElectromagneticCompatability/sd@capeindia.net/1", parameters={}
+2022-02-14T19:16:18.205+0530 DEBUG Mapped to com.capeelectric.controller.ElectromagneticCompatabilityController#retrieveElectromagneticCompatability(String, Integer)
+2022-02-14T19:16:18.211+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:16:18.211+0530 DEBUG Writing [[com.capeelectric.model.ElectromagneticCompatability@466ed9bb]]
+2022-02-14T19:16:18.215+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:16:18.227+0530 DEBUG Completed 200 OK
+2022-02-14T19:16:18.230+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T19:16:18.231+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:16:18.239+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:16:18.239+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@5f689aae]]
+2022-02-14T19:16:18.240+0530 DEBUG Completed 200 OK
+2022-02-14T19:16:18.243+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:16:18.248+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T19:16:18.249+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:16:18.253+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:16:18.254+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@620d2c8a]]
+2022-02-14T19:16:18.255+0530 DEBUG Completed 200 OK
+2022-02-14T19:24:51.898+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-14T19:24:51.959+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-14T19:24:52.038+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-14T19:24:52.056+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-14T19:26:54.829+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-14T19:26:54.831+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-14T19:26:54.831+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-14T19:26:54.831+0530 DEBUG Detected FixedThemeResolver
+2022-02-14T19:26:54.832+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6ff138bc
+2022-02-14T19:26:54.832+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@607ca1df
+2022-02-14T19:26:54.832+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-14T19:26:54.832+0530 INFO Completed initialization in 1 ms
+2022-02-14T19:26:54.834+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T19:26:54.834+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:26:54.859+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T19:26:54.883+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-14T19:26:54.883+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T19:26:54.883+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-14T19:26:54.884+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:26:54.902+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:26:54.902+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:26:54.902+0530 DEBUG Writing [[com.capeelectric.model.Country@328ff647, com.capeelectric.model.Country@a55d9b1b, com.capeelectric. (truncated)...]
+2022-02-14T19:26:54.902+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@19ee5938]]
+2022-02-14T19:26:54.924+0530 DEBUG Completed 200 OK
+2022-02-14T19:26:54.937+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:26:54.945+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-14T19:26:54.946+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-14T19:26:54.950+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-14T19:26:54.950+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@2ad64b0c]]
+2022-02-14T19:26:54.951+0530 DEBUG Completed 200 OK
+2022-02-14T19:26:54.969+0530 DEBUG Completed 200 OK
+2022-02-14T19:35:09.062+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-14T19:35:09.107+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-14T19:35:09.155+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-14T19:35:09.165+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-21T17:16:07.947+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-21T17:16:08.069+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-21T17:16:08.710+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-21T17:16:08.778+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-22T10:37:15.794+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-22T10:37:16.018+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-22T10:37:16.922+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-22T10:37:17.015+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-22T13:57:49.299+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-22T13:57:49.309+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-22T13:57:49.310+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-22T13:57:49.310+0530 DEBUG Detected FixedThemeResolver
+2022-02-22T13:57:49.354+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@16292881
+2022-02-22T13:57:49.354+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@3e6b4340
+2022-02-22T13:57:49.355+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-22T13:57:49.355+0530 INFO Completed initialization in 52 ms
+2022-02-22T13:57:49.443+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-22T13:57:49.444+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:57:49.444+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:57:49.519+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-22T13:57:49.526+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:57:50.101+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-22T13:57:50.101+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-22T13:57:50.103+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-22T13:57:50.104+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:57:50.286+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T13:57:50.287+0530 DEBUG Writing [[com.capeelectric.model.Country@418f569f, com.capeelectric.model.Country@98d034c5, com.capeelectric. (truncated)...]
+2022-02-22T13:57:50.306+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T13:57:50.306+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@3bcb207d]]
+2022-02-22T13:57:50.354+0530 DEBUG Completed 200 OK
+2022-02-22T13:57:50.359+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:57:50.365+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-22T13:57:50.366+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:57:50.371+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T13:57:50.372+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@46ece7cb]]
+2022-02-22T13:57:50.373+0530 DEBUG Completed 200 OK
+2022-02-22T13:57:50.423+0530 DEBUG Completed 200 OK
+2022-02-22T13:58:14.298+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-22T13:58:14.315+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-22T13:58:14.324+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-22T13:58:14.324+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-22T13:58:14.401+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T13:58:14.402+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-22T13:58:14.403+0530 DEBUG Completed 200 OK
+2022-02-22T13:58:18.076+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T13:58:18.096+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T13:58:18.110+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-22T13:58:18.110+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T13:58:18.291+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@48ad1977]
+2022-02-22T13:58:18.313+0530 DEBUG Using @ExceptionHandler com.capeelectric.exception.GlobalExceptionHandler#handleClientDetailsException(ClientDetailsException)
+2022-02-22T13:58:18.322+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T13:58:18.323+0530 DEBUG Writing [com.capeelectric.util.ErrorMessage@4155dd5f]
+2022-02-22T13:58:18.324+0530 WARN Resolved [java.lang.IllegalStateException: Invocation failure
+Controller [com.capeelectric.controller.ClientDetailsController]
+Method [public org.springframework.http.ResponseEntity<com.capeelectric.model.ClientDetails> com.capeelectric.controller.ClientDetailsController.saveClientDetails(com.capeelectric.model.ClientDetails) throws com.capeelectric.exception.ClientDetailsException] with argument values:
+ [0] [type=com.capeelectric.model.ClientDetails] [value=com.capeelectric.model.ClientDetails@48ad1977] ]
+2022-02-22T13:58:18.324+0530 DEBUG Completed 406 NOT_ACCEPTABLE
+2022-02-22T13:58:18.331+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:58:18.345+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-22T13:58:18.346+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:58:18.355+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T13:58:18.355+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@58e87516]]
+2022-02-22T13:58:18.356+0530 DEBUG Completed 200 OK
+2022-02-22T13:58:44.033+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T13:58:44.039+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-22T13:58:44.039+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T13:58:44.040+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@38a8798d]
+2022-02-22T13:58:44.045+0530 DEBUG Using @ExceptionHandler com.capeelectric.exception.GlobalExceptionHandler#handleClientDetailsException(ClientDetailsException)
+2022-02-22T13:58:44.046+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T13:58:44.046+0530 DEBUG Writing [com.capeelectric.util.ErrorMessage@74d0b08d]
+2022-02-22T13:58:44.047+0530 WARN Resolved [java.lang.IllegalStateException: Invocation failure
+Controller [com.capeelectric.controller.ClientDetailsController]
+Method [public org.springframework.http.ResponseEntity<com.capeelectric.model.ClientDetails> com.capeelectric.controller.ClientDetailsController.saveClientDetails(com.capeelectric.model.ClientDetails) throws com.capeelectric.exception.ClientDetailsException] with argument values:
+ [0] [type=com.capeelectric.model.ClientDetails] [value=com.capeelectric.model.ClientDetails@38a8798d] ]
+2022-02-22T13:58:44.048+0530 DEBUG Completed 406 NOT_ACCEPTABLE
+2022-02-22T13:58:44.072+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:58:44.085+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-22T13:58:44.086+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T13:58:44.099+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T13:58:44.099+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@139782c0]]
+2022-02-22T13:58:44.100+0530 DEBUG Completed 200 OK
+2022-02-22T14:27:03.204+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T14:27:03.223+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-22T14:27:03.224+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T14:27:03.229+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@65fbf45e]
+2022-02-22T14:27:03.234+0530 DEBUG Using @ExceptionHandler com.capeelectric.exception.GlobalExceptionHandler#handleClientDetailsException(ClientDetailsException)
+2022-02-22T14:27:03.235+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T14:27:03.235+0530 DEBUG Writing [com.capeelectric.util.ErrorMessage@52420e0e]
+2022-02-22T14:27:03.236+0530 WARN Resolved [java.lang.IllegalStateException: Invocation failure
+Controller [com.capeelectric.controller.ClientDetailsController]
+Method [public org.springframework.http.ResponseEntity<com.capeelectric.model.ClientDetails> com.capeelectric.controller.ClientDetailsController.saveClientDetails(com.capeelectric.model.ClientDetails) throws com.capeelectric.exception.ClientDetailsException] with argument values:
+ [0] [type=com.capeelectric.model.ClientDetails] [value=com.capeelectric.model.ClientDetails@65fbf45e] ]
+2022-02-22T14:27:03.237+0530 DEBUG Completed 406 NOT_ACCEPTABLE
+2022-02-22T14:27:03.253+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T14:27:03.265+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-22T14:27:03.265+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T14:27:03.269+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T14:27:03.269+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@67e13b89]]
+2022-02-22T14:27:03.270+0530 DEBUG Completed 200 OK
+2022-02-22T14:57:41.027+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T14:57:41.075+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T14:57:41.256+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-22T14:57:41.256+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-22T14:57:41.269+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@453fa38d]
+2022-02-22T14:57:41.297+0530 DEBUG Using @ExceptionHandler com.capeelectric.exception.GlobalExceptionHandler#handleClientDetailsException(ClientDetailsException)
+2022-02-22T14:57:41.302+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T14:57:41.304+0530 DEBUG Writing [com.capeelectric.util.ErrorMessage@3f40e8ab]
+2022-02-22T14:57:41.306+0530 WARN Resolved [java.lang.IllegalStateException: Invocation failure
+Controller [com.capeelectric.controller.ClientDetailsController]
+Method [public org.springframework.http.ResponseEntity<com.capeelectric.model.ClientDetails> com.capeelectric.controller.ClientDetailsController.saveClientDetails(com.capeelectric.model.ClientDetails) throws com.capeelectric.exception.ClientDetailsException] with argument values:
+ [0] [type=com.capeelectric.model.ClientDetails] [value=com.capeelectric.model.ClientDetails@453fa38d] ]
+2022-02-22T14:57:41.307+0530 DEBUG Completed 406 NOT_ACCEPTABLE
+2022-02-22T14:57:41.330+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T14:57:41.341+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T14:57:41.351+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-22T14:57:41.352+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T14:57:41.361+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T14:57:41.361+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@3a81258a]]
+2022-02-22T14:57:41.372+0530 DEBUG Completed 200 OK
+2022-02-22T15:01:52.715+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-22T15:01:52.727+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T15:01:52.727+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-22T15:01:52.765+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-22T15:01:52.766+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T15:01:52.771+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-22T15:01:52.771+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-22T15:01:52.816+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T15:01:52.817+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@586988d1]]
+2022-02-22T15:01:52.820+0530 DEBUG Completed 200 OK
+2022-02-22T15:01:52.841+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T15:01:52.857+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-22T15:01:52.857+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-22T15:01:52.862+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T15:01:52.863+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@1828d50b]]
+2022-02-22T15:01:52.864+0530 DEBUG Completed 200 OK
+2022-02-22T15:01:52.877+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-22T15:01:52.878+0530 DEBUG Writing [[com.capeelectric.model.Country@56a3db6b, com.capeelectric.model.Country@8a134111, com.capeelectric. (truncated)...]
+2022-02-22T15:01:52.935+0530 DEBUG Completed 200 OK
+2022-02-22T15:22:50.121+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-22T15:22:50.188+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-22T15:22:50.292+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-22T15:22:50.306+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T12:33:59.829+0530 DEBUG 18 mappings in 'requestMappingHandlerMapping'
+2022-02-23T12:33:59.979+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T12:34:00.562+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T12:34:00.643+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T17:30:27.612+0530 DEBUG 20 mappings in 'requestMappingHandlerMapping'
+2022-02-23T17:30:27.793+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T17:30:28.732+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T17:30:28.788+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T19:06:32.845+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@54d9ebe1
+2022-02-23T19:06:58.516+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@450897d
+2022-02-23T19:07:04.621+0530 DEBUG 20 mappings in 'requestMappingHandlerMapping'
+2022-02-23T19:07:04.971+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T19:07:06.675+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T19:07:06.812+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T19:07:07.405+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@450897d, started on Wed Feb 23 19:06:58 IST 2022
+2022-02-23T19:18:21.723+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@450897d
+2022-02-23T19:18:27.520+0530 DEBUG 20 mappings in 'requestMappingHandlerMapping'
+2022-02-23T19:18:27.766+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T19:18:29.267+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T19:18:29.359+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T19:18:29.967+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@450897d, started on Wed Feb 23 19:18:21 IST 2022
+2022-02-23T19:42:13.546+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2e0d0819
+2022-02-23T19:42:19.724+0530 DEBUG 20 mappings in 'requestMappingHandlerMapping'
+2022-02-23T19:42:20.034+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T19:42:21.585+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T19:42:21.678+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T19:42:22.174+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@2e0d0819, started on Wed Feb 23 19:42:13 IST 2022
+2022-02-23T20:19:33.742+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@450897d
+2022-02-23T20:19:43.059+0530 DEBUG 20 mappings in 'requestMappingHandlerMapping'
+2022-02-23T20:19:43.496+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T20:19:45.990+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T20:19:46.165+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T20:19:46.898+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@450897d, started on Wed Feb 23 20:19:33 IST 2022
+2022-02-23T20:21:45.698+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@450897d
+2022-02-23T20:21:55.672+0530 DEBUG 20 mappings in 'requestMappingHandlerMapping'
+2022-02-23T20:21:56.186+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T20:21:58.311+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T20:21:58.466+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T20:21:59.392+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@450897d, started on Wed Feb 23 20:21:45 IST 2022
+2022-02-23T20:24:36.217+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@670132b9
+2022-02-23T20:24:48.954+0530 DEBUG 20 mappings in 'requestMappingHandlerMapping'
+2022-02-23T20:24:49.493+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T20:24:52.551+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T20:24:52.702+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T20:24:53.672+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@670132b9, started on Wed Feb 23 20:24:36 IST 2022
+2022-02-23T20:50:47.756+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@42f7523d
+2022-02-23T20:50:59.617+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-23T20:51:00.278+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T20:51:02.869+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T20:51:03.030+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T20:51:03.860+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@42f7523d, started on Wed Feb 23 20:50:47 IST 2022
+2022-02-23T20:52:01.735+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@439a0f0
+2022-02-23T20:52:11.484+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-23T20:52:12.456+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-23T20:52:15.064+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-23T20:52:15.535+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-23T20:52:16.446+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@439a0f0, started on Wed Feb 23 20:52:01 IST 2022
+2022-02-24T09:55:35.476+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@42ec207f
+2022-02-24T09:55:44.159+0530 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'clientDetailsController' method 
+com.capeelectric.controller.ClientDetailsController#health()
+to {GET [/api/emc/v1/health]}: There is already 'baseController' bean method
+com.capeelectric.controller.BaseController#health() mapped.
+2022-02-24T09:57:25.861+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@42ec207f
+2022-02-24T09:57:33.438+0530 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'countryDetailsController' method 
+com.capeelectric.controller.CountryDetailsController#health()
+to {GET [/api/emc/v1/health]}: There is already 'clientDetailsController' bean method
+com.capeelectric.controller.ClientDetailsController#health() mapped.
+2022-02-24T10:01:07.693+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@68d9d5b3
+2022-02-24T10:01:15.300+0530 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'countryDetailsController' method 
+com.capeelectric.controller.CountryDetailsController#health()
+to {GET [/api/emc/v1/health]}: There is already 'clientDetailsController' bean method
+com.capeelectric.controller.ClientDetailsController#health() mapped.
+2022-02-24T10:03:33.760+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@450897d
+2022-02-24T10:03:46.773+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T10:03:47.437+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T10:03:49.961+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T10:03:50.143+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T10:03:51.448+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@450897d, started on Thu Feb 24 10:03:33 IST 2022
+2022-02-24T10:08:49.206+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@670132b9
+2022-02-24T10:08:57.790+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T10:08:58.390+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T10:09:00.680+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T10:09:00.852+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T10:09:01.521+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@670132b9, started on Thu Feb 24 10:08:49 IST 2022
+2022-02-24T12:02:00.174+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2bab0d9a
+2022-02-24T12:02:08.808+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T12:02:09.200+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T12:02:11.272+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T12:02:11.408+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T12:02:12.273+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@2bab0d9a, started on Thu Feb 24 12:02:00 IST 2022
+2022-02-24T12:03:48.434+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@73000a80
+2022-02-24T12:04:01.396+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T12:04:01.870+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T12:04:04.673+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T12:04:04.944+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T12:04:06.079+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@73000a80, started on Thu Feb 24 12:03:48 IST 2022
+2022-02-24T16:03:37.520+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2bab0d9a
+2022-02-24T16:03:44.521+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T16:03:44.926+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T16:03:46.950+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T16:03:47.173+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T16:03:48.111+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@2bab0d9a, started on Thu Feb 24 16:03:37 IST 2022
+2022-02-24T16:04:32.594+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@73000a80
+2022-02-24T16:04:39.933+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T16:04:40.305+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T16:04:42.033+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T16:04:42.166+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T16:04:42.875+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@73000a80, started on Thu Feb 24 16:04:32 IST 2022
+2022-02-24T16:14:37.228+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@450897d
+2022-02-24T16:14:45.371+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T16:14:45.736+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T16:14:48.754+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T16:14:48.955+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T16:14:49.842+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@450897d, started on Thu Feb 24 16:14:37 IST 2022
+2022-02-24T16:16:28.513+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@33a7a5ca
+2022-02-24T16:16:36.725+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T16:16:37.074+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T16:16:39.180+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T16:16:39.315+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T16:16:40.209+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@33a7a5ca, started on Thu Feb 24 16:16:28 IST 2022
+2022-02-24T16:49:21.270+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T16:49:21.397+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T16:49:22.144+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T16:49:22.218+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T17:07:06.658+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T17:07:06.731+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T17:11:46.570+0530 DEBUG Refreshing org.springframework.web.context.support.GenericWebApplicationContext@670132b9
+2022-02-24T17:11:54.917+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T17:11:55.417+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T17:11:58.137+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T17:11:58.353+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T17:11:59.631+0530 DEBUG Closing org.springframework.web.context.support.GenericWebApplicationContext@670132b9, started on Thu Feb 24 17:11:46 IST 2022
+2022-02-24T17:22:15.598+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T17:22:15.766+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T17:22:16.459+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T17:22:16.539+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T17:29:09.128+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-24T17:29:09.138+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-24T17:29:09.142+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-24T17:29:09.144+0530 DEBUG Detected FixedThemeResolver
+2022-02-24T17:29:09.193+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@19682aa4
+2022-02-24T17:29:09.195+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@5f99cb3d
+2022-02-24T17:29:09.195+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-24T17:29:09.195+0530 INFO Completed initialization in 63 ms
+2022-02-24T17:29:09.292+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T17:29:09.293+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T17:29:09.293+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T17:29:09.349+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T17:29:09.354+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T17:29:09.677+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-24T17:29:09.677+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T17:29:09.680+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T17:29:09.680+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T17:29:10.025+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:29:10.026+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@4581dcfd]]
+2022-02-24T17:29:10.068+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:29:10.069+0530 DEBUG Writing [[com.capeelectric.model.Country@72450002, com.capeelectric.model.Country@a2d3a006, com.capeelectric. (truncated)...]
+2022-02-24T17:29:10.118+0530 DEBUG Completed 200 OK
+2022-02-24T17:29:10.121+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T17:29:10.130+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T17:29:10.130+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T17:29:10.135+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:29:10.135+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@2c9e1175]]
+2022-02-24T17:29:10.137+0530 DEBUG Completed 200 OK
+2022-02-24T17:29:10.217+0530 DEBUG Completed 200 OK
+2022-02-24T17:30:01.809+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T17:30:01.817+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T17:30:01.824+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-24T17:30:01.825+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T17:30:01.866+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:30:01.866+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-24T17:30:01.867+0530 DEBUG Completed 200 OK
+2022-02-24T17:31:12.715+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-24T17:31:12.725+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-24T17:31:12.741+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-24T17:31:12.743+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-24T17:31:12.773+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@1943682c]
+2022-02-24T17:31:12.904+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:31:12.905+0530 DEBUG Writing [com.capeelectric.model.ClientDetails@1943682c]
+2022-02-24T17:31:12.906+0530 DEBUG Completed 201 CREATED
+2022-02-24T17:31:12.912+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#retrieveClientDetails(String, Integer)
+2022-02-24T17:31:12.928+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T17:31:12.929+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#retrieveClientDetails(String, Integer)
+2022-02-24T17:31:12.938+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T17:31:12.938+0530 DEBUG GET "/api/emc/v1/retrieveClientDetails/sd@capeindia.net/2", parameters={}
+2022-02-24T17:31:12.939+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T17:31:12.939+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#retrieveClientDetails(String, Integer)
+2022-02-24T17:31:12.953+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:31:12.953+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:31:12.953+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@42c40485, com.capeelectric.model.ClientDetails@6d1c00eb]]
+2022-02-24T17:31:12.954+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@65e8d86e]]
+2022-02-24T17:31:12.955+0530 DEBUG Completed 200 OK
+2022-02-24T17:31:12.955+0530 DEBUG Completed 200 OK
+2022-02-24T17:44:28.664+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#addFacilityData(FacilityData)
+2022-02-24T17:44:28.693+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#addFacilityData(FacilityData)
+2022-02-24T17:44:28.758+0530 DEBUG POST "/api/emc/v1/saveFacilityData", parameters={}
+2022-02-24T17:44:28.759+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#addFacilityData(FacilityData)
+2022-02-24T17:44:28.805+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.FacilityData@d5d1894]
+2022-02-24T17:44:28.959+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:44:28.960+0530 DEBUG Writing ["FacilityData  Details Saved Successfully"]
+2022-02-24T17:44:28.961+0530 DEBUG Completed 201 CREATED
+2022-02-24T17:44:28.977+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#retrieveFacilityData(String, Integer)
+2022-02-24T17:44:28.991+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#retrieveFacilityData(String, Integer)
+2022-02-24T17:44:28.997+0530 DEBUG GET "/api/emc/v1/retrieveFacilityData/sd@capeindia.net/2", parameters={}
+2022-02-24T17:44:29.000+0530 DEBUG Mapped to com.capeelectric.controller.FacilityDataController#retrieveFacilityData(String, Integer)
+2022-02-24T17:44:29.011+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:44:29.011+0530 DEBUG Writing [[com.capeelectric.model.FacilityData@5847dd92]]
+2022-02-24T17:44:29.028+0530 DEBUG Completed 200 OK
+2022-02-24T17:45:27.805+0530 DEBUG Mapped to com.capeelectric.controller.FileUploadController#uploadFile(MultipartFile, Integer)
+2022-02-24T17:45:27.822+0530 DEBUG Mapped to com.capeelectric.controller.FileUploadController#uploadFile(MultipartFile, Integer)
+2022-02-24T17:45:27.829+0530 DEBUG POST "/api/emc/v1/upload/1", parameters={}
+2022-02-24T17:45:27.830+0530 DEBUG Mapped to com.capeelectric.controller.FileUploadController#uploadFile(MultipartFile, Integer)
+2022-02-24T17:45:27.836+0530 DEBUG Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.capeelectric.controller.FileUploadController.uploadFile(org.springframework.web.multipart.MultipartFile,java.lang.Integer) throws java.io.IOException: Current request is not a multipart request
+2022-02-24T17:45:27.843+0530 DEBUG Failed to complete request: org.springframework.web.multipart.MultipartException: Current request is not a multipart request
+2022-02-24T17:45:27.882+0530 DEBUG "ERROR" dispatch for POST "/error", parameters={}
+2022-02-24T17:45:27.893+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-24T17:45:27.918+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:45:27.919+0530 DEBUG Writing [{timestamp=Thu Feb 24 17:45:27 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-02-24T17:45:27.937+0530 DEBUG Exiting from "ERROR" dispatch, status 500
+2022-02-24T17:48:51.600+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#savePowerEarthingData(PowerEarthingData)
+2022-02-24T17:48:51.626+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#savePowerEarthingData(PowerEarthingData)
+2022-02-24T17:48:51.635+0530 DEBUG POST "/api/emc/v1/savePowerEarthingData", parameters={}
+2022-02-24T17:48:51.635+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#savePowerEarthingData(PowerEarthingData)
+2022-02-24T17:48:51.658+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.PowerEarthingData@247001aa]
+2022-02-24T17:48:51.752+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:48:51.752+0530 DEBUG Writing ["PowerEarthingData Successfully Saved"]
+2022-02-24T17:48:51.755+0530 DEBUG Completed 200 OK
+2022-02-24T17:48:51.779+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-24T17:48:51.788+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-24T17:48:51.797+0530 DEBUG GET "/api/emc/v1/retrievePowerEarthingData/sd@capeindia.net/2", parameters={}
+2022-02-24T17:48:51.798+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-24T17:48:51.810+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T17:48:51.810+0530 DEBUG Writing [[com.capeelectric.model.PowerEarthingData@68faa948]]
+2022-02-24T17:48:51.829+0530 DEBUG Completed 200 OK
+2022-02-24T18:26:49.482+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:26:49.482+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T18:26:49.482+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:26:49.507+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T18:26:49.511+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:26:49.615+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-24T18:26:49.616+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T18:26:49.617+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T18:26:49.618+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:26:49.638+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:26:49.639+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@2b9991fd, com.capeelectric.model.ClientDetails@30d6c84]]
+2022-02-24T18:26:49.643+0530 DEBUG Completed 200 OK
+2022-02-24T18:26:49.647+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:26:49.647+0530 DEBUG Writing [[com.capeelectric.model.Country@90f90d68, com.capeelectric.model.Country@b037045f, com.capeelectric. (truncated)...]
+2022-02-24T18:26:49.664+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:26:49.679+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T18:26:49.680+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:26:49.684+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:26:49.684+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@35023e77, com.capeelectric.model.ClientDetails@12a2f063]]
+2022-02-24T18:26:49.685+0530 DEBUG Completed 200 OK
+2022-02-24T18:26:49.697+0530 DEBUG Completed 200 OK
+2022-02-24T18:27:07.717+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T18:27:07.732+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T18:27:07.738+0530 DEBUG GET "/api/emc/v1/retrieveEmcReport/sd@capeindia.net/2", parameters={}
+2022-02-24T18:27:07.738+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T18:27:07.839+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:27:07.842+0530 DEBUG Writing [Optional[com.capeelectric.model.EmcFinalReport@5d012f85]]
+2022-02-24T18:27:07.868+0530 DEBUG Completed 200 OK
+2022-02-24T18:27:07.887+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T18:27:07.888+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:27:07.895+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T18:27:07.895+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T18:27:07.896+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:27:07.901+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:27:07.901+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@44ed7e2c, com.capeelectric.model.ClientDetails@3ad3c826]]
+2022-02-24T18:27:07.901+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-24T18:27:07.902+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T18:27:07.903+0530 DEBUG Completed 200 OK
+2022-02-24T18:27:07.912+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:27:07.912+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-24T18:27:07.913+0530 DEBUG Completed 200 OK
+2022-02-24T18:57:42.124+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T18:57:42.124+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:57:42.124+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:57:42.175+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T18:57:42.183+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:57:42.542+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T18:57:42.542+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-24T18:57:42.542+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T18:57:42.543+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:57:42.566+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:57:42.569+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@2a7fbe92, com.capeelectric.model.ClientDetails@29d35b19]]
+2022-02-24T18:57:42.574+0530 DEBUG Completed 200 OK
+2022-02-24T18:57:42.581+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:57:42.582+0530 DEBUG Writing [[com.capeelectric.model.Country@561dd58d, com.capeelectric.model.Country@6e813811, com.capeelectric. (truncated)...]
+2022-02-24T18:57:42.595+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:57:42.609+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T18:57:42.610+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:57:42.613+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:57:42.614+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@3d00ce6, com.capeelectric.model.ClientDetails@7fba6252]]
+2022-02-24T18:57:42.624+0530 DEBUG Completed 200 OK
+2022-02-24T18:57:42.629+0530 DEBUG Completed 200 OK
+2022-02-24T18:57:45.938+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T18:57:45.966+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T18:57:45.973+0530 DEBUG GET "/api/emc/v1/retrieveEmcReport/sd@capeindia.net/2", parameters={}
+2022-02-24T18:57:45.974+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T18:57:46.004+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:57:46.005+0530 DEBUG Writing [Optional[com.capeelectric.model.EmcFinalReport@6c7e5532]]
+2022-02-24T18:57:46.024+0530 DEBUG Completed 200 OK
+2022-02-24T18:57:46.035+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T18:57:46.037+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:57:46.044+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T18:57:46.045+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T18:57:46.046+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T18:57:46.050+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:57:46.050+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@1b343d3d, com.capeelectric.model.ClientDetails@14143dd0]]
+2022-02-24T18:57:46.052+0530 DEBUG Completed 200 OK
+2022-02-24T18:57:46.053+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-24T18:57:46.054+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T18:57:46.066+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T18:57:46.066+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-24T18:57:46.068+0530 DEBUG Completed 200 OK
+2022-02-24T19:24:30.511+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-24T19:24:30.778+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-24T19:24:32.486+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-24T19:24:32.622+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-24T19:26:33.518+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-24T19:26:33.519+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-24T19:26:33.519+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-24T19:26:33.519+0530 DEBUG Detected FixedThemeResolver
+2022-02-24T19:26:33.522+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@761e014b
+2022-02-24T19:26:33.522+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@7200ebb6
+2022-02-24T19:26:33.523+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-24T19:26:33.523+0530 INFO Completed initialization in 5 ms
+2022-02-24T19:26:33.553+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T19:26:33.557+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:26:33.806+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:26:33.807+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-24T19:26:33.810+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T19:26:33.810+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:26:33.891+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:26:33.892+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@2d9721e3, com.capeelectric.model.ClientDetails@41063acd]]
+2022-02-24T19:26:33.893+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:26:33.893+0530 DEBUG Writing [[com.capeelectric.model.Country@4fdde9a1, com.capeelectric.model.Country@82cc56a6, com.capeelectric. (truncated)...]
+2022-02-24T19:26:33.945+0530 DEBUG Completed 200 OK
+2022-02-24T19:26:33.958+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:26:33.967+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:26:33.968+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:26:33.973+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:26:33.974+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@e19ad88, com.capeelectric.model.ClientDetails@78a18e99]]
+2022-02-24T19:26:33.975+0530 DEBUG Completed 200 OK
+2022-02-24T19:26:34.023+0530 DEBUG Completed 200 OK
+2022-02-24T19:26:37.899+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:26:37.907+0530 DEBUG GET "/api/emc/v1/retrieveEmcReport/sd@capeindia.net/2", parameters={}
+2022-02-24T19:26:37.908+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:26:37.966+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:26:37.967+0530 DEBUG Writing [Optional[com.capeelectric.model.EmcFinalReport@5cbdf4d2]]
+2022-02-24T19:26:37.990+0530 DEBUG Completed 200 OK
+2022-02-24T19:26:38.006+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:26:38.006+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:26:38.013+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:26:38.013+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-24T19:26:38.014+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:26:38.014+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:26:38.020+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:26:38.020+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@12d5ad2, com.capeelectric.model.ClientDetails@3fc8acf2]]
+2022-02-24T19:26:38.022+0530 DEBUG Completed 200 OK
+2022-02-24T19:26:38.063+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:26:38.064+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-24T19:26:38.066+0530 DEBUG Completed 200 OK
+2022-02-24T19:34:05.753+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T19:34:05.753+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:34:05.753+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:34:05.808+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T19:34:05.812+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:34:05.916+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-24T19:34:05.916+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:34:05.917+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T19:34:05.917+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:34:05.931+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:34:05.932+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@23256dca, com.capeelectric.model.ClientDetails@4ec4c4b0]]
+2022-02-24T19:34:05.937+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:34:05.937+0530 DEBUG Completed 200 OK
+2022-02-24T19:34:05.938+0530 DEBUG Writing [[com.capeelectric.model.Country@96c21bf0, com.capeelectric.model.Country@c1980462, com.capeelectric. (truncated)...]
+2022-02-24T19:34:05.942+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:34:05.950+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:34:05.951+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:34:05.956+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:34:05.956+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@55990194, com.capeelectric.model.ClientDetails@477de0f7]]
+2022-02-24T19:34:05.961+0530 DEBUG Completed 200 OK
+2022-02-24T19:34:06.002+0530 DEBUG Completed 200 OK
+2022-02-24T19:34:17.651+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:34:17.663+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:34:17.670+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-24T19:34:17.671+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:34:17.678+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:34:17.679+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-24T19:34:17.680+0530 DEBUG Completed 200 OK
+2022-02-24T19:34:28.587+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-24T19:34:28.598+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-24T19:34:28.609+0530 DEBUG POST "/api/emc/v1/saveClientDetails", parameters={}
+2022-02-24T19:34:28.610+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#saveClientDetails(ClientDetails)
+2022-02-24T19:34:28.651+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.ClientDetails@7adc0f6e]
+2022-02-24T19:34:28.812+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:34:28.812+0530 DEBUG Writing [com.capeelectric.model.ClientDetails@7adc0f6e]
+2022-02-24T19:34:28.813+0530 DEBUG Completed 201 CREATED
+2022-02-24T19:34:28.881+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#retrieveClientDetails(String, Integer)
+2022-02-24T19:34:28.899+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#retrieveClientDetails(String, Integer)
+2022-02-24T19:34:28.899+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:34:28.908+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:34:28.907+0530 DEBUG GET "/api/emc/v1/retrieveClientDetails/sd@capeindia.net/3", parameters={}
+2022-02-24T19:34:28.908+0530 DEBUG Mapped to com.capeelectric.controller.ClientDetailsController#retrieveClientDetails(String, Integer)
+2022-02-24T19:34:28.908+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:34:28.913+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:34:28.914+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@42fafd0e, com.capeelectric.model.ClientDetails@188bb08c, com.c (truncated)...]
+2022-02-24T19:34:28.915+0530 DEBUG Completed 200 OK
+2022-02-24T19:34:28.920+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:34:28.921+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@11566bcf]]
+2022-02-24T19:34:28.924+0530 DEBUG Completed 200 OK
+2022-02-24T19:35:03.869+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:35:03.889+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:35:03.896+0530 DEBUG GET "/api/emc/v1/retrieveEmcReport/sd@capeindia.net/3", parameters={}
+2022-02-24T19:35:03.897+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:35:03.917+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:35:03.918+0530 DEBUG Writing [Optional[com.capeelectric.model.EmcFinalReport@385a8c95]]
+2022-02-24T19:35:03.920+0530 DEBUG Completed 200 OK
+2022-02-24T19:35:03.930+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:35:03.938+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-24T19:35:03.939+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:35:03.944+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:35:03.944+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-24T19:35:03.945+0530 DEBUG Completed 200 OK
+2022-02-24T19:35:03.948+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:35:03.955+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:35:03.956+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:35:03.961+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:35:03.961+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@32f87de4, com.capeelectric.model.ClientDetails@69ba5288, com.c (truncated)...]
+2022-02-24T19:35:03.962+0530 DEBUG Completed 200 OK
+2022-02-24T19:54:55.964+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:54:56.047+0530 DEBUG GET "/api/emc/v1/retrieveEmcReport/sd@capeindia.net/3", parameters={}
+2022-02-24T19:54:56.048+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:54:56.074+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:54:56.076+0530 DEBUG Writing [Optional[com.capeelectric.model.EmcFinalReport@36073081]]
+2022-02-24T19:54:56.081+0530 DEBUG Completed 200 OK
+2022-02-24T19:54:56.092+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:54:56.101+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-24T19:54:56.101+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:54:56.101+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:54:56.110+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:54:56.111+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:54:56.117+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:54:56.117+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@6a9706c5, com.capeelectric.model.ClientDetails@178ea7ff, com.c (truncated)...]
+2022-02-24T19:54:56.119+0530 DEBUG Completed 200 OK
+2022-02-24T19:54:56.120+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:54:56.120+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-24T19:54:56.121+0530 DEBUG Completed 200 OK
+2022-02-24T19:55:48.030+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:55:48.041+0530 DEBUG GET "/api/emc/v1/retrieveEmcReport/sd@capeindia.net/3", parameters={}
+2022-02-24T19:55:48.042+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:55:48.049+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:55:48.049+0530 DEBUG Writing [Optional[com.capeelectric.model.EmcFinalReport@506b5116]]
+2022-02-24T19:55:48.051+0530 DEBUG Completed 200 OK
+2022-02-24T19:55:48.076+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:55:48.083+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:55:48.083+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-24T19:55:48.084+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:55:48.089+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:55:48.089+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-24T19:55:48.090+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:55:48.090+0530 DEBUG Completed 200 OK
+2022-02-24T19:55:48.090+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:55:48.096+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:55:48.097+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@6dd44af4, com.capeelectric.model.ClientDetails@10bb08d6, com.c (truncated)...]
+2022-02-24T19:55:48.098+0530 DEBUG Completed 200 OK
+2022-02-24T19:55:57.493+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T19:55:57.494+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:55:57.503+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-24T19:55:57.503+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-24T19:55:57.507+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:55:57.508+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:55:57.512+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:55:57.513+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@3a2c46ee, com.capeelectric.model.ClientDetails@48204b44, com.c (truncated)...]
+2022-02-24T19:55:57.514+0530 DEBUG Completed 200 OK
+2022-02-24T19:55:57.518+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:55:57.519+0530 DEBUG Writing [[com.capeelectric.model.Country@619f1110, com.capeelectric.model.Country@9ccf36b9, com.capeelectric. (truncated)...]
+2022-02-24T19:55:57.523+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:55:57.529+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:55:57.530+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:55:57.533+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:55:57.534+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@5b52dca3, com.capeelectric.model.ClientDetails@1bb95492, com.c (truncated)...]
+2022-02-24T19:55:57.535+0530 DEBUG Completed 200 OK
+2022-02-24T19:55:57.564+0530 DEBUG Completed 200 OK
+2022-02-24T19:56:15.257+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:56:15.265+0530 DEBUG GET "/api/emc/v1/retrieveEmcReport/sd@capeindia.net/3", parameters={}
+2022-02-24T19:56:15.266+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-24T19:56:15.272+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:56:15.272+0530 DEBUG Writing [Optional[com.capeelectric.model.EmcFinalReport@f3e7bee]]
+2022-02-24T19:56:15.274+0530 DEBUG Completed 200 OK
+2022-02-24T19:56:15.290+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:56:15.290+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:56:15.296+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-24T19:56:15.296+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-24T19:56:15.296+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-24T19:56:15.296+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-24T19:56:15.301+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:56:15.301+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@c20a81b, com.capeelectric.model.ClientDetails@40e26726, com.ca (truncated)...]
+2022-02-24T19:56:15.302+0530 DEBUG Completed 200 OK
+2022-02-24T19:56:15.302+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-24T19:56:15.303+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-24T19:56:15.304+0530 DEBUG Completed 200 OK
+2022-02-25T07:29:16.247+0530 DEBUG 21 mappings in 'requestMappingHandlerMapping'
+2022-02-25T07:29:16.509+0530 DEBUG Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-25T07:29:17.704+0530 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-25T07:29:17.780+0530 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-25T07:32:30.210+0530 INFO Initializing Servlet 'dispatcherServlet'
+2022-02-25T07:32:30.211+0530 DEBUG Detected StandardServletMultipartResolver
+2022-02-25T07:32:30.211+0530 DEBUG Detected AcceptHeaderLocaleResolver
+2022-02-25T07:32:30.211+0530 DEBUG Detected FixedThemeResolver
+2022-02-25T07:32:30.214+0530 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@52d0d29c
+2022-02-25T07:32:30.214+0530 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@591ff083
+2022-02-25T07:32:30.214+0530 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-25T07:32:30.214+0530 INFO Completed initialization in 3 ms
+2022-02-25T07:32:30.256+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-25T07:32:30.256+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-25T07:32:30.256+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-25T07:32:30.305+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-25T07:32:30.307+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-25T07:32:30.572+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-25T07:32:30.572+0530 DEBUG GET "/api/emc/v1/fetchCountries", parameters={}
+2022-02-25T07:32:30.576+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchCountries()
+2022-02-25T07:32:30.577+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-25T07:32:30.632+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:32:30.633+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@182ae71b, com.capeelectric.model.ClientDetails@df6126c, com.ca (truncated)...]
+2022-02-25T07:32:30.651+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:32:30.652+0530 DEBUG Writing [[com.capeelectric.model.Country@7e23e234, com.capeelectric.model.Country@88718069, com.capeelectric. (truncated)...]
+2022-02-25T07:32:30.685+0530 DEBUG Completed 200 OK
+2022-02-25T07:32:30.689+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-25T07:32:30.695+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-25T07:32:30.696+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-25T07:32:30.701+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:32:30.701+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@131f9acf, com.capeelectric.model.ClientDetails@889008b, com.ca (truncated)...]
+2022-02-25T07:32:30.703+0530 DEBUG Completed 200 OK
+2022-02-25T07:32:30.761+0530 DEBUG Completed 200 OK
+2022-02-25T07:32:40.493+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-25T07:32:40.508+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-25T07:32:40.515+0530 DEBUG GET "/api/emc/v1/retrieveEmcReport/sd@capeindia.net/2", parameters={}
+2022-02-25T07:32:40.516+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveEmcReports(String, Integer)
+2022-02-25T07:32:40.566+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:32:40.567+0530 DEBUG Writing [Optional[com.capeelectric.model.EmcFinalReport@6a8e4337]]
+2022-02-25T07:32:40.612+0530 DEBUG Completed 200 OK
+2022-02-25T07:32:40.621+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-25T07:32:40.633+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-25T07:32:40.633+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-25T07:32:40.641+0530 DEBUG GET "/api/emc/v1/fetchStatesByCountryCode/IND", parameters={}
+2022-02-25T07:32:40.641+0530 DEBUG GET "/api/emc/v1/retrieveListOfClientDetails/sd@capeindia.net", parameters={}
+2022-02-25T07:32:40.641+0530 DEBUG Mapped to com.capeelectric.controller.CountryDetailsController#fetchStatesByCountryName(String)
+2022-02-25T07:32:40.641+0530 DEBUG Mapped to com.capeelectric.controller.EmcFinalReportController#retrieveListOfClientDetails(String)
+2022-02-25T07:32:40.647+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:32:40.647+0530 DEBUG Writing [[com.capeelectric.model.ClientDetails@7f7c8f41, com.capeelectric.model.ClientDetails@3c1b9d65, com.c (truncated)...]
+2022-02-25T07:32:40.649+0530 DEBUG Completed 200 OK
+2022-02-25T07:32:40.692+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:32:40.693+0530 DEBUG Writing [[com.capeelectric.model.State@9a7991e6, com.capeelectric.model.State@7200c9eb, com.capeelectric.mode (truncated)...]
+2022-02-25T07:32:40.694+0530 DEBUG Completed 200 OK
+2022-02-25T07:34:18.358+0530 DEBUG Mapped to com.capeelectric.controller.FileUploadController#uploadFile(MultipartFile, Integer)
+2022-02-25T07:34:18.376+0530 DEBUG Mapped to com.capeelectric.controller.FileUploadController#uploadFile(MultipartFile, Integer)
+2022-02-25T07:34:18.385+0530 DEBUG POST "/api/emc/v1/upload/1", parameters={}
+2022-02-25T07:34:18.386+0530 DEBUG Mapped to com.capeelectric.controller.FileUploadController#uploadFile(MultipartFile, Integer)
+2022-02-25T07:34:18.390+0530 DEBUG Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.capeelectric.controller.FileUploadController.uploadFile(org.springframework.web.multipart.MultipartFile,java.lang.Integer) throws java.io.IOException: Current request is not a multipart request
+2022-02-25T07:34:18.393+0530 DEBUG Failed to complete request: org.springframework.web.multipart.MultipartException: Current request is not a multipart request
+2022-02-25T07:34:18.404+0530 DEBUG "ERROR" dispatch for POST "/error", parameters={}
+2022-02-25T07:34:18.407+0530 DEBUG Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-25T07:34:18.418+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:34:18.419+0530 DEBUG Writing [{timestamp=Fri Feb 25 07:34:18 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-02-25T07:34:18.430+0530 DEBUG Exiting from "ERROR" dispatch, status 500
+2022-02-25T07:34:20.445+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#updatePowerEarthingData(PowerEarthingData)
+2022-02-25T07:34:20.463+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#updatePowerEarthingData(PowerEarthingData)
+2022-02-25T07:34:20.476+0530 DEBUG PUT "/api/emc/v1/updatePowerEarthingData", parameters={}
+2022-02-25T07:34:20.477+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#updatePowerEarthingData(PowerEarthingData)
+2022-02-25T07:34:20.502+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.PowerEarthingData@138f5907]
+2022-02-25T07:34:20.618+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:34:20.618+0530 DEBUG Writing ["PowerEarthingData Updated Successfully"]
+2022-02-25T07:34:20.619+0530 DEBUG Completed 200 OK
+2022-02-25T07:34:20.633+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-25T07:34:20.646+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-25T07:34:20.655+0530 DEBUG GET "/api/emc/v1/retrievePowerEarthingData/sd@capeindia.net/2", parameters={}
+2022-02-25T07:34:20.655+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-25T07:34:20.663+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:34:20.664+0530 DEBUG Writing [[com.capeelectric.model.PowerEarthingData@49c0af29]]
+2022-02-25T07:34:20.669+0530 DEBUG Completed 200 OK
+2022-02-25T07:37:06.982+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#updatePowerEarthingData(PowerEarthingData)
+2022-02-25T07:37:06.991+0530 DEBUG PUT "/api/emc/v1/updatePowerEarthingData", parameters={}
+2022-02-25T07:37:06.991+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#updatePowerEarthingData(PowerEarthingData)
+2022-02-25T07:37:06.993+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.PowerEarthingData@b001a98]
+2022-02-25T07:37:07.037+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:37:07.037+0530 DEBUG Writing ["PowerEarthingData Updated Successfully"]
+2022-02-25T07:37:07.038+0530 DEBUG Completed 200 OK
+2022-02-25T07:37:07.050+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-25T07:37:07.058+0530 DEBUG GET "/api/emc/v1/retrievePowerEarthingData/sd@capeindia.net/2", parameters={}
+2022-02-25T07:37:07.059+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-25T07:37:07.069+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:37:07.069+0530 DEBUG Writing [[com.capeelectric.model.PowerEarthingData@30bea837]]
+2022-02-25T07:37:07.076+0530 DEBUG Completed 200 OK
+2022-02-25T07:37:26.082+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#updatePowerEarthingData(PowerEarthingData)
+2022-02-25T07:37:26.089+0530 DEBUG PUT "/api/emc/v1/updatePowerEarthingData", parameters={}
+2022-02-25T07:37:26.090+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#updatePowerEarthingData(PowerEarthingData)
+2022-02-25T07:37:26.091+0530 DEBUG Read "application/json;charset=UTF-8" to [com.capeelectric.model.PowerEarthingData@40311f00]
+2022-02-25T07:37:26.117+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:37:26.118+0530 DEBUG Writing ["PowerEarthingData Updated Successfully"]
+2022-02-25T07:37:26.120+0530 DEBUG Completed 200 OK
+2022-02-25T07:37:26.142+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-25T07:37:26.153+0530 DEBUG GET "/api/emc/v1/retrievePowerEarthingData/sd@capeindia.net/2", parameters={}
+2022-02-25T07:37:26.154+0530 DEBUG Mapped to com.capeelectric.controller.PowerEarthingDataController#retrievePowerEarthingData(String, Integer)
+2022-02-25T07:37:26.160+0530 DEBUG Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json, application/cbor]
+2022-02-25T07:37:26.160+0530 DEBUG Writing [[com.capeelectric.model.PowerEarthingData@540c9916]]
+2022-02-25T07:37:26.170+0530 DEBUG Completed 200 OK

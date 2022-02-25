@@ -1,0 +1,2092 @@
+2022-02-11T19:27:17.495+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 20128 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-11T19:27:17.495+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-11T19:27:17.495+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-11T19:27:18.345+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-11T19:27:18.722+0530 INFO Started EmcAssesmentApplication in 1.347 seconds (JVM running for 48.284)
+2022-02-11T19:28:02.473+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 17560 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-11T19:28:02.476+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-11T19:28:02.476+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-11T19:28:07.134+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-11T19:28:08.677+0530 INFO Started EmcAssesmentApplication in 6.552 seconds (JVM running for 7.092)
+2022-02-11T19:28:24.261+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 1696 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-11T19:28:24.263+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-11T19:28:24.263+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-11T19:28:29.181+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-11T19:28:30.661+0530 INFO Started EmcAssesmentApplication in 6.741 seconds (JVM running for 7.277)
+2022-02-11T19:29:18.414+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:29:18.420+0530 INFO ClientDetails fetching process started
+2022-02-11T19:29:18.525+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:29:18.526+0530 INFO ClientDetails fetching process started
+2022-02-11T19:40:04.663+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 16660 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-11T19:40:04.669+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-11T19:40:04.669+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-11T19:40:17.992+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-11T19:40:21.514+0530 INFO Started EmcAssesmentApplication in 17.388 seconds (JVM running for 18.17)
+2022-02-11T19:40:45.190+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:40:45.192+0530 INFO ClientDetails fetching process started
+2022-02-11T19:40:45.225+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:40:45.226+0530 INFO ClientDetails fetching process started
+2022-02-11T19:41:38.608+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:41:38.608+0530 INFO ClientDetails fetching process started
+2022-02-11T19:42:09.313+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 16660 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-11T19:42:09.313+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-11T19:42:09.313+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-11T19:42:12.219+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-11T19:42:12.680+0530 INFO Started EmcAssesmentApplication in 3.416 seconds (JVM running for 129.335)
+2022-02-11T19:42:23.233+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:42:23.234+0530 INFO ClientDetails fetching process started
+2022-02-11T19:42:23.263+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:42:23.264+0530 INFO ClientDetails fetching process started
+2022-02-11T19:43:09.084+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-11T19:43:09.216+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:43:09.216+0530 INFO ClientDetails fetching process started
+2022-02-11T19:46:09.725+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 16660 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-11T19:46:09.725+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-11T19:46:09.726+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-11T19:46:10.888+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-11T19:46:11.221+0530 INFO Started EmcAssesmentApplication in 1.574 seconds (JVM running for 367.876)
+2022-02-11T19:48:11.939+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-11T19:48:12.010+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:48:12.010+0530 INFO ClientDetails fetching process started
+2022-02-11T19:48:45.789+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-11T19:48:45.907+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-11T19:48:45.907+0530 INFO ClientDetails fetching process started
+2022-02-14T17:12:22.146+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 7860 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-14T17:12:22.149+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-14T17:12:22.149+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-14T17:12:31.232+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-14T17:12:33.415+0530 INFO Started EmcAssesmentApplication in 11.803 seconds (JVM running for 12.699)
+2022-02-14T17:16:01.223+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 7860 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-14T17:16:01.228+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-14T17:16:01.229+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-14T17:16:03.121+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-14T17:16:03.611+0530 INFO Started EmcAssesmentApplication in 2.694 seconds (JVM running for 222.895)
+2022-02-14T17:16:05.396+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 7860 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-14T17:16:05.397+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-14T17:16:05.397+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-14T17:16:06.131+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-14T17:16:06.497+0530 INFO Started EmcAssesmentApplication in 1.144 seconds (JVM running for 225.781)
+2022-02-14T17:16:14.132+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T17:16:14.135+0530 INFO ClientDetails fetching process started
+2022-02-14T17:16:14.204+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T17:16:14.204+0530 INFO ClientDetails fetching process started
+2022-02-14T17:27:03.668+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-14T17:27:03.837+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T17:27:03.837+0530 INFO ClientDetails fetching process started
+2022-02-14T18:00:33.971+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T18:00:33.974+0530 INFO ClientDetails fetching process started
+2022-02-14T18:00:34.058+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T18:00:34.058+0530 INFO ClientDetails fetching process started
+2022-02-14T18:01:03.942+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-14T18:01:04.177+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T18:01:04.178+0530 INFO ClientDetails fetching process started
+2022-02-14T18:30:16.470+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 15868 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-14T18:30:16.472+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-14T18:30:16.473+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-14T18:30:21.928+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-14T18:30:23.461+0530 INFO Started EmcAssesmentApplication in 7.327 seconds (JVM running for 7.782)
+2022-02-14T18:31:08.374+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T18:31:08.378+0530 INFO ClientDetails fetching process started
+2022-02-14T18:31:08.445+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T18:31:08.446+0530 INFO ClientDetails fetching process started
+2022-02-14T18:31:24.386+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-14T18:31:24.473+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T18:31:24.474+0530 INFO ClientDetails fetching process started
+2022-02-14T18:31:24.489+0530 INFO called retrieveClientDetails function UserName: sd@capeindia.net, emcId : 1
+2022-02-14T18:53:23.842+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T18:53:23.843+0530 INFO ClientDetails fetching process started
+2022-02-14T18:53:23.888+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T18:53:23.889+0530 INFO ClientDetails fetching process started
+2022-02-14T18:53:26.421+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: sd@capeindia.net,emcId : 1
+2022-02-14T18:53:26.425+0530 DEBUG fetching process started for ClientDetails
+2022-02-14T18:53:26.438+0530 DEBUG ClientDetails fetching ended
+2022-02-14T18:53:26.439+0530 DEBUG fetching process started for FacilityData
+2022-02-14T18:53:26.464+0530 DEBUG FacilityData fetching ended
+2022-02-14T18:53:26.500+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T18:53:26.500+0530 INFO ClientDetails fetching process started
+2022-02-14T19:02:42.629+0530 DEBUG started saveFacilityData function userName: sd@capeindia.net,emcId : 1
+2022-02-14T19:02:42.795+0530 DEBUG ended saveFacilityData function
+2022-02-14T19:02:42.836+0530 INFO called retrieveFacilityData function UserName: sd@capeindia.net, emcId : 1
+2022-02-14T19:14:56.844+0530 DEBUG started savePowerEarthingData function userName: sd@capeindia.net,emcId : 1
+2022-02-14T19:14:56.930+0530 DEBUG ended savePowerEarthingData function
+2022-02-14T19:14:56.974+0530 INFO called retrieveFacilityData function UserName: sd@capeindia.net, emcId : 1
+2022-02-14T19:16:18.051+0530 DEBUG started saveElectromagneticCompatability function userName: sd@capeindia.net,emcId : 1
+2022-02-14T19:16:18.127+0530 DEBUG Electro Magnetic Compatability  Details Successfully Saved in DB
+2022-02-14T19:16:18.163+0530 DEBUG AllStepCompleted information saved ClientDetails table in DBsd@capeindia.net
+2022-02-14T19:16:18.163+0530 DEBUG ended savePowerEarthingData function
+2022-02-14T19:16:18.206+0530 INFO called retrieveFacilityData function UserName: sd@capeindia.net, emcId : 1
+2022-02-14T19:16:18.231+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T19:16:18.231+0530 INFO ClientDetails fetching process started
+2022-02-14T19:16:18.249+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T19:16:18.249+0530 INFO ClientDetails fetching process started
+2022-02-14T19:24:48.111+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 15868 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-14T19:24:48.112+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-14T19:24:48.112+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-14T19:24:51.496+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-14T19:24:52.192+0530 INFO Started EmcAssesmentApplication in 4.175 seconds (JVM running for 3276.515)
+2022-02-14T19:26:54.891+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T19:26:54.892+0530 INFO ClientDetails fetching process started
+2022-02-14T19:26:54.946+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-14T19:26:54.947+0530 INFO ClientDetails fetching process started
+2022-02-14T19:35:07.125+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 15868 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-14T19:35:07.125+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-14T19:35:07.125+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-14T19:35:08.810+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-14T19:35:09.213+0530 INFO Started EmcAssesmentApplication in 2.144 seconds (JVM running for 3893.535)
+2022-02-21T17:16:00.823+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 5524 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-21T17:16:00.826+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-21T17:16:00.826+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-21T17:16:07.025+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-21T17:16:08.971+0530 INFO Started EmcAssesmentApplication in 8.546 seconds (JVM running for 9.105)
+2022-02-22T10:37:05.478+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 18084 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-22T10:37:05.482+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-22T10:37:05.482+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-22T10:37:14.493+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-22T10:37:17.317+0530 INFO Started EmcAssesmentApplication in 12.447 seconds (JVM running for 20.979)
+2022-02-22T13:57:50.176+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-22T13:57:50.182+0530 INFO ClientDetails fetching process started
+2022-02-22T13:57:50.367+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-22T13:57:50.368+0530 INFO ClientDetails fetching process started
+2022-02-22T13:58:18.301+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-22T13:58:18.306+0530 ERROR Given UserName Already Exists
+2022-02-22T13:58:18.346+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-22T13:58:18.347+0530 INFO ClientDetails fetching process started
+2022-02-22T13:58:44.041+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-22T13:58:44.044+0530 ERROR Given UserName Already Exists
+2022-02-22T13:58:44.087+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-22T13:58:44.088+0530 INFO ClientDetails fetching process started
+2022-02-22T14:27:03.229+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-22T14:27:03.233+0530 ERROR Given UserName Already Exists
+2022-02-22T14:27:03.266+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-22T14:27:03.266+0530 INFO ClientDetails fetching process started
+2022-02-22T14:57:41.275+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-22T14:57:41.291+0530 ERROR Given UserName Already Exists
+2022-02-22T14:57:41.355+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-22T14:57:41.356+0530 INFO ClientDetails fetching process started
+2022-02-22T15:01:52.768+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-22T15:01:52.768+0530 INFO ClientDetails fetching process started
+2022-02-22T15:01:52.858+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-22T15:01:52.858+0530 INFO ClientDetails fetching process started
+2022-02-22T15:22:47.166+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 18084 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-22T15:22:47.167+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-22T15:22:47.167+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-22T15:22:49.765+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-22T15:22:50.373+0530 INFO Started EmcAssesmentApplication in 3.35 seconds (JVM running for 17154.036)
+2022-02-23T12:33:50.848+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 5792 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T12:33:50.851+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T12:33:50.851+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-23T12:33:59.006+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-23T12:34:00.860+0530 INFO Started EmcAssesmentApplication in 10.434 seconds (JVM running for 11.066)
+2022-02-23T17:30:19.523+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 19312 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T17:30:19.526+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T17:30:19.526+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-23T17:30:26.435+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-23T17:30:28.944+0530 INFO Started EmcAssesmentApplication in 9.898 seconds (JVM running for 10.666)
+2022-02-23T19:06:31.521+0530 INFO testRetrieveClientDetails Function Started
+2022-02-23T19:06:31.550+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:06:31.590+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-23T19:06:31.616+0530 INFO testUpdateClientDetails Function Started
+2022-02-23T19:06:31.616+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-23T19:06:31.617+0530 INFO testUpdateClientDetails Function Ended
+2022-02-23T19:06:31.624+0530 INFO testSaveClientDetails Function Started
+2022-02-23T19:06:31.624+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-23T19:06:31.625+0530 INFO testSaveClientDetails Function Ended
+2022-02-23T19:06:31.896+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-23T19:06:31.897+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:06:31.897+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-23T19:06:31.905+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-23T19:06:31.905+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:31.905+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-23T19:06:31.912+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-23T19:06:31.912+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:31.913+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T19:06:31.913+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-23T19:06:31.981+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-23T19:06:31.981+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-23T19:06:31.982+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-23T19:06:31.989+0530 INFO testRetrieveEmcReports Function Started
+2022-02-23T19:06:31.990+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:31.991+0530 INFO testRetrieveEmcReports Function ended
+2022-02-23T19:06:32.081+0530 INFO testAddFacilityData Function Started
+2022-02-23T19:06:32.081+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:32.082+0530 DEBUG ended saveFacilityData function
+2022-02-23T19:06:32.090+0530 INFO testRetrieveFacilityData Function Started
+2022-02-23T19:06:32.091+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:06:32.092+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-23T19:06:32.101+0530 INFO testUpdateFacilityData Function Started
+2022-02-23T19:06:32.101+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-23T19:06:32.102+0530 INFO testUpdateFacilityData Function Ended
+2022-02-23T19:06:32.192+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-23T19:06:32.193+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:06:32.194+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-23T19:06:32.201+0530 INFO testSavePowerEarthingData Function Started
+2022-02-23T19:06:32.202+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:32.203+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T19:06:32.203+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-23T19:06:32.210+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-23T19:06:32.211+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:32.211+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-23T19:06:32.790+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 19140 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T19:06:32.791+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T19:06:32.794+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-23T19:06:57.347+0530 INFO testRetrieveClientDetails Function Started
+2022-02-23T19:06:57.368+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:06:57.397+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-23T19:06:57.418+0530 INFO testUpdateClientDetails Function Started
+2022-02-23T19:06:57.418+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-23T19:06:57.419+0530 INFO testUpdateClientDetails Function Ended
+2022-02-23T19:06:57.424+0530 INFO testSaveClientDetails Function Started
+2022-02-23T19:06:57.425+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-23T19:06:57.425+0530 INFO testSaveClientDetails Function Ended
+2022-02-23T19:06:57.687+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-23T19:06:57.687+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:06:57.688+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-23T19:06:57.694+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-23T19:06:57.694+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:57.694+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-23T19:06:57.701+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-23T19:06:57.701+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:57.701+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T19:06:57.701+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-23T19:06:57.762+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-23T19:06:57.763+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-23T19:06:57.764+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-23T19:06:57.771+0530 INFO testRetrieveEmcReports Function Started
+2022-02-23T19:06:57.773+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:57.774+0530 INFO testRetrieveEmcReports Function ended
+2022-02-23T19:06:57.864+0530 INFO testAddFacilityData Function Started
+2022-02-23T19:06:57.865+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:57.866+0530 DEBUG ended saveFacilityData function
+2022-02-23T19:06:57.874+0530 INFO testRetrieveFacilityData Function Started
+2022-02-23T19:06:57.875+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:06:57.875+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-23T19:06:57.884+0530 INFO testUpdateFacilityData Function Started
+2022-02-23T19:06:57.885+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-23T19:06:57.885+0530 INFO testUpdateFacilityData Function Ended
+2022-02-23T19:06:57.953+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-23T19:06:57.954+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:06:57.954+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-23T19:06:57.960+0530 INFO testSavePowerEarthingData Function Started
+2022-02-23T19:06:57.960+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:57.960+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T19:06:57.961+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-23T19:06:57.967+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-23T19:06:57.967+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T19:06:57.967+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-23T19:06:58.472+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 22492 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T19:06:58.473+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T19:06:58.473+0530 INFO The following profiles are active: dev
+2022-02-23T19:07:07.092+0530 INFO Started EmcAssesmentApplicationTests in 8.86 seconds (JVM running for 12.465)
+2022-02-23T19:07:07.167+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-23T19:07:07.168+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.178+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.179+0530 ERROR Given Emc Id is Invalid
+2022-02-23T19:07:07.184+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.264+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-23T19:07:07.265+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.271+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.272+0530 ERROR Given Emc Id is Invalid
+2022-02-23T19:07:07.280+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-23T19:07:07.280+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.281+0530 ERROR Client Details Not Filled
+2022-02-23T19:07:07.299+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-23T19:07:07.300+0530 INFO ClientDetails fetching process started
+2022-02-23T19:07:07.301+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-23T19:07:07.308+0530 INFO testRetrieveEmcReports method started
+2022-02-23T19:07:07.309+0530 DEBUG fetching process started for ClientDetails
+2022-02-23T19:07:07.309+0530 DEBUG ClientDetails fetching ended
+2022-02-23T19:07:07.309+0530 DEBUG fetching process started for FacilityData
+2022-02-23T19:07:07.310+0530 DEBUG FacilityData fetching ended
+2022-02-23T19:07:07.310+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-23T19:07:07.310+0530 DEBUG PowerEarthingData fetching ended
+2022-02-23T19:07:07.310+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-23T19:07:07.311+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-23T19:07:07.312+0530 DEBUG Invalid Input
+2022-02-23T19:07:07.313+0530 INFO testRetrieveEmcReports method ended
+2022-02-23T19:07:07.332+0530 ERROR Given FacilityData Already Exists
+2022-02-23T19:07:07.333+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.340+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-23T19:07:07.341+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.347+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.347+0530 ERROR Given Emc Id is Invalid
+2022-02-23T19:07:07.368+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-23T19:07:07.368+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.377+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-23T19:07:07.377+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.385+0530 ERROR Invalid Inputs
+2022-02-23T19:07:07.386+0530 ERROR Given Emc is Invalid
+2022-02-23T19:18:20.516+0530 INFO testRetrieveClientDetails Function Started
+2022-02-23T19:18:20.542+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:18:20.588+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-23T19:18:20.623+0530 INFO testUpdateClientDetails Function Started
+2022-02-23T19:18:20.624+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-23T19:18:20.624+0530 INFO testUpdateClientDetails Function Ended
+2022-02-23T19:18:20.634+0530 INFO testSaveClientDetails Function Started
+2022-02-23T19:18:20.634+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-23T19:18:20.635+0530 INFO testSaveClientDetails Function Ended
+2022-02-23T19:18:20.913+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-23T19:18:20.914+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:18:20.914+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-23T19:18:20.922+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-23T19:18:20.922+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T19:18:20.923+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-23T19:18:20.930+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-23T19:18:20.931+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:18:20.931+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T19:18:20.931+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-23T19:18:20.988+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-23T19:18:20.988+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-23T19:18:20.989+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-23T19:18:20.995+0530 INFO testRetrieveEmcReports Function Started
+2022-02-23T19:18:20.997+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:18:21.000+0530 INFO testRetrieveEmcReports Function ended
+2022-02-23T19:18:21.071+0530 INFO testAddFacilityData Function Started
+2022-02-23T19:18:21.071+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:18:21.072+0530 DEBUG ended saveFacilityData function
+2022-02-23T19:18:21.078+0530 INFO testRetrieveFacilityData Function Started
+2022-02-23T19:18:21.079+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:18:21.079+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-23T19:18:21.087+0530 INFO testUpdateFacilityData Function Started
+2022-02-23T19:18:21.087+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-23T19:18:21.088+0530 INFO testUpdateFacilityData Function Ended
+2022-02-23T19:18:21.148+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-23T19:18:21.149+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:18:21.150+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-23T19:18:21.154+0530 INFO testSavePowerEarthingData Function Started
+2022-02-23T19:18:21.155+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:18:21.156+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T19:18:21.156+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-23T19:18:21.160+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-23T19:18:21.160+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T19:18:21.160+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-23T19:18:21.677+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 21200 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T19:18:21.678+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T19:18:21.678+0530 INFO The following profiles are active: dev
+2022-02-23T19:18:29.598+0530 INFO Started EmcAssesmentApplicationTests in 8.155 seconds (JVM running for 11.984)
+2022-02-23T19:18:29.687+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-23T19:18:29.687+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.702+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.703+0530 ERROR Given Emc Id is Invalid
+2022-02-23T19:18:29.717+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.838+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-23T19:18:29.839+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.847+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.848+0530 ERROR Given Emc Id is Invalid
+2022-02-23T19:18:29.854+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-23T19:18:29.854+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.855+0530 ERROR Client Details Not Filled
+2022-02-23T19:18:29.876+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-23T19:18:29.877+0530 INFO ClientDetails fetching process started
+2022-02-23T19:18:29.878+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-23T19:18:29.883+0530 INFO testRetrieveEmcReports method started
+2022-02-23T19:18:29.884+0530 DEBUG fetching process started for ClientDetails
+2022-02-23T19:18:29.885+0530 DEBUG ClientDetails fetching ended
+2022-02-23T19:18:29.885+0530 DEBUG fetching process started for FacilityData
+2022-02-23T19:18:29.885+0530 DEBUG FacilityData fetching ended
+2022-02-23T19:18:29.885+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-23T19:18:29.886+0530 DEBUG PowerEarthingData fetching ended
+2022-02-23T19:18:29.886+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-23T19:18:29.886+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-23T19:18:29.887+0530 DEBUG Invalid Input
+2022-02-23T19:18:29.887+0530 INFO testRetrieveEmcReports method ended
+2022-02-23T19:18:29.903+0530 ERROR Given FacilityData Already Exists
+2022-02-23T19:18:29.904+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.911+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-23T19:18:29.911+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.916+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.917+0530 ERROR Given Emc Id is Invalid
+2022-02-23T19:18:29.935+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-23T19:18:29.935+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.943+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-23T19:18:29.943+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.951+0530 ERROR Invalid Inputs
+2022-02-23T19:18:29.951+0530 ERROR Given Emc is Invalid
+2022-02-23T19:42:12.384+0530 INFO testRetrieveClientDetails Function Started
+2022-02-23T19:42:12.408+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:42:12.451+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-23T19:42:12.474+0530 INFO testUpdateClientDetails Function Started
+2022-02-23T19:42:12.474+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-23T19:42:12.475+0530 INFO testUpdateClientDetails Function Ended
+2022-02-23T19:42:12.480+0530 INFO testSaveClientDetails Function Started
+2022-02-23T19:42:12.480+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-23T19:42:12.481+0530 INFO testSaveClientDetails Function Ended
+2022-02-23T19:42:12.741+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-23T19:42:12.742+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:42:12.742+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-23T19:42:12.748+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-23T19:42:12.749+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T19:42:12.749+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-23T19:42:12.756+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-23T19:42:12.757+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:42:12.757+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T19:42:12.757+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-23T19:42:12.810+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-23T19:42:12.811+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-23T19:42:12.811+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-23T19:42:12.817+0530 INFO testRetrieveEmcReports Function Started
+2022-02-23T19:42:12.818+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:42:12.819+0530 INFO testRetrieveEmcReports Function ended
+2022-02-23T19:42:12.890+0530 INFO testAddFacilityData Function Started
+2022-02-23T19:42:12.890+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:42:12.891+0530 DEBUG ended saveFacilityData function
+2022-02-23T19:42:12.897+0530 INFO testRetrieveFacilityData Function Started
+2022-02-23T19:42:12.898+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:42:12.898+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-23T19:42:12.904+0530 INFO testUpdateFacilityData Function Started
+2022-02-23T19:42:12.904+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-23T19:42:12.904+0530 INFO testUpdateFacilityData Function Ended
+2022-02-23T19:42:12.972+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-23T19:42:12.973+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T19:42:12.973+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-23T19:42:12.979+0530 INFO testSavePowerEarthingData Function Started
+2022-02-23T19:42:12.979+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T19:42:12.979+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T19:42:12.979+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-23T19:42:12.984+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-23T19:42:12.984+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T19:42:12.985+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-23T19:42:13.511+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 12120 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T19:42:13.511+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T19:42:13.511+0530 INFO The following profiles are active: dev
+2022-02-23T19:42:21.849+0530 INFO Started EmcAssesmentApplicationTests in 8.584 seconds (JVM running for 12.42)
+2022-02-23T19:42:21.908+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-23T19:42:21.909+0530 ERROR Invalid Inputs
+2022-02-23T19:42:21.920+0530 ERROR Invalid Inputs
+2022-02-23T19:42:21.921+0530 ERROR Given Emc Id is Invalid
+2022-02-23T19:42:21.928+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.029+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-23T19:42:22.030+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.038+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.040+0530 ERROR Given Emc Id is Invalid
+2022-02-23T19:42:22.049+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-23T19:42:22.050+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.051+0530 ERROR Client Details Not Filled
+2022-02-23T19:42:22.073+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-23T19:42:22.074+0530 INFO ClientDetails fetching process started
+2022-02-23T19:42:22.075+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-23T19:42:22.081+0530 INFO testRetrieveEmcReports method started
+2022-02-23T19:42:22.082+0530 DEBUG fetching process started for ClientDetails
+2022-02-23T19:42:22.083+0530 DEBUG ClientDetails fetching ended
+2022-02-23T19:42:22.083+0530 DEBUG fetching process started for FacilityData
+2022-02-23T19:42:22.083+0530 DEBUG FacilityData fetching ended
+2022-02-23T19:42:22.084+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-23T19:42:22.084+0530 DEBUG PowerEarthingData fetching ended
+2022-02-23T19:42:22.084+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-23T19:42:22.084+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-23T19:42:22.086+0530 DEBUG Invalid Input
+2022-02-23T19:42:22.086+0530 INFO testRetrieveEmcReports method ended
+2022-02-23T19:42:22.108+0530 ERROR Given FacilityData Already Exists
+2022-02-23T19:42:22.109+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.116+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-23T19:42:22.117+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.124+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.125+0530 ERROR Given Emc Id is Invalid
+2022-02-23T19:42:22.144+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-23T19:42:22.144+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.153+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-23T19:42:22.153+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.160+0530 ERROR Invalid Inputs
+2022-02-23T19:42:22.160+0530 ERROR Given Emc is Invalid
+2022-02-23T20:19:31.955+0530 INFO testRetrieveClientDetails Function Started
+2022-02-23T20:19:31.993+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:19:32.042+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-23T20:19:32.067+0530 INFO testUpdateClientDetails Function Started
+2022-02-23T20:19:32.067+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-23T20:19:32.068+0530 INFO testUpdateClientDetails Function Ended
+2022-02-23T20:19:32.075+0530 INFO testSaveClientDetails Function Started
+2022-02-23T20:19:32.075+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-23T20:19:32.075+0530 INFO testSaveClientDetails Function Ended
+2022-02-23T20:19:32.472+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-23T20:19:32.473+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:19:32.473+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-23T20:19:32.482+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-23T20:19:32.482+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:19:32.482+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-23T20:19:32.489+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-23T20:19:32.489+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:19:32.490+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:19:32.491+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-23T20:19:32.554+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-23T20:19:32.555+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-23T20:19:32.555+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-23T20:19:32.562+0530 INFO testRetrieveEmcReports Function Started
+2022-02-23T20:19:32.564+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:19:32.565+0530 INFO testRetrieveEmcReports Function ended
+2022-02-23T20:19:32.649+0530 INFO testAddFacilityData Function Started
+2022-02-23T20:19:32.650+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:19:32.650+0530 DEBUG ended saveFacilityData function
+2022-02-23T20:19:32.661+0530 INFO testRetrieveFacilityData Function Started
+2022-02-23T20:19:32.662+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:19:32.663+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-23T20:19:32.673+0530 INFO testUpdateFacilityData Function Started
+2022-02-23T20:19:32.674+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-23T20:19:32.675+0530 INFO testUpdateFacilityData Function Ended
+2022-02-23T20:19:32.768+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-23T20:19:32.769+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:19:32.769+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-23T20:19:32.778+0530 INFO testSavePowerEarthingData Function Started
+2022-02-23T20:19:32.779+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:19:32.779+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:19:32.779+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-23T20:19:32.787+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-23T20:19:32.788+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:19:32.788+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-23T20:19:33.653+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 15812 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T20:19:33.654+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T20:19:33.655+0530 INFO The following profiles are active: dev
+2022-02-23T20:19:46.465+0530 INFO Started EmcAssesmentApplicationTests in 13.203 seconds (JVM running for 17.991)
+2022-02-23T20:19:46.560+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-23T20:19:46.561+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.577+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.578+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:19:46.586+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.695+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-23T20:19:46.696+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.707+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.708+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:19:46.720+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-23T20:19:46.720+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.721+0530 ERROR Client Details Not Filled
+2022-02-23T20:19:46.751+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-23T20:19:46.752+0530 INFO ClientDetails fetching process started
+2022-02-23T20:19:46.753+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-23T20:19:46.768+0530 INFO testRetrieveEmcReports method started
+2022-02-23T20:19:46.769+0530 DEBUG fetching process started for ClientDetails
+2022-02-23T20:19:46.770+0530 DEBUG ClientDetails fetching ended
+2022-02-23T20:19:46.770+0530 DEBUG fetching process started for FacilityData
+2022-02-23T20:19:46.770+0530 DEBUG FacilityData fetching ended
+2022-02-23T20:19:46.771+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-23T20:19:46.771+0530 DEBUG PowerEarthingData fetching ended
+2022-02-23T20:19:46.771+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-23T20:19:46.772+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-23T20:19:46.773+0530 DEBUG Invalid Input
+2022-02-23T20:19:46.774+0530 INFO testRetrieveEmcReports method ended
+2022-02-23T20:19:46.799+0530 ERROR Given FacilityData Already Exists
+2022-02-23T20:19:46.800+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.807+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-23T20:19:46.808+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.816+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.817+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:19:46.839+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-23T20:19:46.840+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.850+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-23T20:19:46.850+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.862+0530 ERROR Invalid Inputs
+2022-02-23T20:19:46.865+0530 ERROR Given Emc is Invalid
+2022-02-23T20:21:43.252+0530 INFO testRetrieveClientDetails Function Started
+2022-02-23T20:21:43.289+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:21:43.351+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-23T20:21:43.390+0530 INFO testUpdateClientDetails Function Started
+2022-02-23T20:21:43.390+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-23T20:21:43.391+0530 INFO testUpdateClientDetails Function Ended
+2022-02-23T20:21:43.401+0530 INFO testSaveClientDetails Function Started
+2022-02-23T20:21:43.401+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-23T20:21:43.402+0530 INFO testSaveClientDetails Function Ended
+2022-02-23T20:21:43.865+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-23T20:21:43.867+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:21:43.867+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-23T20:21:43.877+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-23T20:21:43.878+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:21:43.878+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-23T20:21:43.888+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-23T20:21:43.889+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:21:43.889+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:21:43.890+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-23T20:21:44.063+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-23T20:21:44.064+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-23T20:21:44.069+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-23T20:21:44.085+0530 INFO testRetrieveEmcReports Function Started
+2022-02-23T20:21:44.088+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:21:44.089+0530 INFO testRetrieveEmcReports Function ended
+2022-02-23T20:21:44.269+0530 INFO testAddFacilityData Function Started
+2022-02-23T20:21:44.269+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:21:44.272+0530 DEBUG ended saveFacilityData function
+2022-02-23T20:21:44.284+0530 INFO testRetrieveFacilityData Function Started
+2022-02-23T20:21:44.286+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:21:44.286+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-23T20:21:44.296+0530 INFO testUpdateFacilityData Function Started
+2022-02-23T20:21:44.297+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-23T20:21:44.298+0530 INFO testUpdateFacilityData Function Ended
+2022-02-23T20:21:44.426+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-23T20:21:44.427+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:21:44.429+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-23T20:21:44.446+0530 INFO testSavePowerEarthingData Function Started
+2022-02-23T20:21:44.447+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:21:44.447+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:21:44.448+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-23T20:21:44.457+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-23T20:21:44.457+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:21:44.458+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-23T20:21:45.645+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 19336 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T20:21:45.646+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T20:21:45.646+0530 INFO The following profiles are active: dev
+2022-02-23T20:21:58.795+0530 INFO Started EmcAssesmentApplicationTests in 13.597 seconds (JVM running for 20.08)
+2022-02-23T20:21:58.888+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-23T20:21:58.889+0530 ERROR Invalid Inputs
+2022-02-23T20:21:58.905+0530 ERROR Invalid Inputs
+2022-02-23T20:21:58.906+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:21:58.917+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.143+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-23T20:21:59.145+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.156+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.158+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:21:59.182+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-23T20:21:59.183+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.189+0530 ERROR Client Details Not Filled
+2022-02-23T20:21:59.223+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-23T20:21:59.224+0530 INFO ClientDetails fetching process started
+2022-02-23T20:21:59.226+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-23T20:21:59.238+0530 INFO testRetrieveEmcReports method started
+2022-02-23T20:21:59.239+0530 DEBUG fetching process started for ClientDetails
+2022-02-23T20:21:59.240+0530 DEBUG ClientDetails fetching ended
+2022-02-23T20:21:59.240+0530 DEBUG fetching process started for FacilityData
+2022-02-23T20:21:59.241+0530 DEBUG FacilityData fetching ended
+2022-02-23T20:21:59.241+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-23T20:21:59.242+0530 DEBUG PowerEarthingData fetching ended
+2022-02-23T20:21:59.242+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-23T20:21:59.242+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-23T20:21:59.244+0530 DEBUG Invalid Input
+2022-02-23T20:21:59.245+0530 INFO testRetrieveEmcReports method ended
+2022-02-23T20:21:59.275+0530 ERROR Given FacilityData Already Exists
+2022-02-23T20:21:59.276+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.287+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-23T20:21:59.287+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.295+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.296+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:21:59.323+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-23T20:21:59.323+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.335+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-23T20:21:59.336+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.350+0530 ERROR Invalid Inputs
+2022-02-23T20:21:59.351+0530 ERROR Given Emc is Invalid
+2022-02-23T20:24:33.909+0530 INFO testRetrieveClientDetails Function Started
+2022-02-23T20:24:33.942+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:24:33.999+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-23T20:24:34.031+0530 INFO testUpdateClientDetails Function Started
+2022-02-23T20:24:34.031+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-23T20:24:34.032+0530 INFO testUpdateClientDetails Function Ended
+2022-02-23T20:24:34.040+0530 INFO testSaveClientDetails Function Started
+2022-02-23T20:24:34.040+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-23T20:24:34.041+0530 INFO testSaveClientDetails Function Ended
+2022-02-23T20:24:34.554+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-23T20:24:34.554+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:24:34.555+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-23T20:24:34.567+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-23T20:24:34.568+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:24:34.569+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-23T20:24:34.584+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-23T20:24:34.585+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:24:34.586+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:24:34.587+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-23T20:24:34.792+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-23T20:24:34.796+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-23T20:24:34.797+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-23T20:24:34.823+0530 INFO testRetrieveEmcReports Function Started
+2022-02-23T20:24:34.827+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:24:34.828+0530 INFO testRetrieveEmcReports Function ended
+2022-02-23T20:24:34.978+0530 INFO testAddFacilityData Function Started
+2022-02-23T20:24:34.979+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:24:34.979+0530 DEBUG ended saveFacilityData function
+2022-02-23T20:24:34.998+0530 INFO testRetrieveFacilityData Function Started
+2022-02-23T20:24:35.000+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:24:35.001+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-23T20:24:35.012+0530 INFO testUpdateFacilityData Function Started
+2022-02-23T20:24:35.012+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-23T20:24:35.013+0530 INFO testUpdateFacilityData Function Ended
+2022-02-23T20:24:35.157+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-23T20:24:35.159+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:24:35.160+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-23T20:24:35.172+0530 INFO testSavePowerEarthingData Function Started
+2022-02-23T20:24:35.173+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:24:35.176+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:24:35.177+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-23T20:24:35.190+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-23T20:24:35.192+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:24:35.193+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-23T20:24:36.165+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 22388 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T20:24:36.166+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T20:24:36.166+0530 INFO The following profiles are active: dev
+2022-02-23T20:24:53.088+0530 INFO Started EmcAssesmentApplicationTests in 17.303 seconds (JVM running for 24.731)
+2022-02-23T20:24:53.211+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-23T20:24:53.212+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.242+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.244+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:24:53.253+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.407+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-23T20:24:53.408+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.420+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.421+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:24:53.437+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-23T20:24:53.438+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.439+0530 ERROR Client Details Not Filled
+2022-02-23T20:24:53.510+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-23T20:24:53.511+0530 INFO ClientDetails fetching process started
+2022-02-23T20:24:53.512+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-23T20:24:53.521+0530 INFO testRetrieveEmcReports method started
+2022-02-23T20:24:53.522+0530 DEBUG fetching process started for ClientDetails
+2022-02-23T20:24:53.523+0530 DEBUG ClientDetails fetching ended
+2022-02-23T20:24:53.523+0530 DEBUG fetching process started for FacilityData
+2022-02-23T20:24:53.523+0530 DEBUG FacilityData fetching ended
+2022-02-23T20:24:53.524+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-23T20:24:53.525+0530 DEBUG PowerEarthingData fetching ended
+2022-02-23T20:24:53.527+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-23T20:24:53.528+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-23T20:24:53.533+0530 DEBUG Invalid Input
+2022-02-23T20:24:53.533+0530 INFO testRetrieveEmcReports method ended
+2022-02-23T20:24:53.577+0530 ERROR Given FacilityData Already Exists
+2022-02-23T20:24:53.578+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.589+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-23T20:24:53.590+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.602+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.603+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:24:53.630+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-23T20:24:53.631+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.638+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-23T20:24:53.638+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.647+0530 ERROR Invalid Inputs
+2022-02-23T20:24:53.647+0530 ERROR Given Emc is Invalid
+2022-02-23T20:50:45.984+0530 INFO testRetrieveClientDetails Function Started
+2022-02-23T20:50:46.020+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:50:46.072+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-23T20:50:46.098+0530 INFO testUpdateClientDetails Function Started
+2022-02-23T20:50:46.099+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-23T20:50:46.100+0530 INFO testUpdateClientDetails Function Ended
+2022-02-23T20:50:46.107+0530 INFO testSaveClientDetails Function Started
+2022-02-23T20:50:46.108+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-23T20:50:46.109+0530 INFO testSaveClientDetails Function Ended
+2022-02-23T20:50:46.404+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-23T20:50:46.405+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:50:46.405+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-23T20:50:46.414+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-23T20:50:46.414+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:50:46.415+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-23T20:50:46.423+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-23T20:50:46.423+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:50:46.424+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:50:46.424+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-23T20:50:46.509+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-23T20:50:46.510+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-23T20:50:46.510+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-23T20:50:46.520+0530 INFO testRetrieveEmcReports Function Started
+2022-02-23T20:50:46.523+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:50:46.524+0530 INFO testRetrieveEmcReports Function ended
+2022-02-23T20:50:46.634+0530 INFO testAddFacilityData Function Started
+2022-02-23T20:50:46.634+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:50:46.635+0530 DEBUG ended saveFacilityData function
+2022-02-23T20:50:46.644+0530 INFO testRetrieveFacilityData Function Started
+2022-02-23T20:50:46.645+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:50:46.646+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-23T20:50:46.655+0530 INFO testUpdateFacilityData Function Started
+2022-02-23T20:50:46.655+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-23T20:50:46.656+0530 INFO testUpdateFacilityData Function Ended
+2022-02-23T20:50:46.738+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-23T20:50:46.739+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:50:46.739+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-23T20:50:46.747+0530 INFO testSavePowerEarthingData Function Started
+2022-02-23T20:50:46.749+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:50:46.749+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:50:46.749+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-23T20:50:46.757+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-23T20:50:46.758+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:50:46.758+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-23T20:50:47.664+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 19332 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T20:50:47.665+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T20:50:47.665+0530 INFO The following profiles are active: dev
+2022-02-23T20:51:03.370+0530 INFO Started EmcAssesmentApplicationTests in 16.057 seconds (JVM running for 21.719)
+2022-02-23T20:51:03.493+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-23T20:51:03.493+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.508+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.509+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:51:03.518+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.655+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-23T20:51:03.656+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.665+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.668+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:51:03.676+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-23T20:51:03.677+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.678+0530 ERROR Client Details Not Filled
+2022-02-23T20:51:03.700+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-23T20:51:03.701+0530 INFO ClientDetails fetching process started
+2022-02-23T20:51:03.702+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-23T20:51:03.710+0530 INFO testRetrieveEmcReports method started
+2022-02-23T20:51:03.711+0530 DEBUG fetching process started for ClientDetails
+2022-02-23T20:51:03.712+0530 DEBUG ClientDetails fetching ended
+2022-02-23T20:51:03.712+0530 DEBUG fetching process started for FacilityData
+2022-02-23T20:51:03.713+0530 DEBUG FacilityData fetching ended
+2022-02-23T20:51:03.713+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-23T20:51:03.713+0530 DEBUG PowerEarthingData fetching ended
+2022-02-23T20:51:03.714+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-23T20:51:03.714+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-23T20:51:03.716+0530 DEBUG Invalid Input
+2022-02-23T20:51:03.717+0530 INFO testRetrieveEmcReports method ended
+2022-02-23T20:51:03.738+0530 ERROR Given FacilityData Already Exists
+2022-02-23T20:51:03.739+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.744+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-23T20:51:03.745+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.752+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.753+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:51:03.774+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-23T20:51:03.775+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.792+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-23T20:51:03.794+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.814+0530 ERROR Invalid Inputs
+2022-02-23T20:51:03.815+0530 ERROR Given Emc is Invalid
+2022-02-23T20:51:59.319+0530 INFO testRetrieveClientDetails Function Started
+2022-02-23T20:51:59.365+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:51:59.449+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-23T20:51:59.490+0530 INFO testUpdateClientDetails Function Started
+2022-02-23T20:51:59.491+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-23T20:51:59.494+0530 INFO testUpdateClientDetails Function Ended
+2022-02-23T20:51:59.506+0530 INFO testSaveClientDetails Function Started
+2022-02-23T20:51:59.507+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-23T20:51:59.507+0530 INFO testSaveClientDetails Function Ended
+2022-02-23T20:51:59.904+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-23T20:51:59.906+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:51:59.908+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-23T20:51:59.920+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-23T20:51:59.921+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:51:59.922+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-23T20:51:59.933+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-23T20:51:59.934+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:51:59.935+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:51:59.935+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-23T20:52:00.085+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-23T20:52:00.087+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-23T20:52:00.087+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-23T20:52:00.100+0530 INFO testRetrieveEmcReports Function Started
+2022-02-23T20:52:00.103+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:52:00.103+0530 INFO testRetrieveEmcReports Function ended
+2022-02-23T20:52:00.294+0530 INFO testAddFacilityData Function Started
+2022-02-23T20:52:00.294+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:52:00.305+0530 DEBUG ended saveFacilityData function
+2022-02-23T20:52:00.318+0530 INFO testRetrieveFacilityData Function Started
+2022-02-23T20:52:00.319+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:52:00.322+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-23T20:52:00.333+0530 INFO testUpdateFacilityData Function Started
+2022-02-23T20:52:00.334+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-23T20:52:00.336+0530 INFO testUpdateFacilityData Function Ended
+2022-02-23T20:52:00.478+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-23T20:52:00.479+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-23T20:52:00.480+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-23T20:52:00.493+0530 INFO testSavePowerEarthingData Function Started
+2022-02-23T20:52:00.495+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-23T20:52:00.496+0530 DEBUG ended savePowerEarthingData function
+2022-02-23T20:52:00.496+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-23T20:52:00.507+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-23T20:52:00.508+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-23T20:52:00.509+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-23T20:52:01.672+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 18272 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-23T20:52:01.673+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-23T20:52:01.673+0530 INFO The following profiles are active: dev
+2022-02-23T20:52:15.861+0530 INFO Started EmcAssesmentApplicationTests in 14.691 seconds (JVM running for 21.27)
+2022-02-23T20:52:15.974+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-23T20:52:15.975+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.022+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.026+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:52:16.038+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.227+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-23T20:52:16.228+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.239+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.240+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:52:16.251+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-23T20:52:16.252+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.253+0530 ERROR Client Details Not Filled
+2022-02-23T20:52:16.279+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-23T20:52:16.280+0530 INFO ClientDetails fetching process started
+2022-02-23T20:52:16.281+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-23T20:52:16.299+0530 INFO testRetrieveEmcReports method started
+2022-02-23T20:52:16.300+0530 DEBUG fetching process started for ClientDetails
+2022-02-23T20:52:16.300+0530 DEBUG ClientDetails fetching ended
+2022-02-23T20:52:16.300+0530 DEBUG fetching process started for FacilityData
+2022-02-23T20:52:16.300+0530 DEBUG FacilityData fetching ended
+2022-02-23T20:52:16.301+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-23T20:52:16.301+0530 DEBUG PowerEarthingData fetching ended
+2022-02-23T20:52:16.301+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-23T20:52:16.301+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-23T20:52:16.303+0530 DEBUG Invalid Input
+2022-02-23T20:52:16.304+0530 INFO testRetrieveEmcReports method ended
+2022-02-23T20:52:16.326+0530 ERROR Given FacilityData Already Exists
+2022-02-23T20:52:16.326+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.336+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-23T20:52:16.336+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.343+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.343+0530 ERROR Given Emc Id is Invalid
+2022-02-23T20:52:16.369+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-23T20:52:16.370+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.379+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-23T20:52:16.380+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.389+0530 ERROR Invalid Inputs
+2022-02-23T20:52:16.390+0530 ERROR Given Emc is Invalid
+2022-02-24T09:55:33.674+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T09:55:33.706+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T09:55:33.760+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T09:55:33.789+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T09:55:33.789+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T09:55:33.790+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T09:55:33.798+0530 INFO testSaveClientDetails Function Started
+2022-02-24T09:55:33.798+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T09:55:33.798+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T09:55:34.117+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T09:55:34.118+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T09:55:34.118+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T09:55:34.128+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T09:55:34.128+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T09:55:34.129+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T09:55:34.136+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T09:55:34.137+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T09:55:34.137+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T09:55:34.138+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T09:55:34.213+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T09:55:34.214+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T09:55:34.214+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T09:55:34.222+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T09:55:34.225+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T09:55:34.226+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T09:55:34.326+0530 INFO testAddFacilityData Function Started
+2022-02-24T09:55:34.326+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T09:55:34.327+0530 DEBUG ended saveFacilityData function
+2022-02-24T09:55:34.342+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T09:55:34.344+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T09:55:34.348+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T09:55:34.359+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T09:55:34.360+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T09:55:34.361+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T09:55:34.469+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T09:55:34.471+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T09:55:34.472+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T09:55:34.485+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T09:55:34.486+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T09:55:34.487+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T09:55:34.488+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T09:55:34.501+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T09:55:34.502+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T09:55:34.503+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T09:55:35.430+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 8716 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T09:55:35.430+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T09:55:35.431+0530 INFO The following profiles are active: dev
+2022-02-24T09:55:44.409+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T09:55:44.411+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.441+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.443+0530 ERROR Given Emc Id is Invalid
+2022-02-24T09:55:44.459+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.591+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T09:55:44.592+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.602+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.603+0530 ERROR Given Emc Id is Invalid
+2022-02-24T09:55:44.612+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T09:55:44.614+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.616+0530 ERROR Client Details Not Filled
+2022-02-24T09:55:44.642+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T09:55:44.644+0530 INFO ClientDetails fetching process started
+2022-02-24T09:55:44.645+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T09:55:44.653+0530 INFO testRetrieveEmcReports method started
+2022-02-24T09:55:44.654+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T09:55:44.655+0530 DEBUG ClientDetails fetching ended
+2022-02-24T09:55:44.655+0530 DEBUG fetching process started for FacilityData
+2022-02-24T09:55:44.655+0530 DEBUG FacilityData fetching ended
+2022-02-24T09:55:44.655+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T09:55:44.656+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T09:55:44.656+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T09:55:44.656+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T09:55:44.658+0530 DEBUG Invalid Input
+2022-02-24T09:55:44.658+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T09:55:44.684+0530 ERROR Given FacilityData Already Exists
+2022-02-24T09:55:44.685+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.692+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T09:55:44.694+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.703+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.704+0530 ERROR Given Emc Id is Invalid
+2022-02-24T09:55:44.726+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T09:55:44.727+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.737+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T09:55:44.738+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.750+0530 ERROR Invalid Inputs
+2022-02-24T09:55:44.751+0530 ERROR Given Emc is Invalid
+2022-02-24T09:57:24.219+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T09:57:24.253+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T09:57:24.309+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T09:57:24.340+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T09:57:24.340+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T09:57:24.341+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T09:57:24.348+0530 INFO testSaveClientDetails Function Started
+2022-02-24T09:57:24.349+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T09:57:24.349+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T09:57:24.713+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T09:57:24.714+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T09:57:24.715+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T09:57:24.723+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T09:57:24.723+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T09:57:24.723+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T09:57:24.733+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T09:57:24.733+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T09:57:24.734+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T09:57:24.734+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T09:57:24.812+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T09:57:24.813+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T09:57:24.814+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T09:57:24.821+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T09:57:24.823+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T09:57:24.824+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T09:57:24.919+0530 INFO testAddFacilityData Function Started
+2022-02-24T09:57:24.920+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T09:57:24.920+0530 DEBUG ended saveFacilityData function
+2022-02-24T09:57:24.931+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T09:57:24.932+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T09:57:24.932+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T09:57:24.941+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T09:57:24.941+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T09:57:24.942+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T09:57:25.033+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T09:57:25.034+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T09:57:25.035+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T09:57:25.045+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T09:57:25.046+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T09:57:25.047+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T09:57:25.047+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T09:57:25.055+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T09:57:25.055+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T09:57:25.056+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T09:57:25.803+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 9536 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T09:57:25.804+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T09:57:25.804+0530 INFO The following profiles are active: dev
+2022-02-24T09:57:33.600+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T09:57:33.602+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.617+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.619+0530 ERROR Given Emc Id is Invalid
+2022-02-24T09:57:33.626+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.738+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T09:57:33.739+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.750+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.751+0530 ERROR Given Emc Id is Invalid
+2022-02-24T09:57:33.764+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T09:57:33.765+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.767+0530 ERROR Client Details Not Filled
+2022-02-24T09:57:33.803+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T09:57:33.805+0530 INFO ClientDetails fetching process started
+2022-02-24T09:57:33.807+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T09:57:33.817+0530 INFO testRetrieveEmcReports method started
+2022-02-24T09:57:33.819+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T09:57:33.820+0530 DEBUG ClientDetails fetching ended
+2022-02-24T09:57:33.820+0530 DEBUG fetching process started for FacilityData
+2022-02-24T09:57:33.820+0530 DEBUG FacilityData fetching ended
+2022-02-24T09:57:33.820+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T09:57:33.821+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T09:57:33.821+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T09:57:33.821+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T09:57:33.823+0530 DEBUG Invalid Input
+2022-02-24T09:57:33.823+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T09:57:33.859+0530 ERROR Given FacilityData Already Exists
+2022-02-24T09:57:33.860+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.871+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T09:57:33.872+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.880+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.881+0530 ERROR Given Emc Id is Invalid
+2022-02-24T09:57:33.926+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T09:57:33.927+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.938+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T09:57:33.939+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.948+0530 ERROR Invalid Inputs
+2022-02-24T09:57:33.949+0530 ERROR Given Emc is Invalid
+2022-02-24T10:01:05.986+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T10:01:06.028+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:01:06.075+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T10:01:06.107+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T10:01:06.108+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T10:01:06.109+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T10:01:06.118+0530 INFO testSaveClientDetails Function Started
+2022-02-24T10:01:06.118+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T10:01:06.119+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T10:01:06.469+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T10:01:06.470+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:01:06.470+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T10:01:06.478+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T10:01:06.479+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T10:01:06.479+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T10:01:06.488+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T10:01:06.488+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:01:06.489+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T10:01:06.490+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T10:01:06.580+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T10:01:06.582+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T10:01:06.583+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T10:01:06.591+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T10:01:06.593+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:01:06.594+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T10:01:06.690+0530 INFO testAddFacilityData Function Started
+2022-02-24T10:01:06.691+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:01:06.692+0530 DEBUG ended saveFacilityData function
+2022-02-24T10:01:06.701+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T10:01:06.702+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:01:06.703+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T10:01:06.711+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T10:01:06.712+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T10:01:06.713+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T10:01:06.804+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T10:01:06.805+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:01:06.805+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T10:01:06.814+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T10:01:06.814+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:01:06.815+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T10:01:06.816+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T10:01:06.826+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T10:01:06.827+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T10:01:06.828+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T10:01:07.641+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 11620 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T10:01:07.642+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T10:01:07.642+0530 INFO The following profiles are active: dev
+2022-02-24T10:01:15.462+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T10:01:15.463+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.482+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.483+0530 ERROR Given Emc Id is Invalid
+2022-02-24T10:01:15.495+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.668+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T10:01:15.669+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.681+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.682+0530 ERROR Given Emc Id is Invalid
+2022-02-24T10:01:15.692+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T10:01:15.693+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.695+0530 ERROR Client Details Not Filled
+2022-02-24T10:01:15.717+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T10:01:15.718+0530 INFO ClientDetails fetching process started
+2022-02-24T10:01:15.719+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T10:01:15.726+0530 INFO testRetrieveEmcReports method started
+2022-02-24T10:01:15.728+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T10:01:15.728+0530 DEBUG ClientDetails fetching ended
+2022-02-24T10:01:15.728+0530 DEBUG fetching process started for FacilityData
+2022-02-24T10:01:15.728+0530 DEBUG FacilityData fetching ended
+2022-02-24T10:01:15.728+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T10:01:15.729+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T10:01:15.729+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T10:01:15.729+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T10:01:15.731+0530 DEBUG Invalid Input
+2022-02-24T10:01:15.731+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T10:01:15.754+0530 ERROR Given FacilityData Already Exists
+2022-02-24T10:01:15.755+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.764+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T10:01:15.764+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.771+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.771+0530 ERROR Given Emc Id is Invalid
+2022-02-24T10:01:15.793+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T10:01:15.794+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.802+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T10:01:15.803+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.812+0530 ERROR Invalid Inputs
+2022-02-24T10:01:15.813+0530 ERROR Given Emc is Invalid
+2022-02-24T10:03:31.865+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T10:03:31.901+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:03:31.968+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T10:03:32.012+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T10:03:32.012+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T10:03:32.013+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T10:03:32.024+0530 INFO testSaveClientDetails Function Started
+2022-02-24T10:03:32.024+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T10:03:32.025+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T10:03:32.414+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T10:03:32.415+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:03:32.415+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T10:03:32.425+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T10:03:32.425+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T10:03:32.425+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T10:03:32.432+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T10:03:32.433+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:03:32.433+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T10:03:32.434+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T10:03:32.515+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T10:03:32.516+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T10:03:32.516+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T10:03:32.528+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T10:03:32.530+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:03:32.531+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T10:03:32.649+0530 INFO testAddFacilityData Function Started
+2022-02-24T10:03:32.649+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:03:32.650+0530 DEBUG ended saveFacilityData function
+2022-02-24T10:03:32.662+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T10:03:32.663+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:03:32.664+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T10:03:32.675+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T10:03:32.678+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T10:03:32.679+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T10:03:32.796+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T10:03:32.797+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:03:32.798+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T10:03:32.809+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T10:03:32.809+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:03:32.810+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T10:03:32.810+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T10:03:32.818+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T10:03:32.818+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T10:03:32.819+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T10:03:33.700+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 17248 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T10:03:33.701+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T10:03:33.701+0530 INFO The following profiles are active: dev
+2022-02-24T10:03:50.584+0530 INFO Started EmcAssesmentApplicationTests in 17.307 seconds (JVM running for 23.323)
+2022-02-24T10:03:51.009+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T10:03:51.010+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.036+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.040+0530 ERROR Given Emc Id is Invalid
+2022-02-24T10:03:51.051+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.215+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T10:03:51.216+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.241+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.243+0530 ERROR Given Emc Id is Invalid
+2022-02-24T10:03:51.253+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T10:03:51.255+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.257+0530 ERROR Client Details Not Filled
+2022-02-24T10:03:51.285+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T10:03:51.286+0530 INFO ClientDetails fetching process started
+2022-02-24T10:03:51.287+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T10:03:51.296+0530 INFO testRetrieveEmcReports method started
+2022-02-24T10:03:51.297+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T10:03:51.297+0530 DEBUG ClientDetails fetching ended
+2022-02-24T10:03:51.297+0530 DEBUG fetching process started for FacilityData
+2022-02-24T10:03:51.298+0530 DEBUG FacilityData fetching ended
+2022-02-24T10:03:51.298+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T10:03:51.298+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T10:03:51.298+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T10:03:51.298+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T10:03:51.300+0530 DEBUG Invalid Input
+2022-02-24T10:03:51.300+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T10:03:51.334+0530 ERROR Given FacilityData Already Exists
+2022-02-24T10:03:51.334+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.345+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T10:03:51.346+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.367+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.368+0530 ERROR Given Emc Id is Invalid
+2022-02-24T10:03:51.394+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T10:03:51.394+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.408+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T10:03:51.409+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.417+0530 ERROR Invalid Inputs
+2022-02-24T10:03:51.418+0530 ERROR Given Emc is Invalid
+2022-02-24T10:08:47.625+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T10:08:47.655+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:08:47.706+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T10:08:47.738+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T10:08:47.738+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T10:08:47.739+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T10:08:47.748+0530 INFO testSaveClientDetails Function Started
+2022-02-24T10:08:47.748+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T10:08:47.748+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T10:08:48.097+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T10:08:48.098+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:08:48.099+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T10:08:48.106+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T10:08:48.106+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T10:08:48.106+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T10:08:48.113+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T10:08:48.113+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:08:48.113+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T10:08:48.113+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T10:08:48.182+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T10:08:48.183+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T10:08:48.183+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T10:08:48.190+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T10:08:48.192+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:08:48.193+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T10:08:48.297+0530 INFO testAddFacilityData Function Started
+2022-02-24T10:08:48.297+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:08:48.298+0530 DEBUG ended saveFacilityData function
+2022-02-24T10:08:48.307+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T10:08:48.308+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:08:48.309+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T10:08:48.319+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T10:08:48.320+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T10:08:48.321+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T10:08:48.412+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T10:08:48.413+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T10:08:48.414+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T10:08:48.422+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T10:08:48.423+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T10:08:48.423+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T10:08:48.424+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T10:08:48.434+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T10:08:48.435+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T10:08:48.435+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T10:08:49.164+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 16456 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T10:08:49.164+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T10:08:49.165+0530 INFO The following profiles are active: dev
+2022-02-24T10:09:01.182+0530 INFO Started EmcAssesmentApplicationTests in 12.346 seconds (JVM running for 17.862)
+2022-02-24T10:09:01.260+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T10:09:01.261+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.274+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.275+0530 ERROR Given Emc Id is Invalid
+2022-02-24T10:09:01.285+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.387+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T10:09:01.387+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.395+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.396+0530 ERROR Given Emc Id is Invalid
+2022-02-24T10:09:01.405+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T10:09:01.405+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.406+0530 ERROR Client Details Not Filled
+2022-02-24T10:09:01.426+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T10:09:01.427+0530 INFO ClientDetails fetching process started
+2022-02-24T10:09:01.428+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T10:09:01.434+0530 INFO testRetrieveEmcReports method started
+2022-02-24T10:09:01.435+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T10:09:01.436+0530 DEBUG ClientDetails fetching ended
+2022-02-24T10:09:01.436+0530 DEBUG fetching process started for FacilityData
+2022-02-24T10:09:01.436+0530 DEBUG FacilityData fetching ended
+2022-02-24T10:09:01.436+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T10:09:01.436+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T10:09:01.436+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T10:09:01.437+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T10:09:01.438+0530 DEBUG Invalid Input
+2022-02-24T10:09:01.438+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T10:09:01.457+0530 ERROR Given FacilityData Already Exists
+2022-02-24T10:09:01.458+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.464+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T10:09:01.464+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.471+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.471+0530 ERROR Given Emc Id is Invalid
+2022-02-24T10:09:01.490+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T10:09:01.491+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.498+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T10:09:01.499+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.506+0530 ERROR Invalid Inputs
+2022-02-24T10:09:01.507+0530 ERROR Given Emc is Invalid
+2022-02-24T12:01:58.131+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T12:01:58.174+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T12:01:58.250+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T12:01:58.289+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T12:01:58.290+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T12:01:58.291+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T12:01:58.301+0530 INFO testSaveClientDetails Function Started
+2022-02-24T12:01:58.301+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T12:01:58.302+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T12:01:58.771+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T12:01:58.772+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T12:01:58.772+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T12:01:58.781+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T12:01:58.782+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T12:01:58.782+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T12:01:58.791+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T12:01:58.791+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T12:01:58.792+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T12:01:58.792+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T12:01:58.923+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T12:01:58.924+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T12:01:58.925+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T12:01:58.935+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T12:01:58.937+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T12:01:58.938+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T12:01:59.043+0530 INFO testAddFacilityData Function Started
+2022-02-24T12:01:59.043+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T12:01:59.044+0530 DEBUG ended saveFacilityData function
+2022-02-24T12:01:59.053+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T12:01:59.054+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T12:01:59.055+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T12:01:59.062+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T12:01:59.063+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T12:01:59.064+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T12:01:59.154+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T12:01:59.155+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T12:01:59.156+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T12:01:59.166+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T12:01:59.166+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T12:01:59.167+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T12:01:59.167+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T12:01:59.176+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T12:01:59.176+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T12:01:59.177+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T12:02:00.065+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 15832 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T12:02:00.066+0530 DEBUG Running with Spring Boot v2.5.2, Spring v5.3.8
+2022-02-24T12:02:00.066+0530 INFO The following profiles are active: dev
+2022-02-24T12:02:11.772+0530 INFO Started EmcAssesmentApplicationTests in 12.171 seconds (JVM running for 18.088)
+2022-02-24T12:02:11.884+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T12:02:11.885+0530 ERROR Invalid Inputs
+2022-02-24T12:02:11.907+0530 ERROR Invalid Inputs
+2022-02-24T12:02:11.908+0530 ERROR Given Emc Id is Invalid
+2022-02-24T12:02:11.918+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.075+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T12:02:12.075+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.086+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.088+0530 ERROR Given Emc Id is Invalid
+2022-02-24T12:02:12.098+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T12:02:12.099+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.105+0530 ERROR Client Details Not Filled
+2022-02-24T12:02:12.131+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T12:02:12.132+0530 INFO ClientDetails fetching process started
+2022-02-24T12:02:12.133+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T12:02:12.144+0530 INFO testRetrieveEmcReports method started
+2022-02-24T12:02:12.145+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T12:02:12.146+0530 DEBUG ClientDetails fetching ended
+2022-02-24T12:02:12.146+0530 DEBUG fetching process started for FacilityData
+2022-02-24T12:02:12.146+0530 DEBUG FacilityData fetching ended
+2022-02-24T12:02:12.147+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T12:02:12.147+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T12:02:12.147+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T12:02:12.147+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T12:02:12.149+0530 DEBUG Invalid Input
+2022-02-24T12:02:12.149+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T12:02:12.174+0530 ERROR Given FacilityData Already Exists
+2022-02-24T12:02:12.175+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.184+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T12:02:12.185+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.194+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.195+0530 ERROR Given Emc Id is Invalid
+2022-02-24T12:02:12.229+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T12:02:12.229+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.239+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T12:02:12.240+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.250+0530 ERROR Invalid Inputs
+2022-02-24T12:02:12.252+0530 ERROR Given Emc is Invalid
+2022-02-24T12:03:46.371+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T12:03:46.406+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T12:03:46.469+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T12:03:46.514+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T12:03:46.515+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T12:03:46.516+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T12:03:46.527+0530 INFO testSaveClientDetails Function Started
+2022-02-24T12:03:46.528+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T12:03:46.528+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T12:03:46.981+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T12:03:46.982+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T12:03:46.983+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T12:03:46.992+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T12:03:46.993+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T12:03:46.993+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T12:03:47.002+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T12:03:47.002+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T12:03:47.003+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T12:03:47.003+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T12:03:47.107+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T12:03:47.108+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T12:03:47.109+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T12:03:47.120+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T12:03:47.123+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T12:03:47.124+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T12:03:47.268+0530 INFO testAddFacilityData Function Started
+2022-02-24T12:03:47.268+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T12:03:47.269+0530 DEBUG ended saveFacilityData function
+2022-02-24T12:03:47.278+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T12:03:47.279+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T12:03:47.280+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T12:03:47.290+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T12:03:47.290+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T12:03:47.293+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T12:03:47.399+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T12:03:47.402+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T12:03:47.402+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T12:03:47.412+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T12:03:47.413+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T12:03:47.413+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T12:03:47.414+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T12:03:47.422+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T12:03:47.423+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T12:03:47.423+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T12:03:48.346+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 5452 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T12:03:48.347+0530 DEBUG Running with Spring Boot v2.5.2, Spring v5.3.8
+2022-02-24T12:03:48.347+0530 INFO The following profiles are active: dev
+2022-02-24T12:04:05.582+0530 INFO Started EmcAssesmentApplicationTests in 17.646 seconds (JVM running for 23.169)
+2022-02-24T12:04:05.704+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T12:04:05.705+0530 ERROR Invalid Inputs
+2022-02-24T12:04:05.724+0530 ERROR Invalid Inputs
+2022-02-24T12:04:05.724+0530 ERROR Given Emc Id is Invalid
+2022-02-24T12:04:05.736+0530 ERROR Invalid Inputs
+2022-02-24T12:04:05.889+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T12:04:05.891+0530 ERROR Invalid Inputs
+2022-02-24T12:04:05.901+0530 ERROR Invalid Inputs
+2022-02-24T12:04:05.904+0530 ERROR Given Emc Id is Invalid
+2022-02-24T12:04:05.915+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T12:04:05.916+0530 ERROR Invalid Inputs
+2022-02-24T12:04:05.917+0530 ERROR Client Details Not Filled
+2022-02-24T12:04:05.955+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T12:04:05.955+0530 INFO ClientDetails fetching process started
+2022-02-24T12:04:05.956+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T12:04:05.964+0530 INFO testRetrieveEmcReports method started
+2022-02-24T12:04:05.965+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T12:04:05.965+0530 DEBUG ClientDetails fetching ended
+2022-02-24T12:04:05.965+0530 DEBUG fetching process started for FacilityData
+2022-02-24T12:04:05.965+0530 DEBUG FacilityData fetching ended
+2022-02-24T12:04:05.966+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T12:04:05.966+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T12:04:05.966+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T12:04:05.967+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T12:04:05.969+0530 DEBUG Invalid Input
+2022-02-24T12:04:05.969+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T12:04:05.990+0530 ERROR Given FacilityData Already Exists
+2022-02-24T12:04:05.991+0530 ERROR Invalid Inputs
+2022-02-24T12:04:05.999+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T12:04:06.000+0530 ERROR Invalid Inputs
+2022-02-24T12:04:06.009+0530 ERROR Invalid Inputs
+2022-02-24T12:04:06.010+0530 ERROR Given Emc Id is Invalid
+2022-02-24T12:04:06.041+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T12:04:06.042+0530 ERROR Invalid Inputs
+2022-02-24T12:04:06.051+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T12:04:06.052+0530 ERROR Invalid Inputs
+2022-02-24T12:04:06.061+0530 ERROR Invalid Inputs
+2022-02-24T12:04:06.061+0530 ERROR Given Emc is Invalid
+2022-02-24T16:03:35.949+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T16:03:35.979+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:03:36.028+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T16:03:36.057+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T16:03:36.058+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T16:03:36.059+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T16:03:36.067+0530 INFO testSaveClientDetails Function Started
+2022-02-24T16:03:36.067+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T16:03:36.068+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T16:03:36.357+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T16:03:36.357+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:03:36.357+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T16:03:36.366+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T16:03:36.366+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T16:03:36.367+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T16:03:36.373+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T16:03:36.373+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:03:36.374+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T16:03:36.374+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T16:03:36.458+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T16:03:36.460+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T16:03:36.460+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T16:03:36.470+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T16:03:36.473+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:03:36.473+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T16:03:36.579+0530 INFO testAddFacilityData Function Started
+2022-02-24T16:03:36.580+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:03:36.580+0530 DEBUG ended saveFacilityData function
+2022-02-24T16:03:36.588+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T16:03:36.589+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:03:36.590+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T16:03:36.598+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T16:03:36.598+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T16:03:36.599+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T16:03:36.682+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T16:03:36.683+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:03:36.684+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T16:03:36.691+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T16:03:36.692+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:03:36.692+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T16:03:36.693+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T16:03:36.701+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T16:03:36.701+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T16:03:36.702+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T16:03:37.476+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 16268 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T16:03:37.477+0530 DEBUG Running with Spring Boot v2.5.2, Spring v5.3.8
+2022-02-24T16:03:37.477+0530 INFO The following profiles are active: dev
+2022-02-24T16:03:47.503+0530 INFO Started EmcAssesmentApplicationTests in 10.403 seconds (JVM running for 15.72)
+2022-02-24T16:03:47.608+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T16:03:47.610+0530 ERROR Invalid Inputs
+2022-02-24T16:03:47.629+0530 ERROR Invalid Inputs
+2022-02-24T16:03:47.630+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:03:47.640+0530 ERROR Invalid Inputs
+2022-02-24T16:03:47.848+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T16:03:47.849+0530 ERROR Invalid Inputs
+2022-02-24T16:03:47.859+0530 ERROR Invalid Inputs
+2022-02-24T16:03:47.861+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:03:47.874+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T16:03:47.875+0530 ERROR Invalid Inputs
+2022-02-24T16:03:47.876+0530 ERROR Client Details Not Filled
+2022-02-24T16:03:47.915+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T16:03:47.916+0530 INFO ClientDetails fetching process started
+2022-02-24T16:03:47.921+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T16:03:47.929+0530 INFO testRetrieveEmcReports method started
+2022-02-24T16:03:47.932+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T16:03:47.933+0530 DEBUG ClientDetails fetching ended
+2022-02-24T16:03:47.933+0530 DEBUG fetching process started for FacilityData
+2022-02-24T16:03:47.933+0530 DEBUG FacilityData fetching ended
+2022-02-24T16:03:47.933+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T16:03:47.940+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T16:03:47.940+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T16:03:47.941+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T16:03:47.944+0530 DEBUG Invalid Input
+2022-02-24T16:03:47.944+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T16:03:47.978+0530 ERROR Given FacilityData Already Exists
+2022-02-24T16:03:47.979+0530 ERROR Invalid Inputs
+2022-02-24T16:03:47.991+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T16:03:47.991+0530 ERROR Invalid Inputs
+2022-02-24T16:03:48.000+0530 ERROR Invalid Inputs
+2022-02-24T16:03:48.001+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:03:48.053+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T16:03:48.054+0530 ERROR Invalid Inputs
+2022-02-24T16:03:48.063+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T16:03:48.064+0530 ERROR Invalid Inputs
+2022-02-24T16:03:48.072+0530 ERROR Invalid Inputs
+2022-02-24T16:03:48.073+0530 ERROR Given Emc is Invalid
+2022-02-24T16:04:30.802+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T16:04:30.835+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:04:30.877+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T16:04:30.910+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T16:04:30.910+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T16:04:30.911+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T16:04:30.919+0530 INFO testSaveClientDetails Function Started
+2022-02-24T16:04:30.919+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T16:04:30.920+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T16:04:31.307+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T16:04:31.308+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:04:31.308+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T16:04:31.317+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T16:04:31.317+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T16:04:31.319+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T16:04:31.327+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T16:04:31.327+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:04:31.328+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T16:04:31.328+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T16:04:31.410+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T16:04:31.412+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T16:04:31.412+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T16:04:31.425+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T16:04:31.427+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:04:31.427+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T16:04:31.533+0530 INFO testAddFacilityData Function Started
+2022-02-24T16:04:31.533+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:04:31.533+0530 DEBUG ended saveFacilityData function
+2022-02-24T16:04:31.543+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T16:04:31.544+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:04:31.544+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T16:04:31.554+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T16:04:31.555+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T16:04:31.555+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T16:04:31.630+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T16:04:31.631+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:04:31.631+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T16:04:31.640+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T16:04:31.641+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:04:31.641+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T16:04:31.642+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T16:04:31.649+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T16:04:31.649+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T16:04:31.650+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T16:04:32.518+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 23048 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T16:04:32.519+0530 DEBUG Running with Spring Boot v2.5.2, Spring v5.3.8
+2022-02-24T16:04:32.519+0530 INFO The following profiles are active: dev
+2022-02-24T16:04:42.470+0530 INFO Started EmcAssesmentApplicationTests in 10.402 seconds (JVM running for 15.172)
+2022-02-24T16:04:42.552+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T16:04:42.553+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.567+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.568+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:04:42.577+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.692+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T16:04:42.693+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.705+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.706+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:04:42.716+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T16:04:42.717+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.717+0530 ERROR Client Details Not Filled
+2022-02-24T16:04:42.748+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T16:04:42.748+0530 INFO ClientDetails fetching process started
+2022-02-24T16:04:42.749+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T16:04:42.757+0530 INFO testRetrieveEmcReports method started
+2022-02-24T16:04:42.758+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T16:04:42.758+0530 DEBUG ClientDetails fetching ended
+2022-02-24T16:04:42.758+0530 DEBUG fetching process started for FacilityData
+2022-02-24T16:04:42.758+0530 DEBUG FacilityData fetching ended
+2022-02-24T16:04:42.759+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T16:04:42.759+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T16:04:42.759+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T16:04:42.759+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T16:04:42.761+0530 DEBUG Invalid Input
+2022-02-24T16:04:42.761+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T16:04:42.791+0530 ERROR Given FacilityData Already Exists
+2022-02-24T16:04:42.792+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.801+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T16:04:42.802+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.810+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.811+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:04:42.833+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T16:04:42.834+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.845+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T16:04:42.845+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.855+0530 ERROR Invalid Inputs
+2022-02-24T16:04:42.856+0530 ERROR Given Emc is Invalid
+2022-02-24T16:14:35.519+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T16:14:35.553+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:14:35.604+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T16:14:35.645+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T16:14:35.645+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T16:14:35.646+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T16:14:35.655+0530 INFO testSaveClientDetails Function Started
+2022-02-24T16:14:35.656+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T16:14:35.657+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T16:14:36.038+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T16:14:36.039+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:14:36.040+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T16:14:36.049+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T16:14:36.049+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T16:14:36.049+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T16:14:36.058+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T16:14:36.059+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:14:36.059+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T16:14:36.059+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T16:14:36.143+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T16:14:36.145+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T16:14:36.145+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T16:14:36.153+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T16:14:36.156+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:14:36.156+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T16:14:36.280+0530 INFO testAddFacilityData Function Started
+2022-02-24T16:14:36.280+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:14:36.281+0530 DEBUG ended saveFacilityData function
+2022-02-24T16:14:36.290+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T16:14:36.291+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:14:36.292+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T16:14:36.299+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T16:14:36.300+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T16:14:36.301+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T16:14:36.394+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T16:14:36.395+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:14:36.395+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T16:14:36.405+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T16:14:36.405+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:14:36.406+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T16:14:36.406+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T16:14:36.412+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T16:14:36.413+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T16:14:36.413+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T16:14:37.152+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 16216 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T16:14:37.153+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T16:14:37.154+0530 INFO The following profiles are active: dev
+2022-02-24T16:14:49.334+0530 INFO Started EmcAssesmentApplicationTests in 12.583 seconds (JVM running for 17.512)
+2022-02-24T16:14:49.446+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T16:14:49.446+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.460+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.461+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:14:49.469+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.643+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T16:14:49.644+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.661+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.662+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:14:49.673+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T16:14:49.674+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.675+0530 ERROR Client Details Not Filled
+2022-02-24T16:14:49.698+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T16:14:49.699+0530 INFO ClientDetails fetching process started
+2022-02-24T16:14:49.700+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T16:14:49.708+0530 INFO testRetrieveEmcReports method started
+2022-02-24T16:14:49.709+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T16:14:49.709+0530 DEBUG ClientDetails fetching ended
+2022-02-24T16:14:49.709+0530 DEBUG fetching process started for FacilityData
+2022-02-24T16:14:49.709+0530 DEBUG FacilityData fetching ended
+2022-02-24T16:14:49.710+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T16:14:49.710+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T16:14:49.710+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T16:14:49.710+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T16:14:49.711+0530 DEBUG Invalid Input
+2022-02-24T16:14:49.712+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T16:14:49.734+0530 ERROR Given FacilityData Already Exists
+2022-02-24T16:14:49.735+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.742+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T16:14:49.743+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.751+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.752+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:14:49.780+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T16:14:49.781+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.796+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T16:14:49.797+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.809+0530 ERROR Invalid Inputs
+2022-02-24T16:14:49.810+0530 ERROR Given Emc is Invalid
+2022-02-24T16:16:26.735+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T16:16:26.764+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:16:26.808+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T16:16:26.836+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T16:16:26.837+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T16:16:26.838+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T16:16:26.846+0530 INFO testSaveClientDetails Function Started
+2022-02-24T16:16:26.846+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T16:16:26.847+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T16:16:27.231+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T16:16:27.232+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:16:27.233+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T16:16:27.242+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T16:16:27.242+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T16:16:27.243+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T16:16:27.252+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T16:16:27.252+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:16:27.253+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T16:16:27.253+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T16:16:27.346+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T16:16:27.347+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T16:16:27.348+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T16:16:27.357+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T16:16:27.360+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:16:27.361+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T16:16:27.466+0530 INFO testAddFacilityData Function Started
+2022-02-24T16:16:27.467+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:16:27.467+0530 DEBUG ended saveFacilityData function
+2022-02-24T16:16:27.476+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T16:16:27.477+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:16:27.478+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T16:16:27.486+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T16:16:27.491+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T16:16:27.492+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T16:16:27.581+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T16:16:27.582+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T16:16:27.583+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T16:16:27.591+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T16:16:27.592+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T16:16:27.593+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T16:16:27.593+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T16:16:27.601+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T16:16:27.602+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T16:16:27.602+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T16:16:28.377+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 12696 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T16:16:28.378+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T16:16:28.379+0530 INFO The following profiles are active: dev
+2022-02-24T16:16:39.672+0530 INFO Started EmcAssesmentApplicationTests in 11.77 seconds (JVM running for 17.066)
+2022-02-24T16:16:39.775+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T16:16:39.776+0530 ERROR Invalid Inputs
+2022-02-24T16:16:39.791+0530 ERROR Invalid Inputs
+2022-02-24T16:16:39.792+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:16:39.810+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.010+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T16:16:40.012+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.022+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.024+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:16:40.035+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T16:16:40.036+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.038+0530 ERROR Client Details Not Filled
+2022-02-24T16:16:40.067+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T16:16:40.068+0530 INFO ClientDetails fetching process started
+2022-02-24T16:16:40.069+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T16:16:40.077+0530 INFO testRetrieveEmcReports method started
+2022-02-24T16:16:40.078+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T16:16:40.079+0530 DEBUG ClientDetails fetching ended
+2022-02-24T16:16:40.079+0530 DEBUG fetching process started for FacilityData
+2022-02-24T16:16:40.080+0530 DEBUG FacilityData fetching ended
+2022-02-24T16:16:40.080+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T16:16:40.080+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T16:16:40.080+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T16:16:40.081+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T16:16:40.083+0530 DEBUG Invalid Input
+2022-02-24T16:16:40.083+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T16:16:40.109+0530 ERROR Given FacilityData Already Exists
+2022-02-24T16:16:40.110+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.119+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T16:16:40.120+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.134+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.135+0530 ERROR Given Emc Id is Invalid
+2022-02-24T16:16:40.157+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T16:16:40.158+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.172+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T16:16:40.173+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.184+0530 ERROR Invalid Inputs
+2022-02-24T16:16:40.185+0530 ERROR Given Emc is Invalid
+2022-02-24T16:49:11.450+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 20584 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T16:49:11.456+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T16:49:11.457+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-24T16:49:20.445+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-24T16:49:22.428+0530 INFO Started EmcAssesmentApplication in 12.355 seconds (JVM running for 14.25)
+2022-02-24T17:07:04.039+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 20584 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T17:07:04.039+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T17:07:04.039+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-24T17:07:06.285+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-24T17:11:44.687+0530 INFO testRetrieveClientDetails Function Started
+2022-02-24T17:11:44.721+0530 INFO called retrieveClientDetails function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T17:11:44.779+0530 INFO testRetrieveClientDetails Function Ended
+2022-02-24T17:11:44.811+0530 INFO testUpdateClientDetails Function Started
+2022-02-24T17:11:44.812+0530 INFO called updateClientDetails function UserName : LVsystem@gmail.com,getEmcId : {}
+2022-02-24T17:11:44.813+0530 INFO testUpdateClientDetails Function Ended
+2022-02-24T17:11:44.823+0530 INFO testSaveClientDetails Function Started
+2022-02-24T17:11:44.823+0530 DEBUG started saveClientDetails function userName: LVsystem@gmail.com
+2022-02-24T17:11:44.824+0530 INFO testSaveClientDetails Function Ended
+2022-02-24T17:11:45.204+0530 INFO testRetrieveElectromagneticCompatability Function Started
+2022-02-24T17:11:45.205+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T17:11:45.205+0530 INFO testRetrieveElectromagneticCompatability Function Ended
+2022-02-24T17:11:45.214+0530 INFO testUpdateElectromagneticCompatability Function Started
+2022-02-24T17:11:45.215+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T17:11:45.215+0530 INFO testUpdateElectromagneticCompatability Function Ended
+2022-02-24T17:11:45.223+0530 INFO testSaveElectromagneticCompatability Function Started
+2022-02-24T17:11:45.224+0530 DEBUG started saveElectromagneticCompatability function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T17:11:45.225+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T17:11:45.225+0530 INFO testSaveElectromagneticCompatability Function Ended
+2022-02-24T17:11:45.337+0530 INFO testRetrieveListOfFacilityData Function Started
+2022-02-24T17:11:45.338+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: LVsystem@gmail.com,emcId : {}
+2022-02-24T17:11:45.338+0530 INFO testRetrieveListOfFacilityData Function ended
+2022-02-24T17:11:45.349+0530 INFO testRetrieveEmcReports Function Started
+2022-02-24T17:11:45.353+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T17:11:45.354+0530 INFO testRetrieveEmcReports Function ended
+2022-02-24T17:11:45.517+0530 INFO testAddFacilityData Function Started
+2022-02-24T17:11:45.518+0530 DEBUG started saveFacilityData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T17:11:45.519+0530 DEBUG ended saveFacilityData function
+2022-02-24T17:11:45.531+0530 INFO testRetrieveFacilityData Function Started
+2022-02-24T17:11:45.532+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T17:11:45.534+0530 INFO testRetrieveFacilityData Function Ended
+2022-02-24T17:11:45.545+0530 INFO testUpdateFacilityData Function Started
+2022-02-24T17:11:45.545+0530 INFO called updateBasicLpsDetails function UserName : LVsystem@gmail.com,getEmcId : 1
+2022-02-24T17:11:45.546+0530 INFO testUpdateFacilityData Function Ended
+2022-02-24T17:11:45.662+0530 INFO testRetrievePowerEarthingData Function Started
+2022-02-24T17:11:45.663+0530 INFO called retrieveFacilityData function UserName: LVsystem@gmail.com, emcId : 12
+2022-02-24T17:11:45.663+0530 INFO testRetrievePowerEarthingData Function Ended
+2022-02-24T17:11:45.675+0530 INFO testSavePowerEarthingData Function Started
+2022-02-24T17:11:45.683+0530 DEBUG started savePowerEarthingData function userName: LVsystem@gmail.com,emcId : 1
+2022-02-24T17:11:45.684+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T17:11:45.685+0530 INFO testSavePowerEarthingData Function Ended
+2022-02-24T17:11:45.696+0530 INFO testUpdatePowerEarthingData Function Started
+2022-02-24T17:11:45.697+0530 INFO called updatePowerEarthingData function UserName : LVsystem@gmail.com,emcId : 1
+2022-02-24T17:11:45.697+0530 INFO testUpdatePowerEarthingData Function Ended
+2022-02-24T17:11:46.522+0530 INFO Starting EmcAssesmentApplicationTests using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 2740 (started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T17:11:46.522+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T17:11:46.523+0530 INFO The following profiles are active: dev
+2022-02-24T17:11:58.943+0530 INFO Started EmcAssesmentApplicationTests in 12.755 seconds (JVM running for 18.351)
+2022-02-24T17:11:59.088+0530 ERROR Given EmcId doesn't exist in ClientDetails
+2022-02-24T17:11:59.090+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.135+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.136+0530 ERROR Given Emc Id is Invalid
+2022-02-24T17:11:59.186+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.410+0530 ERROR Given UserName & Id doesn't exist in ElectromagneticCompatability Details
+2022-02-24T17:11:59.411+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.421+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.422+0530 ERROR Given Emc Id is Invalid
+2022-02-24T17:11:59.433+0530 ERROR Given ElectromagneticCompatability Already Exists
+2022-02-24T17:11:59.434+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.435+0530 ERROR Client Details Not Filled
+2022-02-24T17:11:59.475+0530 INFO testRetrieveListOfClientDetails Function Started
+2022-02-24T17:11:59.475+0530 INFO ClientDetails fetching process started
+2022-02-24T17:11:59.476+0530 INFO testRetrieveListOfClientDetails Function ended
+2022-02-24T17:11:59.485+0530 INFO testRetrieveEmcReports method started
+2022-02-24T17:11:59.486+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T17:11:59.486+0530 DEBUG ClientDetails fetching ended
+2022-02-24T17:11:59.486+0530 DEBUG fetching process started for FacilityData
+2022-02-24T17:11:59.487+0530 DEBUG FacilityData fetching ended
+2022-02-24T17:11:59.488+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T17:11:59.488+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T17:11:59.488+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T17:11:59.488+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T17:11:59.491+0530 DEBUG Invalid Input
+2022-02-24T17:11:59.491+0530 INFO testRetrieveEmcReports method ended
+2022-02-24T17:11:59.515+0530 ERROR Given FacilityData Already Exists
+2022-02-24T17:11:59.515+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.527+0530 ERROR Given UserName & Id doesn't exist in FacilityData Details
+2022-02-24T17:11:59.527+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.536+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.537+0530 ERROR Given Emc Id is Invalid
+2022-02-24T17:11:59.565+0530 ERROR Given UserName & Id doesn't exist in PowerEarthingData Details
+2022-02-24T17:11:59.566+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.575+0530 ERROR Given PowerEarthingData Already Exists
+2022-02-24T17:11:59.576+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.586+0530 ERROR Invalid Inputs
+2022-02-24T17:11:59.587+0530 ERROR Given Emc is Invalid
+2022-02-24T17:22:07.209+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 23436 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T17:22:07.212+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T17:22:07.212+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-24T17:22:14.803+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-24T17:22:16.773+0530 INFO Started EmcAssesmentApplication in 10.076 seconds (JVM running for 10.741)
+2022-02-24T17:29:09.885+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T17:29:09.894+0530 INFO ClientDetails fetching process started
+2022-02-24T17:29:10.131+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T17:29:10.131+0530 INFO ClientDetails fetching process started
+2022-02-24T17:31:12.780+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-24T17:31:12.940+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T17:31:12.940+0530 INFO ClientDetails fetching process started
+2022-02-24T17:31:12.943+0530 INFO called retrieveClientDetails function UserName: sd@capeindia.net, emcId : 2
+2022-02-24T17:44:28.807+0530 DEBUG started saveFacilityData function userName: sd@capeindia.net,emcId : 2
+2022-02-24T17:44:28.956+0530 DEBUG ended saveFacilityData function
+2022-02-24T17:44:29.002+0530 INFO called retrieveFacilityData function UserName: sd@capeindia.net, emcId : 2
+2022-02-24T17:48:51.658+0530 DEBUG started savePowerEarthingData function userName: sd@capeindia.net,emcId : 2
+2022-02-24T17:48:51.750+0530 DEBUG ended savePowerEarthingData function
+2022-02-24T17:48:51.800+0530 INFO called retrieveFacilityData function UserName: sd@capeindia.net, emcId : 2
+2022-02-24T18:26:49.622+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T18:26:49.623+0530 INFO ClientDetails fetching process started
+2022-02-24T18:26:49.680+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T18:26:49.681+0530 INFO ClientDetails fetching process started
+2022-02-24T18:27:07.742+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: sd@capeindia.net,emcId : 2
+2022-02-24T18:27:07.748+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T18:27:07.755+0530 DEBUG ClientDetails fetching ended
+2022-02-24T18:27:07.755+0530 DEBUG fetching process started for FacilityData
+2022-02-24T18:27:07.768+0530 DEBUG FacilityData fetching ended
+2022-02-24T18:27:07.768+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T18:27:07.780+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T18:27:07.780+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T18:27:07.835+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T18:27:07.897+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T18:27:07.897+0530 INFO ClientDetails fetching process started
+2022-02-24T18:57:42.548+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T18:57:42.550+0530 INFO ClientDetails fetching process started
+2022-02-24T18:57:42.610+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T18:57:42.611+0530 INFO ClientDetails fetching process started
+2022-02-24T18:57:45.975+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: sd@capeindia.net,emcId : 2
+2022-02-24T18:57:45.975+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T18:57:45.978+0530 DEBUG ClientDetails fetching ended
+2022-02-24T18:57:45.978+0530 DEBUG fetching process started for FacilityData
+2022-02-24T18:57:45.986+0530 DEBUG FacilityData fetching ended
+2022-02-24T18:57:45.986+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T18:57:45.996+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T18:57:45.996+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T18:57:46.003+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T18:57:46.046+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T18:57:46.046+0530 INFO ClientDetails fetching process started
+2022-02-24T19:24:16.860+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 18928 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-24T19:24:16.864+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-24T19:24:16.864+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-24T19:24:29.086+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-24T19:24:33.404+0530 INFO Started EmcAssesmentApplication in 17.257 seconds (JVM running for 18.038)
+2022-02-24T19:26:33.858+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:26:33.862+0530 INFO ClientDetails fetching process started
+2022-02-24T19:26:33.969+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:26:33.970+0530 INFO ClientDetails fetching process started
+2022-02-24T19:26:37.910+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: sd@capeindia.net,emcId : 2
+2022-02-24T19:26:37.911+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T19:26:37.918+0530 DEBUG ClientDetails fetching ended
+2022-02-24T19:26:37.918+0530 DEBUG fetching process started for FacilityData
+2022-02-24T19:26:37.935+0530 DEBUG FacilityData fetching ended
+2022-02-24T19:26:37.936+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-24T19:26:37.950+0530 DEBUG PowerEarthingData fetching ended
+2022-02-24T19:26:37.951+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-24T19:26:37.963+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-24T19:26:38.015+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:26:38.015+0530 INFO ClientDetails fetching process started
+2022-02-24T19:34:05.921+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:34:05.922+0530 INFO ClientDetails fetching process started
+2022-02-24T19:34:05.952+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:34:05.952+0530 INFO ClientDetails fetching process started
+2022-02-24T19:34:28.669+0530 DEBUG started saveClientDetails function userName: sd@capeindia.net
+2022-02-24T19:34:28.909+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:34:28.909+0530 INFO ClientDetails fetching process started
+2022-02-24T19:34:28.910+0530 INFO called retrieveClientDetails function UserName: sd@capeindia.net, emcId : 3
+2022-02-24T19:35:03.897+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: sd@capeindia.net,emcId : 3
+2022-02-24T19:35:03.898+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T19:35:03.902+0530 DEBUG ClientDetails fetching ended
+2022-02-24T19:35:03.902+0530 DEBUG fetching process started for FacilityData
+2022-02-24T19:35:03.916+0530 DEBUG FacilityData fetching ended
+2022-02-24T19:35:03.957+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:35:03.957+0530 INFO ClientDetails fetching process started
+2022-02-24T19:54:56.054+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: sd@capeindia.net,emcId : 3
+2022-02-24T19:54:56.055+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T19:54:56.063+0530 DEBUG ClientDetails fetching ended
+2022-02-24T19:54:56.064+0530 DEBUG fetching process started for FacilityData
+2022-02-24T19:54:56.070+0530 DEBUG FacilityData fetching ended
+2022-02-24T19:54:56.112+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:54:56.112+0530 INFO ClientDetails fetching process started
+2022-02-24T19:55:48.043+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: sd@capeindia.net,emcId : 3
+2022-02-24T19:55:48.043+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T19:55:48.046+0530 DEBUG ClientDetails fetching ended
+2022-02-24T19:55:48.046+0530 DEBUG fetching process started for FacilityData
+2022-02-24T19:55:48.048+0530 DEBUG FacilityData fetching ended
+2022-02-24T19:55:48.092+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:55:48.092+0530 INFO ClientDetails fetching process started
+2022-02-24T19:55:57.508+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:55:57.509+0530 INFO ClientDetails fetching process started
+2022-02-24T19:55:57.530+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:55:57.531+0530 INFO ClientDetails fetching process started
+2022-02-24T19:56:15.267+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: sd@capeindia.net,emcId : 3
+2022-02-24T19:56:15.267+0530 DEBUG fetching process started for ClientDetails
+2022-02-24T19:56:15.269+0530 DEBUG ClientDetails fetching ended
+2022-02-24T19:56:15.269+0530 DEBUG fetching process started for FacilityData
+2022-02-24T19:56:15.271+0530 DEBUG FacilityData fetching ended
+2022-02-24T19:56:15.297+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-24T19:56:15.297+0530 INFO ClientDetails fetching process started
+2022-02-25T07:29:05.168+0530 INFO Starting EmcAssesmentApplication using Java 1.8.0_271 on DESKTOP-PUJTA74 with PID 5028 (C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend\target\classes started by capeelectricsoftware in C:\Users\gopa0\sathish\backend\Cape-Electric-EMC-Backend)
+2022-02-25T07:29:05.172+0530 DEBUG Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-02-25T07:29:05.173+0530 INFO No active profile set, falling back to default profiles: default
+2022-02-25T07:29:14.042+0530 DEBUG Filter 'jwtRequestFilter' configured for use
+2022-02-25T07:29:18.020+0530 INFO Started EmcAssesmentApplication in 13.79 seconds (JVM running for 15.399)
+2022-02-25T07:32:30.608+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-25T07:32:30.611+0530 INFO ClientDetails fetching process started
+2022-02-25T07:32:30.697+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-25T07:32:30.697+0530 INFO ClientDetails fetching process started
+2022-02-25T07:32:40.518+0530 INFO FinalReportAPI_started retrieveFinalEmcReport function userName: sd@capeindia.net,emcId : 2
+2022-02-25T07:32:40.519+0530 DEBUG fetching process started for ClientDetails
+2022-02-25T07:32:40.528+0530 DEBUG ClientDetails fetching ended
+2022-02-25T07:32:40.528+0530 DEBUG fetching process started for FacilityData
+2022-02-25T07:32:40.541+0530 DEBUG FacilityData fetching ended
+2022-02-25T07:32:40.541+0530 DEBUG fetching process started for PowerEarthingData
+2022-02-25T07:32:40.554+0530 DEBUG PowerEarthingData fetching ended
+2022-02-25T07:32:40.554+0530 DEBUG fetching process started for ElectromagneticCompatability
+2022-02-25T07:32:40.563+0530 DEBUG ElectromagneticCompatability fetching ended
+2022-02-25T07:32:40.642+0530 INFO FinalReportAPI_started retrieveListOfClientDetails function userName: sd@capeindia.net,emcId : {}
+2022-02-25T07:32:40.642+0530 INFO ClientDetails fetching process started
+2022-02-25T07:34:20.507+0530 INFO called updatePowerEarthingData function UserName : sd@capeindia.net,emcId : 2
+2022-02-25T07:34:20.656+0530 INFO called retrieveFacilityData function UserName: sd@capeindia.net, emcId : 2
+2022-02-25T07:37:06.994+0530 INFO called updatePowerEarthingData function UserName : sd@capeindia.net,emcId : 2
+2022-02-25T07:37:07.061+0530 INFO called retrieveFacilityData function UserName: sd@capeindia.net, emcId : 2
+2022-02-25T07:37:26.092+0530 INFO called updatePowerEarthingData function UserName : sd@capeindia.net,emcId : 2
+2022-02-25T07:37:26.155+0530 INFO called retrieveFacilityData function UserName: sd@capeindia.net, emcId : 2
