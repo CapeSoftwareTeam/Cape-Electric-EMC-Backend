@@ -1,5 +1,7 @@
 package com.capeelectric.model;
 
+import java.sql.Blob;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,8 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
-
-import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name = "FILE_UPLOAD_TABLE")
@@ -27,9 +27,9 @@ public class ResponseFile {
 
 	@Column(name = "FILE_TYPE")
 	private String fileType;
-	@Lob
+
 	@Column(name = "DATA")
-	private byte[] data;
+	private Blob data;
 
 	public Integer getEmcId() {
 		return emcId;
@@ -55,11 +55,11 @@ public class ResponseFile {
 		this.fileType = fileType;
 	}
 
-	public byte[] getData() {
+	public Blob getData() {
 		return data;
 	}
 
-	public void setData(byte[] data) {
+	public void setData(Blob data) {
 		this.data = data;
 	}
 

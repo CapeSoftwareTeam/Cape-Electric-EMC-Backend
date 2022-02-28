@@ -1,6 +1,10 @@
 package com.capeelectric.service;
 
 import java.io.IOException;
+import java.sql.Blob;
+import java.sql.SQLException;
+
+import javax.sql.rowset.serial.SerialException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,9 +13,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.amazonaws.util.IOUtils;
 import com.capeelectric.model.ResponseFile;
 import com.capeelectric.repository.FileDBRepository;
-import com.capeelectric.service.impl.FacilityDataServiceImpl;
 
 @Service
 public class FileStorageService {
@@ -20,20 +24,49 @@ public class FileStorageService {
 	@Autowired
 	private FileDBRepository fileDBRepository;
 
-	public ResponseFile store(MultipartFile file, Integer emcId) throws IOException {
+	public void store(MultipartFile file, Integer emcId) throws IOException, SerialException, SQLException {
 		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+		Blob blob = new javax.sql.rowset.serial.SerialBlob(IOUtils.toByteArray(file.getInputStream()));
 		ResponseFile FileDB = new ResponseFile();
 		FileDB.setEmcId(emcId);
 		FileDB.setFileName(fileName);
-		FileDB.setData(file.getBytes());
+		FileDB.setData(blob);
 		FileDB.setFileType(file.getContentType());
 		logger.debug("File Saved In DB");
-		return fileDBRepository.save(FileDB);
+		fileDBRepository.save(FileDB);
 	}
 
-	public ResponseFile getFile(Integer emcid) {
-		return fileDBRepository.findByEmcId(emcid).get();
+	public ResponseFile downloadFile(Integer emcId) throws IOException {
+		if (emcId != null && emcId != 0) {
+			ResponseFile fileDB = fileDBRepository.findByEmcId(emcId).get();
+			if (fileDB != null && fileDB.getEmcId().equals(emcId)) {
+				return fileDBRepository.findByEmcId(emcId).get();
+			} else {
+				logger.error("File Not Preset");
+				throw new IOException("File Not Preset");
+			}
+		} else {
+			logger.error("Id Not Preset");
+			throw new IOException("Id Not Preset");
+		}
 
 	}
 
+	public void removeFile(Integer emcId) throws IOException {
+		if (emcId != null && emcId != 0) {
+			ResponseFile fileDB = fileDBRepository.findByEmcId(emcId).get();
+			if (fileDB != null && fileDB.getEmcId().equals(emcId)) {
+				logger.info("File Deleted");
+				fileDBRepository.delete(fileDB);
+			} else {
+				logger.error("File Not Preset");
+				throw new IOException("File Not Preset");
+			}
+
+		} else {
+			logger.error("Id Not Preset");
+			throw new IOException("Id Not Preset");
+		}
+
+	}
 }
