@@ -17,8 +17,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.capeelectric.controller.PowerEarthingDataController;
-import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.FacilityData;

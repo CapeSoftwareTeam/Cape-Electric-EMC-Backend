@@ -17,7 +17,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.capeelectric.controller.ElectromagneticCompatabilityControllerTest;
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
 import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.ClientDetails;
@@ -29,7 +28,6 @@ import com.capeelectric.repository.ElectromagneticCompatabilityRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
 import com.capeelectric.service.impl.ElectromagneticCompatabilityServiceImpl;
-import com.capeelectric.service.impl.PowerEarthingDataServiceImpl;
 
 @ExtendWith(SpringExtension.class)
 @ExtendWith(MockitoExtension.class)

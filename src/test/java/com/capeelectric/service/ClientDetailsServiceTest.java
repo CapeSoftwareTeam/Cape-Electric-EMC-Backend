@@ -1,7 +1,6 @@
 package com.capeelectric.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -19,13 +18,9 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.capeelectric.exception.ClientDetailsException;
-import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.model.ClientDetails;
-import com.capeelectric.model.FacilityData;
 import com.capeelectric.repository.ClientDetailsRepository;
-import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.service.impl.ClientDetailsServiceImpl;
-import com.capeelectric.service.impl.FacilityDataServiceImpl;
 
 @ExtendWith(SpringExtension.class)
 @ExtendWith(MockitoExtension.class)
