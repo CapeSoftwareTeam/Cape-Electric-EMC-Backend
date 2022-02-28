@@ -12,8 +12,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -29,7 +27,6 @@ import com.capeelectric.service.impl.PowerEarthingDataServiceImpl;
 @ExtendWith(SpringExtension.class)
 @ExtendWith(MockitoExtension.class)
 public class PowerEarthingDataServiceImplTest {
-	private static final Logger logger = LoggerFactory.getLogger(PowerEarthingDataServiceImplTest.class);
 
 	@InjectMocks
 	private PowerEarthingDataServiceImpl powerEarthingDataServiceImpl;
