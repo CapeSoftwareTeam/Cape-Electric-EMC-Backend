@@ -1,7 +1,6 @@
 package com.capeelectric.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -13,24 +12,17 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.capeelectric.exception.ClientDetailsException;
-import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.model.ClientDetails;
-import com.capeelectric.model.FacilityData;
 import com.capeelectric.repository.ClientDetailsRepository;
-import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.service.impl.ClientDetailsServiceImpl;
-import com.capeelectric.service.impl.FacilityDataServiceImpl;
 
 @ExtendWith(SpringExtension.class)
 @ExtendWith(MockitoExtension.class)
 public class ClientDetailsServiceTest {
-	private static final Logger logger = LoggerFactory.getLogger(ClientDetailsServiceTest.class);
 	@InjectMocks
 	private ClientDetailsServiceImpl clientDetailsServiceImpl;
 

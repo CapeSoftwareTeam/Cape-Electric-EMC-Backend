@@ -1,7 +1,6 @@
 package com.capeelectric.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -19,7 +18,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.capeelectric.exception.FacilityDataException;
-
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.service.impl.FacilityDataServiceImpl;
 

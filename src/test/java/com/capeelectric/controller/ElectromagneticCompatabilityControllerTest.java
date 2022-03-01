@@ -18,13 +18,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
-import com.capeelectric.exception.FacilityDataException;
-import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.ElectromagneticCompatability;
-import com.capeelectric.model.FacilityData;
-import com.capeelectric.model.PowerEarthingData;
 import com.capeelectric.service.impl.ElectromagneticCompatabilityServiceImpl;
-import com.capeelectric.service.impl.PowerEarthingDataServiceImpl;
 
 @ExtendWith(SpringExtension.class)
 @ExtendWith(MockitoExtension.class)

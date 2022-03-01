@@ -18,16 +18,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.capeelectric.exception.ElectromagneticCompatabilityException;
 import com.capeelectric.exception.EmcFinalReportException;
-import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.EmcFinalReport;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
 import com.capeelectric.service.impl.EmcFinalReportServiceImpl;
-import com.capeelectric.service.impl.FacilityDataServiceImpl;
 
 @ExtendWith(SpringExtension.class)
 @ExtendWith(MockitoExtension.class)

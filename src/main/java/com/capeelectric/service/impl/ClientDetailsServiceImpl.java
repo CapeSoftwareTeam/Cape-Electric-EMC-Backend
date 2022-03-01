@@ -10,11 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.capeelectric.exception.ClientDetailsException;
-import com.capeelectric.exception.FacilityDataException;
 import com.capeelectric.model.ClientDetails;
-import com.capeelectric.model.FacilityData;
 import com.capeelectric.repository.ClientDetailsRepository;
-import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.service.ClientDetailsService;
 
 @Service

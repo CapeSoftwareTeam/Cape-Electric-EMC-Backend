@@ -7,8 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import com.capeelectric.model.ClientDetails;
-import com.capeelectric.model.ElectromagneticCompatability;
-import com.capeelectric.model.FacilityData;
 
 @Repository
 public interface ClientDetailsRepository extends CrudRepository<ClientDetails, Integer> {
