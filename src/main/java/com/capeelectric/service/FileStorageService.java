@@ -3,6 +3,7 @@ package com.capeelectric.service;
 import java.io.IOException;
 import java.sql.Blob;
 import java.sql.SQLException;
+import java.util.Optional;
 
 import javax.sql.rowset.serial.SerialException;
 
@@ -95,17 +96,17 @@ public class FileStorageService {
 
 	public ResponseFile retrieveFileNameByEmcId(Integer emcId) throws IOException {
 		if (emcId != null && emcId != 0) {
-			ResponseFile fileDB = fileDBRepository.findByEmcId(emcId).get();
-			if (fileDB != null && fileDB.getEmcId().equals(emcId)) {
-				return fileDB;
-			} else {
-				logger.error("File Not Preset");
-				throw new IOException("File Not Preset");
+			Optional<ResponseFile> fileDB = fileDBRepository.findByEmcId(emcId);
+			if(fileDB.isPresent()) {
+				if (fileDB.get() != null && fileDB.get().getEmcId().equals(emcId)) {
+					return fileDB.get();
+				} else {
+					logger.error("File Not Present");
+				}
 			}
-
 		} else {
-			logger.error("Id Not Preset");
-			throw new IOException("Id Not Preset");
+			logger.error("Id Not Present");
 		}
+		return null;
 	}
 }

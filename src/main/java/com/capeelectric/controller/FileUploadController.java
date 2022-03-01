@@ -63,12 +63,16 @@ public class FileUploadController<V> {
 	public ResponseEntity<Map> retrieveFileNameByEmcId(@PathVariable Integer emcId) throws IOException, SQLException {
 		logger.debug("Retrieve File Start emcId : {}", emcId);
 		ResponseFile fileDB = storageService.retrieveFileNameByEmcId(emcId);
-		HashMap<String, String> hashMap = new HashMap<>();
-		hashMap.put("fileId", fileDB.getFileId().toString());
-		hashMap.put("fileType", fileDB.getFileType());
-		hashMap.put("fileEmcId", fileDB.getEmcId().toString());
-		hashMap.put("fileName", fileDB.getFileName());
-		return new ResponseEntity<Map>(hashMap, HttpStatus.OK);
+		if(null != fileDB) {
+			HashMap<String, String> hashMap = new HashMap<>();
+			hashMap.put("fileId", fileDB.getFileId().toString());
+			hashMap.put("fileType", fileDB.getFileType());
+			hashMap.put("fileEmcId", fileDB.getEmcId().toString());
+			hashMap.put("fileName", fileDB.getFileName());
+			return new ResponseEntity<Map>(hashMap, HttpStatus.OK);
+		}
+		return null;
+		
 	}
 
 	@PutMapping("/updateFile/{fileId}")
