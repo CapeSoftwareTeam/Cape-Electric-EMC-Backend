@@ -40,7 +40,7 @@ public class FileStorageService {
 		if (emcId != null && emcId != 0) {
 			ResponseFile fileDB = fileDBRepository.findByEmcId(emcId).get();
 			if (fileDB != null && fileDB.getEmcId().equals(emcId)) {
-				return fileDBRepository.findByEmcId(emcId).get();
+				return fileDB;
 			} else {
 				logger.error("File Not Preset");
 				throw new IOException("File Not Preset");
@@ -68,5 +68,44 @@ public class FileStorageService {
 			throw new IOException("Id Not Preset");
 		}
 
+	}
+
+	public void updateFile(MultipartFile file, Integer fileId) throws SerialException, SQLException, IOException {
+		if (fileId != null && fileId != 0) {
+			ResponseFile fileDB = fileDBRepository.findById(fileId).get();
+			if (fileDB != null && fileDB.getFileId().equals(fileId)) {
+				String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+				Blob blob = new javax.sql.rowset.serial.SerialBlob(IOUtils.toByteArray(file.getInputStream()));
+				//fileDB.setEmcId(emcId);
+				fileDB.setFileName(fileName);
+				fileDB.setData(blob);
+				fileDB.setFileType(file.getContentType());
+				logger.debug("File Update In DB");
+				fileDBRepository.save(fileDB);
+			} else {
+				logger.error("File Not Preset");
+				throw new IOException("File Not Preset");
+			}
+		} else {
+			logger.error("Id Not Preset");
+			throw new IOException("Id Not Preset");
+		}
+
+	}
+
+	public ResponseFile retrieveFileNameByEmcId(Integer emcId) throws IOException {
+		if (emcId != null && emcId != 0) {
+			ResponseFile fileDB = fileDBRepository.findByEmcId(emcId).get();
+			if (fileDB != null && fileDB.getEmcId().equals(emcId)) {
+				return fileDB;
+			} else {
+				logger.error("File Not Preset");
+				throw new IOException("File Not Preset");
+			}
+
+		} else {
+			logger.error("Id Not Preset");
+			throw new IOException("Id Not Preset");
+		}
 	}
 }

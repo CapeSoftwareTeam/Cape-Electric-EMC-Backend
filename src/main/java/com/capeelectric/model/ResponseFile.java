@@ -1,5 +1,6 @@
 package com.capeelectric.model;
 
+import java.io.Serializable;
 import java.sql.Blob;
 
 import javax.persistence.Column;
@@ -7,12 +8,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Lob;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "FILE_UPLOAD_TABLE")
-public class ResponseFile {
+public class ResponseFile implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -31,12 +36,12 @@ public class ResponseFile {
 	@Column(name = "DATA")
 	private Blob data;
 
-	public Integer getEmcId() {
-		return emcId;
+	public Integer getFileId() {
+		return fileId;
 	}
 
-	public void setEmcId(Integer emcId) {
-		this.emcId = emcId;
+	public void setFileId(Integer fileId) {
+		this.fileId = fileId;
 	}
 
 	public String getFileName() {
@@ -45,6 +50,14 @@ public class ResponseFile {
 
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
+	}
+
+	public Integer getEmcId() {
+		return emcId;
+	}
+
+	public void setEmcId(Integer emcId) {
+		this.emcId = emcId;
 	}
 
 	public String getFileType() {
@@ -61,18 +74,6 @@ public class ResponseFile {
 
 	public void setData(Blob data) {
 		this.data = data;
-	}
-
-	public Integer getfileId() {
-		return fileId;
-	}
-
-	public Integer getFileId() {
-		return fileId;
-	}
-
-	public void setFileId(Integer fileId) {
-		this.fileId = fileId;
 	}
 
 }
