@@ -61,6 +61,8 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 						if (!electromagneticDataRep.isPresent()) {
 							electromagneticCompatability.setCreatedDate(LocalDateTime.now());
 							electromagneticCompatability.setCreatedBy(electromagneticCompatability.getUserName());
+							electromagneticCompatability.setUpdatedBy(electromagneticCompatability.getUserName());
+							electromagneticCompatability.setUpdatedDate(LocalDateTime.now());
 							electromagneticCompatabilityRepository.save(electromagneticCompatability);
 							logger.debug("Electro Magnetic Compatability  Details Successfully Saved in DB");
 
