@@ -50,7 +50,7 @@ public class ElectromagneticCompatabilityControllerTest {
 
 		ResponseEntity<String> saveElectromagneticCompatability = electromagneticCompatabilityController
 				.saveElectromagneticCompatability(electromagneticCompatability);
-		assertEquals(saveElectromagneticCompatability.getBody(), "Electromagnetic Compatability Successfully Saved");
+		assertEquals(saveElectromagneticCompatability.getBody(), "Electromagnetic Compatability Successfully Submitted");
 
 		logger.info("testSaveElectromagneticCompatability Function Ended");
 	}
