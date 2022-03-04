@@ -71,6 +71,8 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 									&& clientDetailsRepo.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
 								clientDetails = clientDetailsRepo.get();
 								clientDetails.setAllStepsCompleted("AllStepCompleted");
+								clientDetails.setUpdatedBy(electromagneticCompatability.getUserName());
+								clientDetails.setUpdatedDate(LocalDateTime.now());
 								clientDetailsRepository.save(clientDetails);
 								logger.debug("AllStepCompleted information saved ClientDetails table in DB"
 										+ electromagneticCompatability.getUserName());
