@@ -17,7 +17,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import com.capeelectric.exception.ClientDetailsException;
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
+import com.capeelectric.exception.FacilityDataException;
+import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.service.impl.ElectromagneticCompatabilityServiceImpl;
 
@@ -45,7 +48,7 @@ public class ElectromagneticCompatabilityControllerTest {
 	}
 
 	@Test
-	public void testSaveElectromagneticCompatability() throws ElectromagneticCompatabilityException {
+	public void testSaveElectromagneticCompatability() throws ElectromagneticCompatabilityException, ClientDetailsException, FacilityDataException, PowerEarthingDataException, Exception {
 		logger.info("testSaveElectromagneticCompatability Function Started");
 
 		ResponseEntity<String> saveElectromagneticCompatability = electromagneticCompatabilityController

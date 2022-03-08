@@ -15,7 +15,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.capeelectric.exception.ClientDetailsException;
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
+import com.capeelectric.exception.FacilityDataException;
+import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.service.ElectromagneticCompatabilityService;
 
@@ -34,35 +37,38 @@ public class ElectromagneticCompatabilityController {
 	private ElectromagneticCompatabilityService electromagneticCompatabilityService;
 
 	@PostMapping("/saveElectromagneticCompatability")
-	public ResponseEntity<String> saveElectromagneticCompatability(@RequestBody ElectromagneticCompatability electromagneticCompatability)
-			throws  ElectromagneticCompatabilityException {
-		logger.debug("started saveElectromagneticCompatability function userName: {},emcId : {}", electromagneticCompatability.getUserName(),
-				electromagneticCompatability.getEmcId());
+	public ResponseEntity<String> saveElectromagneticCompatability(
+			@RequestBody ElectromagneticCompatability electromagneticCompatability)
+			throws ElectromagneticCompatabilityException, ClientDetailsException, FacilityDataException,
+			PowerEarthingDataException, Exception {
+		logger.debug("started saveElectromagneticCompatability function userName: {},emcId : {}",
+				electromagneticCompatability.getUserName(), electromagneticCompatability.getEmcId());
 
 		electromagneticCompatabilityService.saveElectromagneticCompatability(electromagneticCompatability);
 		logger.debug("ended savePowerEarthingData function");
 
-		return new ResponseEntity<String>("Electromagnetic Compatability Successfully Submitted"
-				+ "\n"
+		return new ResponseEntity<String>("Electromagnetic Compatability Successfully Submitted" + "\n"
 				+ " (PDF Generation will be implemented later)", HttpStatus.OK);
 
 	}
-	
+
 	@GetMapping("/retrieveElectromagneticCompatability/{userName}/{emcId}")
-	public ResponseEntity<List<ElectromagneticCompatability>> retrieveElectromagneticCompatability(@PathVariable String userName,
-			@PathVariable Integer emcId) throws  ElectromagneticCompatabilityException {
+	public ResponseEntity<List<ElectromagneticCompatability>> retrieveElectromagneticCompatability(
+			@PathVariable String userName, @PathVariable Integer emcId) throws ElectromagneticCompatabilityException {
 		logger.info("called retrieveFacilityData function UserName: {}, emcId : {}", userName, emcId);
-		return new ResponseEntity<List<ElectromagneticCompatability>>(electromagneticCompatabilityService.retrieveElectromagneticCompatability(userName, emcId),
+		return new ResponseEntity<List<ElectromagneticCompatability>>(
+				electromagneticCompatabilityService.retrieveElectromagneticCompatability(userName, emcId),
 				HttpStatus.OK);
 	}
+
 	@PutMapping("/updateElectromagneticCompatability")
-	public ResponseEntity<String> updateElectromagneticCompatability(@RequestBody ElectromagneticCompatability electromagneticCompatability)
-			throws  ElectromagneticCompatabilityException {
-		logger.info("called updatePowerEarthingData function UserName : {},emcId : {}", electromagneticCompatability.getUserName(),
-				electromagneticCompatability.getEmcId());
+	public ResponseEntity<String> updateElectromagneticCompatability(
+			@RequestBody ElectromagneticCompatability electromagneticCompatability)
+			throws ElectromagneticCompatabilityException {
+		logger.info("called updatePowerEarthingData function UserName : {},emcId : {}",
+				electromagneticCompatability.getUserName(), electromagneticCompatability.getEmcId());
 		electromagneticCompatabilityService.updateElectromagneticCompatability(electromagneticCompatability);
-		return new ResponseEntity<String>("Electromagnetic Compatability Successfully Updated"
-				+ "\n"
+		return new ResponseEntity<String>("Electromagnetic Compatability Successfully Updated" + "\n"
 				+ " (PDF Generation will be implemented later)", HttpStatus.OK);
 	}
 }

@@ -9,7 +9,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.capeelectric.exception.ClientDetailsException;
 import com.capeelectric.exception.ElectromagneticCompatabilityException;
+import com.capeelectric.exception.FacilityDataException;
+import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.FacilityData;
@@ -18,7 +21,12 @@ import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.ElectromagneticCompatabilityRepository;
 import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
+import com.capeelectric.service.ClientDetailsPDFService;
 import com.capeelectric.service.ElectromagneticCompatabilityService;
+import com.capeelectric.service.ElectromagneticPDFService;
+import com.capeelectric.service.FacilityDataPDFService;
+import com.capeelectric.service.PowerEarthingDataPDFService;
+import com.capeelectric.service.PrintFinalPDFService;
 
 @Service
 public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticCompatabilityService {
@@ -39,10 +47,25 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 
 	private ClientDetails clientDetails;
 
+	@Autowired
+	private ClientDetailsPDFService clientDetailsPDFService;
+
+	@Autowired
+	private FacilityDataPDFService facilityDataPDFService;
+
+	@Autowired
+	private PowerEarthingDataPDFService powerEarthingDataPDFService;
+
+	@Autowired
+	private ElectromagneticPDFService electromagneticPDFService;
+
+	@Autowired
+	private PrintFinalPDFService printFinalPDFService;
 
 	@Override
 	public void saveElectromagneticCompatability(ElectromagneticCompatability electromagneticCompatability)
-			throws ElectromagneticCompatabilityException {
+			throws ElectromagneticCompatabilityException, ClientDetailsException, FacilityDataException,
+			PowerEarthingDataException, Exception {
 		if (electromagneticCompatability != null && electromagneticCompatability.getUserName() != null) {
 			Optional<FacilityData> facilityDataRep = facilityDataRepository
 					.findByEmcId(electromagneticCompatability.getEmcId());
@@ -66,9 +89,11 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 							electromagneticCompatabilityRepository.save(electromagneticCompatability);
 							logger.debug("Electro Magnetic Compatability  Details Successfully Saved in DB");
 
-							clientDetailsRepo = clientDetailsRepository.findByUserNameAndEmcId(electromagneticCompatability.getUserName(),electromagneticCompatability.getEmcId());
-							if (clientDetailsRepo.isPresent()
-									&& clientDetailsRepo.get().getEmcId().equals(electromagneticCompatability.getEmcId())) {
+							clientDetailsRepo = clientDetailsRepository.findByUserNameAndEmcId(
+									electromagneticCompatability.getUserName(),
+									electromagneticCompatability.getEmcId());
+							if (clientDetailsRepo.isPresent() && clientDetailsRepo.get().getEmcId()
+									.equals(electromagneticCompatability.getEmcId())) {
 								clientDetails = clientDetailsRepo.get();
 								clientDetails.setAllStepsCompleted("AllStepCompleted");
 								clientDetails.setUpdatedBy(electromagneticCompatability.getUserName());
@@ -76,6 +101,30 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 								clientDetailsRepository.save(clientDetails);
 								logger.debug("AllStepCompleted information saved ClientDetails table in DB"
 										+ electromagneticCompatability.getUserName());
+
+								clientDetailsPDFService.printClientDetails(electromagneticCompatability.getUserName(),
+										electromagneticCompatability.getEmcId());
+								logger.debug("PDF printClientDetails() function called successfully");
+
+								facilityDataPDFService.printFacilityDataDetails(
+										electromagneticCompatability.getUserName(),
+										electromagneticCompatability.getEmcId());
+								logger.debug("PDF printFacilityDataDetails() function called successfully");
+
+								powerEarthingDataPDFService.printPowerEarthingData(
+										electromagneticCompatability.getUserName(),
+										electromagneticCompatability.getEmcId());
+								logger.debug("PDF printPowerEarthingData() function called successfully");
+
+								electromagneticPDFService.printElectromagneticData(
+										electromagneticCompatability.getUserName(),
+										electromagneticCompatability.getEmcId());
+								logger.debug("PDF printElectromagneticData() function called successfully");
+
+								printFinalPDFService.printFinalPDF(electromagneticCompatability.getUserName(),
+										electromagneticCompatability.getEmcId(),clientDetails.getClientName());
+								logger.debug("PDF printFinalPDF() function called successfully");
+
 							} else {
 								logger.error("EMC-Id Information not Available in ClientDetails_Table");
 								throw new ElectromagneticCompatabilityException(

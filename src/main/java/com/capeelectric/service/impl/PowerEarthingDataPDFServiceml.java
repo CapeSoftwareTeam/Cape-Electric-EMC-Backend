@@ -343,6 +343,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				table14.addCell(cell75);
 
 				document.add(table14);
+				document.newPage();
 
 				PdfPCell cellEs = new PdfPCell(new Paragraph(30, "Electronics System Room Power Distribution", font9));
 				cellEs.setBorder(PdfPCell.NO_BORDER);
@@ -369,8 +370,6 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell86.setBorder(PdfPCell.NO_BORDER);
 				table17.addCell(cell86);
 				document.add(table17);
-
-				document.newPage();
 
 				PdfPCell cellEsp = new PdfPCell(
 						new Paragraph(30, "2.Electronic system power distribution panel:", font9));
@@ -713,6 +712,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				table24.addCell(cell3116);
 
 				document.add(table24);
+				document.newPage();
 
 				PdfPCell cellW = new PdfPCell(new Paragraph(30, "Distribution panel At Load (Final Circuits)", font9));
 				cellW.setBorder(PdfPCell.NO_BORDER);
