@@ -73,7 +73,6 @@ public class AWSEmailService {
 		//if(!emailDisable.equalsIgnoreCase("Y")) {
 
 		String to = userName;
-		System.out.println(userName);
 		String from = FROM;
 		Properties props = new Properties();
 		props.put("mail.transport.protocol", "smtp");
@@ -103,7 +102,6 @@ public class AWSEmailService {
 			fullObject = s3Client
 					.getObject(new GetObjectRequest(s3BucketName, "EMC_Pdf Name_".concat(keyname) + "/" + filename));
 
-			System.out.println(s3Client);
 			InputStream in = fullObject.getObjectContent();
 			byte[] buf = new byte[1024];
 			OutputStream out = new FileOutputStream(filename);
