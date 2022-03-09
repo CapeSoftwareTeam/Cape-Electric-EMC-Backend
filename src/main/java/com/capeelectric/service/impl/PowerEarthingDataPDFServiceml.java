@@ -2,6 +2,7 @@ package com.capeelectric.service.impl;
 
 import java.io.FileOutputStream;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,20 +27,20 @@ import com.itextpdf.text.pdf.PdfWriter;
 @Service
 public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFService {
 
-	@Autowired
-	private PowerEarthingDataRepository powerEarthingDataRepository;
+//	@Autowired
+//	private PowerEarthingDataRepository powerEarthingDataRepository;
 
 	@Override
-	public void printPowerEarthingData(String userName, Integer emcId) throws PowerEarthingDataException {
+	public void printPowerEarthingData(String userName, Integer emcId,Optional<PowerEarthingData> powerEarthingDataRep) throws PowerEarthingDataException {
 		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			Document document = new Document(PageSize.A4, 68, 68, 62, 68);
 
 			try {
 
 				PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("PowerandEarthingData.pdf"));
-				List<PowerEarthingData> powerEarthigData1 = powerEarthingDataRepository.findByUserNameAndEmcId(userName,
-						emcId);
-				PowerEarthingData powerEarthigData = powerEarthigData1.get(0);
+//				List<PowerEarthingData> powerEarthigData1 = powerEarthingDataRepository.findByUserNameAndEmcId(userName,
+//						emcId);
+				PowerEarthingData powerEarthigData = powerEarthingDataRep.get();
 
 				List<ElectronicSystem> electroicSys1 = powerEarthigData.getElectronicSystem();
 
@@ -395,7 +396,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell301.setGrayFill(0.92f);
 				table22.addCell(cell301);
 
-				PdfPCell cell302 = new PdfPCell(new Paragraph("Panel ID:", font9));
+				PdfPCell cell302 = new PdfPCell(new Paragraph("Panel ID", font9));
 				cell302.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell302.setFixedHeight(20f);
 				cell302.setGrayFill(0.92f);
@@ -412,7 +413,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell304.setGrayFill(0.92f);
 				table22.addCell(cell304);
 
-				PdfPCell cell305 = new PdfPCell(new Paragraph("Name plate data (manufacturer):", font9));
+				PdfPCell cell305 = new PdfPCell(new Paragraph("Name plate data (manufacturer)", font9));
 				cell305.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell305.setFixedHeight(20f);
 				cell305.setGrayFill(0.92f);
@@ -439,7 +440,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell3041.setRowspan(2);
 				table23.addCell(cell3041);
 
-				PdfPCell cell309 = new PdfPCell(new Paragraph("Main circuit breaker:", font9));
+				PdfPCell cell309 = new PdfPCell(new Paragraph("Main circuit breaker", font9));
 				cell309.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell309.setFixedHeight(20f);
 				cell309.setColspan(2);
@@ -505,7 +506,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell201.setRowspan(2);
 				table24.addCell(cell201);
 
-				PdfPCell cell202 = new PdfPCell(new Paragraph("Other trips:", font9));
+				PdfPCell cell202 = new PdfPCell(new Paragraph("Other trips", font9));
 				cell202.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell202.setFixedHeight(20f);
 				cell202.setGrayFill(0.92f);
@@ -517,7 +518,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell203.setColspan(2);
 				table24.addCell(cell203);
 
-				PdfPCell cell204 = new PdfPCell(new Paragraph("Differential protection:", font9));
+				PdfPCell cell204 = new PdfPCell(new Paragraph("Differential protection", font9));
 				cell204.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell204.setFixedHeight(20f);
 				cell204.setGrayFill(0.92f);
@@ -535,7 +536,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				// cell2012.setRowspan(2);
 				table24.addCell(cell2012);
 
-				PdfPCell cell206 = new PdfPCell(new Paragraph("Panel bonded to building steel:", font9));
+				PdfPCell cell206 = new PdfPCell(new Paragraph("Panel bonded to building steel", font9));
 				cell206.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell206.setFixedHeight(20f);
 				cell206.setGrayFill(0.92f);
@@ -553,7 +554,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell333.setRowspan(4);
 				table24.addCell(cell333);
 
-				PdfPCell cell331 = new PdfPCell(new Paragraph("Panel feed:", font9));
+				PdfPCell cell331 = new PdfPCell(new Paragraph("Panel feed", font9));
 				cell331.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell331.setFixedHeight(20f);
 				cell331.setGrayFill(0.92f);
@@ -565,7 +566,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell332.setColspan(2);
 				table24.addCell(cell332);
 
-				PdfPCell cell334 = new PdfPCell(new Paragraph("Phase wires:", font9));
+				PdfPCell cell334 = new PdfPCell(new Paragraph("Phase wires", font9));
 				cell334.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell334.setFixedHeight(20f);
 				cell334.setGrayFill(0.92f);
@@ -577,7 +578,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell335.setColspan(2);
 				table24.addCell(cell335);
 
-				PdfPCell cell336 = new PdfPCell(new Paragraph("Neutral wire:", font9));
+				PdfPCell cell336 = new PdfPCell(new Paragraph("Neutral wire", font9));
 				cell336.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell336.setFixedHeight(20f);
 				cell336.setGrayFill(0.92f);
@@ -589,7 +590,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell337.setColspan(2);
 				table24.addCell(cell337);
 
-				PdfPCell cell338 = new PdfPCell(new Paragraph("PE wire size:", font9));
+				PdfPCell cell338 = new PdfPCell(new Paragraph("PE wire size", font9));
 				cell338.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell338.setFixedHeight(20f);
 				cell338.setGrayFill(0.92f);
@@ -640,7 +641,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell3234.setGrayFill(0.92f);
 				table24.addCell(cell3234);
 
-				PdfPCell cell312313 = new PdfPCell(new Paragraph("Neutral bus:", font9));
+				PdfPCell cell312313 = new PdfPCell(new Paragraph("Neutral bus", font9));
 				cell312313.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell312313.setFixedHeight(20f);
 				cell312313.setGrayFill(0.92f);
@@ -652,7 +653,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell31231.setColspan(2);
 				table24.addCell(cell31231);
 
-				PdfPCell cell31203 = new PdfPCell(new Paragraph("Earth bus:", font9));
+				PdfPCell cell31203 = new PdfPCell(new Paragraph("Earth bus", font9));
 				cell31203.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell31203.setFixedHeight(20f);
 				cell31203.setGrayFill(0.92f);
@@ -663,7 +664,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				// cell311.setFixedHeight(20f);
 				table24.addCell(cell311);
 
-				PdfPCell cell312033 = new PdfPCell(new Paragraph("List of non electronic loads on earth bus:", font9));
+				PdfPCell cell312033 = new PdfPCell(new Paragraph("List of non electronic loads on earth bus", font9));
 				cell312033.setHorizontalAlignment(Element.ALIGN_CENTER);
 				// cell312033.setFixedHeight(20f);
 				cell312033.setGrayFill(0.92f);
@@ -687,7 +688,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell32343.setGrayFill(0.92f);
 				table24.addCell(cell32343);
 
-				PdfPCell cell3123131 = new PdfPCell(new Paragraph("Dediated to electronic system?:", font9));
+				PdfPCell cell3123131 = new PdfPCell(new Paragraph("Dediated to electronic system?", font9));
 				cell3123131.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell3123131.setFixedHeight(20f);
 				cell3123131.setGrayFill(0.92f);
@@ -700,9 +701,9 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				table24.addCell(cell12);
 
 				PdfPCell cell31201 = new PdfPCell(
-						new Paragraph("List all non computer loads, including any convenience receptacles:", font9));
+						new Paragraph("List all non computer loads, including any convenience receptacles", font9));
 				cell31201.setHorizontalAlignment(Element.ALIGN_CENTER);
-				cell31201.setFixedHeight(20f);
+				//cell31201.setFixedHeight(20f);
 				cell31201.setGrayFill(0.92f);
 				table24.addCell(cell31201);
 

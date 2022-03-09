@@ -2,6 +2,7 @@ package com.capeelectric.service.impl;
 
 import java.io.FileOutputStream;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,11 +25,11 @@ import com.itextpdf.text.pdf.PdfWriter;
 @Service
 public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 
-	@Autowired
-	private FacilityDataRepository facilityDataRepository;
+//	@Autowired
+//	private FacilityDataRepository facilityDataRepository;
 
 	@Override
-	public void printFacilityDataDetails(String userName, Integer emcId) throws FacilityDataException {
+	public void printFacilityDataDetails(String userName, Integer emcId,Optional<FacilityData> facilityDataRep) throws FacilityDataException {
 		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			Document document = new Document(PageSize.A4, 68, 68, 62, 68);
 
@@ -36,8 +37,8 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 
 				PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("FacilityData.pdf"));
 
-				List<FacilityData> facilityDataRepo1 = facilityDataRepository.findByUserNameAndEmcId(userName, emcId);
-				FacilityData facilityDataRepo = facilityDataRepo1.get(0);
+				//List<FacilityData> facilityDataRepo1 = facilityDataRepository.findByUserNameAndEmcId(userName, emcId);
+				FacilityData facilityDataRepo = facilityDataRep.get();
 
 				List<FloorCovering> FloorCovering = facilityDataRepo.getFloorCovering();
 				FloorCovering FloorCovering1 = FloorCovering.get(0);
@@ -101,7 +102,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 //				table3.setSpacingAfter(10f); // Space after table
 				table3.getDefaultCell().setBorder(0);
 
-				PdfPCell cell4 = new PdfPCell(new Paragraph("Type", font9));
+				PdfPCell cell4 = new PdfPCell(new Paragraph("Type:", font9));
 				cell4.setBorder(PdfPCell.NO_BORDER);
 				cell4.setGrayFill(0.92f);
 				table3.addCell(cell4);
@@ -315,7 +316,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 //				table12.setSpacingAfter(10f); // Space after table
 				table12.getDefaultCell().setBorder(0);
 
-				PdfPCell cell38 = new PdfPCell(new Paragraph("Raised floor", font9));
+				PdfPCell cell38 = new PdfPCell(new Paragraph("Raised floor:", font9));
 				cell38.setBorder(PdfPCell.NO_BORDER);
 				cell38.setGrayFill(0.92f);
 				table12.addCell(cell38);
@@ -324,7 +325,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell39.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell39);
 
-				PdfPCell cell40 = new PdfPCell(new Paragraph("Used as air supply plenum", font9));
+				PdfPCell cell40 = new PdfPCell(new Paragraph("Used as air supply plenum:", font9));
 				cell40.setBorder(PdfPCell.NO_BORDER);
 				// cell40.setGrayFill(0.92f);
 				table12.addCell(cell40);
@@ -333,7 +334,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell41.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell41);
 
-				PdfPCell cell42 = new PdfPCell(new Paragraph("Height", font9));
+				PdfPCell cell42 = new PdfPCell(new Paragraph("Height:", font9));
 				cell42.setBorder(PdfPCell.NO_BORDER);
 				cell42.setGrayFill(0.92f);
 				table12.addCell(cell42);
@@ -342,7 +343,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell43.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell43);
 
-				PdfPCell cell44 = new PdfPCell(new Paragraph("Air flow obstructions", font9));
+				PdfPCell cell44 = new PdfPCell(new Paragraph("Air flow obstructions:", font9));
 				cell44.setBorder(PdfPCell.NO_BORDER);
 				// cell44.setGrayFill(0.92f);
 				table12.addCell(cell44);
@@ -351,7 +352,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell45.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell45);
 
-				PdfPCell cell46 = new PdfPCell(new Paragraph("Description", font9));
+				PdfPCell cell46 = new PdfPCell(new Paragraph("Description:", font9));
 				cell46.setBorder(PdfPCell.NO_BORDER);
 				cell46.setGrayFill(0.92f);
 				table12.addCell(cell46);
@@ -360,7 +361,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell47.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell47);
 
-				PdfPCell cell48 = new PdfPCell(new Paragraph("Air grill dampers", font9));
+				PdfPCell cell48 = new PdfPCell(new Paragraph("Air grill dampers:", font9));
 				cell48.setBorder(PdfPCell.NO_BORDER);
 				// cell48.setGrayFill(0.92f);
 				table12.addCell(cell48);
@@ -369,7 +370,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell49.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell49);
 
-				PdfPCell cell50 = new PdfPCell(new Paragraph("Cable hole edge guards", font9));
+				PdfPCell cell50 = new PdfPCell(new Paragraph("Cable hole edge guards:", font9));
 				cell50.setBorder(PdfPCell.NO_BORDER);
 				cell50.setGrayFill(0.92f);
 				table12.addCell(cell50);
@@ -378,7 +379,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell51.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell51);
 
-				PdfPCell cell52 = new PdfPCell(new Paragraph("Pedestals", font9));
+				PdfPCell cell52 = new PdfPCell(new Paragraph("Pedestals:", font9));
 				cell52.setBorder(PdfPCell.NO_BORDER);
 				// cell52.setGrayFill(0.92f);
 				table12.addCell(cell52);
@@ -387,7 +388,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell53.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell53);
 
-				PdfPCell cell54 = new PdfPCell(new Paragraph("Grids", font9));
+				PdfPCell cell54 = new PdfPCell(new Paragraph("Grids:", font9));
 				cell54.setBorder(PdfPCell.NO_BORDER);
 				cell54.setGrayFill(0.92f);
 				table12.addCell(cell54);
@@ -396,7 +397,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell55.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell55);
 
-				PdfPCell cell56 = new PdfPCell(new Paragraph("Bolted", font9));
+				PdfPCell cell56 = new PdfPCell(new Paragraph("Bolted:", font9));
 				cell56.setBorder(PdfPCell.NO_BORDER);
 				// cell56.setGrayFill(0.92f);
 				table12.addCell(cell56);
@@ -405,7 +406,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell57.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell57);
 
-				PdfPCell cell58 = new PdfPCell(new Paragraph("Welded", font9));
+				PdfPCell cell58 = new PdfPCell(new Paragraph("Welded:", font9));
 				cell58.setBorder(PdfPCell.NO_BORDER);
 				cell58.setGrayFill(0.92f);
 				table12.addCell(cell58);
@@ -414,7 +415,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell59.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell59);
 
-				PdfPCell cell60 = new PdfPCell(new Paragraph("Description of earthing", font9));
+				PdfPCell cell60 = new PdfPCell(new Paragraph("Description of earthing:", font9));
 				cell60.setBorder(PdfPCell.NO_BORDER);
 				// cell60.setGrayFill(0.92f);
 				table12.addCell(cell60);
@@ -423,7 +424,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell61.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell61);
 
-				PdfPCell cell62 = new PdfPCell(new Paragraph("True floor: material", font9));
+				PdfPCell cell62 = new PdfPCell(new Paragraph("True floor material:", font9));
 				cell62.setBorder(PdfPCell.NO_BORDER);
 				cell62.setGrayFill(0.92f);
 				table12.addCell(cell62);
@@ -432,7 +433,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell63.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell63);
 
-				PdfPCell cell64 = new PdfPCell(new Paragraph("Describe", font9));
+				PdfPCell cell64 = new PdfPCell(new Paragraph("Describe:", font9));
 				cell64.setBorder(PdfPCell.NO_BORDER);
 				// cell64.setGrayFill(0.92f);
 				table12.addCell(cell64);
@@ -441,7 +442,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell65.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell65);
 
-				PdfPCell cell66 = new PdfPCell(new Paragraph("Cleanliness", font9));
+				PdfPCell cell66 = new PdfPCell(new Paragraph("Cleanliness:", font9));
 				cell66.setBorder(PdfPCell.NO_BORDER);
 				cell66.setGrayFill(0.92f);
 				table12.addCell(cell66);
@@ -450,7 +451,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell67.setBorder(PdfPCell.NO_BORDER);
 				table12.addCell(cell67);
 
-				PdfPCell cell68 = new PdfPCell(new Paragraph("Other descriptions", font9));
+				PdfPCell cell68 = new PdfPCell(new Paragraph("Other descriptions:", font9));
 				cell68.setBorder(PdfPCell.NO_BORDER);
 				// cell68.setGrayFill(0.92f);
 				table12.addCell(cell68);
@@ -479,7 +480,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 //				table14.setSpacingAfter(10f); // Space after table
 				table14.getDefaultCell().setBorder(0);
 
-				PdfPCell cell70 = new PdfPCell(new Paragraph("Type", font9));
+				PdfPCell cell70 = new PdfPCell(new Paragraph("Type:", font9));
 				cell70.setBorder(PdfPCell.NO_BORDER);
 				cell70.setGrayFill(0.92f);
 				table14.addCell(cell70);
@@ -488,7 +489,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell71.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell71);
 
-				PdfPCell cell72 = new PdfPCell(new Paragraph("Manufacturer", font9));
+				PdfPCell cell72 = new PdfPCell(new Paragraph("Manufacturer:", font9));
 				cell72.setBorder(PdfPCell.NO_BORDER);
 				// cell72.setGrayFill(0.92f);
 				table14.addCell(cell72);
@@ -497,7 +498,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell73.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell73);
 
-				PdfPCell cell74 = new PdfPCell(new Paragraph("Static tratment type and description", font9));
+				PdfPCell cell74 = new PdfPCell(new Paragraph("Static tratment type and description:", font9));
 				cell74.setBorder(PdfPCell.NO_BORDER);
 				cell74.setGrayFill(0.92f);
 				table14.addCell(cell74);
@@ -506,7 +507,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell75.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell75);
 
-				PdfPCell cell76 = new PdfPCell(new Paragraph("Woven", font9));
+				PdfPCell cell76 = new PdfPCell(new Paragraph("Woven:", font9));
 				cell76.setBorder(PdfPCell.NO_BORDER);
 				// cell76.setGrayFill(0.92f);
 				table14.addCell(cell76);
@@ -515,7 +516,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell77.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell77);
 
-				PdfPCell cell78 = new PdfPCell(new Paragraph("Chemical", font9));
+				PdfPCell cell78 = new PdfPCell(new Paragraph("Chemical:", font9));
 				cell78.setBorder(PdfPCell.NO_BORDER);
 				cell78.setGrayFill(0.92f);
 				table14.addCell(cell78);
@@ -524,7 +525,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell79.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell79);
 
-				PdfPCell cell80 = new PdfPCell(new Paragraph("None", font9));
+				PdfPCell cell80 = new PdfPCell(new Paragraph("None:", font9));
 				cell80.setBorder(PdfPCell.NO_BORDER);
 				// cell80.setGrayFill(0.92f);
 				table14.addCell(cell80);
@@ -533,7 +534,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell81.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell81);
 
-				PdfPCell cell82 = new PdfPCell(new Paragraph("Others - Describe", font9));
+				PdfPCell cell82 = new PdfPCell(new Paragraph("Others - Describe:", font9));
 				cell82.setBorder(PdfPCell.NO_BORDER);
 				cell82.setGrayFill(0.92f);
 				table14.addCell(cell82);
@@ -543,7 +544,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table14.addCell(cell83);
 				document.add(table14);
 
-				PdfPCell cellW = new PdfPCell(new Paragraph(30, "Walls", font9));
+				PdfPCell cellW = new PdfPCell(new Paragraph(30, "Walls:", font9));
 				cellW.setBorder(PdfPCell.NO_BORDER);
 				cellW.setBackgroundColor(BaseColor.LIGHT_GRAY);
 

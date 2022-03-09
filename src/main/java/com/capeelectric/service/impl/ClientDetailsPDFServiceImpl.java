@@ -2,6 +2,7 @@ package com.capeelectric.service.impl;
 
 import java.io.FileOutputStream;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,11 +27,11 @@ import com.itextpdf.text.pdf.PdfWriter;
 @Service
 public class ClientDetailsPDFServiceImpl implements ClientDetailsPDFService {
 
-	@Autowired
-	private ClientDetailsRepository clientDetailsRepository;
+//	@Autowired
+//	private ClientDetailsRepository clientDetailsRepository;
 
 	@Override
-	public void printClientDetails(String userName, Integer emcId) throws ClientDetailsException {
+	public void printClientDetails(String userName, Integer emcId,Optional<ClientDetails> clientDetailsRepo) throws ClientDetailsException {
 		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			Document document = new Document(PageSize.A4, 68, 68, 62, 68);
 
@@ -38,8 +39,8 @@ public class ClientDetailsPDFServiceImpl implements ClientDetailsPDFService {
 
 				PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("ClientDetails.pdf"));
 
-				List<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByEmcId(emcId);
-				ClientDetails clientDetailsRepo1 = clientDetailsRepo.get(0);
+				//List<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByEmcId(emcId);
+				ClientDetails clientDetailsRepo1 = clientDetailsRepo.get();
 
 				Font font8 = new Font(BaseFont.createFont(), 9, Font.NORMAL, BaseColor.BLACK);
 				Font font9 = new Font(BaseFont.createFont(), 10, Font.NORMAL, BaseColor.BLACK);

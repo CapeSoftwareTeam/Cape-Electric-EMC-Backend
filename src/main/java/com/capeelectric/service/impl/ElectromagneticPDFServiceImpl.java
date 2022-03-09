@@ -2,6 +2,7 @@ package com.capeelectric.service.impl;
 
 import java.io.FileOutputStream;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,11 +25,11 @@ import com.itextpdf.text.pdf.PdfWriter;
 @Service
 public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService {
 
-	@Autowired
-	private ElectromagneticCompatabilityRepository electromagneticCompatabilityRepository;
+//	@Autowired
+//	private ElectromagneticCompatabilityRepository electromagneticCompatabilityRepository;
 
 	@Override
-	public void printElectromagneticData(String userName, Integer emcId) throws ElectromagneticCompatabilityException {
+	public void printElectromagneticData(String userName, Integer emcId,Optional<ElectromagneticCompatability> electromagneticDataRep) throws ElectromagneticCompatabilityException {
 		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			Document document = new Document(PageSize.A4, 68, 68, 62, 68);
 
@@ -36,9 +37,9 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 
 				PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("ElectromagneticData.pdf"));
 				document.open();
-				List<ElectromagneticCompatability> electromageticC1 = electromagneticCompatabilityRepository
-						.findByUserNameAndEmcId(userName, emcId);
-				ElectromagneticCompatability electromageticC = electromageticC1.get(0);
+//				List<ElectromagneticCompatability> electromageticC1 = electromagneticCompatabilityRepository
+//						.findByUserNameAndEmcId(userName, emcId);
+				ElectromagneticCompatability electromageticC = electromagneticDataRep.get();
 
 				List<ExternalCompatibility> externalC = electromageticC.getExternalCompatibility();
 				ExternalCompatibility externalCo = externalC.get(0);
@@ -512,7 +513,7 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 				cell7129.setBorder(PdfPCell.NO_BORDER);
 				table21.addCell(cell7129);
 
-				PdfPCell cell728 = new PdfPCell(new Paragraph("RFI survey needed::", font9));
+				PdfPCell cell728 = new PdfPCell(new Paragraph("RFI survey needed:", font9));
 				cell728.setBorder(PdfPCell.NO_BORDER);
 				cell728.setGrayFill(0.92f);
 				table21.addCell(cell728);
