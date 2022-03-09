@@ -47,8 +47,7 @@ public class ElectromagneticCompatabilityController {
 		electromagneticCompatabilityService.saveElectromagneticCompatability(electromagneticCompatability);
 		logger.debug("ended savePowerEarthingData function");
 
-		return new ResponseEntity<String>("Electromagnetic Compatability Successfully Submitted" + "\n"
-				+ " (PDF Generation will be implemented later)", HttpStatus.OK);
+		return new ResponseEntity<String>("Electromagnetic Compatability Successfully Saved", HttpStatus.OK);
 
 	}
 
