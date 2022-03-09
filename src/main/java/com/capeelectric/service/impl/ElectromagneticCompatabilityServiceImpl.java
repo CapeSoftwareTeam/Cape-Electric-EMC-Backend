@@ -103,26 +103,26 @@ public class ElectromagneticCompatabilityServiceImpl implements ElectromagneticC
 										+ electromagneticCompatability.getUserName());
 
 								clientDetailsPDFService.printClientDetails(electromagneticCompatability.getUserName(),
-										electromagneticCompatability.getEmcId(),clientDetailsRepo);
+										electromagneticCompatability.getEmcId(), clientDetailsRepo);
 								logger.debug("PDF printClientDetails() function called successfully");
 
 								facilityDataPDFService.printFacilityDataDetails(
 										electromagneticCompatability.getUserName(),
-										electromagneticCompatability.getEmcId(),facilityDataRep);
+										electromagneticCompatability.getEmcId(), facilityDataRep);
 								logger.debug("PDF printFacilityDataDetails() function called successfully");
 
 								powerEarthingDataPDFService.printPowerEarthingData(
 										electromagneticCompatability.getUserName(),
-										electromagneticCompatability.getEmcId(),powerEarthingDataRep);
+										electromagneticCompatability.getEmcId(), powerEarthingDataRep);
 								logger.debug("PDF printPowerEarthingData() function called successfully");
 
 								electromagneticPDFService.printElectromagneticData(
 										electromagneticCompatability.getUserName(),
-										electromagneticCompatability.getEmcId(),electromagneticDataRep);
+										electromagneticCompatability.getEmcId());
 								logger.debug("PDF printElectromagneticData() function called successfully");
 
 								printFinalPDFService.printFinalPDF(electromagneticCompatability.getUserName(),
-										electromagneticCompatability.getEmcId(),clientDetails.getClientName());
+										electromagneticCompatability.getEmcId(), clientDetails.getClientName());
 								logger.debug("PDF printFinalPDF() function called successfully");
 
 							} else {
