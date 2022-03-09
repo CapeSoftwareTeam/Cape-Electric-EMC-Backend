@@ -26,7 +26,7 @@ public class ElectromagneticPDFController {
 	public ResponseEntity<String> printElectromagneticData(@PathVariable String userName, @PathVariable Integer emcId)
 			throws ElectromagneticCompatabilityException {
 		logger.info("called printElectromagneticData function userName: {},emcId : {}", userName, emcId);
-		electromagneticPDFService.printElectromagneticData(userName, emcId);
+	//	electromagneticPDFService.printElectromagneticData(userName, emcId);
 		return new ResponseEntity<String>(HttpStatus.OK);
 	}
 

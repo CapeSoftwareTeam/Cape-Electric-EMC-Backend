@@ -25,7 +25,7 @@ public class FacilityDataPDFController {
 	public ResponseEntity<String> printFacilityDataDetails(@PathVariable String userName, @PathVariable Integer emcId)
 			throws FacilityDataException {
 		logger.info("called printFacilityDataDetails function userName: {},emcId : {}", userName, emcId);
-		facilityDataPDFService.printFacilityDataDetails(userName, emcId);
+	//	facilityDataPDFService.printFacilityDataDetails(userName, emcId);
 		return new ResponseEntity<String>(HttpStatus.OK);
 	}
 

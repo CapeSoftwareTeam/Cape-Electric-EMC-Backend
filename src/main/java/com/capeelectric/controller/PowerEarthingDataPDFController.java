@@ -25,7 +25,7 @@ public class PowerEarthingDataPDFController {
 	public ResponseEntity<String> printPowerEarthingData(@PathVariable String userName, @PathVariable Integer emcId)
 			throws PowerEarthingDataException {
 		logger.info("called printPowerEarthingData function userName: {},emcId : {}", userName, emcId);
-		powerEarthingDataPDFService.printPowerEarthingData(userName, emcId);
+	//	powerEarthingDataPDFService.printPowerEarthingData(userName, emcId);
 		return new ResponseEntity<String>(HttpStatus.OK);
 	}
 }
