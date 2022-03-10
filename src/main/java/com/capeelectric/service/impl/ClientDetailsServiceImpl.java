@@ -26,6 +26,8 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 		if (clientDetails != null && clientDetails.getUserName() != null) {
 			clientDetails.setCreatedDate(LocalDateTime.now());
 			clientDetails.setCreatedBy(clientDetails.getUserName());
+			clientDetails.setUpdatedBy(clientDetails.getUserName());
+			clientDetails.setUpdatedDate(LocalDateTime.now());
 			return clientDetailsRepository.save(clientDetails);
 		} else {
 			logger.error("Invalid Inputs");
