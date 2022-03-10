@@ -53,9 +53,7 @@ public class ElectromagneticCompatabilityControllerTest {
 
 		ResponseEntity<String> saveElectromagneticCompatability = electromagneticCompatabilityController
 				.saveElectromagneticCompatability(electromagneticCompatability);
-		assertEquals(saveElectromagneticCompatability.getBody(), "Electromagnetic Compatability Successfully Submitted"
-				+ "\n"
-				+ " (PDF Generation will be implemented later)");
+		assertEquals(saveElectromagneticCompatability.getBody(), "Electromagnetic Compatability Successfully Saved");
 
 		logger.info("testSaveElectromagneticCompatability Function Ended");
 	}
