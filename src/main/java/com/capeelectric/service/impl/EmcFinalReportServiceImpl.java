@@ -14,6 +14,7 @@ import com.capeelectric.model.ElectromagneticCompatability;
 import com.capeelectric.model.EmcFinalReport;
 import com.capeelectric.model.FacilityData;
 import com.capeelectric.model.PowerEarthingData;
+import com.capeelectric.model.State;
 import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.repository.ElectromagneticCompatabilityRepository;
 import com.capeelectric.repository.FacilityDataRepository;
@@ -90,7 +91,9 @@ public class EmcFinalReportServiceImpl implements FinalReportService {
 		if (userName != null) {
 			try {
 				logger.info("ClientDetails fetching process started");
-				return clientDetailsRepository.findByUserName(userName);
+				List<ClientDetails> clientDetails =  clientDetailsRepository.findByUserName(userName);
+				clientDetails.sort((o1, o2) -> o1.getUpdatedDate().compareTo(o2.getUpdatedDate()));
+				return clientDetails;
 			} catch (Exception e) {
 				logger.info("ClientDetails fetching process faild");
 				throw new EmcFinalReportException("ClientDetails Not Available");
