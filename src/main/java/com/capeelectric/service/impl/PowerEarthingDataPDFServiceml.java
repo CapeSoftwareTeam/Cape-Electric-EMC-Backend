@@ -120,7 +120,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				table.addCell(cell11);
 				document.add(table);
 
-				PdfPCell cellBc = new PdfPCell(new Paragraph(30, "Input:", font9));
+				PdfPCell cellBc = new PdfPCell(new Paragraph(30, "Input", font9));
 				cellBc.setBorder(PdfPCell.NO_BORDER);
 				cellBc.setBackgroundColor(BaseColor.LIGHT_GRAY);
 
@@ -171,7 +171,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 
 				document.add(table5);
 
-				PdfPCell cellRu = new PdfPCell(new Paragraph(30, "Output to MDB:", font9));
+				PdfPCell cellRu = new PdfPCell(new Paragraph(30, "Output to MDB", font9));
 				cellRu.setBorder(PdfPCell.NO_BORDER);
 				cellRu.setBackgroundColor(BaseColor.LIGHT_GRAY);
 
@@ -405,7 +405,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				document.add(table17);
 
 				PdfPCell cellEsp = new PdfPCell(
-						new Paragraph(30, "2.Electronic system power distribution panel:", font9));
+						new Paragraph(30, "2.Electronic system power distribution panel", font9));
 				cellEsp.setBorder(PdfPCell.NO_BORDER);
 				cellEsp.setBackgroundColor(BaseColor.LIGHT_GRAY);
 

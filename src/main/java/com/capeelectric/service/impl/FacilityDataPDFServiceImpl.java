@@ -544,7 +544,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table14.addCell(cell83);
 				document.add(table14);
 
-				PdfPCell cellW = new PdfPCell(new Paragraph(30, "Walls:", font9));
+				PdfPCell cellW = new PdfPCell(new Paragraph(30, "Walls", font9));
 				cellW.setBorder(PdfPCell.NO_BORDER);
 				cellW.setBackgroundColor(BaseColor.LIGHT_GRAY);
 

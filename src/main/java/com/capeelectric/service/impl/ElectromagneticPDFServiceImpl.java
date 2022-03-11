@@ -164,7 +164,7 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 				table20.addCell(cell119);
 				document.add(table20);
 
-				PdfPCell cellSi = new PdfPCell(new Paragraph(30, "Site RF Source:", font9));
+				PdfPCell cellSi = new PdfPCell(new Paragraph(30, "Site RF Source", font9));
 				cellSi.setBorder(PdfPCell.NO_BORDER);
 				cellSi.setBackgroundColor(BaseColor.LIGHT_GRAY);
 
