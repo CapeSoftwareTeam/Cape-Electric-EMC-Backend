@@ -839,6 +839,18 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell137.setBorder(PdfPCell.NO_BORDER);
 				table22.addCell(cell137);
 				document.add(table22);
+				
+				
+				PdfPCell cellNote = new PdfPCell(new Paragraph(25, "Note: Attach room layout as close to scale as possible (or attach site plan drawing, if current). Show all major equipment: windows, doors, furniture, and so forth. If possible, make three copies of this drawing for use in subsequent survey sections.", font9));
+				cellNote.setBorder(PdfPCell.NO_BORDER);
+				//cellNote.setBackgroundColor(BaseColor.LIGHT_GRAY);
+
+				PdfPTable table29 = new PdfPTable(1);
+				table29.setWidthPercentage(100); // Width 100%
+				table29.setSpacingBefore(10f); // Space before table
+				table29.getDefaultCell().setBorder(0);
+				table29.addCell(cellNote);
+				document.add(table29);
 
 				document.close();
 				writer.close();

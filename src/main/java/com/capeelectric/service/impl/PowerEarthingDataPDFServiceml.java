@@ -324,26 +324,58 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell71.setGrayFill(0.92f);
 				cell71.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell71);
+				document.add(table14);
+				
+				
+				PdfPCell cellNote = new PdfPCell(new Paragraph(25, "Note: any heavy cycling loads or variable load controllers fed from the same distribution feeder path that supplies the computer system.", font9));
+				cellNote.setBorder(PdfPCell.NO_BORDER);
+				//cellNote.setBackgroundColor(BaseColor.LIGHT_GRAY);
+
+				PdfPTable table29 = new PdfPTable(1);
+				table29.setWidthPercentage(100); // Width 100%
+				table29.setSpacingBefore(5f); // Space before table
+				table29.getDefaultCell().setBorder(0);
+				table29.addCell(cellNote);
+				document.add(table29);
+				
+				PdfPCell cellNote1 = new PdfPCell(new Paragraph(25, "Note:how protective earthing distribution is accomplished (conduit only, flexible conduit and bond wire, other).", font9));
+				cellNote1.setBorder(PdfPCell.NO_BORDER);
+				//cellNote1.setBackgroundColor(BaseColor.LIGHT_GRAY);
+
+				PdfPTable table31 = new PdfPTable(1);
+				table31.setWidthPercentage(100); // Width 100%
+				//table31.setSpacingBefore(10f); // Space before table
+				table31.getDefaultCell().setBorder(0);
+				table31.addCell(cellNote1);
+				document.add(table31);
+				
+				
+				PdfPTable table18 = new PdfPTable(pointColumnWidths1); // 3 columns.
+				table18.setWidthPercentage(100); // Width 100%
+				table18.setSpacingBefore(5f); // Space before table
+//				table18.setSpacingAfter(10f); // Space after table
+				table18.getDefaultCell().setBorder(0);
+				
 
 				PdfPCell cell72 = new PdfPCell(new Paragraph("Record data:", font9));
 				cell72.setBorder(PdfPCell.NO_BORDER);
 				// cell72.setGrayFill(0.92f);
-				table14.addCell(cell72);
+				table18.addCell(cell72);
 				PdfPCell cell73 = new PdfPCell(new Paragraph(electroicSys.getbDRecordData(), font9));
 				// cell73.setGrayFill(0.92f);
 				cell73.setBorder(PdfPCell.NO_BORDER);
-				table14.addCell(cell73);
+				table18.addCell(cell73);
 
 				PdfPCell cell74 = new PdfPCell(new Paragraph("Earthing:", font9));
 				cell74.setBorder(PdfPCell.NO_BORDER);
 				cell74.setGrayFill(0.92f);
-				table14.addCell(cell74);
+				table18.addCell(cell74);
 				PdfPCell cell75 = new PdfPCell(new Paragraph(electroicSys.getbDEarthing(), font9));
 				cell75.setGrayFill(0.92f);
 				cell75.setBorder(PdfPCell.NO_BORDER);
-				table14.addCell(cell75);
+				table18.addCell(cell75);
 
-				document.add(table14);
+				document.add(table18);
 				document.newPage();
 
 				PdfPCell cellEs = new PdfPCell(new Paragraph(30, "Electronics System Room Power Distribution", font9));
