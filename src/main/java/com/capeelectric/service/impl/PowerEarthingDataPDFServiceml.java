@@ -488,6 +488,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				PdfPCell cell313 = new PdfPCell(new Paragraph("Rating (A)", font9));
 				cell313.setHorizontalAlignment(Element.ALIGN_CENTER);
 				cell313.setFixedHeight(20f);
+				cell313.setGrayFill(0.92f);
 				table23.addCell(cell313);
 
 				PdfPCell cell3133 = new PdfPCell(new Paragraph(electroicSys.getMainCircuteBrakerRating(), font9));
