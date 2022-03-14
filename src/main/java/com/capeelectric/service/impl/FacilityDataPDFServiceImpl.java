@@ -14,10 +14,13 @@ import com.capeelectric.repository.FacilityDataRepository;
 import com.capeelectric.service.FacilityDataPDFService;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
+import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Phrase;
 import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.GrayColor;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
@@ -25,8 +28,11 @@ import com.itextpdf.text.pdf.PdfWriter;
 @Service
 public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 
-//	@Autowired
-//	private FacilityDataRepository facilityDataRepository;
+	@Autowired
+	private FacilityDataRepository facilityDataRepository;
+	
+//	@Override
+//	public void printFacilityDataDetails(String userName, Integer emcId) throws FacilityDataException {
 
 	@Override
 	public void printFacilityDataDetails(String userName, Integer emcId,Optional<FacilityData> facilityDataRep) throws FacilityDataException {
@@ -37,34 +43,65 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 
 				PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("FacilityData.pdf"));
 
-				//List<FacilityData> facilityDataRepo1 = facilityDataRepository.findByUserNameAndEmcId(userName, emcId);
+//				List<FacilityData> facilityDataRepo1 = facilityDataRepository.findByUserNameAndEmcId(userName, emcId);
+//				FacilityData facilityDataRepo = facilityDataRepo1.get(0);
 				FacilityData facilityDataRepo = facilityDataRep.get();
 
 				List<FloorCovering> FloorCovering = facilityDataRepo.getFloorCovering();
 				FloorCovering FloorCovering1 = FloorCovering.get(0);
 
-				Font font8 = new Font(BaseFont.createFont(), 9, Font.NORMAL, BaseColor.BLACK);
+				Font font12B = new Font(BaseFont.createFont(), 12, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
+				Font font10B = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
+			
 				Font font9 = new Font(BaseFont.createFont(), 10, Font.NORMAL, BaseColor.BLACK);
 
 				document.open();
+				
+				float[] pointColumnHeadLabel = { 100F };
+				
+				PdfPTable FacilityDataTable = new PdfPTable(pointColumnHeadLabel);
+				FacilityDataTable.setWidthPercentage(100); // Width 100%
+				FacilityDataTable.setSpacingBefore(5f); // Space before table
+				FacilityDataTable.setSpacingAfter(5f); // Space after table
 
-				PdfPCell cellBls = new PdfPCell(new Paragraph(30, "Building Location / Setting", font9));
-				cellBls.setBorder(PdfPCell.NO_BORDER);
-				cellBls.setBackgroundColor(BaseColor.LIGHT_GRAY);
+				PdfPCell facilityCell = new PdfPCell(new Paragraph("Facility Data", font12B));
+				facilityCell.setHorizontalAlignment(Element.ALIGN_CENTER);
+				facilityCell.setBackgroundColor(new GrayColor(0.93f));
+				facilityCell.setFixedHeight(20f);
+				FacilityDataTable.addCell(facilityCell);
+				
+				document.add(FacilityDataTable);
+
+//				PdfPCell cellBls = new PdfPCell(new Paragraph(30, "Building Location / Setting", font9));
+//				cellBls.setBorder(PdfPCell.NO_BORDER);
+//				cellBls.setBackgroundColor(BaseColor.LIGHT_GRAY);
+				
+				PdfPTable BuildingLocationTable = new PdfPTable(pointColumnHeadLabel);
+				BuildingLocationTable.setWidthPercentage(100); // Width 100%
+				BuildingLocationTable.setSpacingBefore(5f); // Space before table
+				BuildingLocationTable.setSpacingAfter(5f); // Space after table
+
+				PdfPCell buildinLocCell = new PdfPCell(new Paragraph("Building Location / Setting", font10B));
+				buildinLocCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				buildinLocCell.setBackgroundColor(new GrayColor(0.93f));
+				buildinLocCell.setFixedHeight(17f);
+				BuildingLocationTable.addCell(buildinLocCell);
+	
+				document.add(BuildingLocationTable);
 
 				Font font2 = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
 				PdfPTable table10 = new PdfPTable(1);
 				table10.setWidthPercentage(100); // Width 100%
 				table10.setSpacingBefore(10f); // Space before table
 				table10.getDefaultCell().setBorder(0);
-				table10.addCell(cellBls);
+//				table10.addCell(cellBls);
 				document.add(table10);
 
 				float[] pointColumnWidths1 = { 90F, 90F };
 
 				PdfPTable table = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table.setWidthPercentage(100); // Width 100%
-				table.setSpacingBefore(10f); // Space before table
+				table.setSpacingBefore(5f); // Space before table
 //				table7.setSpacingAfter(10f); // Space after table
 				table.getDefaultCell().setBorder(0);
 
@@ -84,21 +121,39 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell3.setBorder(PdfPCell.NO_BORDER);
 				table.addCell(cell3);
 				document.add(table);
+				
+//				PdfPTable table2 = new PdfPTable(1);
+//				table2.setWidthPercentage(100); // Width 100%
+//				table2.setSpacingBefore(10f); // Space before table
+//				table2.getDefaultCell().setBorder(0);
+//
+//				PdfPCell cellBc = new PdfPCell(new Paragraph(30, "Building Construction", font9));
+//				cellBc.setBorder(PdfPCell.NO_BORDER);
+//				cellBc.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table2.addCell(cellBc);
+//				document.add(table2);
+				
+				PdfPTable BuildingConstructionTable = new PdfPTable(pointColumnHeadLabel);
+				BuildingConstructionTable.setWidthPercentage(100); // Width 100%
+				BuildingConstructionTable.setSpacingBefore(10f); // Space before table
+				BuildingConstructionTable.setSpacingAfter(5f); // Space after table
 
-				PdfPCell cellBc = new PdfPCell(new Paragraph(30, "Building Construction", font9));
-				cellBc.setBorder(PdfPCell.NO_BORDER);
-				cellBc.setBackgroundColor(BaseColor.LIGHT_GRAY);
-
-				PdfPTable table2 = new PdfPTable(1);
-				table2.setWidthPercentage(100); // Width 100%
-				table2.setSpacingBefore(10f); // Space before table
-				table2.getDefaultCell().setBorder(0);
-				table2.addCell(cellBc);
-				document.add(table2);
+				PdfPCell buildinConCell = new PdfPCell(new Paragraph("Building Construction", font10B));
+				buildinConCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				buildinConCell.setBackgroundColor(new GrayColor(0.93f));
+				buildinConCell.setFixedHeight(17f);
+				BuildingConstructionTable.addCell(buildinConCell);
+	
+				document.add(BuildingConstructionTable);
+				
+				
+				
+				
+				
 
 				PdfPTable table3 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table3.setWidthPercentage(100); // Width 100%
-				table3.setSpacingBefore(10f); // Space before table
+				table3.setSpacingBefore(5f); // Space before table
 //				table3.setSpacingAfter(10f); // Space after table
 				table3.getDefaultCell().setBorder(0);
 
@@ -144,20 +199,33 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table3.addCell(cell13);
 				document.add(table3);
 
-				PdfPCell cellBl = new PdfPCell(new Paragraph(30, "Room Location", font9));
-				cellBl.setBorder(PdfPCell.NO_BORDER);
-				cellBl.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table4 = new PdfPTable(1);
+//				table4.setWidthPercentage(100); // Width 100%
+//				table4.setSpacingBefore(10f); // Space before table
+//				table4.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellBl = new PdfPCell(new Paragraph(30, "Room Location", font9));
+//				cellBl.setBorder(PdfPCell.NO_BORDER);
+//				cellBl.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table4.addCell(cellBl);
+//				document.add(table4);
+				
+				PdfPTable RoomLocationTable = new PdfPTable(pointColumnHeadLabel);
+				RoomLocationTable.setWidthPercentage(100); // Width 100%
+				RoomLocationTable.setSpacingBefore(10f); // Space before table
+//				RoomLocationTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table4 = new PdfPTable(1);
-				table4.setWidthPercentage(100); // Width 100%
-				table4.setSpacingBefore(10f); // Space before table
-				table4.getDefaultCell().setBorder(0);
-				table4.addCell(cellBl);
-				document.add(table4);
+				PdfPCell roomLocationCell = new PdfPCell(new Paragraph("Room Location", font10B));
+				roomLocationCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				roomLocationCell.setBackgroundColor(new GrayColor(0.93f));
+				roomLocationCell.setFixedHeight(17f);
+				RoomLocationTable.addCell(roomLocationCell);
+	
+				document.add(RoomLocationTable);
 
 				PdfPTable table5 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table5.setWidthPercentage(100); // Width 100%
-				table5.setSpacingBefore(10f); // Space before table
+				table5.setSpacingBefore(5f); // Space before table
 //				table3.setSpacingAfter(10f); // Space after table
 				table5.getDefaultCell().setBorder(0);
 
@@ -201,17 +269,29 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table5.addCell(cell23);
 
 				document.add(table5);
+				
+//				PdfPTable table6 = new PdfPTable(1);
+//				table6.setWidthPercentage(100); // Width 100%
+//				table6.setSpacingBefore(10f); // Space before table
+//				table6.getDefaultCell().setBorder(0);
+//
+//				PdfPCell cellRu = new PdfPCell(new Paragraph(30, "Room Use", font9));
+//				cellRu.setBorder(PdfPCell.NO_BORDER);
+//				cellRu.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table6.addCell(cellRu);
+//				document.add(table6);
+				
+				PdfPTable RoomUseTable = new PdfPTable(pointColumnHeadLabel);
+				RoomUseTable.setWidthPercentage(100); // Width 100%
+				RoomUseTable.setSpacingBefore(10f); // Space before table
+//				RoomUseTable.setSpacingAfter(5f); // Space after table
 
-				PdfPCell cellRu = new PdfPCell(new Paragraph(30, "Room Use", font9));
-				cellRu.setBorder(PdfPCell.NO_BORDER);
-				cellRu.setBackgroundColor(BaseColor.LIGHT_GRAY);
-
-				PdfPTable table6 = new PdfPTable(1);
-				table6.setWidthPercentage(100); // Width 100%
-				table6.setSpacingBefore(10f); // Space before table
-				table6.getDefaultCell().setBorder(0);
-				table6.addCell(cellRu);
-				document.add(table6);
+				PdfPCell roomUseCell = new PdfPCell(new Paragraph("Room Use", font10B));
+				roomUseCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				roomUseCell.setBackgroundColor(new GrayColor(0.93f));
+				roomUseCell.setFixedHeight(17f);
+				RoomUseTable.addCell(roomUseCell);
+				document.add(RoomUseTable);
 
 				PdfPTable table7 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table7.setWidthPercentage(100); // Width 100%
@@ -236,16 +316,29 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table7.addCell(cell27);
 				document.add(table7);
 
-				PdfPCell cellRd = new PdfPCell(new Paragraph(30, "Room Dimentions", font9));
-				cellRd.setBorder(PdfPCell.NO_BORDER);
-				cellRd.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table8 = new PdfPTable(1);
+//				table8.setWidthPercentage(100); // Width 100%
+//				table8.setSpacingBefore(10f); // Space before table
+//				table8.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellRd = new PdfPCell(new Paragraph(30, "Room Dimentions", font9));
+//				cellRd.setBorder(PdfPCell.NO_BORDER);
+//				cellRd.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table8.addCell(cellRd);
+//				document.add(table8);
+				
+				PdfPTable RoomDimentionsTable = new PdfPTable(pointColumnHeadLabel);
+				RoomDimentionsTable.setWidthPercentage(100); // Width 100%
+				RoomDimentionsTable.setSpacingBefore(10f); // Space before table
+//				RoomDimentionsTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table8 = new PdfPTable(1);
-				table8.setWidthPercentage(100); // Width 100%
-				table8.setSpacingBefore(10f); // Space before table
-				table8.getDefaultCell().setBorder(0);
-				table8.addCell(cellRd);
-				document.add(table8);
+				PdfPCell roomDimentionsCell = new PdfPCell(new Paragraph("Room Dimentions", font10B));
+				roomDimentionsCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				roomDimentionsCell.setBackgroundColor(new GrayColor(0.93f));
+				roomDimentionsCell.setFixedHeight(17f);
+				RoomDimentionsTable.addCell(roomDimentionsCell);
+				document.add(RoomDimentionsTable);
+
 
 				PdfPTable table9 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table9.setWidthPercentage(100); // Width 100%
@@ -299,16 +392,28 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table9.addCell(cell37);
 				document.add(table9);
 
-				PdfPCell cellFt = new PdfPCell(new Paragraph(30, "Floor Type", font9));
-				cellFt.setBorder(PdfPCell.NO_BORDER);
-				cellFt.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table11 = new PdfPTable(1);
+//				table11.setWidthPercentage(100); // Width 100%
+//				table11.setSpacingBefore(10f); // Space before table
+//				table11.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellFt = new PdfPCell(new Paragraph(30, "Floor Type", font9));
+//				cellFt.setBorder(PdfPCell.NO_BORDER);
+//				cellFt.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table11.addCell(cellFt);
+//				document.add(table11);
+				
+				PdfPTable floorTypeTable = new PdfPTable(pointColumnHeadLabel);
+				floorTypeTable.setWidthPercentage(100); // Width 100%
+				floorTypeTable.setSpacingBefore(10f); // Space before table
+//				floorTypeTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table11 = new PdfPTable(1);
-				table11.setWidthPercentage(100); // Width 100%
-				table11.setSpacingBefore(10f); // Space before table
-				table11.getDefaultCell().setBorder(0);
-				table11.addCell(cellFt);
-				document.add(table11);
+				PdfPCell floorTypeCell = new PdfPCell(new Paragraph("Floor Type", font10B));
+				floorTypeCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				floorTypeCell.setBackgroundColor(new GrayColor(0.93f));
+				floorTypeCell.setFixedHeight(17f);
+				floorTypeTable.addCell(floorTypeCell);
+				document.add(floorTypeTable);
 
 				PdfPTable table12 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table12.setWidthPercentage(100); // Width 100%
@@ -461,18 +566,30 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table12.addCell(cell69);
 
 				document.add(table12);
+				
+//				PdfPTable table13 = new PdfPTable(1);
+//				table13.setWidthPercentage(100); // Width 100%
+//				table13.setSpacingBefore(10f); // Space before table
+//				table13.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellFc = new PdfPCell(new Paragraph(30, "Floor Covering", font9));
+//				cellFc.setBorder(PdfPCell.NO_BORDER);
+//				cellFc.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table13.addCell(cellFc);
+//				document.add(table13);
+			
+				PdfPTable floorCoveringTable = new PdfPTable(pointColumnHeadLabel);
+				floorCoveringTable.setWidthPercentage(100); // Width 100%
+				floorCoveringTable.setSpacingBefore(10f); // Space before table
+//				floorCoveringTable.setSpacingAfter(5f); // Space after table
 
-				document.newPage();
-				PdfPCell cellFc = new PdfPCell(new Paragraph(30, "Floor Covering", font9));
-				cellFc.setBorder(PdfPCell.NO_BORDER);
-				cellFc.setBackgroundColor(BaseColor.LIGHT_GRAY);
-
-				PdfPTable table13 = new PdfPTable(1);
-				table13.setWidthPercentage(100); // Width 100%
-				table13.setSpacingBefore(10f); // Space before table
-				table13.getDefaultCell().setBorder(0);
-				table13.addCell(cellFc);
-				document.add(table13);
+				PdfPCell floorCoveingCell = new PdfPCell(new Paragraph("Floor Covering", font10B));
+				floorCoveingCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				floorCoveingCell.setBackgroundColor(new GrayColor(0.93f));
+				floorCoveingCell.setFixedHeight(17f);
+				floorCoveringTable.addCell(floorCoveingCell);
+				document.add(floorCoveringTable);
+				
 
 				PdfPTable table14 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table14.setWidthPercentage(100); // Width 100%
@@ -543,17 +660,29 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell83.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell83);
 				document.add(table14);
+				
+//				PdfPTable table16 = new PdfPTable(1);
+//				table16.setWidthPercentage(100); // Width 100%
+//				table16.setSpacingBefore(10f); // Space before table
+//				table16.getDefaultCell().setBorder(0);
+//
+//				PdfPCell cellW = new PdfPCell(new Paragraph(30, "Walls", font9));
+//				cellW.setBorder(PdfPCell.NO_BORDER);
+//				cellW.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table16.addCell(cellW);
+//				document.add(table16);
+				
+				PdfPTable WalssTable = new PdfPTable(pointColumnHeadLabel);
+				WalssTable.setWidthPercentage(100); // Width 100%
+				WalssTable.setSpacingBefore(10f); // Space before table
+//				WalssTable.setSpacingAfter(5f); // Space after table
 
-				PdfPCell cellW = new PdfPCell(new Paragraph(30, "Walls", font9));
-				cellW.setBorder(PdfPCell.NO_BORDER);
-				cellW.setBackgroundColor(BaseColor.LIGHT_GRAY);
-
-				PdfPTable table16 = new PdfPTable(1);
-				table16.setWidthPercentage(100); // Width 100%
-				table16.setSpacingBefore(10f); // Space before table
-				table16.getDefaultCell().setBorder(0);
-				table16.addCell(cellW);
-				document.add(table16);
+				PdfPCell wallsCell = new PdfPCell(new Paragraph("Walls", font10B));
+				wallsCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				wallsCell.setBackgroundColor(new GrayColor(0.93f));
+				wallsCell.setFixedHeight(17f);
+				WalssTable.addCell(wallsCell);
+				document.add(WalssTable);
 
 				PdfPTable table15 = new PdfPTable(pointColumnWidths1);
 				table15.setWidthPercentage(100); // Width 100%
@@ -616,16 +745,28 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table15.addCell(cell95);
 				document.add(table15);
 
-				PdfPCell cellCc = new PdfPCell(new Paragraph(30, "Ceiling Construction", font9));
-				cellCc.setBorder(PdfPCell.NO_BORDER);
-				cellCc.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table17 = new PdfPTable(1);
+//				table17.setWidthPercentage(100); // Width 100%
+//				table17.setSpacingBefore(10f); // Space before table
+//				table17.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellCc = new PdfPCell(new Paragraph(30, "Ceiling Construction", font9));
+//				cellCc.setBorder(PdfPCell.NO_BORDER);
+//				cellCc.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table17.addCell(cellCc);
+//				document.add(table17);
+				
+				PdfPTable CeilingConstructionTable = new PdfPTable(pointColumnHeadLabel);
+				CeilingConstructionTable.setWidthPercentage(100); // Width 100%
+				CeilingConstructionTable.setSpacingBefore(10f); // Space before table
+//				CeilingConstructionTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table17 = new PdfPTable(1);
-				table17.setWidthPercentage(100); // Width 100%
-				table17.setSpacingBefore(10f); // Space before table
-				table17.getDefaultCell().setBorder(0);
-				table17.addCell(cellCc);
-				document.add(table17);
+				PdfPCell CeilingConstructionTablel = new PdfPCell(new Paragraph("Ceiling Construction", font10B));
+				CeilingConstructionTablel.setHorizontalAlignment(Element.ALIGN_LEFT);
+				CeilingConstructionTablel.setBackgroundColor(new GrayColor(0.93f));
+				CeilingConstructionTablel.setFixedHeight(17f);
+				CeilingConstructionTable.addCell(CeilingConstructionTablel);
+				document.add(CeilingConstructionTable);
 
 				PdfPTable table18 = new PdfPTable(pointColumnWidths1);
 				table18.setWidthPercentage(100); // Width 100%
@@ -697,16 +838,29 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table18.addCell(cell109);
 				document.add(table18);
 
-				PdfPCell cellWi = new PdfPCell(new Paragraph(30, "Windows", font9));
-				cellWi.setBorder(PdfPCell.NO_BORDER);
-				cellWi.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPCell cellWi = new PdfPCell(new Paragraph(30, "Windows", font9));
+//				cellWi.setBorder(PdfPCell.NO_BORDER);
+//				cellWi.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//
+//				PdfPTable table19 = new PdfPTable(1);
+//				table19.setWidthPercentage(100); // Width 100%
+//				table19.setSpacingBefore(10f); // Space before table
+//				table19.getDefaultCell().setBorder(0);
+//				table19.addCell(cellWi);
+//				document.add(table19);
+				
+				PdfPTable WindowsTable = new PdfPTable(pointColumnHeadLabel);
+				WindowsTable.setWidthPercentage(100); // Width 100%
+				WindowsTable.setSpacingBefore(10f); // Space before table
+//				WindowsTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table19 = new PdfPTable(1);
-				table19.setWidthPercentage(100); // Width 100%
-				table19.setSpacingBefore(10f); // Space before table
-				table19.getDefaultCell().setBorder(0);
-				table19.addCell(cellWi);
-				document.add(table19);
+				PdfPCell WindowsCell = new PdfPCell(new Paragraph("Windows", font10B));
+				WindowsCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				WindowsCell.setBackgroundColor(new GrayColor(0.93f));
+				WindowsCell.setFixedHeight(17f);
+				WindowsTable.addCell(WindowsCell);
+				document.add(WindowsTable);
+
 
 				PdfPTable table20 = new PdfPTable(pointColumnWidths1);
 				table20.setWidthPercentage(100); // Width 100%
@@ -760,16 +914,28 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table20.addCell(cell119);
 				document.add(table20);
 
-				PdfPCell cellD = new PdfPCell(new Paragraph(30, "Doors", font9));
-				cellD.setBorder(PdfPCell.NO_BORDER);
-				cellD.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table21 = new PdfPTable(1);
+//				table21.setWidthPercentage(100); // Width 100%
+//				table21.setSpacingBefore(10f); // Space before table
+//				table21.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellD = new PdfPCell(new Paragraph(30, "Doors", font9));
+//				cellD.setBorder(PdfPCell.NO_BORDER);
+//				cellD.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table21.addCell(cellD);
+//				document.add(table21);
+				
+				PdfPTable DoorsTable = new PdfPTable(pointColumnHeadLabel);
+				DoorsTable.setWidthPercentage(100); // Width 100%
+				DoorsTable.setSpacingBefore(10f); // Space before table
+//				DoorsTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table21 = new PdfPTable(1);
-				table21.setWidthPercentage(100); // Width 100%
-				table21.setSpacingBefore(10f); // Space before table
-				table21.getDefaultCell().setBorder(0);
-				table21.addCell(cellD);
-				document.add(table21);
+				PdfPCell DoorsCell = new PdfPCell(new Paragraph("Doors", font10B));
+				DoorsCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				DoorsCell.setBackgroundColor(new GrayColor(0.93f));
+				DoorsCell.setFixedHeight(17f);
+				DoorsTable.addCell(DoorsCell);
+				document.add(DoorsTable);
 
 				PdfPTable table22 = new PdfPTable(pointColumnWidths1);
 				table22.setWidthPercentage(100); // Width 100%

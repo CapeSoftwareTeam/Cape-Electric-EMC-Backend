@@ -13,10 +13,12 @@ import com.capeelectric.repository.ElectromagneticCompatabilityRepository;
 import com.capeelectric.service.ElectromagneticPDFService;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
+import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.GrayColor;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
@@ -45,24 +47,53 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 
 				Font font8 = new Font(BaseFont.createFont(), 9, Font.NORMAL, BaseColor.BLACK);
 				Font font9 = new Font(BaseFont.createFont(), 10, Font.NORMAL, BaseColor.BLACK);
+				
+				
+				Font font12B = new Font(BaseFont.createFont(), 12, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
+				Font font10B = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
+				
+                float[] pointColumnHeadLabel = { 100F };
+				
+				PdfPTable ElectroMagneticDataTable = new PdfPTable(pointColumnHeadLabel);
+				ElectroMagneticDataTable.setWidthPercentage(100); // Width 100%
+				ElectroMagneticDataTable.setSpacingBefore(5f); // Space before table
+				ElectroMagneticDataTable.setSpacingAfter(5f); // Space after table
 
-				PdfPCell cellSy = new PdfPCell(new Paragraph(30, "System Earth Reference Summary", font9));
-				cellSy.setBorder(PdfPCell.NO_BORDER);
-				cellSy.setBackgroundColor(BaseColor.LIGHT_GRAY);
+				PdfPCell ElectroMagneticDataCell = new PdfPCell(new Paragraph("Electro Magnetic Compatibility (EMC) Data", font12B));
+				ElectroMagneticDataCell.setHorizontalAlignment(Element.ALIGN_CENTER);
+				ElectroMagneticDataCell.setBackgroundColor(new GrayColor(0.93f));
+				ElectroMagneticDataCell.setFixedHeight(20f);
+				ElectroMagneticDataTable.addCell(ElectroMagneticDataCell);
+				document.add(ElectroMagneticDataTable); 
+				
+//				PdfPTable table10 = new PdfPTable(1);
+//				table10.setWidthPercentage(100); // Width 100%
+//				table10.setSpacingBefore(10f); // Space before table
+//				table10.getDefaultCell().setBorder(0); 
+//				
+//				PdfPCell cellSy = new PdfPCell(new Paragraph(30, "System Earth Reference Summary", font9));
+//				cellSy.setBorder(PdfPCell.NO_BORDER);
+//				cellSy.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table10.addCell(cellSy);
+//				document.add(table10);
+				
+				PdfPTable SystemEarthRefTable = new PdfPTable(pointColumnHeadLabel);
+				SystemEarthRefTable.setWidthPercentage(100); // Width 100%
+				SystemEarthRefTable.setSpacingBefore(5f); // Space before table
+				SystemEarthRefTable.setSpacingAfter(5f); // Space after table
 
-				Font font2 = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
-				PdfPTable table10 = new PdfPTable(1);
-				table10.setWidthPercentage(100); // Width 100%
-				table10.setSpacingBefore(10f); // Space before table
-				table10.getDefaultCell().setBorder(0);
-				table10.addCell(cellSy);
-				document.add(table10);
+				PdfPCell SystemEarthRefCell = new PdfPCell(new Paragraph("System Earth Reference Summary", font10B));
+				SystemEarthRefCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				SystemEarthRefCell.setBackgroundColor(new GrayColor(0.93f));
+				SystemEarthRefCell.setFixedHeight(17f);
+				SystemEarthRefTable.addCell(SystemEarthRefCell);
+				document.add(SystemEarthRefTable);
 
 				float[] pointColumnWidths1 = { 90F, 90F };
 
 				PdfPTable table = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table.setWidthPercentage(100); // Width 100%
-				table.setSpacingBefore(10f); // Space before table
+				table.setSpacingBefore(5f); // Space before table
 //				table7.setSpacingAfter(10f); // Space after table
 				table.getDefaultCell().setBorder(0);
 
@@ -101,16 +132,28 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 				table.addCell(cell121);
 				document.add(table);
 
-				PdfPCell cellSr = new PdfPCell(new Paragraph(30, "System / Room Shielding", font9));
-				cellSr.setBorder(PdfPCell.NO_BORDER);
-				cellSr.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table19 = new PdfPTable(1);
+//				table19.setWidthPercentage(100); // Width 100%
+//				table19.setSpacingBefore(10f); // Space before table
+//				table19.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellSr = new PdfPCell(new Paragraph(30, "System / Room Shielding", font9));
+//				cellSr.setBorder(PdfPCell.NO_BORDER);
+//				cellSr.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table19.addCell(cellSr);
+//				document.add(table19);
+				
+				PdfPTable SystemRoomShieldTable = new PdfPTable(pointColumnHeadLabel);
+				SystemRoomShieldTable.setWidthPercentage(100); // Width 100%
+				SystemRoomShieldTable.setSpacingBefore(5f); // Space before table
+//				SystemRoomShieldTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table19 = new PdfPTable(1);
-				table19.setWidthPercentage(100); // Width 100%
-				table19.setSpacingBefore(10f); // Space before table
-				table19.getDefaultCell().setBorder(0);
-				table19.addCell(cellSr);
-				document.add(table19);
+				PdfPCell SystemRoomShieldCell = new PdfPCell(new Paragraph("System / Room Shielding", font10B));
+				SystemRoomShieldCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				SystemRoomShieldCell.setBackgroundColor(new GrayColor(0.93f));
+				SystemRoomShieldCell.setFixedHeight(17f);
+				SystemRoomShieldTable.addCell(SystemRoomShieldCell);
+				document.add(SystemRoomShieldTable);
 
 				PdfPTable table20 = new PdfPTable(pointColumnWidths1);
 				table20.setWidthPercentage(100); // Width 100%
@@ -164,16 +207,29 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 				table20.addCell(cell119);
 				document.add(table20);
 
-				PdfPCell cellSi = new PdfPCell(new Paragraph(30, "Site RF Source", font9));
-				cellSi.setBorder(PdfPCell.NO_BORDER);
-				cellSi.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table6 = new PdfPTable(1);
+//				table6.setWidthPercentage(100); // Width 100%
+//				table6.setSpacingBefore(10f); // Space before table
+//				table6.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellSi = new PdfPCell(new Paragraph(30, "Site RF Source", font9));
+//				cellSi.setBorder(PdfPCell.NO_BORDER);
+//				cellSi.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table6.addCell(cellSi);
+//				document.add(table6);
+				
+				PdfPTable SiteRFSourceTable = new PdfPTable(pointColumnHeadLabel);
+				SiteRFSourceTable.setWidthPercentage(100); // Width 100%
+				SiteRFSourceTable.setSpacingBefore(5f); // Space before table
+//				SiteRFSourceTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table6 = new PdfPTable(1);
-				table6.setWidthPercentage(100); // Width 100%
-				table6.setSpacingBefore(10f); // Space before table
-				table6.getDefaultCell().setBorder(0);
-				table6.addCell(cellSi);
-				document.add(table6);
+				PdfPCell SiteRFSourceCell = new PdfPCell(new Paragraph("Site RF Source", font10B));
+				SiteRFSourceCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				SiteRFSourceCell.setBackgroundColor(new GrayColor(0.93f));
+				SiteRFSourceCell.setFixedHeight(17f);
+				SiteRFSourceTable.addCell(SiteRFSourceCell);
+				document.add(SiteRFSourceTable);
+
 
 				PdfPTable table7 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table7.setWidthPercentage(100); // Width 100%
@@ -241,16 +297,29 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 				table7.addCell(cell1373);
 				document.add(table7);
 
-				PdfPCell cellEx = new PdfPCell(new Paragraph(30, "Extrenal RFI Sources", font9));
-				cellEx.setBorder(PdfPCell.NO_BORDER);
-				cellEx.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table13 = new PdfPTable(1);
+//				table13.setWidthPercentage(100); // Width 100%
+//				table13.setSpacingBefore(10f); // Space before table
+//				table13.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellEx = new PdfPCell(new Paragraph(30, "Extrenal RFI Sources", font9));
+//				cellEx.setBorder(PdfPCell.NO_BORDER);
+//				cellEx.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table13.addCell(cellEx);
+//				document.add(table13);
+				
+				PdfPTable ExtrenaRFISourcesTable = new PdfPTable(pointColumnHeadLabel);
+				ExtrenaRFISourcesTable.setWidthPercentage(100); // Width 100%
+				ExtrenaRFISourcesTable.setSpacingBefore(5f); // Space before table
+//				ExtrenaRFISourcesTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table13 = new PdfPTable(1);
-				table13.setWidthPercentage(100); // Width 100%
-				table13.setSpacingBefore(10f); // Space before table
-				table13.getDefaultCell().setBorder(0);
-				table13.addCell(cellEx);
-				document.add(table13);
+				PdfPCell ExtrenaRFISourcesCell = new PdfPCell(new Paragraph("Extrenal RFI Sources", font10B));
+				ExtrenaRFISourcesCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				ExtrenaRFISourcesCell.setBackgroundColor(new GrayColor(0.93f));
+				ExtrenaRFISourcesCell.setFixedHeight(17f);
+				ExtrenaRFISourcesTable.addCell(ExtrenaRFISourcesCell);
+				document.add(ExtrenaRFISourcesTable);
+
 
 				PdfPTable table14 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table14.setWidthPercentage(100); // Width 100%
@@ -365,16 +434,29 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 				table14.addCell(cell47);
 				document.add(table14);
 
-				PdfPCell cellIe = new PdfPCell(new Paragraph(30, "Incidental EMI Source", font9));
-				cellIe.setBorder(PdfPCell.NO_BORDER);
-				cellIe.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPCell cellIe = new PdfPCell(new Paragraph(30, "Incidental EMI Source", font9));
+//				cellIe.setBorder(PdfPCell.NO_BORDER);
+//				cellIe.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//
+//				PdfPTable table15 = new PdfPTable(1);
+//				table15.setWidthPercentage(100); // Width 100%
+//				table15.setSpacingBefore(10f); // Space before table
+//				table15.getDefaultCell().setBorder(0);
+//				table15.addCell(cellIe);
+//				document.add(table15);
+				
+				PdfPTable IncidentalEMISourceTable = new PdfPTable(pointColumnHeadLabel);
+				IncidentalEMISourceTable.setWidthPercentage(100); // Width 100%
+				IncidentalEMISourceTable.setSpacingBefore(5f); // Space before table
+//				IncidentalEMISourceTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table15 = new PdfPTable(1);
-				table15.setWidthPercentage(100); // Width 100%
-				table15.setSpacingBefore(10f); // Space before table
-				table15.getDefaultCell().setBorder(0);
-				table15.addCell(cellIe);
-				document.add(table15);
+				PdfPCell IncidentalEMISourceCell = new PdfPCell(new Paragraph("Incidental EMI Source", font10B));
+				IncidentalEMISourceCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				IncidentalEMISourceCell.setBackgroundColor(new GrayColor(0.93f));
+				IncidentalEMISourceCell.setFixedHeight(17f);
+				IncidentalEMISourceTable.addCell(IncidentalEMISourceCell);
+				document.add(IncidentalEMISourceTable);
+
 
 				PdfPTable table18 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table18.setWidthPercentage(100); // Width 100%
@@ -486,20 +568,32 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 				table14.addCell(cell730);
 				document.add(table14);
 
-				PdfPCell cellSrs = new PdfPCell(new Paragraph(30, "SITE RFI SURVEY", font9));
-				cellSrs.setBorder(PdfPCell.NO_BORDER);
-				cellSrs.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table23 = new PdfPTable(1);
+//				table23.setWidthPercentage(100); // Width 100%
+//				table23.setSpacingBefore(10f); // Space before table
+//				table23.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellSrs = new PdfPCell(new Paragraph(30, "SITE RFI SURVEY", font9));
+//				cellSrs.setBorder(PdfPCell.NO_BORDER);
+//				cellSrs.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table23.addCell(cellSrs);
+//				document.add(table23);
+				
+				PdfPTable SiteRFISurveyTable = new PdfPTable(pointColumnHeadLabel);
+				SiteRFISurveyTable.setWidthPercentage(100); // Width 100%
+				SiteRFISurveyTable.setSpacingBefore(5f); // Space before table
+//				SiteRFISurveyTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table23 = new PdfPTable(1);
-				table23.setWidthPercentage(100); // Width 100%
-				table23.setSpacingBefore(10f); // Space before table
-				table23.getDefaultCell().setBorder(0);
-				table23.addCell(cellSrs);
-				document.add(table23);
+				PdfPCell SiteRFISurveyCell = new PdfPCell(new Paragraph("SITE RFI SURVEY", font10B));
+				SiteRFISurveyCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				SiteRFISurveyCell.setBackgroundColor(new GrayColor(0.93f));
+				SiteRFISurveyCell.setFixedHeight(17f);
+				SiteRFISurveyTable.addCell(SiteRFISurveyCell);
+				document.add(SiteRFISurveyTable);
 
 				PdfPTable table21 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table21.setWidthPercentage(100); // Width 100%
-				table21.setSpacingBefore(10f); // Space before table
+				table21.setSpacingBefore(5f); // Space before table
 //				table21.setSpacingAfter(10f); // Space after table
 				table21.getDefaultCell().setBorder(0);
 

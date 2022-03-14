@@ -20,6 +20,7 @@ import com.itextpdf.text.Font;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.GrayColor;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
@@ -27,12 +28,16 @@ import com.itextpdf.text.pdf.PdfWriter;
 @Service
 public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFService {
 
-//	@Autowired
-//	private PowerEarthingDataRepository powerEarthingDataRepository;
+	@Autowired
+	private PowerEarthingDataRepository powerEarthingDataRepository;
 
+//	@Override
+//	public void printPowerEarthingData(String userName, Integer emcId) throws PowerEarthingDataException {
+		
 	@Override
 	public void printPowerEarthingData(String userName, Integer emcId,Optional<PowerEarthingData> powerEarthingDataRep) throws PowerEarthingDataException {
-		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
+	
+	if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			Document document = new Document(PageSize.A4, 68, 68, 62, 68);
 
 			try {
@@ -40,6 +45,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("PowerandEarthingData.pdf"));
 //				List<PowerEarthingData> powerEarthigData1 = powerEarthingDataRepository.findByUserNameAndEmcId(userName,
 //						emcId);
+//				PowerEarthingData powerEarthigData = powerEarthigData1.get(0);
 				PowerEarthingData powerEarthigData = powerEarthingDataRep.get();
 
 				List<ElectronicSystem> electroicSys1 = powerEarthigData.getElectronicSystem();
@@ -50,18 +56,48 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				document.open();
 				Font font8 = new Font(BaseFont.createFont(), 9, Font.NORMAL, BaseColor.BLACK);
 				Font font9 = new Font(BaseFont.createFont(), 10, Font.NORMAL, BaseColor.BLACK);
+				
+				Font font12B = new Font(BaseFont.createFont(), 12, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
+				Font font10B = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
+				
+                float[] pointColumnHeadLabel = { 100F };
+				
+				PdfPTable FacilityDataTable = new PdfPTable(pointColumnHeadLabel);
+				FacilityDataTable.setWidthPercentage(100); // Width 100%
+				FacilityDataTable.setSpacingBefore(5f); // Space before table
+				FacilityDataTable.setSpacingAfter(5f); // Space after table
 
-				PdfPCell cellBls = new PdfPCell(new Paragraph(30, "Service Entrance", font9));
-				cellBls.setBorder(PdfPCell.NO_BORDER);
-				cellBls.setBackgroundColor(BaseColor.LIGHT_GRAY);
-
+				PdfPCell facilityCell = new PdfPCell(new Paragraph("Power And Earthing Data", font12B));
+				facilityCell.setHorizontalAlignment(Element.ALIGN_CENTER);
+				facilityCell.setBackgroundColor(new GrayColor(0.93f));
+				facilityCell.setFixedHeight(20f);
+				FacilityDataTable.addCell(facilityCell);
+				document.add(FacilityDataTable);
+				
 				Font font2 = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
-				PdfPTable table10 = new PdfPTable(1);
-				table10.setWidthPercentage(100); // Width 100%
-				table10.setSpacingBefore(10f); // Space before table
-				table10.getDefaultCell().setBorder(0);
-				table10.addCell(cellBls);
-				document.add(table10);
+			
+//				PdfPTable table10 = new PdfPTable(1);
+//				table10.setWidthPercentage(100); // Width 100%
+//				table10.setSpacingBefore(10f); // Space before table
+//				table10.getDefaultCell().setBorder(0);
+//
+//				PdfPCell cellBls = new PdfPCell(new Paragraph(30, "Service Entrance", font9));
+//				cellBls.setBorder(PdfPCell.NO_BORDER);
+//				cellBls.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table10.addCell(cellBls);
+//				document.add(table10);
+				
+				PdfPTable ServiceEntranceTable = new PdfPTable(pointColumnHeadLabel);
+				ServiceEntranceTable.setWidthPercentage(100); // Width 100%
+				ServiceEntranceTable.setSpacingBefore(5f); // Space before table
+//				ServiceEntranceTable.setSpacingAfter(5f); // Space after table
+
+				PdfPCell ServiceEntranceCell = new PdfPCell(new Paragraph("Service Entrance", font10B));
+				ServiceEntranceCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				ServiceEntranceCell.setBackgroundColor(new GrayColor(0.93f));
+				ServiceEntranceCell.setFixedHeight(17f);
+				ServiceEntranceTable.addCell(ServiceEntranceCell);
+				document.add(ServiceEntranceTable);
 
 				float[] pointColumnWidths1 = { 90F, 90F };
 
@@ -120,20 +156,32 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				table.addCell(cell11);
 				document.add(table);
 
-				PdfPCell cellBc = new PdfPCell(new Paragraph(30, "Input", font9));
-				cellBc.setBorder(PdfPCell.NO_BORDER);
-				cellBc.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table2 = new PdfPTable(1);
+//				table2.setWidthPercentage(100); // Width 100%
+//				table2.setSpacingBefore(10f); // Space before table
+//				table2.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellBc = new PdfPCell(new Paragraph(30, "Input", font9));
+//				cellBc.setBorder(PdfPCell.NO_BORDER);
+//				cellBc.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table2.addCell(cellBc);
+//				document.add(table2);
+				
+				PdfPTable InputTable = new PdfPTable(pointColumnHeadLabel);
+				InputTable.setWidthPercentage(100); // Width 100%
+				InputTable.setSpacingBefore(5f); // Space before table
+//				InputTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table2 = new PdfPTable(1);
-				table2.setWidthPercentage(100); // Width 100%
-				table2.setSpacingBefore(10f); // Space before table
-				table2.getDefaultCell().setBorder(0);
-				table2.addCell(cellBc);
-				document.add(table2);
+				PdfPCell InputCell = new PdfPCell(new Paragraph("Input", font10B));
+				InputCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				InputCell.setBackgroundColor(new GrayColor(0.93f));
+				InputCell.setFixedHeight(17f);
+				InputTable.addCell(InputCell);
+				document.add(InputTable);
 
 				PdfPTable table5 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table5.setWidthPercentage(100); // Width 100%
-				table5.setSpacingBefore(10f); // Space before table
+				table5.setSpacingBefore(5f); // Space before table
 //				table3.setSpacingAfter(10f); // Space after table
 				table5.getDefaultCell().setBorder(0);
 
@@ -171,16 +219,28 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 
 				document.add(table5);
 
-				PdfPCell cellRu = new PdfPCell(new Paragraph(30, "Output to MDB", font9));
-				cellRu.setBorder(PdfPCell.NO_BORDER);
-				cellRu.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table6 = new PdfPTable(1);
+//				table6.setWidthPercentage(100); // Width 100%
+//				table6.setSpacingBefore(10f); // Space before table
+//				table6.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellRu = new PdfPCell(new Paragraph(30, "Output to MDB", font9));
+//				cellRu.setBorder(PdfPCell.NO_BORDER);
+//				cellRu.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table6.addCell(cellRu);
+//				document.add(table6);
+				
+				PdfPTable OutPutTable = new PdfPTable(pointColumnHeadLabel);
+				OutPutTable.setWidthPercentage(100); // Width 100%
+				OutPutTable.setSpacingBefore(10f); // Space before table
+//				OutPutTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table6 = new PdfPTable(1);
-				table6.setWidthPercentage(100); // Width 100%
-				table6.setSpacingBefore(10f); // Space before table
-				table6.getDefaultCell().setBorder(0);
-				table6.addCell(cellRu);
-				document.add(table6);
+				PdfPCell OutPutCell = new PdfPCell(new Paragraph("Output to MDB", font10B));
+				OutPutCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				OutPutCell.setBackgroundColor(new GrayColor(0.93f));
+				OutPutCell.setFixedHeight(17f);
+				OutPutTable.addCell(OutPutCell);
+				document.add(OutPutTable);
 
 				PdfPTable table7 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table7.setWidthPercentage(100); // Width 100%
@@ -298,17 +358,29 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				table5.addCell(cell45);
 
 				document.add(table5);
+				
+//				PdfPTable table13 = new PdfPTable(1);
+//				table13.setWidthPercentage(100); // Width 100%
+//				table13.setSpacingBefore(10f); // Space before table
+//				table13.getDefaultCell().setBorder(0);
+//
+//				PdfPCell cellBd = new PdfPCell(new Paragraph(30, "Building Distribution", font9));
+//				cellBd.setBorder(PdfPCell.NO_BORDER);
+//				cellBd.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table13.addCell(cellBd);
+//				document.add(table13);
+				
+				PdfPTable BuildingDistributionTable = new PdfPTable(pointColumnHeadLabel);
+				BuildingDistributionTable.setWidthPercentage(100); // Width 100%
+				BuildingDistributionTable.setSpacingBefore(10f); // Space before table
+//				BuildingDistributionTable.setSpacingAfter(5f); // Space after table
 
-				PdfPCell cellBd = new PdfPCell(new Paragraph(30, "Building Distribution", font9));
-				cellBd.setBorder(PdfPCell.NO_BORDER);
-				cellBd.setBackgroundColor(BaseColor.LIGHT_GRAY);
-
-				PdfPTable table13 = new PdfPTable(1);
-				table13.setWidthPercentage(100); // Width 100%
-				table13.setSpacingBefore(10f); // Space before table
-				table13.getDefaultCell().setBorder(0);
-				table13.addCell(cellBd);
-				document.add(table13);
+				PdfPCell BuildingDistriCell = new PdfPCell(new Paragraph("Building Distribution", font10B));
+				BuildingDistriCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				BuildingDistriCell.setBackgroundColor(new GrayColor(0.93f));
+				BuildingDistriCell.setFixedHeight(17f);
+				BuildingDistributionTable.addCell(BuildingDistriCell);
+				document.add(BuildingDistributionTable);
 
 				PdfPTable table14 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table14.setWidthPercentage(100); // Width 100%
@@ -378,16 +450,28 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				document.add(table18);
 				document.newPage();
 
-				PdfPCell cellEs = new PdfPCell(new Paragraph(30, "Electronics System Room Power Distribution", font9));
-				cellEs.setBorder(PdfPCell.NO_BORDER);
-				cellEs.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table30 = new PdfPTable(1);
+//				table30.setWidthPercentage(100); // Width 100%
+//				table30.setSpacingBefore(10f); // Space before table
+//				table30.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellEs = new PdfPCell(new Paragraph(30, "Electronics System Room Power Distribution", font9));
+//				cellEs.setBorder(PdfPCell.NO_BORDER);
+//				cellEs.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table30.addCell(cellEs);
+//				document.add(table30);
+				
+				PdfPTable ElectronicsSystemTable = new PdfPTable(pointColumnHeadLabel);
+				ElectronicsSystemTable.setWidthPercentage(100); // Width 100%
+				ElectronicsSystemTable.setSpacingBefore(10f); // Space before table
+//				ElectronicsSystemTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table30 = new PdfPTable(1);
-				table30.setWidthPercentage(100); // Width 100%
-				table30.setSpacingBefore(10f); // Space before table
-				table30.getDefaultCell().setBorder(0);
-				table30.addCell(cellEs);
-				document.add(table30);
+				PdfPCell ElectronicsSystemCell = new PdfPCell(new Paragraph("Electronics System Room Power Distribution", font10B));
+				ElectronicsSystemCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				ElectronicsSystemCell.setBackgroundColor(new GrayColor(0.93f));
+				ElectronicsSystemCell.setFixedHeight(17f);
+				ElectronicsSystemTable.addCell(ElectronicsSystemCell);
+				document.add(ElectronicsSystemTable);
 
 				PdfPTable table17 = new PdfPTable(pointColumnWidths1);
 				table17.setWidthPercentage(100); // Width 100%
@@ -748,16 +832,29 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				document.add(table24);
 				document.newPage();
 
-				PdfPCell cellW = new PdfPCell(new Paragraph(30, "Distribution panel At Load (Final Circuits)", font9));
-				cellW.setBorder(PdfPCell.NO_BORDER);
-				cellW.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				PdfPTable table16 = new PdfPTable(1);
+//				table16.setWidthPercentage(100); // Width 100%
+//				table16.setSpacingBefore(10f); // Space before table
+//				table16.getDefaultCell().setBorder(0);
+//				
+//				PdfPCell cellW = new PdfPCell(new Paragraph(30, "Distribution panel At Load (Final Circuits)", font9));
+//				cellW.setBorder(PdfPCell.NO_BORDER);
+//				cellW.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				
+//				table16.addCell(cellW);
+//				document.add(table16);
+				
+				PdfPTable DistributionPanelTable = new PdfPTable(pointColumnHeadLabel);
+				DistributionPanelTable.setWidthPercentage(100); // Width 100%
+				DistributionPanelTable.setSpacingBefore(10f); // Space before table
+//				DistributionPanelTable.setSpacingAfter(5f); // Space after table
 
-				PdfPTable table16 = new PdfPTable(1);
-				table16.setWidthPercentage(100); // Width 100%
-				table16.setSpacingBefore(10f); // Space before table
-				table16.getDefaultCell().setBorder(0);
-				table16.addCell(cellW);
-				document.add(table16);
+				PdfPCell DistributionPanelCell = new PdfPCell(new Paragraph("Distribution panel At Load (Final Circuits)", font10B));
+				DistributionPanelCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				DistributionPanelCell.setBackgroundColor(new GrayColor(0.93f));
+				DistributionPanelCell.setFixedHeight(17f);
+				DistributionPanelTable.addCell(DistributionPanelCell);
+				document.add(DistributionPanelTable);
 
 				PdfPTable table15 = new PdfPTable(pointColumnWidths1);
 				table15.setWidthPercentage(100); // Width 100%
