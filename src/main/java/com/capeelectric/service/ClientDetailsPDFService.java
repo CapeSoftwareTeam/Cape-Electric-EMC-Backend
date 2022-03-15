@@ -10,4 +10,6 @@ public interface ClientDetailsPDFService {
 
 	public void printClientDetails(String userName, Integer emcId, Optional<ClientDetails> clientDetailsRepo) throws ClientDetailsException;
 
+//	public void printClientDetails(String userName, Integer emcId) throws ClientDetailsException;
+	
 }

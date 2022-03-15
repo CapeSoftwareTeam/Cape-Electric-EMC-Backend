@@ -1,15 +1,12 @@
 package com.capeelectric.service.impl;
 
 import java.io.FileOutputStream;
-import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.capeelectric.exception.ClientDetailsException;
 import com.capeelectric.model.ClientDetails;
-import com.capeelectric.repository.ClientDetailsRepository;
 import com.capeelectric.service.ClientDetailsPDFService;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
@@ -30,8 +27,12 @@ public class ClientDetailsPDFServiceImpl implements ClientDetailsPDFService {
 //	@Autowired
 //	private ClientDetailsRepository clientDetailsRepository;
 
+//	@Override
+//	public void printClientDetails(String userName, Integer emcId) throws ClientDetailsException {
+		
+
 	@Override
-	public void printClientDetails(String userName, Integer emcId,Optional<ClientDetails> clientDetailsRepo) throws ClientDetailsException {
+	public void printClientDetails(String userName, Integer emcId, Optional<ClientDetails> clientDetailsRepo) throws ClientDetailsException {
 		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			Document document = new Document(PageSize.A4, 68, 68, 62, 68);
 
@@ -39,7 +40,8 @@ public class ClientDetailsPDFServiceImpl implements ClientDetailsPDFService {
 
 				PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("ClientDetails.pdf"));
 
-				//List<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByEmcId(emcId);
+//				List<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByEmcId(emcId);
+//				ClientDetails clientDetailsRepo1 = clientDetailsRepo.get(0);
 				ClientDetails clientDetailsRepo1 = clientDetailsRepo.get();
 
 				Font font8 = new Font(BaseFont.createFont(), 9, Font.NORMAL, BaseColor.BLACK);
@@ -214,7 +216,6 @@ public class ClientDetailsPDFServiceImpl implements ClientDetailsPDFService {
 				comment1.setHorizontalAlignment(Element.ALIGN_LEFT);
 				comment1.setBorder(PdfPCell.NO_BORDER);
 				comment.addCell(comment1);
-
 				document.add(comment);
 
 				PdfPTable table41 = new PdfPTable(pointColumnWidths3);
@@ -230,18 +231,32 @@ public class ClientDetailsPDFServiceImpl implements ClientDetailsPDFService {
 				document.add(table41);
 
 				document.newPage();
-
-				PdfPCell cell45 = new PdfPCell(new Paragraph(30, "Client Details", font9));
-				cell45.setBorder(PdfPCell.NO_BORDER);
-				cell45.setBackgroundColor(BaseColor.LIGHT_GRAY);
-
+				
 				Font font2 = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
-				PdfPTable table10 = new PdfPTable(1);
-				table10.setWidthPercentage(100); // Width 100%
-				table10.setSpacingBefore(10f); // Space before table
-				table10.getDefaultCell().setBorder(0);
-				table10.addCell(cell45);
-				document.add(table10);
+//				PdfPTable table10 = new PdfPTable(1);
+//				table10.setWidthPercentage(100); // Width 100%
+//				table10.setSpacingBefore(10f); // Space before table
+//				table10.getDefaultCell().setBorder(0);
+//
+//				PdfPCell cell45 = new PdfPCell(new Paragraph(30, "Client Details", font9));
+//				cell45.setBorder(PdfPCell.NO_BORDER);
+//				cell45.setBackgroundColor(BaseColor.LIGHT_GRAY);
+//				table10.addCell(cell45);
+//				document.add(table10);
+				
+				Font font10B = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
+				
+				PdfPTable ClientDetailsTable = new PdfPTable(1);
+				ClientDetailsTable.setWidthPercentage(100); // Width 100%
+				ClientDetailsTable.setSpacingBefore(5f); // Space before table
+//				ClientDetailsTable.setSpacingAfter(5f); // Space after table
+
+				PdfPCell cleintDetailsCell = new PdfPCell(new Paragraph("Client Details", font10B));
+				cleintDetailsCell.setHorizontalAlignment(Element.ALIGN_LEFT);
+				cleintDetailsCell.setBackgroundColor(new GrayColor(0.90f));
+				cleintDetailsCell.setFixedHeight(17f);
+				ClientDetailsTable.addCell(cleintDetailsCell);
+				document.add(ClientDetailsTable);
 
 				float[] pointColumnWidths1 = { 90F, 90F };
 
@@ -299,7 +314,7 @@ public class ClientDetailsPDFServiceImpl implements ClientDetailsPDFService {
 				cell111.setBorder(PdfPCell.NO_BORDER);
 				table.addCell(cell111);
 
-				PdfPCell cell12 = new PdfPCell(new Paragraph(" Email:", font9));
+				PdfPCell cell12 = new PdfPCell(new Paragraph("Email:", font9));
 				cell12.setBorder(PdfPCell.NO_BORDER);
 				cell12.setGrayFill(0.92f);
 				table.addCell(cell12);
