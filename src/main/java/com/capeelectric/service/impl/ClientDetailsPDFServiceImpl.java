@@ -308,27 +308,29 @@ public class ClientDetailsPDFServiceImpl implements ClientDetailsPDFService {
 				cell13.setBorder(PdfPCell.NO_BORDER);
 				table.addCell(cell13);
 
-				PdfPCell cell14 = new PdfPCell(new Paragraph("Address:", font9));
-				cell14.setBorder(PdfPCell.NO_BORDER);
-				table.addCell(cell14);
-				PdfPCell cell15 = new PdfPCell(new Paragraph(clientDetailsRepo1.getClientAddress(), font9));
-				cell15.setBorder(PdfPCell.NO_BORDER);
-				table.addCell(cell15);
+//				PdfPCell cell14 = new PdfPCell(new Paragraph("Address:", font9));
+//				cell14.setBorder(PdfPCell.NO_BORDER);
+//				table.addCell(cell14);
+//				PdfPCell cell15 = new PdfPCell(new Paragraph(clientDetailsRepo1.getClientAddress(), font9));
+//				cell15.setBorder(PdfPCell.NO_BORDER);
+//				table.addCell(cell15);
 
 				PdfPCell cell16 = new PdfPCell(new Paragraph("Country:", font9));
 				cell16.setBorder(PdfPCell.NO_BORDER);
-				cell16.setGrayFill(0.92f);
+				//cell16.setGrayFill(0.92f);
 				table.addCell(cell16);
 				PdfPCell cell17 = new PdfPCell(new Paragraph(clientDetailsRepo1.getCountry(), font9));
-				cell17.setGrayFill(0.92f);
+				//cell17.setGrayFill(0.92f);
 				cell17.setBorder(PdfPCell.NO_BORDER);
 				table.addCell(cell17);
 
 				PdfPCell cell18 = new PdfPCell(new Paragraph("State:", font9));
 				cell18.setBorder(PdfPCell.NO_BORDER);
+				cell18.setGrayFill(0.92f);
 				table.addCell(cell18);
 				PdfPCell cell191 = new PdfPCell(new Paragraph(clientDetailsRepo1.getState(), font9));
 				cell191.setBorder(PdfPCell.NO_BORDER);
+				cell18.setGrayFill(0.92f);
 				table.addCell(cell191);
 
 				document.add(table);

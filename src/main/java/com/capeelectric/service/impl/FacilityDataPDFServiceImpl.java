@@ -615,7 +615,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell73.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell73);
 
-				PdfPCell cell74 = new PdfPCell(new Paragraph("Static tratment type and description:", font9));
+				PdfPCell cell74 = new PdfPCell(new Paragraph("Static treatment type and description:", font9));
 				cell74.setBorder(PdfPCell.NO_BORDER);
 				cell74.setGrayFill(0.92f);
 				table14.addCell(cell74);
@@ -800,7 +800,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				cell101.setBorder(PdfPCell.NO_BORDER);
 				table18.addCell(cell101);
 
-				PdfPCell cell102 = new PdfPCell(new Paragraph("Utilisation of void:", font9));
+				PdfPCell cell102 = new PdfPCell(new Paragraph("Utilization of void:", font9));
 				cell102.setBorder(PdfPCell.NO_BORDER);
 				// cell102.setGrayFill(0.92f);
 				table18.addCell(cell102);
@@ -828,7 +828,7 @@ public class FacilityDataPDFServiceImpl implements FacilityDataPDFService {
 				table18.addCell(cell107);
 
 				PdfPCell cell108 = new PdfPCell(
-						new Paragraph("Description of surface tratment and condition/clealiness:", font9));
+						new Paragraph("Description of surface treatment and condition/clealiness:", font9));
 				cell108.setBorder(PdfPCell.NO_BORDER);
 				cell108.setGrayFill(0.92f);
 				table18.addCell(cell108);
