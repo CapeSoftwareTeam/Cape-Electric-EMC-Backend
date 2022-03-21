@@ -345,7 +345,7 @@ public class ClientDetailsPDFServiceImpl implements ClientDetailsPDFService {
 				table.addCell(cell18);
 				PdfPCell cell191 = new PdfPCell(new Paragraph(clientDetailsRepo1.getState(), font9));
 				cell191.setBorder(PdfPCell.NO_BORDER);
-				cell18.setGrayFill(0.92f);
+				cell191.setGrayFill(0.92f);
 				table.addCell(cell191);
 
 				document.add(table);
