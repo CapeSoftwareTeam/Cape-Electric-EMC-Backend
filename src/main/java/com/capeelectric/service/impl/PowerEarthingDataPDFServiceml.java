@@ -1,22 +1,39 @@
 package com.capeelectric.service.impl;
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.net.URL;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import com.amazonaws.HttpMethod;
+import com.amazonaws.auth.AWSStaticCredentialsProvider;
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.regions.Regions;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+import com.amazonaws.services.s3.model.AmazonS3Exception;
+import com.amazonaws.services.s3.model.GeneratePresignedUrlRequest;
+import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.DistrubutionPannel;
 import com.capeelectric.model.ElectronicSystem;
 import com.capeelectric.model.PowerEarthingData;
+import com.capeelectric.model.ResponseFile;
+import com.capeelectric.repository.FileDBRepository;
 import com.capeelectric.repository.PowerEarthingDataRepository;
 import com.capeelectric.service.PowerEarthingDataPDFService;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
+import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.BaseFont;
@@ -27,17 +44,32 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 @Service
 public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFService {
+	private static final Logger logger = LoggerFactory.getLogger(PowerEarthingDataPDFServiceml.class);
 
 	@Autowired
 	private PowerEarthingDataRepository powerEarthingDataRepository;
 
+	@Autowired
+	private FileDBRepository fileDBRepository;
+
+	@Value("${s3.bucket.name1}")
+	private String s3BucketName1;
+
+	@Value("${access.key.id}")
+	private String accessKeyId;
+
+	@Value("${access.key.secret}")
+	private String accessKeySecret;
+
 //	@Override
 //	public void printPowerEarthingData(String userName, Integer emcId) throws PowerEarthingDataException {
-		
+
+		// }
+
 	@Override
 	public void printPowerEarthingData(String userName, Integer emcId,Optional<PowerEarthingData> powerEarthingDataRep) throws PowerEarthingDataException {
-	
-	if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
+
+		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			Document document = new Document(PageSize.A4, 68, 68, 62, 68);
 
 			try {
@@ -45,8 +77,11 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("PowerandEarthingData.pdf"));
 //				List<PowerEarthingData> powerEarthigData1 = powerEarthingDataRepository.findByUserNameAndEmcId(userName,
 //						emcId);
-//				PowerEarthingData powerEarthigData = powerEarthigData1.get(0);
-				PowerEarthingData powerEarthigData = powerEarthingDataRep.get();
+  //     			 PowerEarthingData powerEarthigData = powerEarthigData1.get(0);
+				 PowerEarthingData powerEarthigData = powerEarthingDataRep.get();
+
+				Optional<ResponseFile> file = fileDBRepository.findByEmcId(emcId);
+				ResponseFile file1 = file.get();
 
 				List<ElectronicSystem> electroicSys1 = powerEarthigData.getElectronicSystem();
 
@@ -54,14 +89,16 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				DistrubutionPannel distrubution = distrubution1.get(0);
 				ElectronicSystem electroicSys = electroicSys1.get(0);
 				document.open();
-				Font font8 = new Font(BaseFont.createFont(), 9, Font.NORMAL, BaseColor.BLACK);
+
 				Font font9 = new Font(BaseFont.createFont(), 10, Font.NORMAL, BaseColor.BLACK);
-				
+
 				Font font12B = new Font(BaseFont.createFont(), 12, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
 				Font font10B = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
-				
-                float[] pointColumnHeadLabel = { 100F };
-				
+
+				float[] pointColumnHeadLabel = { 100F };
+
+				document.newPage();
+
 				PdfPTable FacilityDataTable = new PdfPTable(pointColumnHeadLabel);
 				FacilityDataTable.setWidthPercentage(100); // Width 100%
 				FacilityDataTable.setSpacingBefore(5f); // Space before table
@@ -73,9 +110,9 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				facilityCell.setFixedHeight(20f);
 				FacilityDataTable.addCell(facilityCell);
 				document.add(FacilityDataTable);
-				
+
 				Font font2 = new Font(BaseFont.createFont(), 10, Font.NORMAL | Font.BOLD, BaseColor.BLACK);
-			
+
 //				PdfPTable table10 = new PdfPTable(1);
 //				table10.setWidthPercentage(100); // Width 100%
 //				table10.setSpacingBefore(10f); // Space before table
@@ -86,7 +123,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 //				cellBls.setBackgroundColor(BaseColor.LIGHT_GRAY);
 //				table10.addCell(cellBls);
 //				document.add(table10);
-				
+
 				PdfPTable ServiceEntranceTable = new PdfPTable(pointColumnHeadLabel);
 				ServiceEntranceTable.setWidthPercentage(100); // Width 100%
 				ServiceEntranceTable.setSpacingBefore(5f); // Space before table
@@ -166,7 +203,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 //				cellBc.setBackgroundColor(BaseColor.LIGHT_GRAY);
 //				table2.addCell(cellBc);
 //				document.add(table2);
-				
+
 				PdfPTable InputTable = new PdfPTable(pointColumnHeadLabel);
 				InputTable.setWidthPercentage(100); // Width 100%
 				InputTable.setSpacingBefore(5f); // Space before table
@@ -229,7 +266,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 //				cellRu.setBackgroundColor(BaseColor.LIGHT_GRAY);
 //				table6.addCell(cellRu);
 //				document.add(table6);
-				
+
 				PdfPTable OutPutTable = new PdfPTable(pointColumnHeadLabel);
 				OutPutTable.setWidthPercentage(100); // Width 100%
 				OutPutTable.setSpacingBefore(10f); // Space before table
@@ -358,18 +395,72 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				table5.addCell(cell45);
 
 				document.add(table5);
-				
-//				PdfPTable table13 = new PdfPTable(1);
-//				table13.setWidthPercentage(100); // Width 100%
-//				table13.setSpacingBefore(10f); // Space before table
-//				table13.getDefaultCell().setBorder(0);
-//
-//				PdfPCell cellBd = new PdfPCell(new Paragraph(30, "Building Distribution", font9));
-//				cellBd.setBorder(PdfPCell.NO_BORDER);
-//				cellBd.setBackgroundColor(BaseColor.LIGHT_GRAY);
-//				table13.addCell(cellBd);
-//				document.add(table13);
-				
+
+				PdfPTable table13 = new PdfPTable(1);
+				table13.setWidthPercentage(100); // Width 100%
+				table13.setSpacingBefore(10f); // Space before table
+				table13.getDefaultCell().setBorder(0);
+
+				PdfPCell cellAttachedFile = new PdfPCell(
+						new Paragraph(30, "Attach SLD of power supply system:", font9));
+				cellAttachedFile.setBorder(PdfPCell.NO_BORDER);
+				cellAttachedFile.setBackgroundColor(BaseColor.LIGHT_GRAY);
+				table13.addCell(cellAttachedFile);
+
+				byte[] blob = file1.getData().getBinaryStream().readAllBytes();
+				FileOutputStream fileout = new FileOutputStream(file1.getFileName());
+				fileout.write(blob);
+
+				try {
+					// Create a S3 client with in-program credential
+					BasicAWSCredentials awsCreds = new BasicAWSCredentials(accessKeyId, accessKeySecret);
+					AmazonS3 s3Client = AmazonS3ClientBuilder.standard().withRegion(Regions.AP_SOUTH_1)
+							.withCredentials(new AWSStaticCredentialsProvider(awsCreds)).build();
+					// Uploading the PDF File in AWS S3 Bucket with folderName + fileNameInS3
+					if (file1.getFileName().length() > 0) {
+						PutObjectRequest request = new PutObjectRequest(s3BucketName1,
+								"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()),
+								new File(file1.getFileName()));
+						s3Client.putObject(request);
+						logger.info("Uploading PowerEarthingfile done in AWS s3");
+//							java.util.Date expiration = new java.util.Date();
+//					        expiration.setTime(6000*10*20);
+						GeneratePresignedUrlRequest generateUrl = new GeneratePresignedUrlRequest(s3BucketName1,
+								"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()));
+						generateUrl.setMethod(HttpMethod.GET); // Default.
+						// generateUrl.setExpiration(expiration);
+						URL url = s3Client.generatePresignedUrl(generateUrl);
+//						HttpURLConnection httpcon = (HttpURLConnection) url.openConnection();
+//						httpcon.addRequestProperty("User-Agent", "YOUR_BROWSER_AGENT");
+//						Paragraph paragraph = new Paragraph("Click here to download file",font9);
+//						Anchor anchor1 = new Anchor(url.toString(),
+//								FontFactory.getFont(FontFactory.HELVETICA, 2, Font.UNDERLINE,BaseColor.BLUE));
+//						//anchor1.setReference(url.toString());
+//						//anchor1.setGrayFill(0.92f);
+
+						PdfPCell cell7322 = new PdfPCell(
+								new Paragraph("Click here to download the uploaded file in EMC:", font9));
+						// cell73.setGrayFill(0.92f);
+						cell7322.setBorder(PdfPCell.NO_BORDER);
+						table13.addCell(cell7322);
+
+						PdfPCell cell732 = new PdfPCell(new Paragraph(url.toString(),
+								FontFactory.getFont(FontFactory.HELVETICA, 2, Font.UNDERLINE, BaseColor.BLUE)));
+						cell732.setGrayFill(0.92f);
+						// cell732.setBorder(PdfPCell.NO_BORDER);
+					    cell732.setFixedHeight(8f);
+						table13.addCell(cell732);
+						document.add(table13);
+//					
+					} else {
+						logger.error("There is no file available");
+						throw new Exception("There is no file  available");
+					}
+
+				} catch (AmazonS3Exception e) {
+					e.printStackTrace();
+				}
+
 				PdfPTable BuildingDistributionTable = new PdfPTable(pointColumnHeadLabel);
 				BuildingDistributionTable.setWidthPercentage(100); // Width 100%
 				BuildingDistributionTable.setSpacingBefore(10f); // Space before table
@@ -397,11 +488,12 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cell71.setBorder(PdfPCell.NO_BORDER);
 				table14.addCell(cell71);
 				document.add(table14);
-				
-				
-				PdfPCell cellNote = new PdfPCell(new Paragraph(25, "Note: any heavy cycling loads or variable load controllers fed from the same distribution feeder path that supplies the computer system.", font9));
+
+				PdfPCell cellNote = new PdfPCell(new Paragraph(25,
+						"Note: any heavy cycling loads or variable load controllers fed from the same distribution feeder path that supplies the computer system.",
+						font9));
 				cellNote.setBorder(PdfPCell.NO_BORDER);
-				//cellNote.setBackgroundColor(BaseColor.LIGHT_GRAY);
+				// cellNote.setBackgroundColor(BaseColor.LIGHT_GRAY);
 
 				PdfPTable table29 = new PdfPTable(1);
 				table29.setWidthPercentage(100); // Width 100%
@@ -409,25 +501,25 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				table29.getDefaultCell().setBorder(0);
 				table29.addCell(cellNote);
 				document.add(table29);
-				
-				PdfPCell cellNote1 = new PdfPCell(new Paragraph(25, "Note:how protective earthing distribution is accomplished (conduit only, flexible conduit and bond wire, other).", font9));
+
+				PdfPCell cellNote1 = new PdfPCell(new Paragraph(25,
+						"Note:how protective earthing distribution is accomplished (conduit only, flexible conduit and bond wire, other).",
+						font9));
 				cellNote1.setBorder(PdfPCell.NO_BORDER);
-				//cellNote1.setBackgroundColor(BaseColor.LIGHT_GRAY);
+				// cellNote1.setBackgroundColor(BaseColor.LIGHT_GRAY);
 
 				PdfPTable table31 = new PdfPTable(1);
 				table31.setWidthPercentage(100); // Width 100%
-				//table31.setSpacingBefore(10f); // Space before table
+				// table31.setSpacingBefore(10f); // Space before table
 				table31.getDefaultCell().setBorder(0);
 				table31.addCell(cellNote1);
 				document.add(table31);
-				
-				
+
 				PdfPTable table18 = new PdfPTable(pointColumnWidths1); // 3 columns.
 				table18.setWidthPercentage(100); // Width 100%
 				table18.setSpacingBefore(5f); // Space before table
 //				table18.setSpacingAfter(10f); // Space after table
 				table18.getDefaultCell().setBorder(0);
-				
 
 				PdfPCell cell72 = new PdfPCell(new Paragraph("Record data:", font9));
 				cell72.setBorder(PdfPCell.NO_BORDER);
@@ -460,13 +552,14 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 //				cellEs.setBackgroundColor(BaseColor.LIGHT_GRAY);
 //				table30.addCell(cellEs);
 //				document.add(table30);
-				
+
 				PdfPTable ElectronicsSystemTable = new PdfPTable(pointColumnHeadLabel);
 				ElectronicsSystemTable.setWidthPercentage(100); // Width 100%
 				ElectronicsSystemTable.setSpacingBefore(10f); // Space before table
 //				ElectronicsSystemTable.setSpacingAfter(5f); // Space after table
 
-				PdfPCell ElectronicsSystemCell = new PdfPCell(new Paragraph("Electronics System Room Power Distribution", font10B));
+				PdfPCell ElectronicsSystemCell = new PdfPCell(
+						new Paragraph("Electronics System Room Power Distribution", font10B));
 				ElectronicsSystemCell.setHorizontalAlignment(Element.ALIGN_LEFT);
 				ElectronicsSystemCell.setBackgroundColor(new GrayColor(0.93f));
 				ElectronicsSystemCell.setFixedHeight(17f);
@@ -820,7 +913,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				PdfPCell cell31201 = new PdfPCell(
 						new Paragraph("List all non computer loads, including any convenience receptacles", font9));
 				cell31201.setHorizontalAlignment(Element.ALIGN_CENTER);
-				//cell31201.setFixedHeight(20f);
+				// cell31201.setFixedHeight(20f);
 				cell31201.setGrayFill(0.92f);
 				table24.addCell(cell31201);
 
@@ -843,13 +936,14 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 //				
 //				table16.addCell(cellW);
 //				document.add(table16);
-				
+
 				PdfPTable DistributionPanelTable = new PdfPTable(pointColumnHeadLabel);
 				DistributionPanelTable.setWidthPercentage(100); // Width 100%
 				DistributionPanelTable.setSpacingBefore(10f); // Space before table
 //				DistributionPanelTable.setSpacingAfter(5f); // Space after table
 
-				PdfPCell DistributionPanelCell = new PdfPCell(new Paragraph("Distribution panel At Load (Final Circuits)", font10B));
+				PdfPCell DistributionPanelCell = new PdfPCell(
+						new Paragraph("Distribution panel At Load (Final Circuits)", font10B));
 				DistributionPanelCell.setHorizontalAlignment(Element.ALIGN_LEFT);
 				DistributionPanelCell.setBackgroundColor(new GrayColor(0.93f));
 				DistributionPanelCell.setFixedHeight(17f);
