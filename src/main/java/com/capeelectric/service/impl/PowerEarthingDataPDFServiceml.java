@@ -3,9 +3,12 @@ package com.capeelectric.service.impl;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.net.URL;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +39,7 @@ import com.itextpdf.text.Font;
 import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Utilities;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.GrayColor;
 import com.itextpdf.text.pdf.PdfPCell;
@@ -46,8 +50,8 @@ import com.itextpdf.text.pdf.PdfWriter;
 public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFService {
 	private static final Logger logger = LoggerFactory.getLogger(PowerEarthingDataPDFServiceml.class);
 
-	@Autowired
-	private PowerEarthingDataRepository powerEarthingDataRepository;
+//	@Autowired
+//	private PowerEarthingDataRepository powerEarthingDataRepository;
 
 	@Autowired
 	private FileDBRepository fileDBRepository;
@@ -64,10 +68,11 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 //	@Override
 //	public void printPowerEarthingData(String userName, Integer emcId) throws PowerEarthingDataException {
 
-		// }
+	// }
 
 	@Override
-	public void printPowerEarthingData(String userName, Integer emcId,Optional<PowerEarthingData> powerEarthingDataRep) throws PowerEarthingDataException {
+	public void printPowerEarthingData(String userName, Integer emcId, Optional<PowerEarthingData> powerEarthingDataRep)
+			throws PowerEarthingDataException {
 
 		if (userName != null && !userName.isEmpty() && emcId != null && emcId != 0) {
 			Document document = new Document(PageSize.A4, 68, 68, 62, 68);
@@ -77,8 +82,8 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("PowerandEarthingData.pdf"));
 //				List<PowerEarthingData> powerEarthigData1 = powerEarthingDataRepository.findByUserNameAndEmcId(userName,
 //						emcId);
-  //     			 PowerEarthingData powerEarthigData = powerEarthigData1.get(0);
-				 PowerEarthingData powerEarthigData = powerEarthingDataRep.get();
+				// PowerEarthingData powerEarthigData = powerEarthigData1.get(0);
+				PowerEarthingData powerEarthigData = powerEarthingDataRep.get();
 
 				Optional<ResponseFile> file = fileDBRepository.findByEmcId(emcId);
 				ResponseFile file1 = file.get();
@@ -423,13 +428,20 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 								new File(file1.getFileName()));
 						s3Client.putObject(request);
 						logger.info("Uploading PowerEarthingfile done in AWS s3");
-//							java.util.Date expiration = new java.util.Date();
-//					        expiration.setTime(6000*10*20);
+
+						java.util.Date expiration = new java.util.Date();
+						long expTimeMillis = expiration.getTime();
+						expTimeMillis += 1000 * 67 * 9000;
+						expiration.setTime(expTimeMillis);
+
+						// Date expiration = new Date();
+						// new DateTime().plusMinutes(5).toDate()).toString()
+						// expiration.setTime();
 						GeneratePresignedUrlRequest generateUrl = new GeneratePresignedUrlRequest(s3BucketName1,
 								"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()));
 						generateUrl.setMethod(HttpMethod.GET); // Default.
-						// generateUrl.setExpiration(expiration);
-						URL url = s3Client.generatePresignedUrl(generateUrl);
+						generateUrl.setExpiration(expiration);
+						String url = s3Client.generatePresignedUrl(generateUrl).toExternalForm();
 //						HttpURLConnection httpcon = (HttpURLConnection) url.openConnection();
 //						httpcon.addRequestProperty("User-Agent", "YOUR_BROWSER_AGENT");
 //						Paragraph paragraph = new Paragraph("Click here to download file",font9);
@@ -437,6 +449,8 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 //								FontFactory.getFont(FontFactory.HELVETICA, 2, Font.UNDERLINE,BaseColor.BLUE));
 //						//anchor1.setReference(url.toString());
 //						//anchor1.setGrayFill(0.92f);
+						// Utilities utilities = s3Client.utilities();
+						System.out.println(url);
 
 						PdfPCell cell7322 = new PdfPCell(
 								new Paragraph("Click here to download the uploaded file in EMC:", font9));
@@ -448,8 +462,15 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 								FontFactory.getFont(FontFactory.HELVETICA, 2, Font.UNDERLINE, BaseColor.BLUE)));
 						cell732.setGrayFill(0.92f);
 						// cell732.setBorder(PdfPCell.NO_BORDER);
-					    cell732.setFixedHeight(8f);
+						cell732.setFixedHeight(8f);
 						table13.addCell(cell732);
+
+						PdfPCell fileNote = new PdfPCell(
+								new Paragraph("Note :These link will expair  with in 7 days", font9));
+						// cell73.setGrayFill(0.92f);
+						fileNote.setBorder(PdfPCell.NO_BORDER);
+						table13.addCell(fileNote);
+
 						document.add(table13);
 //					
 					} else {
