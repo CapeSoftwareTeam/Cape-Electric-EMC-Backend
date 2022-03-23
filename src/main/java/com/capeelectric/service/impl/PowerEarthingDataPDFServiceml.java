@@ -57,8 +57,8 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 	@Autowired
 	private FileDBRepository fileDBRepository;
 
-	@Value("${s3.bucket.name1}")
-	private String s3BucketName1;
+	@Value("${s3.emc.file.upload.bucket.name}")
+	private String s3EmcFileUploadBucketName;
 
 	@Value("${access.key.id}")
 	private String accessKeyId;
@@ -426,7 +426,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 							.withCredentials(new AWSStaticCredentialsProvider(awsCreds)).build();
 					// Uploading the PDF File in AWS S3 Bucket with folderName + fileNameInS3
 					if (file1.getFileName().length() > 0) {
-						PutObjectRequest request = new PutObjectRequest(s3BucketName1,
+						PutObjectRequest request = new PutObjectRequest(s3EmcFileUploadBucketName,
 								"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()),
 								new File(file1.getFileName()));
 						s3Client.putObject(request);
@@ -440,7 +440,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 						// Date expiration = new Date();
 						// new DateTime().plusMinutes(5).toDate()).toString()
 						// expiration.setTime();
-						GeneratePresignedUrlRequest generateUrl = new GeneratePresignedUrlRequest(s3BucketName1,
+						GeneratePresignedUrlRequest generateUrl = new GeneratePresignedUrlRequest(s3EmcFileUploadBucketName,
 								"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()));
 						generateUrl.setMethod(HttpMethod.GET); // Default.
 						generateUrl.setExpiration(expiration);
