@@ -3,6 +3,7 @@ package com.capeelectric.service.impl;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.net.URL;
+import java.sql.Blob;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -412,9 +413,11 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 				cellAttachedFile.setBackgroundColor(BaseColor.LIGHT_GRAY);
 				table13.addCell(cellAttachedFile);
 
-				byte[] blob = file1.getData().getBinaryStream().readAllBytes();
+				// byte[] blob = file1.getData().getBinaryStream().readAllBytes();
+				Blob blob = file1.getData();
+				byte[] bytes = blob.getBytes(1l, (int) blob.length());
 				FileOutputStream fileout = new FileOutputStream(file1.getFileName());
-				fileout.write(blob);
+				fileout.write(bytes);
 
 				try {
 					// Create a S3 client with in-program credential
