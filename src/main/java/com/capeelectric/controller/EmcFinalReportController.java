@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.capeelectric.exception.EmcFinalReportException;
 import com.capeelectric.model.ClientDetails;
 import com.capeelectric.model.EmcFinalReport;
+import com.capeelectric.service.FinalReportService;
 import com.capeelectric.service.impl.EmcFinalReportServiceImpl;
 
 /**
@@ -30,15 +31,15 @@ public class EmcFinalReportController {
 	private static final Logger logger = LoggerFactory.getLogger(EmcFinalReportController.class);
 
 	@Autowired
-	EmcFinalReportServiceImpl emcFinalReportServiceImpl;
-
+	FinalReportService finalReportService;
+	
 	@GetMapping("/retrieveEmcReport/{userName}/{emcId}")
 	public ResponseEntity<Optional<EmcFinalReport>> retrieveEmcReports(@PathVariable String userName,
 			@PathVariable Integer emcId) throws EmcFinalReportException {
 		logger.info("FinalReportAPI_started retrieveFinalEmcReport function userName: {},emcId : {}", userName, emcId);
 
 		return new ResponseEntity<Optional<EmcFinalReport>>(
-				emcFinalReportServiceImpl.retrieveEmcReports(userName, emcId), HttpStatus.OK);
+				finalReportService.retrieveEmcReports(userName, emcId), HttpStatus.OK);
 
 	}
 
@@ -47,9 +48,18 @@ public class EmcFinalReportController {
 			throws EmcFinalReportException {
 		logger.info("FinalReportAPI_started retrieveListOfClientDetails function userName: {},emcId : {}", userName);
 
-		return new ResponseEntity<List<ClientDetails>>(emcFinalReportServiceImpl.retrieveListOfClientDetails(userName),
+		return new ResponseEntity<List<ClientDetails>>(finalReportService.retrieveListOfClientDetails(userName),
 				HttpStatus.OK);
 
 	}
+	
+	@GetMapping("/retrieveAllClients")
+	public ResponseEntity<List<ClientDetails>> retrieveAllCLientDetails() throws EmcFinalReportException{
+		logger.info("FinalReportAPI_started retrieveAllCLientDetails");
+			
+		return new ResponseEntity<List<ClientDetails>>(finalReportService.retrieveAllCLientDetails(),
+						HttpStatus.OK);
+	}
+
 
 }
