@@ -259,7 +259,7 @@ public class ElectromagneticPDFServiceImpl implements ElectromagneticPDFService 
 				table7.addCell(cell133);
 
 				PdfPCell cell134 = new PdfPCell(new Paragraph(
-						"Equipment maintained and operated properly (access doors/panels closed??):", font9));
+						"Equipment maintained and operated properly (access doors/panels closed?):", font9));
 				cell134.setBorder(PdfPCell.NO_BORDER);
 				cell134.setGrayFill(0.92f);
 				table7.addCell(cell134);
