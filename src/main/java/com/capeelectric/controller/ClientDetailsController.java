@@ -42,7 +42,7 @@ public class ClientDetailsController {
 		return new ResponseEntity<List<ClientDetails>>(clientDetailsService.retrieveClientDetails(userName, emcId),
 				HttpStatus.OK);
 	}
-
+ 
 	@PutMapping("/updateClientDetails")
 	public ResponseEntity<String> updateClientDetails(@RequestBody ClientDetails clientDetails)
 			throws ClientDetailsException {
@@ -50,4 +50,13 @@ public class ClientDetailsController {
 		clientDetailsService.updateClientDetails(clientDetails);
 		return new ResponseEntity<String>("ClientDetails  Updated Successfully", HttpStatus.OK);
 	}
+	
+	@PutMapping("/updateStatus/{emcId}")
+	public ResponseEntity<String> updateClientDetailsStatus(@PathVariable Integer emcId)
+			throws ClientDetailsException {
+		logger.info("called updateClientDetails function getEmcId : {}", emcId);
+		clientDetailsService.updateClientDetailsStatus(emcId);
+		return new ResponseEntity<String>("ClientDetails  Updated Successfully with InActive status", HttpStatus.OK);
+	}
+	
 }

@@ -21,9 +21,11 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 	@Autowired
 	private ClientDetailsRepository clientDetailsRepository;
 
+	private ClientDetails clientDetails;
 	@Override
 	public ClientDetails saveClientDetails(ClientDetails clientDetails) throws ClientDetailsException {
 		if (clientDetails != null && clientDetails.getUserName() != null) {
+			clientDetails.setStatus("Active");
 			clientDetails.setCreatedDate(LocalDateTime.now());
 			clientDetails.setCreatedBy(clientDetails.getUserName());
 			clientDetails.setUpdatedBy(clientDetails.getUserName());
@@ -60,6 +62,28 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 			if (clientDetailsRepo.isPresent() && clientDetailsRepo.get().getEmcId().equals(clientDetails.getEmcId())) {
 				clientDetails.setUpdatedDate(LocalDateTime.now());
 				clientDetails.setUpdatedBy(clientDetails.getUserName());
+				clientDetailsRepository.save(clientDetails);
+			} else {
+				logger.error("Given Emc Id is Invalid");
+				throw new ClientDetailsException("Given Emc Id is Invalid");
+			}
+
+		} else {
+			logger.error("Invalid Inputs");
+			throw new ClientDetailsException("Invalid inputs");
+		}
+
+	}
+	
+	@Override
+	public void updateClientDetailsStatus(Integer emcId) throws ClientDetailsException {
+		if (emcId != null && emcId != 0) {
+			List<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByEmcId(emcId);
+			if (clientDetailsRepo != null && !clientDetailsRepo.isEmpty()) {
+				clientDetails = clientDetailsRepo.get(0);
+				clientDetails.setStatus("InActive");
+//				clientDetails.setUpdatedDate(LocalDateTime.now());
+//				clientDetails.setUpdatedBy(clientDetails.getUserName());
 				clientDetailsRepository.save(clientDetails);
 			} else {
 				logger.error("Given Emc Id is Invalid");

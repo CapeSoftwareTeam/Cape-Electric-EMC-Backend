@@ -117,6 +117,7 @@ CREATE TABLE state_table (
 				    EMAIL VARCHAR(255),
 				    CONTACT_NUMBER  VARCHAR(255),
 				    LAND_MARK VARCHAR(255),
+				    STATUS VARCHAR(50),		    
 				    CREATED_BY VARCHAR(255),
 				    CREATED_DATE datetime,
 			        UPDATED_BY VARCHAR(255),
