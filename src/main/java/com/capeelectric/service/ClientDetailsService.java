@@ -15,7 +15,7 @@ public interface ClientDetailsService {
 
 	public void updateClientDetails(ClientDetails clientDetails) throws ClientDetailsException;
 	
-	public void updateClientDetailsStatus(Integer emcId) throws ClientDetailsException;
+	public void updateClientDetailsStatus(ClientDetails clientDetails) throws ClientDetailsException;
 
 
 }

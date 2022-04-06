@@ -21,7 +21,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 	@Autowired
 	private ClientDetailsRepository clientDetailsRepository;
 
-	private ClientDetails clientDetails;
+	private ClientDetails clientDetailsData;
 	@Override
 	public ClientDetails saveClientDetails(ClientDetails clientDetails) throws ClientDetailsException {
 		if (clientDetails != null && clientDetails.getUserName() != null) {
@@ -76,15 +76,15 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 	}
 	
 	@Override
-	public void updateClientDetailsStatus(Integer emcId) throws ClientDetailsException {
-		if (emcId != null && emcId != 0) {
-			List<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByEmcId(emcId);
-			if (clientDetailsRepo != null && !clientDetailsRepo.isEmpty()) {
-				clientDetails = clientDetailsRepo.get(0);
-				clientDetails.setStatus("InActive");
-//				clientDetails.setUpdatedDate(LocalDateTime.now());
-//				clientDetails.setUpdatedBy(clientDetails.getUserName());
-				clientDetailsRepository.save(clientDetails);
+	public void updateClientDetailsStatus(ClientDetails clientDetails) throws ClientDetailsException {
+		if (clientDetails != null && clientDetails.getUserName() != null && clientDetails.getEmcId() != null) {
+			List<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByEmcId(clientDetails.getEmcId());
+			if (clientDetailsRepo != null && !clientDetailsRepo.isEmpty()) {			
+				clientDetailsData = clientDetailsRepo.get(0);
+				clientDetailsData.setStatus("InActive");
+				clientDetailsData.setUpdatedDate(LocalDateTime.now());
+				clientDetailsData.setUpdatedBy(clientDetails.getUserName());
+				clientDetailsRepository.save(clientDetailsData);
 			} else {
 				logger.error("Given Emc Id is Invalid");
 				throw new ClientDetailsException("Given Emc Id is Invalid");
