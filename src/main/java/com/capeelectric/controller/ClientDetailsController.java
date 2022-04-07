@@ -56,7 +56,7 @@ public class ClientDetailsController {
 			throws ClientDetailsException {
 		logger.info("called updateClientDetailsStatus function UserName : {},getEmcId : {}", clientDetails.getUserName());
 		clientDetailsService.updateClientDetailsStatus(clientDetails);
-		return new ResponseEntity<String>("ClientDetails  Updated Successfully with InActive status", HttpStatus.OK);
+		return new ResponseEntity<String>("ClientDetails  has been successfully deleted", HttpStatus.OK);
 	}
 	
 }
