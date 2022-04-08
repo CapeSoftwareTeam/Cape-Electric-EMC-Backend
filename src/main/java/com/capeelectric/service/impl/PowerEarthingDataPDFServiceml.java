@@ -437,24 +437,6 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 						expTimeMillis += 1000 * 67 * 9000;
 						expiration.setTime(expTimeMillis);
 
-						// Date expiration = new Date();
-						// new DateTime().plusMinutes(5).toDate()).toString()
-						// expiration.setTime();
-						GeneratePresignedUrlRequest generateUrl = new GeneratePresignedUrlRequest(s3EmcFileUploadBucketName,
-								"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()));
-						generateUrl.setMethod(HttpMethod.GET); // Default.
-						generateUrl.setExpiration(expiration);
-						String url = s3Client.generatePresignedUrl(generateUrl).toExternalForm();
-//						HttpURLConnection httpcon = (HttpURLConnection) url.openConnection();
-//						httpcon.addRequestProperty("User-Agent", "YOUR_BROWSER_AGENT");
-//						Paragraph paragraph = new Paragraph("Click here to download file",font9);
-//						Anchor anchor1 = new Anchor(url.toString(),
-//								FontFactory.getFont(FontFactory.HELVETICA, 2, Font.UNDERLINE,BaseColor.BLUE));
-//						//anchor1.setReference(url.toString());
-//						//anchor1.setGrayFill(0.92f);
-						// Utilities utilities = s3Client.utilities();
-						System.out.println(url);
-
 						PdfPCell cell7322 = new PdfPCell(
 								new Paragraph("Paste these url to Broweser and download the uploaded file in EMC:", font9));
 						// cell73.setGrayFill(0.92f);
