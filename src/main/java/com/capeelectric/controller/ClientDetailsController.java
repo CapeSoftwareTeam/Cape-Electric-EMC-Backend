@@ -42,7 +42,7 @@ public class ClientDetailsController {
 		return new ResponseEntity<List<ClientDetails>>(clientDetailsService.retrieveClientDetails(userName, emcId),
 				HttpStatus.OK);
 	}
-
+ 
 	@PutMapping("/updateClientDetails")
 	public ResponseEntity<String> updateClientDetails(@RequestBody ClientDetails clientDetails)
 			throws ClientDetailsException {
@@ -50,4 +50,13 @@ public class ClientDetailsController {
 		clientDetailsService.updateClientDetails(clientDetails);
 		return new ResponseEntity<String>("ClientDetails  Updated Successfully", HttpStatus.OK);
 	}
+	
+	@PutMapping("/updateEmcStatus")
+	public ResponseEntity<String> updateClientDetailsStatus(@RequestBody ClientDetails clientDetails)
+			throws ClientDetailsException {
+		logger.info("called updateClientDetailsStatus function UserName : {},getEmcId : {}", clientDetails.getUserName());
+		clientDetailsService.updateClientDetailsStatus(clientDetails);
+		return new ResponseEntity<String>("ClientDetails  has been successfully deleted", HttpStatus.OK);
+	}
+	
 }

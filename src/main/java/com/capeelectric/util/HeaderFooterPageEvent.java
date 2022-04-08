@@ -57,7 +57,7 @@ public class HeaderFooterPageEvent extends PdfPageEventHelper {
 //			image.setAbsolutePosition(-3, -9);
 //			document.add(image);
 			
-			Font font = new Font(BaseFont.createFont(), 9, Font.NORMAL, BaseColor.DARK_GRAY);
+			Font font = new Font(BaseFont.createFont(), 8, Font.NORMAL, BaseColor.DARK_GRAY);
 			
 			ColumnText.showTextAligned(writer.getDirectContent(), Element.ALIGN_CENTER,
 					new Phrase("CAPE electric pvt. Ltd., A41B Sipcot, Oragadam, Kancheepuram – 602105.", font), 300,
@@ -79,7 +79,7 @@ public class HeaderFooterPageEvent extends PdfPageEventHelper {
 			footer.getDefaultCell().setHorizontalAlignment(Element.ALIGN_RIGHT);
 
 			footer.addCell(new Phrase(String.format("Page %d of", writer.getPageNumber()),
-					new Font(Font.FontFamily.HELVETICA, 8)));
+					new Font(BaseFont.createFont(), 8)));
 
 			PdfPCell totalPageCount = new PdfPCell(total);
 			totalPageCount.setBorder(0);

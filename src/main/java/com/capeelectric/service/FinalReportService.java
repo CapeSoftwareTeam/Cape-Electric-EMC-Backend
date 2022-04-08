@@ -13,4 +13,7 @@ public interface FinalReportService {
 	List<ClientDetails> retrieveListOfClientDetails(String userName) throws EmcFinalReportException;
 
 	Optional<EmcFinalReport> retrieveEmcReports(String userName, Integer emcId) throws EmcFinalReportException;
+	
+	List<ClientDetails> retrieveAllCLientDetails() throws EmcFinalReportException;
+
 }

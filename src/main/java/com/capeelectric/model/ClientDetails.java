@@ -55,6 +55,9 @@ public class ClientDetails implements Serializable {
 
 	@Column(name = "ALL_STEPS_COMPLETED")
 	private String allStepsCompleted;
+	
+	@Column(name = "STATUS")
+	private String status;
 
 	@Column(name = "CREATED_BY")
 	private String createdBy;
@@ -196,4 +199,17 @@ public class ClientDetails implements Serializable {
 		this.updatedDate = updatedDate;
 	}
 
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	
 }

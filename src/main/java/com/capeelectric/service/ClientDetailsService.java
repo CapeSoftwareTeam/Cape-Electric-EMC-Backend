@@ -14,5 +14,8 @@ public interface ClientDetailsService {
 	public List<ClientDetails> retrieveClientDetails(String userName, Integer emcId) throws ClientDetailsException;
 
 	public void updateClientDetails(ClientDetails clientDetails) throws ClientDetailsException;
+	
+	public void updateClientDetailsStatus(ClientDetails clientDetails) throws ClientDetailsException;
+
 
 }

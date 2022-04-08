@@ -102,4 +102,10 @@ public class EmcFinalReportServiceImpl implements FinalReportService {
 			throw new EmcFinalReportException("Invaild Input");
 		}
 	}
+	
+	@Override
+	public List<ClientDetails> retrieveAllCLientDetails() throws EmcFinalReportException {
+		return (List<ClientDetails>) clientDetailsRepository.findAll();
+	}
+
 }
