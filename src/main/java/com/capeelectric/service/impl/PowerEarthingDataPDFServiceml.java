@@ -2,28 +2,22 @@ package com.capeelectric.service.impl;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.net.URL;
 import java.sql.Blob;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
-import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.amazonaws.HttpMethod;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.AmazonS3Exception;
-import com.amazonaws.services.s3.model.GeneratePresignedUrlRequest;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.capeelectric.exception.PowerEarthingDataException;
 import com.capeelectric.model.DistrubutionPannel;
@@ -31,8 +25,8 @@ import com.capeelectric.model.ElectronicSystem;
 import com.capeelectric.model.PowerEarthingData;
 import com.capeelectric.model.ResponseFile;
 import com.capeelectric.repository.FileDBRepository;
-import com.capeelectric.repository.PowerEarthingDataRepository;
 import com.capeelectric.service.PowerEarthingDataPDFService;
+import com.capeelectric.util.Constants;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Element;
@@ -40,7 +34,6 @@ import com.itextpdf.text.Font;
 import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.Utilities;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.GrayColor;
 import com.itextpdf.text.pdf.PdfPCell;
@@ -438,12 +431,13 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 						expiration.setTime(expTimeMillis);
 
 						PdfPCell cell7322 = new PdfPCell(
-								new Paragraph("Paste these url to Broweser and download the uploaded file in EMC:", font9));
+								new Paragraph("Paste these url to Browser and download/view the uploaded file in EMC:", font9));
 						// cell73.setGrayFill(0.92f);
 						cell7322.setBorder(PdfPCell.NO_BORDER);
 						table13.addCell(cell7322);
 
-						PdfPCell cell732 = new PdfPCell(new Paragraph("https://d35eofesgzbybk.cloudfront.net/"+"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()),FontFactory.getFont(FontFactory.HELVETICA, 4, Font.UNDERLINE, BaseColor.BLUE)));
+						PdfPCell cell732 = new PdfPCell(new Paragraph(Constants.EMC_FILE_UPLOAD_DOMAIN
+								+ "/"+"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()),FontFactory.getFont(FontFactory.HELVETICA, 4, Font.UNDERLINE, BaseColor.BLUE)));
 						cell732.setGrayFill(0.92f);
 						// cell732.setBorder(PdfPCell.NO_BORDER);
 						cell732.setFixedHeight(8f);
