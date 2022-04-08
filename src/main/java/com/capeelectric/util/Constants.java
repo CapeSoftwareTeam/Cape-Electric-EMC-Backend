@@ -28,9 +28,11 @@ public class Constants {
 
 	public static final String NUMBER_OF_LICENSES = String.valueOf(5);
 
-	public static final String FROM_EMAIL = "info@rushforsafety.com";
+	public static final String FROM_EMAIL = "solve@safelv.in";
 	
 	public static final String AWS_EMAIL_PORT = String.valueOf(587);
 	
-	public static final String EMAIL_SUBJECT = "Rush Electrical Safety Digital TIC Platform";
+	public static final String EMAIL_SUBJECT = "SOLVE Electrical Safety Digital TIC Platform";
+	
+	public static final String EMC_FILE_UPLOAD_DOMAIN = "https://d35eofesgzbybk.cloudfront.net";
 }
