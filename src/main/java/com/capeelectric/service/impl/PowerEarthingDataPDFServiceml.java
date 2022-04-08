@@ -456,23 +456,22 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 						System.out.println(url);
 
 						PdfPCell cell7322 = new PdfPCell(
-								new Paragraph("Click here to download the uploaded file in EMC:", font9));
+								new Paragraph("Paste these url to Broweser and download the uploaded file in EMC:", font9));
 						// cell73.setGrayFill(0.92f);
 						cell7322.setBorder(PdfPCell.NO_BORDER);
 						table13.addCell(cell7322);
 
-						PdfPCell cell732 = new PdfPCell(new Paragraph(url.toString(),
-								FontFactory.getFont(FontFactory.HELVETICA, 2, Font.UNDERLINE, BaseColor.BLUE)));
+						PdfPCell cell732 = new PdfPCell(new Paragraph("https://d35eofesgzbybk.cloudfront.net/"+"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()),FontFactory.getFont(FontFactory.HELVETICA, 4, Font.UNDERLINE, BaseColor.BLUE)));
 						cell732.setGrayFill(0.92f);
 						// cell732.setBorder(PdfPCell.NO_BORDER);
 						cell732.setFixedHeight(8f);
 						table13.addCell(cell732);
 
-						PdfPCell fileNote = new PdfPCell(
-								new Paragraph("Note :These link will expair  with in 7 days", font9));
-						// cell73.setGrayFill(0.92f);
-						fileNote.setBorder(PdfPCell.NO_BORDER);
-						table13.addCell(fileNote);
+//						PdfPCell fileNote = new PdfPCell(
+//								new Paragraph("Note :These link will expair  with in 7 days", font9));
+//						// cell73.setGrayFill(0.92f);
+//						fileNote.setBorder(PdfPCell.NO_BORDER);
+//						table13.addCell(fileNote);
 
 						document.add(table13);
 //					
