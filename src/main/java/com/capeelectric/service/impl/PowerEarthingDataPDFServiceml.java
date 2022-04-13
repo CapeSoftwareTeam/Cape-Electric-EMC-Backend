@@ -26,6 +26,7 @@ import com.capeelectric.model.PowerEarthingData;
 import com.capeelectric.model.ResponseFile;
 import com.capeelectric.repository.FileDBRepository;
 import com.capeelectric.service.PowerEarthingDataPDFService;
+import com.capeelectric.util.AWSS3Configuration;
 import com.capeelectric.util.Constants;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
@@ -53,11 +54,9 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 	@Value("${s3.emc.file.upload.bucket.name}")
 	private String s3EmcFileUploadBucketName;
 
-	@Value("${access.key.id}")
-	private String accessKeyId;
-
-	@Value("${access.key.secret}")
-	private String accessKeySecret;
+	@Autowired
+	AWSS3Configuration AWSS3configuration;
+	
 
 //	@Override
 //	public void printPowerEarthingData(String userName, Integer emcId) throws PowerEarthingDataException {
@@ -414,9 +413,10 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 
 				try {
 					// Create a S3 client with in-program credential
-					BasicAWSCredentials awsCreds = new BasicAWSCredentials(accessKeyId, accessKeySecret);
-					AmazonS3 s3Client = AmazonS3ClientBuilder.standard().withRegion(Regions.AP_SOUTH_1)
-							.withCredentials(new AWSStaticCredentialsProvider(awsCreds)).build();
+//					BasicAWSCredentials awsCreds = new BasicAWSCredentials(accessKeyId, accessKeySecret);
+//					AmazonS3 s3Client = AmazonS3ClientBuilder.standard().withRegion(Regions.AP_SOUTH_1)
+//							.withCredentials(new AWSStaticCredentialsProvider(awsCreds)).build();
+					AmazonS3 s3Client=AWSS3configuration.getAmazonS3Client();
 					// Uploading the PDF File in AWS S3 Bucket with folderName + fileNameInS3
 					if (file1.getFileName().length() > 0) {
 						PutObjectRequest request = new PutObjectRequest(s3EmcFileUploadBucketName,

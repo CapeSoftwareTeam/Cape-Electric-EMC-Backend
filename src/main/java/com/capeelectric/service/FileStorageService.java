@@ -25,13 +25,14 @@ public class FileStorageService {
 	@Autowired
 	private FileDBRepository fileDBRepository;
 
-	public void store(MultipartFile file, Integer emcId) throws IOException, SerialException, SQLException {
+	public void store(MultipartFile file, Integer emcId, String fileSize) throws IOException, SerialException, SQLException {
 		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
 		Blob blob = new javax.sql.rowset.serial.SerialBlob(IOUtils.toByteArray(file.getInputStream()));
 		ResponseFile FileDB = new ResponseFile();
 		FileDB.setEmcId(emcId);
 		FileDB.setFileName(fileName);
 		FileDB.setData(blob);
+		FileDB.setFileSize(fileSize);
 		FileDB.setFileType(file.getContentType());
 		logger.debug("File Saved In DB");
 		fileDBRepository.save(FileDB);
@@ -71,7 +72,7 @@ public class FileStorageService {
 
 	}
 
-	public void updateFile(MultipartFile file, Integer fileId) throws SerialException, SQLException, IOException {
+	public void updateFile(MultipartFile file, Integer fileId, String fileSize) throws SerialException, SQLException, IOException {
 		if (fileId != null && fileId != 0) {
 			ResponseFile fileDB = fileDBRepository.findById(fileId).get();
 			if (fileDB != null && fileDB.getFileId().equals(fileId)) {
@@ -81,6 +82,7 @@ public class FileStorageService {
 				fileDB.setFileName(fileName);
 				fileDB.setData(blob);
 				fileDB.setFileType(file.getContentType());
+				fileDB.setFileSize(fileSize);
 				logger.debug("File Update In DB");
 				fileDBRepository.save(fileDB);
 			} else {

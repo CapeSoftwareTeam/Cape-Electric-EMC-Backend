@@ -35,6 +35,9 @@ public class ResponseFile implements Serializable{
 
 	@Column(name = "DATA")
 	private Blob data;
+	
+	@Column(name = "FILE_SIZE")
+	private String fileSize;
 
 	public Integer getFileId() {
 		return fileId;
@@ -74,6 +77,14 @@ public class ResponseFile implements Serializable{
 
 	public void setData(Blob data) {
 		this.data = data;
+	}
+
+	public String getFileSize() {
+		return fileSize;
+	}
+
+	public void setFileSize(String fileSize) {
+		this.fileSize = fileSize;
 	}
 
 }

@@ -35,11 +35,11 @@ public class FileUploadController<V> {
 	@Autowired
 	private FileStorageService storageService;
 
-	@PostMapping("/upload/{emcId}")
-	public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file, @PathVariable Integer emcId)
+	@PostMapping("/upload/{emcId}/{fileSize}")
+	public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file, @PathVariable Integer emcId, @PathVariable String fileSize)
 			throws IOException, SerialException, SQLException {
 		logger.debug("File Upload Start");
-		storageService.store(file, emcId);
+		storageService.store(file, emcId, fileSize);
 		logger.debug("File Upload 	End");
 		return new ResponseEntity<String>("File  Upload Successfully", HttpStatus.OK);
 	}
@@ -69,17 +69,18 @@ public class FileUploadController<V> {
 			hashMap.put("fileType", fileDB.getFileType());
 			hashMap.put("fileEmcId", fileDB.getEmcId().toString());
 			hashMap.put("fileName", fileDB.getFileName());
+			hashMap.put("fileSize", fileDB.getFileSize());
 			return new ResponseEntity<Map>(hashMap, HttpStatus.OK);
 		}
 		return null;
 		
 	}
 
-	@PutMapping("/updateFile/{fileId}")
-	public ResponseEntity<String> updateFile(@RequestParam("file") MultipartFile file, @PathVariable Integer fileId)
+	@PutMapping("/updateFile/{fileId}/{fileSize}")
+	public ResponseEntity<String> updateFile(@RequestParam("file") MultipartFile file, @PathVariable Integer fileId, @PathVariable String fileSize)
 			throws IOException, SerialException, SQLException {
 		logger.debug("UpdateFile File Start");
-		storageService.updateFile(file, fileId);
+		storageService.updateFile(file, fileId,fileSize);
 		logger.debug("UpdateFile File End");
 		return new ResponseEntity<String>("File Updated Successfully", HttpStatus.OK);
 	}
