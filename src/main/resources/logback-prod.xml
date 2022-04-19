@@ -55,15 +55,15 @@
         </triggeringPolicy>
     </appender>  
      
-    <logger name="com.capeelectric" level="INFO">
+    <logger name="com.capeelectric" level="ERROR">
         <appender-ref ref="applicationLog" />
     </logger>
      
-    <logger name="org.springframework.web" level="INFO">
+    <logger name="org.springframework.web" level="ERROR">
         <appender-ref ref="springLog" />
     </logger>
      
-    <logger name="org.hibernate" level="INFO">
+    <logger name="org.hibernate" level="ERROR">
         <appender-ref ref="hibernateLog" />
     </logger>
  
