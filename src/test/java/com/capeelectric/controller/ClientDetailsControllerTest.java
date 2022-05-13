@@ -81,4 +81,14 @@ public class ClientDetailsControllerTest {
 		logger.info("testUpdateClientDetails Function Ended");
 	}
 
+	@Test
+	public void testUpdateClientDetailsStatus() throws ClientDetailsException {
+
+		logger.info("testUpdateClientDetailsStatus Function Started");
+		ResponseEntity<String> expectedResponseEntity = new ResponseEntity<String>(HttpStatus.OK);
+		ResponseEntity<String> actualResponseEntity = clientDetailsController.updateClientDetailsStatus(clientDetails);
+		assertEquals(actualResponseEntity.getStatusCode(), expectedResponseEntity.getStatusCode());
+		logger.info("testUpdateClientDetailsStatus Function Ended");
+	}
+
 }

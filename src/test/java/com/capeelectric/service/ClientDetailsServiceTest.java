@@ -85,8 +85,8 @@ public class ClientDetailsServiceTest {
 	@Test
 	public void testUpdateClientDetails() throws ClientDetailsException {
 
-		when(clientDetailsRepository.findByUserNameAndEmcId("LVsystem@gmail.com", 1))
-				.thenReturn(Optional.of(clientDetails));
+		when(clientDetailsRepository.findByClientName("LVsystem@gmail.com")).thenReturn(Optional.of(clientDetails));
+		when(clientDetailsRepository.findById(1)).thenReturn(Optional.of(clientDetails));
 		clientDetailsServiceImpl.updateClientDetails(clientDetails);
 
 		ClientDetailsException assertThrows_1 = Assertions.assertThrows(ClientDetailsException.class,
@@ -94,6 +94,26 @@ public class ClientDetailsServiceTest {
 		assertEquals(assertThrows_1.getMessage(), "Invalid inputs");
 
 		clientDetails.setEmcId(8);
+		ClientDetailsException assertThrows_2 = Assertions.assertThrows(ClientDetailsException.class,
+				() -> clientDetailsServiceImpl.updateClientDetails(clientDetails));
+		assertEquals(assertThrows_2.getMessage(), "Given Emc Id is Invalid");
+
+	}
+
+	@Test
+	public void testUpdateClientDetailsStatus() throws ClientDetailsException {
+
+		List<ClientDetails> arrayList = new ArrayList<ClientDetails>();
+		arrayList.add(clientDetails);
+		when(clientDetailsRepository.findByEmcId(1)).thenReturn(arrayList);
+		clientDetailsServiceImpl.updateClientDetailsStatus(clientDetails);
+
+		ClientDetailsException assertThrows_1 = Assertions.assertThrows(ClientDetailsException.class,
+				() -> clientDetailsServiceImpl.updateClientDetailsStatus(null));
+		assertEquals(assertThrows_1.getMessage(), "Invalid inputs");
+
+		clientDetails.setEmcId(7);
+		clientDetails.setStatus("InActive");
 		ClientDetailsException assertThrows_2 = Assertions.assertThrows(ClientDetailsException.class,
 				() -> clientDetailsServiceImpl.updateClientDetails(clientDetails));
 		assertEquals(assertThrows_2.getMessage(), "Given Emc Id is Invalid");
