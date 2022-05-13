@@ -8,10 +8,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "CLIENT_DETAILS_TABLE")
+
+@NamedQueries(value = { 
+		@NamedQuery(name = "ClientDetailsRepository.findByClientName", query = "select s from ClientDetails s where s.clientName=:clientName"),
+		@NamedQuery(name = "ClientDetailsRepository.findByClientNameAndStatus", query = "select s from ClientDetails s where s.clientName=:clientName and s.status='Active'")
+		})
+
 public class ClientDetails implements Serializable {
 	/**
 	 * 

@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,15 +24,30 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 	private ClientDetailsRepository clientDetailsRepository;
 
 	private ClientDetails clientDetailsData;
+	
+	@Transactional
 	@Override
+	
 	public ClientDetails saveClientDetails(ClientDetails clientDetails) throws ClientDetailsException {
+		
 		if (clientDetails != null && clientDetails.getUserName() != null) {
-			clientDetails.setStatus("Active");
-			clientDetails.setCreatedDate(LocalDateTime.now());
-			clientDetails.setCreatedBy(clientDetails.getUserName());
-			clientDetails.setUpdatedBy(clientDetails.getUserName());
-			clientDetails.setUpdatedDate(LocalDateTime.now());
-			return clientDetailsRepository.save(clientDetails);
+			
+			Optional<ClientDetails> clientEMCDetailsRepo = clientDetailsRepository.findByClientNameAndStatus(clientDetails.getClientName(), "Active");
+			logger.debug("Basic Client Repo data available");
+			
+			if(!clientEMCDetailsRepo.isPresent() || (clientEMCDetailsRepo.isPresent() && clientEMCDetailsRepo.get().getStatus().equals("InActive"))) {
+				clientDetails.setStatus("Active");
+				clientDetails.setCreatedDate(LocalDateTime.now());
+				clientDetails.setCreatedBy(clientDetails.getUserName());
+				clientDetails.setUpdatedBy(clientDetails.getUserName());
+				clientDetails.setUpdatedDate(LocalDateTime.now());
+				return clientDetailsRepository.save(clientDetails);
+			}
+			else {
+				logger.error("Client name "+clientDetails.getClientName()+" already exists");
+				throw new ClientDetailsException("Client name "+clientDetails.getClientName()+" already exists");
+			}
+			
 		} else {
 			logger.error("Invalid Inputs");
 			throw new ClientDetailsException("Invalid Inputs");
@@ -54,24 +71,35 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 		}
 	}
 
+	@Transactional
 	@Override
 	public void updateClientDetails(ClientDetails clientDetails) throws ClientDetailsException {
+		
 		if (clientDetails != null && clientDetails.getUserName() != null && clientDetails.getEmcId() != null) {
-			Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository
-					.findByUserNameAndEmcId(clientDetails.getUserName(), clientDetails.getEmcId());
-			if (clientDetailsRepo.isPresent() && clientDetailsRepo.get().getEmcId().equals(clientDetails.getEmcId())) {
-				clientDetails.setUpdatedDate(LocalDateTime.now());
-				clientDetails.setUpdatedBy(clientDetails.getUserName());
-				clientDetailsRepository.save(clientDetails);
-			} else {
-				logger.error("Given Emc Id is Invalid");
-				throw new ClientDetailsException("Given Emc Id is Invalid");
+			Optional<ClientDetails> clientDetailsRepo1 = clientDetailsRepository.findByClientName(clientDetails.getClientName());
+			
+			if(!clientDetailsRepo1.isPresent()) {
+				Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository.findById(clientDetails.getEmcId());
+				
+				if (clientDetailsRepo.isPresent() && clientDetailsRepo.get().getEmcId().equals(clientDetails.getEmcId())) {
+					clientDetails.setUpdatedDate(LocalDateTime.now());
+					clientDetails.setUpdatedBy(clientDetails.getUserName());
+					clientDetailsRepository.save(clientDetails);
+				} else {
+					logger.error("Given Emc Id is Invalid");
+					throw new ClientDetailsException("Given Emc Id is Invalid");
+				}
 			}
-
+			else {
+				logger.error("Client name "+clientDetails.getClientName()+" already exists");
+				throw new ClientDetailsException("Client name "+clientDetails.getClientName()+" already exists");
+			}
+			
 		} else {
 			logger.error("Invalid Inputs");
 			throw new ClientDetailsException("Invalid inputs");
 		}
+		logger.info("Ended updateBasicLpsDetails function");
 
 	}
 	
