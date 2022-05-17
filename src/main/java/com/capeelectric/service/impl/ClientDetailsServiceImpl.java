@@ -24,30 +24,31 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 	private ClientDetailsRepository clientDetailsRepository;
 
 	private ClientDetails clientDetailsData;
-	
+
 	@Transactional
 	@Override
-	
+
 	public ClientDetails saveClientDetails(ClientDetails clientDetails) throws ClientDetailsException {
-		
+
 		if (clientDetails != null && clientDetails.getUserName() != null) {
-			
-			Optional<ClientDetails> clientEMCDetailsRepo = clientDetailsRepository.findByClientNameAndStatus(clientDetails.getClientName(), "Active");
+
+			Optional<ClientDetails> clientEMCDetailsRepo = clientDetailsRepository
+					.findByClientNameAndStatus(clientDetails.getClientName(), "Active");
 			logger.debug("Basic Client Repo data available");
-			
-			if(!clientEMCDetailsRepo.isPresent() || (clientEMCDetailsRepo.isPresent() && clientEMCDetailsRepo.get().getStatus().equals("InActive"))) {
+
+			if (!clientEMCDetailsRepo.isPresent() || (clientEMCDetailsRepo.isPresent()
+					&& clientEMCDetailsRepo.get().getStatus().equals("InActive"))) {
 				clientDetails.setStatus("Active");
 				clientDetails.setCreatedDate(LocalDateTime.now());
 				clientDetails.setCreatedBy(clientDetails.getUserName());
 				clientDetails.setUpdatedBy(clientDetails.getUserName());
 				clientDetails.setUpdatedDate(LocalDateTime.now());
 				return clientDetailsRepository.save(clientDetails);
+			} else {
+				logger.error("Client name " + clientDetails.getClientName() + " already exists");
+				throw new ClientDetailsException("Client name " + clientDetails.getClientName() + " already exists");
 			}
-			else {
-				logger.error("Client name "+clientDetails.getClientName()+" already exists");
-				throw new ClientDetailsException("Client name "+clientDetails.getClientName()+" already exists");
-			}
-			
+
 		} else {
 			logger.error("Invalid Inputs");
 			throw new ClientDetailsException("Invalid Inputs");
@@ -74,14 +75,15 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 	@Transactional
 	@Override
 	public void updateClientDetails(ClientDetails clientDetails) throws ClientDetailsException {
-		
+
 		if (clientDetails != null && clientDetails.getUserName() != null && clientDetails.getEmcId() != null) {
-			Optional<ClientDetails> clientDetailsRepo1 = clientDetailsRepository.findByClientName(clientDetails.getClientName());
-			
-			if(!clientDetailsRepo1.isPresent() || clientDetailsRepo1.get().getClientName().equals(clientDetails.getClientName())) {
-				Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository.findById(clientDetails.getEmcId());
-				
-				if (clientDetailsRepo.isPresent() && clientDetailsRepo.get().getEmcId().equals(clientDetails.getEmcId())) {
+			Optional<ClientDetails> clientDetailsRepo1 = clientDetailsRepository
+					.findByClientName(clientDetails.getClientName());
+			Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository.findById(clientDetails.getEmcId());
+			if (!clientDetailsRepo1.isPresent()
+					|| clientDetailsRepo1.get().getClientName().equals(clientDetailsRepo.get().getClientName())) {
+				if (clientDetailsRepo.isPresent()
+						&& clientDetailsRepo.get().getEmcId().equals(clientDetails.getEmcId())) {
 					clientDetails.setUpdatedBy(clientDetails.getUserName());
 					clientDetails.setUpdatedDate(LocalDateTime.now());
 					clientDetailsRepository.save(clientDetails);
@@ -89,12 +91,11 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 					logger.error("Given Emc Id is Invalid");
 					throw new ClientDetailsException("Given Emc Id is Invalid");
 				}
+			} else {
+				logger.error("Client name " + clientDetails.getClientName() + " already exists");
+				throw new ClientDetailsException("Client name " + clientDetails.getClientName() + " already exists");
 			}
-			else {
-				logger.error("Client name "+clientDetails.getClientName()+" already exists");
-				throw new ClientDetailsException("Client name "+clientDetails.getClientName()+" already exists");
-			}
-			
+
 		} else {
 			logger.error("Invalid Inputs");
 			throw new ClientDetailsException("Invalid inputs");
@@ -102,12 +103,12 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 		logger.info("Ended updateBasicLpsDetails function");
 
 	}
-	
+
 	@Override
 	public void updateClientDetailsStatus(ClientDetails clientDetails) throws ClientDetailsException {
 		if (clientDetails != null && clientDetails.getUserName() != null && clientDetails.getEmcId() != null) {
 			List<ClientDetails> clientDetailsRepo = clientDetailsRepository.findByEmcId(clientDetails.getEmcId());
-			if (clientDetailsRepo != null && !clientDetailsRepo.isEmpty()) {			
+			if (clientDetailsRepo != null && !clientDetailsRepo.isEmpty()) {
 				clientDetailsData = clientDetailsRepo.get(0);
 				clientDetailsData.setStatus("InActive");
 				clientDetailsData.setUpdatedDate(LocalDateTime.now());
