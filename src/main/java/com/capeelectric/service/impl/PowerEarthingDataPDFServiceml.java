@@ -420,7 +420,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 					// Uploading the PDF File in AWS S3 Bucket with folderName + fileNameInS3
 					if (file1.getFileName().length() > 0) {
 						PutObjectRequest request = new PutObjectRequest(s3EmcFileUploadBucketName,
-								"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()),
+								"EMC_PowerAndEarthingUploadedFile Name_"+file1.getFileId().toString().concat(file1.getFileName()),
 								new File(file1.getFileName()));
 						s3Client.putObject(request);
 						logger.info("Uploading PowerEarthingfile done in AWS s3");
@@ -437,7 +437,7 @@ public class PowerEarthingDataPDFServiceml implements PowerEarthingDataPDFServic
 						table13.addCell(cell7322);
 
 						PdfPCell cell732 = new PdfPCell(new Paragraph(Constants.EMC_FILE_UPLOAD_DOMAIN
-								+ "/"+"EMC_PowerAndEarthingUploadedFile Name_".concat(file1.getFileName()),FontFactory.getFont(FontFactory.HELVETICA, 4, Font.UNDERLINE, BaseColor.BLUE)));
+								+ "/"+"EMC_PowerAndEarthingUploadedFile Name_"+file1.getFileId().toString().concat(file1.getFileName()),FontFactory.getFont(FontFactory.HELVETICA, 4, Font.UNDERLINE, BaseColor.BLUE)));
 						cell732.setGrayFill(0.92f);
 						// cell732.setBorder(PdfPCell.NO_BORDER);
 						cell732.setFixedHeight(8f);
