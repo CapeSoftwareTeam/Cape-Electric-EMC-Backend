@@ -78,12 +78,12 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 		if (clientDetails != null && clientDetails.getUserName() != null && clientDetails.getEmcId() != null) {
 			Optional<ClientDetails> clientDetailsRepo1 = clientDetailsRepository.findByClientName(clientDetails.getClientName());
 			
-			if(!clientDetailsRepo1.isPresent()) {
+			if(!clientDetailsRepo1.isPresent() || clientDetailsRepo1.get().getClientName().equals(clientDetails.getClientName())) {
 				Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository.findById(clientDetails.getEmcId());
 				
 				if (clientDetailsRepo.isPresent() && clientDetailsRepo.get().getEmcId().equals(clientDetails.getEmcId())) {
-					clientDetails.setUpdatedDate(LocalDateTime.now());
 					clientDetails.setUpdatedBy(clientDetails.getUserName());
+					clientDetails.setUpdatedDate(LocalDateTime.now());
 					clientDetailsRepository.save(clientDetails);
 				} else {
 					logger.error("Given Emc Id is Invalid");
