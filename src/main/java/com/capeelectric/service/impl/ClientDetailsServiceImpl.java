@@ -78,7 +78,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 
 		if (clientDetails != null && clientDetails.getUserName() != null && clientDetails.getEmcId() != null) {
 			Optional<ClientDetails> clientDetailsRepo1 = clientDetailsRepository
-					.findByClientName(clientDetails.getClientName());
+					.findByClientNameAndStatus(clientDetails.getClientName(),"Active");
 			Optional<ClientDetails> clientDetailsRepo = clientDetailsRepository.findById(clientDetails.getEmcId());
 			if (!clientDetailsRepo1.isPresent()
 					|| clientDetailsRepo1.get().getClientName().equals(clientDetailsRepo.get().getClientName())) {

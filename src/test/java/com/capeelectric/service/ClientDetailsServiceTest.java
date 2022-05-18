@@ -85,7 +85,7 @@ public class ClientDetailsServiceTest {
 	@Test
 	public void testUpdateClientDetails() throws ClientDetailsException {
 
-		when(clientDetailsRepository.findByClientName("LVsystem@gmail.com")).thenReturn(Optional.of(clientDetails));
+		when(clientDetailsRepository.findByClientNameAndStatus("LVsystem@gmail.com","Active")).thenReturn(Optional.of(clientDetails));
 		when(clientDetailsRepository.findById(1)).thenReturn(Optional.of(clientDetails));
 		clientDetailsServiceImpl.updateClientDetails(clientDetails);
 
